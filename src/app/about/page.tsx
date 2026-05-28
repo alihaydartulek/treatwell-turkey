@@ -34,27 +34,17 @@ const values = [
 ];
 
 const stats = [
-  { value: "10,000+", label: "Patients Helped" },
-  { value: "150+", label: "Verified Clinics" },
-  { value: "12", label: "Countries Served" },
-  { value: "4.8/5", label: "Platform Rating" },
+  { value: "7", label: "Verified Clinics Listed" },
+  { value: "4", label: "Destinations Covered" },
+  { value: "8+", label: "Countries Served" },
+  { value: "Free", label: "For Patients" },
 ];
 
 const team = [
   {
-    name: "Founder & CEO",
+    name: "Founder",
     initials: "TW",
-    bio: "Founded TreatWell Turkey after personally struggling to find reliable information when researching treatment options abroad. Built the platform to give patients the transparent, independent resource that didn't exist.",
-  },
-  {
-    name: "Head of Clinic Partnerships",
-    initials: "CP",
-    bio: "15 years in international healthcare management, previously led international patient departments at two Istanbul hospitals. Responsible for our clinic verification and vetting process.",
-  },
-  {
-    name: "Patient Experience Lead",
-    initials: "PE",
-    bio: "Former NHS patient coordinator, now managing our team of multilingual patient coordinators across UK, Germany, Netherlands and Scandinavia.",
+    bio: "Founded TreatWell Turkey after personally struggling to find reliable, independent information when researching treatment options in Turkey. Built the platform to give patients the transparent, unbiased resource that didn't exist.",
   },
 ];
 
@@ -121,10 +111,10 @@ export default function AboutPage() {
                 <strong className="text-slate-900">
                   TreatWell Turkey exists to fix that.
                 </strong>{" "}
-                We personally visit and vet clinics before listing them. We publish
-                all reviews — including negative ones. We give patients a dedicated
-                coordinator who is their advocate, not the clinic&apos;s. And we only
-                make money when a patient makes a booking they&apos;re happy with.
+                We verify clinics before listing them, display their real Google
+                ratings, and give patients everything they need to contact clinics
+                directly — no middleman, no coordinator, no hidden referral fees.
+                We make money from clinic listing fees, not from your booking.
               </p>
             </div>
           </div>
@@ -228,11 +218,11 @@ export default function AboutPage() {
               ))}
             </div>
             <h2 className="text-3xl font-bold mb-3">
-              Trusted by 10,000+ Patients
+              Find the Right Clinic for You
             </h2>
             <p className="text-blue-100 mb-6">
-              Join thousands of patients from the UK, Germany, Netherlands and
-              across Europe who&apos;ve saved thousands on world-class treatment.
+              Browse verified clinics from the UK, Germany, Netherlands and
+              across Europe — compare prices, read real Google reviews, contact directly.
             </p>
             <Link
               href="/get-a-quote"

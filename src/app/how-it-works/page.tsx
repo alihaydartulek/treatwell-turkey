@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Search,
-  MessageSquare,
+  MessageCircle,
   Plane,
   CheckCircle,
   Shield,
   Clock,
   Star,
   ArrowRight,
+  Mail,
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -16,7 +17,7 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "How It Works — TreatWell Turkey",
   description:
-    "Learn how TreatWell Turkey connects you with verified clinics, handles your quote requests, and supports you every step of the way — completely free.",
+    "Browse verified Turkish clinics, compare prices and contact them directly via WhatsApp or email. No middleman, no coordinator — just transparent information.",
 };
 
 const steps = [
@@ -25,44 +26,41 @@ const steps = [
     number: "01",
     title: "Search & Compare Clinics",
     color: "bg-blue-50 text-blue-600 border-blue-100",
-    numColor: "text-blue-100",
     description:
-      "Browse our directory of 150+ verified clinics across Istanbul, Ankara, Izmir and Antalya. Filter by treatment type, city, accreditation, price and patient rating. Read detailed clinic profiles including doctor CVs, before/after galleries and verified patient reviews.",
+      "Browse our directory of verified clinics across Istanbul, Ankara, Izmir and Antalya. Filter by treatment type, city, accreditation, price and patient rating. Read detailed clinic profiles with doctor information, treatment details and Google review scores.",
     sub: [
-      "All clinics personally vetted by our team",
-      "Verified patient reviews — we never edit feedback",
-      "Real price ranges, not misleading 'from' prices",
+      "All listed clinics have a valid Turkish Ministry of Health licence",
+      "Google ratings displayed — sourced publicly, not curated by us",
+      "Real price ranges from each clinic",
       "Side-by-side clinic comparison tool",
     ],
   },
   {
-    icon: MessageSquare,
+    icon: MessageCircle,
     number: "02",
-    title: "Submit Your Request",
+    title: "Contact the Clinic Directly",
     color: "bg-green-50 text-green-600 border-green-100",
-    numColor: "text-green-100",
     description:
-      "Fill in our simple multi-step form — it takes under 2 minutes. Tell us your treatment, your home country, and when you're thinking of travelling. You can upload photos if relevant (e.g. for hair transplant or dental work). Your dedicated coordinator will review your case personally.",
+      "Every clinic on our platform has a WhatsApp button and email address on their profile. You contact them directly — no form to fill in, no intermediary, no coordinator. The clinic's own international patient team responds to you personally.",
     sub: [
-      "No sign-up or account required",
-      "Your data is encrypted and GDPR compliant",
-      "We only share your info with clinics you choose to contact",
-      "Zero commitment — you're just requesting information",
+      "WhatsApp or email — your choice",
+      "You speak directly with the clinic, not with us",
+      "No account or sign-up required",
+      "Your personal data stays between you and the clinic",
     ],
   },
   {
     icon: Clock,
     number: "03",
-    title: "Receive Matched Quotes",
+    title: "Get a Personalised Quote",
     color: "bg-purple-50 text-purple-600 border-purple-100",
-    numColor: "text-purple-100",
     description:
-      "Within 24 hours (usually 2 hours during working hours), your coordinator sends you personalised quotes from 2-3 matched clinics. Each quote is tailored to your specific case — not a generic price list. We explain the differences and help you ask the right questions.",
+      "The clinic's international patient team will ask for details about your case (photos if needed, medical history) and provide a personalised quote. Most clinics respond within a few hours during business hours. You can contact multiple clinics and compare their quotes directly.",
     sub: [
-      "Personalised quotes based on your case",
-      "Coordinator explains differences between clinics",
-      "Free video consultation with the clinic arranged if wanted",
-      "No pressure — take as long as you need",
+      "Send your photos or medical records directly to the clinic",
+      "Ask the clinic any questions — pricing, techniques, recovery",
+      "Compare quotes from multiple clinics side by side",
+      "No obligation — take as long as you need",
     ],
   },
   {
@@ -70,53 +68,55 @@ const steps = [
     number: "04",
     title: "Travel & Get Treated",
     color: "bg-orange-50 text-orange-600 border-orange-100",
-    numColor: "text-orange-100",
     description:
-      "Once you choose a clinic, your coordinator helps with any remaining questions and passes your confirmed details to the clinic. The clinic's international patient team takes over — arranging your airport transfer, accommodation advice, and a pre-treatment consultation on arrival.",
+      "Once you have chosen a clinic and agreed a date, the clinic's international patient team handles the logistics — airport transfer, accommodation advice, pre-treatment consultation on arrival. Most established clinics offer all-inclusive packages.",
     sub: [
-      "Clinic handles airport transfer (most packages)",
+      "Airport transfer arranged by the clinic (most packages)",
       "Pre-treatment consultation on day of arrival",
-      "Coordinator remains your point of contact throughout",
-      "Emergency support line available 24/7",
+      "Clinic team is your point of contact throughout",
+      "Payments made directly to the clinic — we never handle money",
     ],
   },
   {
     icon: CheckCircle,
     number: "05",
-    title: "Aftercare & Follow-up",
+    title: "Aftercare via the Clinic",
     color: "bg-teal-50 text-teal-600 border-teal-100",
-    numColor: "text-teal-100",
     description:
-      "After you return home, the clinic's aftercare team stays in touch via WhatsApp or email. Follow-up video consultations are included in all our partner clinic packages. Our platform coordinator also checks in at 1 month and 3 months to ensure you're happy with your results.",
+      "After you return home, the clinic's aftercare team stays in contact via WhatsApp or email. Follow-up video consultations are standard at all established Turkish clinics. You remain in direct contact with the clinical team throughout your recovery.",
     sub: [
-      "WhatsApp aftercare with the clinic",
-      "Video follow-up consultations included",
-      "TreatWell coordinator check-ins at 1 and 3 months",
-      "Leave a verified review to help future patients",
+      "WhatsApp aftercare with the clinic's medical team",
+      "Video follow-up consultations included in most packages",
+      "Direct line to the clinic — not via a platform",
+      "Leave a Google review to help future patients",
     ],
   },
 ];
 
 const faqs = [
   {
-    q: "How is TreatWell Turkey different from booking directly with a clinic?",
-    a: "Booking directly, you have no independent verification, no price comparison, and no advocate if problems arise. We pre-vet every clinic, give you objective comparisons, negotiate on your behalf, and remain your independent point of contact throughout.",
+    q: "Is TreatWell Turkey a clinic or an agency?",
+    a: "Neither. We are an independent directory and comparison platform. We list clinics, display their ratings and prices, and let you contact them directly. We have no financial relationship with the outcome of your treatment — we make money from clinic listing fees, not patient referrals.",
   },
   {
-    q: "How do you make money if it's free for patients?",
-    a: "We charge clinics a referral fee only when a patient they've been matched with actually books a procedure. Patients always pay clinics directly — we never handle patient payments.",
+    q: "Do I have to go through you to contact a clinic?",
+    a: "No. Every clinic on our platform has its own website, WhatsApp and email. You can contact them directly at any time, with or without using TreatWell Turkey. We just make it easier to find and compare them.",
+  },
+  {
+    q: "How do you make money if it is free for patients?",
+    a: "We charge clinics a fee to be listed and featured on the platform. Patients always pay clinics directly — we never handle patient payments and have no referral commission.",
+  },
+  {
+    q: "Can I trust the information on your platform?",
+    a: "We display publicly available Google ratings and review counts for each clinic. Clinic descriptions are based on publicly verifiable information (their websites, accreditation bodies, Google Business profiles). We note clearly when information has been verified versus when it is self-reported by the clinic.",
   },
   {
     q: "What if something goes wrong during or after treatment?",
-    a: "We are your advocate. If there's a complication or dispute, your coordinator escalates directly with the clinic. All our partner clinics have written complaints procedures and are required to respond within 48 hours to any escalation from our team.",
+    a: "Your relationship is directly with the clinic, not with us. If there is a complication, you contact the clinic's aftercare team directly. For serious issues, you can also contact the Turkish Ministry of Health or the clinic's accreditation body (e.g. JCI). We recommend checking that your travel insurance covers medical procedures abroad before travelling.",
   },
   {
-    q: "Can I trust the reviews on your platform?",
-    a: "Yes — our reviews are from patients who were matched through our platform. We verify each review by confirming the reviewer had a consultation with the clinic in question. We never edit, filter or remove negative reviews.",
-  },
-  {
-    q: "Do I have to choose from the clinics you suggest?",
-    a: "No. Our suggested clinics are recommendations based on your case. You can ask us to add other clinics to your comparison, or contact any clinic independently — we're here to help, not to restrict your options.",
+    q: "Do I need to contact only the clinics you suggest?",
+    a: "No. Browse our full directory, use our comparison tool, and contact as many clinics as you like. Our role is to give you the information — the decision is entirely yours.",
   },
 ];
 
@@ -135,8 +135,8 @@ export default function HowItWorksPage() {
               How It Works
             </h1>
             <p className="text-lg text-slate-300">
-              From your first search to your final follow-up — here&apos;s exactly
-              what happens, step by step.
+              Browse verified clinics, compare prices, and contact them directly.
+              No middleman. No coordinator. No hidden fees.
             </p>
           </div>
         </section>
@@ -145,10 +145,10 @@ export default function HowItWorksPage() {
         <div className="bg-blue-600 text-white py-4">
           <div className="container flex flex-wrap justify-center gap-6 text-sm">
             {[
-              { icon: Shield, text: "100% free for patients" },
-              { icon: CheckCircle, text: "All clinics independently verified" },
-              { icon: Star, text: "No edited or filtered reviews" },
-              { icon: Clock, text: "Reply within 2 hours" },
+              { icon: Shield, text: "Free for patients" },
+              { icon: CheckCircle, text: "Verified clinic listings" },
+              { icon: Mail, text: "Direct clinic contact" },
+              { icon: Star, text: "Real Google ratings" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-1.5">
                 <Icon size={14} className="text-blue-200" />
@@ -241,15 +241,15 @@ export default function HowItWorksPage() {
         {/* CTA */}
         <section className="py-16 bg-blue-600 text-white text-center">
           <div className="container max-w-xl mx-auto">
-            <h2 className="text-3xl font-bold mb-3">Ready to Get Started?</h2>
+            <h2 className="text-3xl font-bold mb-3">Ready to Start?</h2>
             <p className="text-blue-100 mb-6">
-              It takes under 2 minutes. No account needed. No commitment.
+              Browse our verified clinic directory — free, no sign-up required.
             </p>
             <Link
-              href="/get-a-quote"
+              href="/clinics"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 font-bold text-lg rounded-xl hover:bg-blue-50 transition-colors"
             >
-              Get My Free Clinic Matches <ArrowRight size={18} />
+              Browse Clinics <ArrowRight size={18} />
             </Link>
           </div>
         </section>

@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="container py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { icon: CheckCircle, text: "10,000+ Patients Helped" },
+              { icon: CheckCircle, text: "Free for Patients" },
               { icon: Shield, text: "GDPR Compliant Platform" },
               { icon: Star, text: "All Clinics Verified" },
               { icon: Users, text: "10+ Destinations Covered" },
