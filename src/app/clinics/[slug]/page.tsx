@@ -278,9 +278,6 @@ export default async function ClinicProfilePage({
                 <div className="flex flex-col gap-5">
                   {clinic.doctors.map((doc) => (
                     <div key={doc.name} className="flex gap-4 p-5 border border-slate-200 rounded-2xl">
-                      <div className="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg shrink-0">
-                        {doc.initials}
-                      </div>
                       <div>
                         <div className="flex flex-wrap items-center gap-2 mb-1">
                           <h3 className="font-bold text-slate-900">{doc.name}</h3>
