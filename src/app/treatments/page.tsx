@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, TrendingDown, CheckCircle } from "lucide-react";
 import Header from "@/components/layout/Header";
@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { treatments } from "@/lib/treatments";
 
 export const metadata: Metadata = {
-  title: "All Treatments in Turkey — Compare Clinics & Prices | TreatWell Turkey",
+  title: "All Treatments in Turkey — Compare Clinics & Prices | CliniqTurkey",
   description:
     "Browse 40+ medical treatments available in Turkey. Compare verified clinics, real prices, and patient reviews for hair transplant, dental, bariatric surgery, IVF and more.",
 };

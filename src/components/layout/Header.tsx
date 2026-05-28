@@ -37,10 +37,10 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-              <span className="text-white text-sm font-bold">TW</span>
+              <span className="text-white text-sm font-bold">CT</span>
             </div>
             <span className="font-bold text-slate-900 text-lg">
-              TreatWell<span className="text-blue-600">Turkey</span>
+              Cliniq<span className="text-blue-600">Turkey</span>
             </span>
           </Link>
 
@@ -172,6 +172,20 @@ export default function Header() {
                 className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
               >
                 {t.label}
+              </Link>
+            ))}
+            <div className="border-t border-slate-100 my-2" />
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-3 mb-1">
+              Destinations
+            </p>
+            {destinations.map((d) => (
+              <Link
+                key={d.href}
+                href={d.href}
+                onClick={() => setMobileOpen(false)}
+                className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
+              >
+                {d.label}
               </Link>
             ))}
             <div className="border-t border-slate-100 my-2" />

@@ -14,19 +14,19 @@ export const metadata: Metadata = {
   title: "Compare Medical Clinics in Turkey — Hair Transplant, Dental & More",
   description:
     "Find and compare 18 verified clinics in Turkey for hair transplant, dental veneers, bariatric surgery, IVF and cosmetic surgery. Save 50–75% vs UK prices. Real Google reviews, direct clinic contact.",
-  alternates: { canonical: "https://www.treatwellturkey.com" },
+  alternates: { canonical: "https://www.cliniqturkey.com" },
 };
 
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "TreatWell Turkey",
-  url: "https://www.treatwellturkey.com",
+  name: "CliniqTurkey",
+  url: "https://www.cliniqturkey.com",
   description:
     "Independent medical tourism comparison platform — compare verified clinics in Turkey for hair transplant, dental, bariatric surgery and more.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://www.treatwellturkey.com/clinics?search={search_term_string}",
+    target: "https://www.cliniqturkey.com/clinics?search={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -34,11 +34,11 @@ const websiteJsonLd = {
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "TreatWell Turkey",
-  url: "https://www.treatwellturkey.com",
+  name: "CliniqTurkey",
+  url: "https://www.cliniqturkey.com",
   contactPoint: {
     "@type": "ContactPoint",
-    email: "hello@treatwellturkey.com",
+    email: "hello@cliniqturkey.com",
     contactType: "customer support",
     availableLanguage: ["English", "German"],
   },

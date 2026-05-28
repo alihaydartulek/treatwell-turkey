@@ -4,8 +4,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: {
-    default: "TreatWell Turkey — Compare Verified Clinics & Save Up to 75%",
-    template: "%s | TreatWell Turkey",
+    default: "CliniqTurkey — Compare Verified Clinics & Save Up to 75%",
+    template: "%s | CliniqTurkey",
   },
   description:
     "Compare 18 verified clinics in Turkey for hair transplant, dental veneers, bariatric surgery, IVF and more. Real Google ratings, transparent prices, direct clinic contact.",
@@ -21,32 +21,32 @@ export const metadata: Metadata = {
     "istanbul clinics",
     "turkey medical tourism cost",
   ],
-  metadataBase: new URL("https://www.treatwellturkey.com"),
+  metadataBase: new URL("https://www.cliniqturkey.com"),
   openGraph: {
-    title: "TreatWell Turkey — Compare Verified Clinics & Save Up to 75%",
+    title: "CliniqTurkey — Compare Verified Clinics & Save Up to 75%",
     description:
       "Compare 18 verified clinics in Turkey. Real Google ratings, transparent prices, direct contact — no middleman.",
     type: "website",
     locale: "en_GB",
-    siteName: "TreatWell Turkey",
+    siteName: "CliniqTurkey",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80",
         width: 1200,
         height: 630,
-        alt: "TreatWell Turkey — Compare Medical Clinics",
+        alt: "CliniqTurkey — Compare Medical Clinics",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TreatWell Turkey — Compare Verified Clinics & Save Up to 75%",
+    title: "CliniqTurkey — Compare Verified Clinics & Save Up to 75%",
     description:
       "Compare 18 verified clinics in Turkey. Real Google ratings, transparent prices, direct contact.",
     images: ["https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80"],
   },
   alternates: {
-    canonical: "https://www.treatwellturkey.com",
+    canonical: "https://www.cliniqturkey.com",
   },
 };
 

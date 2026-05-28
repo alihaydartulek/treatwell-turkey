@@ -1,7 +1,7 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 import { clinics } from "@/lib/clinics";
 
-const BASE_URL = "https://www.treatwellturkey.com";
+const BASE_URL = "https://www.cliniqturkey.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const clinicRoutes = clinics.map((c) => ({

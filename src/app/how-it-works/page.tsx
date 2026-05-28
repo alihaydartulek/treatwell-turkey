@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Search,
@@ -15,7 +15,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "How It Works — TreatWell Turkey",
+  title: "How It Works — CliniqTurkey",
   description:
     "Browse verified Turkish clinics, compare prices and contact them directly via WhatsApp or email. No middleman, no coordinator — just transparent information.",
 };
@@ -95,12 +95,12 @@ const steps = [
 
 const faqs = [
   {
-    q: "Is TreatWell Turkey a clinic or an agency?",
+    q: "Is CliniqTurkey a clinic or an agency?",
     a: "Neither. We are an independent directory and comparison platform. We list clinics, display their ratings and prices, and let you contact them directly. We have no financial relationship with the outcome of your treatment — we make money from clinic listing fees, not patient referrals.",
   },
   {
     q: "Do I have to go through you to contact a clinic?",
-    a: "No. Every clinic on our platform has its own website, WhatsApp and email. You can contact them directly at any time, with or without using TreatWell Turkey. We just make it easier to find and compare them.",
+    a: "No. Every clinic on our platform has its own website, WhatsApp and email. You can contact them directly at any time, with or without using CliniqTurkey. We just make it easier to find and compare them.",
   },
   {
     q: "How do you make money if it is free for patients?",

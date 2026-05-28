@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — TreatWell Turkey",
-  description: "Terms and conditions for using the TreatWell Turkey platform.",
+  title: "Terms of Use — CliniqTurkey",
+  description: "Terms and conditions for using the CliniqTurkey platform.",
 };
 
 export default function TermsPage() {
@@ -19,8 +19,8 @@ export default function TermsPage() {
           <div className="prose-sm space-y-8 text-slate-600 leading-relaxed">
 
             <section>
-              <h2 className="text-xl font-bold text-slate-900 mb-3">1. What TreatWell Turkey Is</h2>
-              <p>TreatWell Turkey is an independent directory and comparison platform that lists Turkish medical clinics for informational purposes. We are not a medical provider, travel agency or intermediary. We do not arrange, book or guarantee any medical procedure.</p>
+              <h2 className="text-xl font-bold text-slate-900 mb-3">1. What CliniqTurkey Is</h2>
+              <p>CliniqTurkey is an independent directory and comparison platform that lists Turkish medical clinics for informational purposes. We are not a medical provider, travel agency or intermediary. We do not arrange, book or guarantee any medical procedure.</p>
             </section>
 
             <section>
@@ -36,7 +36,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">4. Your Relationship with Clinics</h2>
-              <p>When you contact a clinic via this platform, you enter into a direct relationship with that clinic. TreatWell Turkey is not a party to any agreement between you and a clinic. Any contractual terms, payment arrangements and medical liability are entirely between you and the clinic.</p>
+              <p>When you contact a clinic via this platform, you enter into a direct relationship with that clinic. CliniqTurkey is not a party to any agreement between you and a clinic. Any contractual terms, payment arrangements and medical liability are entirely between you and the clinic.</p>
             </section>
 
             <section>
@@ -46,12 +46,12 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">6. Limitation of Liability</h2>
-              <p>TreatWell Turkey is not liable for any medical outcomes, complications, financial losses or other damages arising from procedures carried out at clinics listed on this platform. Use this platform as one of several sources of information when making your decision.</p>
+              <p>CliniqTurkey is not liable for any medical outcomes, complications, financial losses or other damages arising from procedures carried out at clinics listed on this platform. Use this platform as one of several sources of information when making your decision.</p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">7. Intellectual Property</h2>
-              <p>All content on this platform (text, design, code) is the property of TreatWell Turkey. Clinic names, logos and trademarks belong to their respective owners.</p>
+              <p>All content on this platform (text, design, code) is the property of CliniqTurkey. Clinic names, logos and trademarks belong to their respective owners.</p>
             </section>
 
             <section>
@@ -61,7 +61,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">9. Contact</h2>
-              <p>Questions about these terms: <a href="mailto:hello@treatwellturkey.com" className="text-blue-600 hover:underline">hello@treatwellturkey.com</a></p>
+              <p>Questions about these terms: <a href="mailto:hello@cliniqturkey.com" className="text-blue-600 hover:underline">hello@cliniqturkey.com</a></p>
             </section>
 
           </div>

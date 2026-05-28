@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — TreatWell Turkey",
-  description: "How TreatWell Turkey collects, uses and protects your personal data.",
+  title: "Privacy Policy — CliniqTurkey",
+  description: "How CliniqTurkey collects, uses and protects your personal data.",
 };
 
 export default function PrivacyPage() {
@@ -21,13 +21,13 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">1. Who We Are</h2>
-              <p>TreatWell Turkey is an independent medical tourism directory and comparison platform. We connect patients with verified Turkish clinics but do not act as a medical provider, agency or intermediary. Our platform is free for patients to use.</p>
-              <p className="mt-2">Contact: <a href="mailto:hello@treatwellturkey.com" className="text-blue-600 hover:underline">hello@treatwellturkey.com</a></p>
+              <p>CliniqTurkey is an independent medical tourism directory and comparison platform. We connect patients with verified Turkish clinics but do not act as a medical provider, agency or intermediary. Our platform is free for patients to use.</p>
+              <p className="mt-2">Contact: <a href="mailto:hello@cliniqturkey.com" className="text-blue-600 hover:underline">hello@cliniqturkey.com</a></p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">2. Data We Collect</h2>
-              <p>TreatWell Turkey does not require account registration. We collect minimal data:</p>
+              <p>CliniqTurkey does not require account registration. We collect minimal data:</p>
               <ul className="list-disc ml-6 mt-2 space-y-1">
                 <li><strong>Usage data</strong> — pages visited, browser type, country of origin (via standard analytics)</li>
                 <li><strong>Contact form data</strong> — if you use our contact form: name, email address, message content</li>
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
                 <li>Object to processing</li>
                 <li>Lodge a complaint with your national data protection authority</li>
               </ul>
-              <p className="mt-2">To exercise any of these rights, email <a href="mailto:hello@treatwellturkey.com" className="text-blue-600 hover:underline">hello@treatwellturkey.com</a>.</p>
+              <p className="mt-2">To exercise any of these rights, email <a href="mailto:hello@cliniqturkey.com" className="text-blue-600 hover:underline">hello@cliniqturkey.com</a>.</p>
             </section>
 
             <section>

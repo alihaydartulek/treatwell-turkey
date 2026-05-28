@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, ArrowLeft, ArrowRight } from "lucide-react";
@@ -19,13 +19,13 @@ export async function generateMetadata({
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return {
-    title: `${post.title} | TreatWell Turkey`,
+    title: `${post.title} | CliniqTurkey`,
     description: post.excerpt,
-    alternates: { canonical: `https://www.treatwellturkey.com/blog/${slug}` },
+    alternates: { canonical: `https://www.cliniqturkey.com/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://www.treatwellturkey.com/blog/${slug}`,
+      url: `https://www.cliniqturkey.com/blog/${slug}`,
       type: "article",
       images: [{ url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80", width: 1200, height: 630 }],
     },

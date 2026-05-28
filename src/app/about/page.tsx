@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Shield, CheckCircle, Users, Heart, ArrowRight, Star } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "About TreatWell Turkey — Who We Are & Why We Built This",
+  title: "About CliniqTurkey — Who We Are & Why We Built This",
   description:
-    "TreatWell Turkey is an independent medical tourism comparison platform. We are not a clinic or agency — we are on your side. Learn why we built this and how we verify clinics.",
+    "CliniqTurkey is an independent medical tourism comparison platform. We are not a clinic or agency — we are on your side. Learn why we built this and how we verify clinics.",
 };
 
 const values = [
@@ -44,7 +44,7 @@ const team = [
   {
     name: "Founder",
     initials: "TW",
-    bio: "Founded TreatWell Turkey after personally struggling to find reliable, independent information when researching treatment options in Turkey. Built the platform to give patients the transparent, unbiased resource that didn't exist.",
+    bio: "Founded CliniqTurkey after personally struggling to find reliable, independent information when researching treatment options in Turkey. Built the platform to give patients the transparent, unbiased resource that didn't exist.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function AboutPage() {
               Not the clinic&apos;s.
             </h1>
             <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
-              TreatWell Turkey was built because finding honest, independent
+              CliniqTurkey was built because finding honest, independent
               information about medical tourism was too hard. Every site we found
               was either run by a clinic, an agency, or was clearly prioritising
               the highest-paying advertisers over the best patient outcomes. We
@@ -109,7 +109,7 @@ export default function AboutPage() {
               </p>
               <p>
                 <strong className="text-slate-900">
-                  TreatWell Turkey exists to fix that.
+                  CliniqTurkey exists to fix that.
                 </strong>{" "}
                 We verify clinics before listing them, display their real Google
                 ratings, and give patients everything they need to contact clinics
@@ -150,7 +150,7 @@ export default function AboutPage() {
               How We Verify Clinics
             </h2>
             <p className="text-slate-500 mb-8">
-              Every clinic on TreatWell Turkey goes through a multi-stage
+              Every clinic on CliniqTurkey goes through a multi-stage
               verification before being listed — and we continue to monitor them
               after listing.
             </p>

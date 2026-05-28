@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -8,13 +8,13 @@ import { faqSections } from "@/lib/faq-data";
 export const metadata: Metadata = {
   title: "FAQ — Medical Treatment in Turkey: Safety, Costs & Planning",
   description:
-    "Answers to the most common questions about medical tourism in Turkey — is it safe, how much does it cost, how do I plan, and how does TreatWell Turkey work.",
-  alternates: { canonical: "https://www.treatwellturkey.com/faq" },
+    "Answers to the most common questions about medical tourism in Turkey — is it safe, how much does it cost, how do I plan, and how does CliniqTurkey work.",
+  alternates: { canonical: "https://www.cliniqturkey.com/faq" },
   openGraph: {
-    title: "FAQ — Medical Treatment in Turkey | TreatWell Turkey",
+    title: "FAQ — Medical Treatment in Turkey | CliniqTurkey",
     description:
       "Everything you need to know about medical tourism in Turkey — safety, costs, planning and more.",
-    url: "https://www.treatwellturkey.com/faq",
+    url: "https://www.cliniqturkey.com/faq",
     type: "website",
   },
 };

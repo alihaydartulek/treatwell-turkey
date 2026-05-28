@@ -1,4 +1,4 @@
-export type FAQ = {
+﻿export type FAQ = {
   question: string;
   answer: string;
 };
@@ -17,12 +17,12 @@ export const faqSections: FAQSection[] = [
       {
         question: "Is it safe to have surgery in Turkey?",
         answer:
-          "Turkey has become one of the world's leading medical tourism destinations, attracting over 1.5 million international patients per year. Many Turkish hospitals hold JCI (Joint Commission International) accreditation — the same gold standard used by top hospitals in the US, UK and Germany. All clinics listed on TreatWell Turkey hold valid Turkish Ministry of Health licences and have been independently verified. That said, safety depends heavily on choosing the right clinic. We only list clinics with strong, independently verifiable track records.",
+          "Turkey has become one of the world's leading medical tourism destinations, attracting over 1.5 million international patients per year. Many Turkish hospitals hold JCI (Joint Commission International) accreditation — the same gold standard used by top hospitals in the US, UK and Germany. All clinics listed on CliniqTurkey hold valid Turkish Ministry of Health licences and have been independently verified. That said, safety depends heavily on choosing the right clinic. We only list clinics with strong, independently verifiable track records.",
       },
       {
         question: "How do I know if a clinic is legitimate?",
         answer:
-          "Every clinic on TreatWell Turkey has been verified before listing. We check their Turkish Ministry of Health licence, review third-party accreditations (JCI, ISO 9001), and cross-reference their Google review history. We display real Google ratings directly on each profile — these are publicly sourced and not curated by us. Before booking, we also recommend checking the clinic's own Google Maps listing independently, and asking them for proof of their Ministry of Health certificate.",
+          "Every clinic on CliniqTurkey has been verified before listing. We check their Turkish Ministry of Health licence, review third-party accreditations (JCI, ISO 9001), and cross-reference their Google review history. We display real Google ratings directly on each profile — these are publicly sourced and not curated by us. Before booking, we also recommend checking the clinic's own Google Maps listing independently, and asking them for proof of their Ministry of Health certificate.",
       },
       {
         question: "What is JCI accreditation and why does it matter?",
@@ -89,7 +89,7 @@ export const faqSections: FAQSection[] = [
       {
         question: "How do I pay the clinic?",
         answer:
-          "Payment methods vary by clinic. Most accept credit/debit cards, bank transfer, and cash (Turkish Lira, Euro, or GBP). We recommend: paying by credit card where possible (provides consumer protection), never paying 100% upfront before you have arrived and confirmed the consultation, getting a written receipt for any payment, and confirming the total cost in writing before travelling. TreatWell Turkey does not handle any payments — you pay the clinic directly.",
+          "Payment methods vary by clinic. Most accept credit/debit cards, bank transfer, and cash (Turkish Lira, Euro, or GBP). We recommend: paying by credit card where possible (provides consumer protection), never paying 100% upfront before you have arrived and confirmed the consultation, getting a written receipt for any payment, and confirming the total cost in writing before travelling. CliniqTurkey does not handle any payments — you pay the clinic directly.",
       },
       {
         question: "Will I be charged a deposit?",
@@ -99,16 +99,16 @@ export const faqSections: FAQSection[] = [
     ],
   },
   {
-    title: "About TreatWell Turkey",
+    title: "About CliniqTurkey",
     icon: "ℹ️",
     faqs: [
       {
-        question: "How does TreatWell Turkey work?",
+        question: "How does CliniqTurkey work?",
         answer:
-          "TreatWell Turkey is an independent comparison and directory platform. We verify clinics, display their real Google ratings and pricing, and allow patients to contact them directly. We do not act as an intermediary or coordinator — there is no middleman between you and the clinic. You browse profiles, find a clinic you like, and contact them directly via WhatsApp or email from their profile page.",
+          "CliniqTurkey is an independent comparison and directory platform. We verify clinics, display their real Google ratings and pricing, and allow patients to contact them directly. We do not act as an intermediary or coordinator — there is no middleman between you and the clinic. You browse profiles, find a clinic you like, and contact them directly via WhatsApp or email from their profile page.",
       },
       {
-        question: "Is TreatWell Turkey free to use?",
+        question: "Is CliniqTurkey free to use?",
         answer:
           "Yes, completely free for patients. We do not charge patients any fees, take any booking commission, or add any hidden costs to the clinic's prices. Clinics pay a listing fee to be featured on the platform. Our listings are not ranked by how much clinics pay us; rankings are based on verified patient ratings and accreditations.",
       },
@@ -120,12 +120,12 @@ export const faqSections: FAQSection[] = [
       {
         question: "How are the Google ratings sourced?",
         answer:
-          "The ratings displayed on TreatWell Turkey are sourced from publicly available Google Maps data. They are not curated, filtered, or modified by us. We clearly label all ratings as 'Google ratings' and include the review count so you can verify them independently on Google Maps.",
+          "The ratings displayed on CliniqTurkey are sourced from publicly available Google Maps data. They are not curated, filtered, or modified by us. We clearly label all ratings as 'Google ratings' and include the review count so you can verify them independently on Google Maps.",
       },
       {
-        question: "Can I trust the clinic profiles on TreatWell Turkey?",
+        question: "Can I trust the clinic profiles on CliniqTurkey?",
         answer:
-          "We verify the key facts before listing a clinic: Ministry of Health licence, accreditations, and that the clinic is an active, real business. Pricing ranges are provided by or agreed with the clinic and reflect their typical starting prices. However, final quotes always depend on individual assessment — always confirm pricing directly with the clinic. If you ever spot incorrect information on a profile, please contact us at hello@treatwellturkey.com and we will investigate promptly.",
+          "We verify the key facts before listing a clinic: Ministry of Health licence, accreditations, and that the clinic is an active, real business. Pricing ranges are provided by or agreed with the clinic and reflect their typical starting prices. However, final quotes always depend on individual assessment — always confirm pricing directly with the clinic. If you ever spot incorrect information on a profile, please contact us at hello@cliniqturkey.com and we will investigate promptly.",
       },
     ],
   },

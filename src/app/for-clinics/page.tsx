@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import {
   TrendingUp,
@@ -15,7 +15,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "List Your Clinic on TreatWell Turkey — Reach 10,000+ International Patients",
+  title: "List Your Clinic on CliniqTurkey — Reach 10,000+ International Patients",
   description:
     "Join 150+ verified clinics and connect with qualified leads from the UK, Germany, Netherlands and across Europe. Flexible listing plans, no upfront commitment.",
 };
@@ -148,7 +148,7 @@ export default function ForClinicsPage() {
                 Pre-Qualified European Patients
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl">
-                Get listed on TreatWell Turkey — the independent platform
+                Get listed on CliniqTurkey — the independent platform
                 connecting UK, German, Dutch and Scandinavian patients with
                 verified clinics in Turkey.
               </p>
@@ -189,7 +189,7 @@ export default function ForClinicsPage() {
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-slate-900 mb-3">
-                Why List on TreatWell Turkey?
+                Why List on CliniqTurkey?
               </h2>
               <p className="text-slate-500 max-w-lg mx-auto">
                 We drive high-intent traffic from patients who are ready to
@@ -343,10 +343,10 @@ export default function ForClinicsPage() {
             <p className="text-blue-200 text-sm mt-4">
               Questions? Email us at{" "}
               <a
-                href="mailto:clinics@treatwellturkey.com"
+                href="mailto:clinics@cliniqturkey.com"
                 className="underline text-white"
               >
-                clinics@treatwellturkey.com
+                clinics@cliniqturkey.com
               </a>
             </p>
           </div>

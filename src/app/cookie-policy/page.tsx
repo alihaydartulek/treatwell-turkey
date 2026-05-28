@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy — TreatWell Turkey",
-  description: "How TreatWell Turkey uses cookies and similar technologies.",
+  title: "Cookie Policy — CliniqTurkey",
+  description: "How CliniqTurkey uses cookies and similar technologies.",
 };
 
 export default function CookiePolicyPage() {
@@ -64,7 +64,7 @@ export default function CookiePolicyPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">More Information</h2>
-              <p>See our <Link href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link> for full details on how we handle your data. Questions: <a href="mailto:hello@treatwellturkey.com" className="text-blue-600 hover:underline">hello@treatwellturkey.com</a></p>
+              <p>See our <Link href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link> for full details on how we handle your data. Questions: <a href="mailto:hello@cliniqturkey.com" className="text-blue-600 hover:underline">hello@cliniqturkey.com</a></p>
             </section>
 
           </div>

@@ -57,10 +57,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                <span className="text-white text-sm font-bold">TW</span>
+                <span className="text-white text-sm font-bold">CT</span>
               </div>
               <span className="font-bold text-white text-lg">
-                TreatWell<span className="text-blue-400">Turkey</span>
+                Cliniq<span className="text-blue-400">Turkey</span>
               </span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-4 max-w-xs">
@@ -69,11 +69,11 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-2 text-sm">
               <a
-                href="mailto:hello@treatwellturkey.com"
+                href="mailto:hello@cliniqturkey.com"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
               >
                 <Mail size={14} />
-                hello@treatwellturkey.com
+                hello@cliniqturkey.com
               </a>
               <span className="flex items-center gap-2 text-slate-400">
                 <MapPin size={14} />
@@ -166,7 +166,7 @@ export default function Footer() {
       <div className="border-t border-slate-800">
         <div className="container py-4 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-500">
           <p>
-            &copy; {new Date().getFullYear()} TreatWell Turkey Ltd. All rights
+            &copy; {new Date().getFullYear()} CliniqTurkey Ltd. All rights
             reserved.
           </p>
           <div className="flex items-center gap-4">

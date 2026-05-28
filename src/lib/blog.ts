@@ -1,4 +1,4 @@
-export type BlogPost = {
+﻿export type BlogPost = {
   slug: string;
   title: string;
   excerpt: string;
@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     category: "Hair Transplant",
     readTime: 12,
     publishDate: "2025-04-15",
-    author: "TreatWell Editorial",
+    author: "CliniqTurkey Editorial",
     coverEmoji: "💇",
     relatedTreatment: "hair-transplant",
     content: `
@@ -111,7 +111,7 @@ This is the most important section of this guide. Turkey's rapid growth in hair 
     category: "Dental",
     readTime: 10,
     publishDate: "2025-03-28",
-    author: "TreatWell Editorial",
+    author: "CliniqTurkey Editorial",
     coverEmoji: "🦷",
     relatedTreatment: "dental",
     content: `
@@ -185,7 +185,7 @@ The difference emerges at the lower end of the market. There are budget Turkish 
     category: "Destination Guide",
     readTime: 14,
     publishDate: "2025-03-10",
-    author: "TreatWell Editorial",
+    author: "CliniqTurkey Editorial",
     coverEmoji: "🕌",
     relatedTreatment: undefined,
     content: `
@@ -260,7 +260,7 @@ Istanbul's medical tourism districts — Şişli, Beşiktaş, Nişantaşı — a
     category: "Bariatric",
     readTime: 13,
     publishDate: "2025-02-20",
-    author: "TreatWell Editorial",
+    author: "CliniqTurkey Editorial",
     coverEmoji: "⚖️",
     relatedTreatment: "bariatric",
     content: `
@@ -350,7 +350,7 @@ Both Memorial Hospital and Acıbadem — listed on our platform — hold JCI acc
     category: "Patient Guide",
     readTime: 11,
     publishDate: "2025-01-30",
-    author: "TreatWell Editorial",
+    author: "CliniqTurkey Editorial",
     coverEmoji: "🛡️",
     relatedTreatment: undefined,
     content: `
@@ -408,7 +408,7 @@ Before booking any procedure in Turkey, verify:
 
 Medical tourism in Turkey is safe for patients who choose accredited clinics, do their research, ask the right questions, and do not select providers on price alone. It carries greater risk for patients who prioritise the lowest possible price without verifying credentials, or who choose unaccredited clinics based on social media advertising.
 
-The clinics listed on TreatWell Turkey have been vetted against the criteria above. We do not list clinics that fail to meet our minimum standards, regardless of commercial considerations.
+The clinics listed on CliniqTurkey have been vetted against the criteria above. We do not list clinics that fail to meet our minimum standards, regardless of commercial considerations.
     `,
   },
 ];

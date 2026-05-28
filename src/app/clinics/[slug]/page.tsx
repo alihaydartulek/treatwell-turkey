@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,11 +36,11 @@ export async function generateMetadata({
   return {
     title: `${clinic.name} — ${clinic.city} Reviews & Prices`,
     description: `Read verified patient reviews for ${clinic.name} in ${clinic.city}. Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.accreditations.slice(0, 2).join(", ")}. Compare and contact directly.`,
-    alternates: { canonical: `https://www.treatwellturkey.com/clinics/${clinic.slug}` },
+    alternates: { canonical: `https://www.cliniqturkey.com/clinics/${clinic.slug}` },
     openGraph: {
-      title: `${clinic.name} — ${clinic.city} | TreatWell Turkey`,
+      title: `${clinic.name} — ${clinic.city} | CliniqTurkey`,
       description: `${clinic.tagline} Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.googleReviewCount ?? clinic.reviewCount} Google reviews.`,
-      url: `https://www.treatwellturkey.com/clinics/${clinic.slug}`,
+      url: `https://www.cliniqturkey.com/clinics/${clinic.slug}`,
       images: [{ url: ogImage, width: 1200, height: 630, alt: clinic.name }],
       type: "website",
     },
@@ -83,7 +83,7 @@ export default async function ClinicProfilePage({
     "@type": "MedicalClinic",
     name: clinic.name,
     description: clinic.description.slice(0, 300),
-    url: `https://www.treatwellturkey.com/clinics/${clinic.slug}`,
+    url: `https://www.cliniqturkey.com/clinics/${clinic.slug}`,
     ...(clinic.coverImage ? { image: clinic.coverImage } : {}),
     telephone: clinic.phone,
     email: clinic.email,
