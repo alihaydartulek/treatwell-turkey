@@ -126,7 +126,7 @@ export const treatments: Treatment[] = [
       },
       {
         q: "How is aftercare handled once I return home?",
-        a: "All our partner clinics provide a dedicated aftercare coordinator. Video follow-up consultations are included for 6-12 months post-surgery.",
+        a: "Reputable bariatric clinics in Turkey provide follow-up support after surgery — typically including video consultations for 6–12 months post-procedure. Always confirm the exact aftercare package directly with your chosen clinic before booking.",
       },
     ],
   },
