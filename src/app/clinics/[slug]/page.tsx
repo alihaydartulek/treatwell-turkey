@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   MapPin,
@@ -35,6 +36,21 @@ export async function generateMetadata({
   };
 }
 
+function getInitials(name: string): string {
+  const words = name.split(/\s+/).filter((w) => w.length > 2);
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
+  return name.slice(0, 2).toUpperCase();
+}
+
+const slugToTreatmentName: Record<string, string> = {
+  "hair-transplant": "Hair Transplant",
+  "dental": "Dental Veneers",
+  "bariatric": "Bariatric Surgery",
+  "cosmetic": "Cosmetic Surgery",
+  "eye-surgery": "Eye Surgery",
+  "ivf": "IVF & Fertility",
+};
+
 export default async function ClinicProfilePage({
   params,
 }: {
@@ -44,13 +60,33 @@ export default async function ClinicProfilePage({
   const clinic = getClinicBySlug(slug);
   if (!clinic) notFound();
 
+  const primarySlug = clinic.treatmentSlugs[0] ?? "";
+  const treatmentName = slugToTreatmentName[primarySlug] ?? "";
+  const quoteUrl = treatmentName
+    ? `/get-a-quote?treatment=${encodeURIComponent(treatmentName)}&clinic=${clinic.slug}`
+    : "/get-a-quote";
+
   return (
     <>
       <Header />
       <main>
         {/* Cover */}
-        <section className="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-12">
-          <div className="container">
+        <section className="bg-gradient-to-br from-slate-800 to-slate-900 text-white">
+          {/* Cover photo strip */}
+          {clinic.coverImage && (
+            <div className="relative h-52 md:h-72 overflow-hidden">
+              <Image
+                src={clinic.coverImage}
+                alt={clinic.name}
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-slate-900/80" />
+            </div>
+          )}
+
+          <div className="container py-10">
             <div className="flex items-center gap-2 text-slate-400 text-sm mb-6">
               <Link href="/" className="hover:text-white">Home</Link>
               <span>/</span>
@@ -60,9 +96,9 @@ export default async function ClinicProfilePage({
             </div>
 
             <div className="flex flex-col md:flex-row gap-6 items-start">
-              {/* Clinic avatar */}
-              <div className="w-24 h-24 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl shrink-0">
-                🏥
+              {/* Clinic avatar — initials badge */}
+              <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-lg select-none">
+                {getInitials(clinic.name)}
               </div>
 
               <div className="flex-1">
@@ -100,7 +136,7 @@ export default async function ClinicProfilePage({
               {/* Quick CTA */}
               <div className="flex flex-col gap-2 shrink-0">
                 <Link
-                  href="/get-a-quote"
+                  href={quoteUrl}
                   className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl text-sm transition-colors text-center"
                 >
                   Get Free Quote
@@ -239,48 +275,60 @@ export default async function ClinicProfilePage({
                 </div>
 
                 {clinic.reviews.length > 0 ? (
-                  <div className="flex flex-col gap-4">
-                    {clinic.reviews.map((review) => (
-                      <div key={review.name} className="p-5 bg-slate-50 border border-slate-200 rounded-2xl">
-                        <div className="flex items-start justify-between mb-3">
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-sm font-bold">
-                              {review.name[0]}
+                  <>
+                    <div className="flex flex-col gap-4">
+                      {clinic.reviews.map((review) => (
+                        <div key={review.name} className="p-5 bg-slate-50 border border-slate-200 rounded-2xl">
+                          <div className="flex items-start justify-between mb-3">
+                            <div className="flex items-center gap-3">
+                              <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-sm font-bold">
+                                {review.name[0]}
+                              </div>
+                              <div>
+                                <div className="font-semibold text-slate-900 text-sm">{review.name}</div>
+                                <div className="text-xs text-slate-500">{review.country}</div>
+                              </div>
                             </div>
-                            <div>
-                              <div className="font-semibold text-slate-900 text-sm">{review.name}</div>
-                              <div className="text-xs text-slate-500">{review.country}</div>
+                            <div className="text-right">
+                              <div className="flex gap-0.5 justify-end mb-0.5">
+                                {Array.from({ length: review.rating }).map((_, i) => (
+                                  <Star key={i} size={12} className="text-yellow-400 fill-yellow-400" />
+                                ))}
+                              </div>
+                              <div className="text-xs text-slate-400">{review.date}</div>
                             </div>
                           </div>
-                          <div className="text-right">
-                            <div className="flex gap-0.5 justify-end mb-0.5">
-                              {Array.from({ length: review.rating }).map((_, i) => (
-                                <Star key={i} size={12} className="text-yellow-400 fill-yellow-400" />
-                              ))}
+                          {review.verified && (
+                            <div className="flex items-center gap-1 text-xs text-green-600 mb-2">
+                              <CheckCircle size={11} />
+                              Verified patient
                             </div>
-                            <div className="text-xs text-slate-400">{review.date}</div>
-                          </div>
+                          )}
+                          <p className="text-sm text-slate-700 leading-relaxed">{review.text}</p>
                         </div>
-                        {review.verified && (
-                          <div className="flex items-center gap-1 text-xs text-green-600 mb-2">
-                            <CheckCircle size={11} />
-                            Verified patient
-                          </div>
-                        )}
-                        <p className="text-sm text-slate-700 leading-relaxed">{review.text}</p>
+                      ))}
+                    </div>
+                    {clinic.googleReviewCount && (
+                      <div className="mt-4 text-center">
+                        <a
+                          href={`https://www.google.com/search?q=${encodeURIComponent(clinic.name + " " + clinic.city + " reviews")}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:underline"
+                        >
+                          View all {clinic.googleReviewCount.toLocaleString()} Google Reviews →
+                        </a>
                       </div>
-                    ))}
-                  </div>
+                    )}
+                  </>
                 ) : (
                   <div className="text-center py-10 border-2 border-dashed border-slate-200 rounded-2xl bg-slate-50">
                     <p className="text-sm font-medium text-slate-600 mb-1">
-                      Verified platform reviews coming soon
+                      No reviews added yet
                     </p>
                     <p className="text-xs text-slate-400 mb-4">
                       This clinic has{" "}
-                      {clinic.googleReviewCount?.toLocaleString()} reviews on
-                      Google. Platform reviews will appear here as patients
-                      book through TreatWell Turkey.
+                      {clinic.googleReviewCount?.toLocaleString()} reviews on Google.
                     </p>
                     {clinic.website && (
                       <a
@@ -298,9 +346,9 @@ export default async function ClinicProfilePage({
             </div>
 
             {/* Sidebar */}
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 sticky top-24 self-start">
               {/* CTA */}
-              <div className="bg-blue-600 text-white rounded-2xl p-6 sticky top-24">
+              <div className="bg-blue-600 text-white rounded-2xl p-6">
                 <h3 className="font-bold text-lg mb-2">
                   Request a Free Quote
                 </h3>
@@ -309,7 +357,7 @@ export default async function ClinicProfilePage({
                   No commitment.
                 </p>
                 <Link
-                  href="/get-a-quote"
+                  href={quoteUrl}
                   className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors mb-3"
                 >
                   Get Free Quote

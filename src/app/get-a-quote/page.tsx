@@ -33,7 +33,13 @@ const trustPoints = [
   },
 ];
 
-export default function GetAQuotePage() {
+export default async function GetAQuotePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ treatment?: string; clinic?: string }>;
+}) {
+  const { treatment, clinic } = await searchParams;
+
   return (
     <>
       <Header />
@@ -64,7 +70,7 @@ export default function GetAQuotePage() {
           </div>
         </section>
 
-        <LeadCaptureSection />
+        <LeadCaptureSection initialTreatment={treatment ?? ""} initialClinic={clinic ?? ""} />
       </main>
       <Footer />
     </>

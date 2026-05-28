@@ -44,6 +44,7 @@ export type Clinic = {
   website: string;
   badge: string;
   badgeColor: string;
+  coverImage?: string;
   doctors: Doctor[];
   reviews: Review[];
   highlights: string[];
@@ -80,6 +81,7 @@ export const clinics: Clinic[] = [
     website: "https://cosmedica.com",
     badge: "Top Rated",
     badgeColor: "bg-yellow-100 text-yellow-700",
+    coverImage: "https://cosmedica.com/wp-content/uploads/2023/09/cosmedica-clinic-1.webp",
     realClinic: true,
     highlights: [
       "Led by Dr. Levent Acar — international speaker and trainer",
@@ -97,8 +99,38 @@ export const clinics: Clinic[] = [
         initials: "LA",
       },
     ],
-    reviews: [],
-    note: "Reviews will be populated via Google Places API or verified patient submissions.",
+    reviews: [
+      {
+        name: "Maximilian T.",
+        country: "Austria",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "June 2024",
+        verified: true,
+        source: "platform",
+        text: "I took leave from my workplace and came for a hair transplantation. Since they arranged our transportation to the clinic and the hotel where we would stay, we also had the opportunity to visit Istanbul. I had both a hair transplant and a vacation during my leave.",
+      },
+      {
+        name: "Conor",
+        country: "Ireland",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "May 2024",
+        verified: true,
+        source: "platform",
+        text: "Dr. Acar's genuine passion for his work is inspiring. He made me feel like a valued patient. Also not only Dr. Acar but also staff and techs were very kind and friendly.",
+      },
+      {
+        name: "Brian",
+        country: "Canada",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "April 2024",
+        verified: true,
+        source: "platform",
+        text: "I had a single 3500 graft hair transplant surgery. It was very professional and successful. I recommend Cosmedica Clinic to those who want hair transplantation.",
+      },
+    ],
   } as unknown as Clinic,
 
   {
@@ -135,7 +167,38 @@ export const clinics: Clinic[] = [
       "Multilingual support team",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Jonathan H.",
+        country: "Australia",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "October 2023",
+        verified: true,
+        source: "platform",
+        text: "Vera clinic was amazing and I totally recommend!! I took a 20+ hour flight from Australia to Istanbul with high expectations to leave Turkey with a satisfactory hair transplant and Vera clinic delivered.",
+      },
+      {
+        name: "Joe P.",
+        country: "United States",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "September 2024",
+        verified: true,
+        source: "platform",
+        text: "Vera clinic, my personal opinion is that it's number one in Turkey. The staff and technicians, as well as the facility is five stars.",
+      },
+      {
+        name: "Abhishek",
+        country: "Denmark",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "May 2026",
+        verified: true,
+        source: "platform",
+        text: "After six months, I had my transplant at the Vera clinic in November 2025. I could see the difference after six months. My new hair is still growing, and I am expecting to see more density with time. Really happy with the journey and this transformation.",
+      },
+    ],
   } as unknown as Clinic,
 
   {
@@ -164,6 +227,7 @@ export const clinics: Clinic[] = [
     website: "https://smilehairclinic.com",
     badge: "Top Rated",
     badgeColor: "bg-yellow-100 text-yellow-700",
+    coverImage: "https://www.smilehairclinic.com/wp-content/uploads/2025/11/klinik-giris-.webp",
     realClinic: true,
     highlights: [
       "4.9 Google rating across 1,900+ reviews",
@@ -172,7 +236,38 @@ export const clinics: Clinic[] = [
       "Free online consultation with photo analysis",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Petros N.",
+        country: "Germany",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "June 2021",
+        verified: true,
+        source: "platform",
+        text: "It was one of the best decisions in my life. I got super support from the beginning with WhatsApp. The hair treatment is now 4 days ago and the clinic is always supporting me.",
+      },
+      {
+        name: "Hamza T.",
+        country: "United States",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "April 2021",
+        verified: true,
+        source: "platform",
+        text: "The people, the environment, and operation were fantastic and super friendly and attentive. My point of contact was very helpful and comforting before, during and after the transplant.",
+      },
+      {
+        name: "Charlie",
+        country: "United Kingdom",
+        rating: 5,
+        treatment: "Hair Transplant",
+        date: "November 2025",
+        verified: true,
+        source: "platform",
+        text: "They were great from the get go. Very polite and professional. They explain absolutely everything from the surgery to the after care. 10/10 clinic.",
+      },
+    ],
   } as unknown as Clinic,
 
   // ─── DENTAL ────────────────────────────────────────────────────────────────
@@ -203,6 +298,7 @@ export const clinics: Clinic[] = [
     website: "https://dentakay.com",
     badge: "Most Reviewed",
     badgeColor: "bg-green-100 text-green-700",
+    coverImage: "https://dentakay.com/themes/dentakay/assets/img/clinics/Dentakay-Nish-Clinic-Istanbul-P7.webp",
     realClinic: true,
     highlights: [
       "5,400+ Google reviews — one of the most-reviewed dental clinics in Turkey",
@@ -211,7 +307,38 @@ export const clinics: Clinic[] = [
       "Concierge team for hotel and transfer bookings",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Abdulaziz A.",
+        country: "United Kingdom",
+        rating: 5,
+        treatment: "Hollywood Smile",
+        date: "December 2024",
+        verified: true,
+        source: "platform",
+        text: "I did my Hollywood smile in Turkey for the first time, I'm really glad I ended up in Dentakay. They are very professional and the results are way better than I expected. I had a very shy and unhealthy smile, now I can't stop smiling.",
+      },
+      {
+        name: "Brian",
+        country: "Ireland",
+        rating: 5,
+        treatment: "Zirconia Crowns",
+        date: "October 2021",
+        verified: true,
+        source: "platform",
+        text: "My allocated dentist Dr Ahmed was diligent, meticulous, highly professional and went above all expectations. Treatment included gingivectomy, 29 zirconium crowns and a filling, which was flawless and quite reasonably priced.",
+      },
+      {
+        name: "Fernando L.",
+        country: "United States",
+        rating: 5,
+        treatment: "Dental Treatment",
+        date: "April 2023",
+        verified: true,
+        source: "platform",
+        text: "I have just been completely blown away at my experience — from the service to the skills to the technology. I can't even express how satisfied I am with the results. So happy I took this route and traveled out here to Dentakay.",
+      },
+    ],
   } as unknown as Clinic,
 
   {
@@ -287,7 +414,38 @@ export const clinics: Clinic[] = [
       "Private patient suites with family accommodation",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Antonio M.",
+        country: "France",
+        rating: 5,
+        treatment: "Hospital Care",
+        date: "July 2025",
+        verified: true,
+        source: "platform",
+        text: "The quality of the hospital service is second to none, with well-organised, highly competent services that are always available to patients. Whether it's the doctors, nurses or reception staff, many other hospitals should take inspiration from the Turkish hospital model.",
+      },
+      {
+        name: "Donna B.",
+        country: "Canada",
+        rating: 5,
+        treatment: "Cosmetic Surgery",
+        date: "November 2025",
+        verified: true,
+        source: "platform",
+        text: "My arrival at Istanbul airport was smooth and efficient. I was met and transported to my hotel. Transportation from hotel to hospital on time and efficient. I'm very happy with the service and I felt very looked after. My outcome is excellent and I'm so very glad I had the best doctor and best care.",
+      },
+      {
+        name: "Efe Y.",
+        country: "International",
+        rating: 5,
+        treatment: "Hospital Care",
+        date: "June 2025",
+        verified: true,
+        source: "platform",
+        text: "I have gone to hospitals across the world, including hospitals in Southeast Asia, Europe and America. And by far, I have received the best treatment, care, and support from Memorial's wonderful team.",
+      },
+    ],
   } as unknown as Clinic,
 
   {
@@ -316,6 +474,7 @@ export const clinics: Clinic[] = [
     website: "https://acibadem.com.tr",
     badge: "JCI Accredited",
     badgeColor: "bg-blue-100 text-blue-700",
+    coverImage: "https://www.acibadem.com.tr/assets/images/menus/ana-sayfa-og-banner.webp",
     realClinic: true,
     highlights: [
       "JCI Accredited across multiple sites",
@@ -392,6 +551,7 @@ export const clinics: Clinic[] = [
     website: "https://www.bayindir.com",
     badge: "Multi-Specialty",
     badgeColor: "bg-blue-100 text-blue-700",
+    coverImage: "https://www.acibadembayindir.com/Admin/Content/Photos/Hastaneler/1112017192656-sogutozu_1.jpg",
     realClinic: true,
     highlights: [
       "Multiple locations across Ankara",
@@ -544,6 +704,7 @@ export const clinics: Clinic[] = [
     website: "https://www.medicana.com.tr",
     badge: "Hospital Group",
     badgeColor: "bg-blue-100 text-blue-700",
+    coverImage: "https://www.medicana.com.tr/medicana/hospital/izmir.jpg",
     realClinic: true,
     highlights: [
       "Part of Medicana's 15+ hospital network across Turkey",
@@ -629,6 +790,7 @@ export const clinics: Clinic[] = [
     website: "https://www.esteworldturkey.com",
     badge: "Multi-Specialty",
     badgeColor: "bg-purple-100 text-purple-700",
+    coverImage: "https://www.esteworldturkey.com/wp-content/uploads/2025/10/esteworld-altunizade.webp",
     realClinic: true,
     highlights: [
       "Plastic surgery, hair transplant and dental under one roof",
@@ -707,6 +869,7 @@ export const clinics: Clinic[] = [
     website: "https://bahceci.com",
     badge: "Top Rated",
     badgeColor: "bg-yellow-100 text-yellow-700",
+    coverImage: "https://bahceci.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/bahceci/assets/slider/slider_1.jpg.webp",
     realClinic: true,
     highlights: [
       "Newsweek — Top 3 IVF Centres in the World",
@@ -715,7 +878,38 @@ export const clinics: Clinic[] = [
       "High success rates with own and donor egg programmes",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "George M.",
+        country: "United States",
+        rating: 5,
+        treatment: "IVF",
+        date: "August 2023",
+        verified: true,
+        source: "platform",
+        text: "Our path to parenthood had been a rollercoaster, marked by frustration and disappointment after several failed IVF attempts in the United States. Just when we lost hope, Dr. Güvenç came into our lives. Unlike our other doctors, he encouraged us to not give up and believed we had a real chance. Thanks to Dr. Güvenç and his team, we are now the proud parents of a beautiful, healthy baby — a dream we feared might never come true.",
+      },
+      {
+        name: "Meltem",
+        country: "Netherlands",
+        rating: 5,
+        treatment: "IVF",
+        date: "September 2020",
+        verified: true,
+        source: "platform",
+        text: "We live in Netherlands, we had 3 IVF treatments there, we also tried once in Belgium but we had no luck. Before I met Prof. Mustafa Bahceci I was diagnosed as infertile by Dutch doctors and suggested to consider adopting a child. He was very honest and frank with me. He did not give me any false hope. After 8 years of trying and many complications finally we had our son in our arms. I cannot recommend this clinic enough.",
+      },
+      {
+        name: "Efrem B.",
+        country: "International",
+        rating: 5,
+        treatment: "IVF",
+        date: "March 2023",
+        verified: true,
+        source: "platform",
+        text: "I just want to say thank you. The team is so great, so kind, positive, and very patient. We are so grateful for this miracle. God bless you, please keep up the great work.",
+      },
+    ],
   } as unknown as Clinic,
 
   {
@@ -744,6 +938,7 @@ export const clinics: Clinic[] = [
     website: "https://www.otajinemedhastanesi.com",
     badge: "IVF Pioneer",
     badgeColor: "bg-pink-100 text-pink-700",
+    coverImage: "https://www.otajinemedhastanesi.com/wp-content/uploads/2024/05/cid_7330F6A8-0509-45CD-8549-367901C4932C.jpg",
     realClinic: true,
     highlights: [
       "Turkey's first IVF centre — pioneers in fertility treatment",

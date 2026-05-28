@@ -30,15 +30,27 @@ const treatmentToSlug: Record<string, string> = {
 
 type Step = 1 | 2 | 3;
 
-export default function LeadCaptureSection() {
-  const [step, setStep] = useState<Step>(1);
-  const [selectedTreatment, setSelectedTreatment] = useState("");
+type Props = {
+  initialTreatment?: string;
+  initialClinic?: string;
+};
+
+export default function LeadCaptureSection({ initialTreatment = "", initialClinic = "" }: Props) {
+  const [step, setStep] = useState<Step>(initialTreatment ? 2 : 1);
+  const [selectedTreatment, setSelectedTreatment] = useState(initialTreatment);
 
   const matchedClinics = selectedTreatment
-    ? clinics.filter((c) => {
-        const slug = treatmentToSlug[selectedTreatment];
-        return slug ? c.treatmentSlugs.includes(slug) : true;
-      }).slice(0, 3)
+    ? clinics
+        .filter((c) => {
+          const slug = treatmentToSlug[selectedTreatment];
+          return slug ? c.treatmentSlugs.includes(slug) : true;
+        })
+        .sort((a, b) => {
+          if (a.slug === initialClinic) return -1;
+          if (b.slug === initialClinic) return 1;
+          return 0;
+        })
+        .slice(0, 3)
     : [];
 
   return (
