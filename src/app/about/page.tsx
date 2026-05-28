@@ -34,7 +34,7 @@ const values = [
 ];
 
 const stats = [
-  { value: "7", label: "Verified Clinics Listed" },
+  { value: "18", label: "Verified Clinics Listed" },
   { value: "4", label: "Destinations Covered" },
   { value: "8+", label: "Countries Served" },
   { value: "Free", label: "For Patients" },

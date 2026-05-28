@@ -105,9 +105,9 @@ export default function HeroSection() {
         {/* Stats bar */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {[
-            { icon: Users, value: "10,000+", label: "Patients Helped" },
-            { icon: Shield, value: "150+", label: "Verified Clinics" },
-            { icon: Star, value: "4.8/5", label: "Average Rating" },
+            { icon: Shield, value: "18", label: "Verified Clinics" },
+            { icon: Star, value: "4.7★", label: "Avg. Google Rating" },
+            { icon: Users, value: "50–75%", label: "Average Savings" },
             { icon: Search, value: "40+", label: "Treatments Covered" },
           ].map(({ icon: Icon, value, label }) => (
             <div

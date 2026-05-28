@@ -55,7 +55,7 @@ export default function TreatmentsPage() {
               "Save 50–75% vs UK & German prices",
               "JCI & ISO accredited clinics",
               "English-speaking medical teams",
-              "Free patient coordinator included",
+              "Direct clinic contact — no middleman",
             ].map((t) => (
               <span key={t} className="flex items-center gap-1.5">
                 <CheckCircle size={13} className="text-blue-200" />
@@ -154,14 +154,14 @@ export default function TreatmentsPage() {
               Not sure which treatment is right for you?
             </h2>
             <p className="text-slate-500 mb-6 text-sm">
-              Our patient coordinators can help you understand your options —
-              free consultation, no commitment.
+              Browse our full clinic directory, filter by treatment and city,
+              and contact clinics directly — no middleman, no commitment.
             </p>
             <Link
-              href="/get-a-quote"
+              href="/clinics"
               className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
             >
-              Talk to a Coordinator <ArrowRight size={16} />
+              Browse All Clinics <ArrowRight size={16} />
             </Link>
           </div>
         </section>

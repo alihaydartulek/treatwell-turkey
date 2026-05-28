@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Star,
@@ -15,6 +16,12 @@ import {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { clinics } from "@/lib/clinics";
+
+function getInitials(name: string): string {
+  const words = name.split(/\s+/).filter((w) => w.length > 2);
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
+  return name.slice(0, 2).toUpperCase();
+}
 
 const allCities = ["All Cities", "Istanbul", "Ankara", "İzmir", "Antalya"];
 const allTreatments = [
@@ -289,9 +296,25 @@ export default function ClinicsPage() {
                         : "border-slate-200 hover:border-blue-200"
                     }`}
                   >
-                    {/* Image placeholder */}
-                    <div className="h-40 bg-gradient-to-br from-blue-100 to-blue-200 relative flex items-center justify-center">
-                      <span className="text-5xl opacity-30">🏥</span>
+                    {/* Cover image */}
+                    <div className="h-40 relative overflow-hidden">
+                      {clinic.coverImage ? (
+                        <>
+                          <Image
+                            src={clinic.coverImage}
+                            alt={clinic.name}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                        </>
+                      ) : (
+                        <div className="h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                          <span className="text-4xl font-bold text-blue-400 opacity-40 select-none">
+                            {getInitials(clinic.name)}
+                          </span>
+                        </div>
+                      )}
                       <span
                         className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${clinic.badgeColor}`}
                       >

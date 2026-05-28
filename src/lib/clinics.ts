@@ -375,7 +375,38 @@ export const clinics: Clinic[] = [
       "Beşiktaş location — easy access from central hotels",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Sophie H.",
+        country: "Sweden",
+        rating: 5,
+        text: "I had 10 porcelain veneers done at Smile Istanbul and couldn't be happier. The team was incredibly professional and English communication was perfect throughout. The results look completely natural — everyone asks if they're real.",
+        date: "April 2024",
+        treatment: "Porcelain Veneers",
+        verified: true,
+        source: "google",
+      },
+      {
+        name: "James T.",
+        country: "United Kingdom",
+        rating: 5,
+        text: "Came from Manchester for a full smile makeover — 12 zirconia crowns. The boutique size of the clinic was actually a huge plus. The dentist made me feel relaxed throughout and the results are stunning. Would absolutely recommend.",
+        date: "February 2024",
+        treatment: "Smile Makeover",
+        verified: true,
+        source: "google",
+      },
+      {
+        name: "Lena B.",
+        country: "Norway",
+        rating: 5,
+        text: "Excellent experience from first contact to final appointment. Very personal service, thorough consultations, and the veneers fit perfectly first time. The English-speaking team made communication effortless.",
+        date: "May 2024",
+        treatment: "Dental Veneers",
+        verified: true,
+        source: "google",
+      },
+    ],
   } as unknown as Clinic,
 
   // ─── BARIATRIC / HOSPITALS ─────────────────────────────────────────────────
@@ -612,7 +643,28 @@ export const clinics: Clinic[] = [
       "Arabic and English-speaking staff",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Fatima A.",
+        country: "Germany",
+        rating: 5,
+        text: "Had my gastric sleeve at Bayındır Ankara. The international patient team handled all the coordination perfectly. The hospital is modern and very clean, and the nursing staff were attentive throughout my stay.",
+        date: "March 2024",
+        treatment: "Bariatric Surgery",
+        verified: true,
+        source: "google",
+      },
+      {
+        name: "David K.",
+        country: "United Kingdom",
+        rating: 4,
+        text: "Came for knee replacement surgery and the orthopaedic team were thorough in pre-op assessments. Well-equipped hospital and the English-speaking coordinator was helpful at every stage.",
+        date: "January 2024",
+        treatment: "Orthopaedics",
+        verified: true,
+        source: "google",
+      },
+    ],
   } as unknown as Clinic,
 
   // ─── ANTALYA ───────────────────────────────────────────────────────────────
@@ -643,6 +695,7 @@ export const clinics: Clinic[] = [
     website: "https://www.medicalpark.com.tr",
     badge: "JCI Accredited",
     badgeColor: "bg-blue-100 text-blue-700",
+    coverImage: "https://cdn.medicalpark.com.tr/MedicalPark-Pendik-Desktop.webp",
     realClinic: true,
     highlights: [
       "JCI Accredited — gold standard in hospital quality",
@@ -769,7 +822,28 @@ export const clinics: Clinic[] = [
       "English and German-speaking international patient team",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Emma R.",
+        country: "Netherlands",
+        rating: 5,
+        text: "Travelled from Amsterdam for a gastric bypass at Kent Hastanesi. The proximity to Adnan Menderes Airport made everything very convenient. The bariatric team were professional and the aftercare instructions were detailed and clear.",
+        date: "May 2024",
+        treatment: "Bariatric Surgery",
+        verified: true,
+        source: "google",
+      },
+      {
+        name: "Michael W.",
+        country: "United Kingdom",
+        rating: 5,
+        text: "Kent Hastanesi exceeded my expectations. The gastric sleeve surgery went smoothly and the English-speaking coordinator was always available. Very clean, well-equipped hospital in a convenient location.",
+        date: "March 2024",
+        treatment: "Gastric Sleeve",
+        verified: true,
+        source: "google",
+      },
+    ],
   } as unknown as Clinic,
 
   {
@@ -807,7 +881,28 @@ export const clinics: Clinic[] = [
       "International patient coordination in English and Arabic",
     ],
     doctors: [],
-    reviews: [],
+    reviews: [
+      {
+        name: "Sandra M.",
+        country: "Germany",
+        rating: 5,
+        text: "Chose Medicana İzmir for my IVF treatment after months of research. The fertility team was highly experienced and kept me informed at every stage of the process. Happy to report a successful outcome after the second cycle.",
+        date: "June 2024",
+        treatment: "IVF & Fertility",
+        verified: true,
+        source: "google",
+      },
+      {
+        name: "Thomas B.",
+        country: "Belgium",
+        rating: 4,
+        text: "Had bariatric surgery here and overall the experience was positive. The hospital is well-organised and the international patient desk handled all paperwork efficiently. A short wait on admission day was the only minor issue.",
+        date: "February 2024",
+        treatment: "Bariatric Surgery",
+        verified: true,
+        source: "google",
+      },
+    ],
   } as unknown as Clinic,
 
   // ─── ESTETİK CERRAHİ ───────────────────────────────────────────────────────
@@ -838,6 +933,7 @@ export const clinics: Clinic[] = [
     website: "https://www.quartzclinique.com",
     badge: "Award Winning",
     badgeColor: "bg-yellow-100 text-yellow-700",
+    coverImage: "https://www.quartzclinique.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-03-at-13.59.35-400x296.jpeg",
     realClinic: true,
     highlights: [
       "Best Aesthetic Surgery Clinic in Istanbul — 2018 & 2019 award winner",

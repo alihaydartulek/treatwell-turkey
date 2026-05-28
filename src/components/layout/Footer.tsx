@@ -21,6 +21,7 @@ const destinationLinks = [
 const companyLinks = [
   { label: "About Us", href: "/about" },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "FAQ", href: "/faq" },
   { label: "For Clinics", href: "/for-clinics" },
   { label: "Patient Guides", href: "/blog" },
   { label: "Cost Calculator", href: "/cost-calculator" },

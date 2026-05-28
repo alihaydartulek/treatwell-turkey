@@ -28,8 +28,8 @@ const benefits = [
   },
   {
     icon: Users,
-    title: "Pre-Qualified Leads",
-    desc: "Every patient request goes through our coordinator team before reaching you. You only receive leads that match your treatments, pricing and availability.",
+    title: "Direct Patient Enquiries",
+    desc: "Patients browse your profile and contact you directly via WhatsApp or email. No middleman — you own the relationship from the first message.",
   },
   {
     icon: TrendingUp,
@@ -48,8 +48,8 @@ const benefits = [
   },
   {
     icon: MessageSquare,
-    title: "Dedicated Account Manager",
-    desc: "Every listed clinic gets a dedicated account manager who speaks your language (English, German, Turkish) and helps you optimise your profile.",
+    title: "Profile Optimisation Support",
+    desc: "We help you build a compelling profile — treatments, pricing, doctor bios and photos — so patients have everything they need to choose you with confidence.",
   },
 ];
 
@@ -116,17 +116,17 @@ const steps = [
   {
     number: "02",
     title: "Profile Setup",
-    desc: "Your account manager helps you build your profile — treatments, prices, doctor bios, photos. Most clinics are live within 5 days.",
+    desc: "We help you build your profile — treatments, prices, doctor bios, photos. Most clinics are live within 5 days of approval.",
   },
   {
     number: "03",
-    title: "Receive Leads",
-    desc: "Patient enquiries are routed to your lead inbox. You have 4 hours to respond — speed of response is the #1 factor in conversion.",
+    title: "Receive Direct Enquiries",
+    desc: "Patients contact you directly via WhatsApp or email from your profile. You own the relationship — no middleman, no delay.",
   },
   {
     number: "04",
     title: "Track & Grow",
-    desc: "Monitor your profile views, lead volume and conversion in your dashboard. Your account manager provides monthly optimisation advice.",
+    desc: "Monitor your profile views and enquiry volume. We provide guidance on profile improvements to increase your visibility.",
   },
 ];
 
@@ -148,9 +148,9 @@ export default function ForClinicsPage() {
                 Pre-Qualified European Patients
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl">
-                Join 150+ verified clinics on TreatWell Turkey — the leading
-                independent platform for UK, German, Dutch and Scandinavian
-                patients seeking treatment in Turkey.
+                Get listed on TreatWell Turkey — the independent platform
+                connecting UK, German, Dutch and Scandinavian patients with
+                verified clinics in Turkey.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-10">
