@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import {
   Star,
@@ -9,12 +10,13 @@ import {
   SlidersHorizontal,
   Search,
   X,
+  GitCompareArrows,
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { clinics } from "@/lib/clinics";
 
-const allCities = ["All Cities", "Istanbul", "Ankara", "Izmir", "Antalya"];
+const allCities = ["All Cities", "Istanbul", "Ankara", "İzmir", "Antalya"];
 const allTreatments = [
   "All Treatments",
   "Hair Transplant",
@@ -31,12 +33,14 @@ const sortOptions = [
 ];
 
 export default function ClinicsPage() {
+  const router = useRouter();
   const [search, setSearch] = useState("");
   const [city, setCity] = useState("All Cities");
   const [treatment, setTreatment] = useState("All Treatments");
   const [sort, setSort] = useState("rating");
   const [jciOnly, setJciOnly] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [compareList, setCompareList] = useState<string[]>([]);
 
   const filtered = useMemo(() => {
     let list = [...clinics];
@@ -52,7 +56,7 @@ export default function ClinicsPage() {
     }
 
     if (city !== "All Cities") {
-      list = list.filter((c) => c.city === city);
+      list = list.filter((c) => c.city === city || c.city === city.replace("İ", "I"));
     }
 
     if (treatment !== "All Treatments") {
@@ -85,6 +89,20 @@ export default function ClinicsPage() {
     jciOnly && "JCI Only",
   ].filter(Boolean) as string[];
 
+  const toggleCompare = (slug: string) => {
+    setCompareList((prev) => {
+      if (prev.includes(slug)) return prev.filter((s) => s !== slug);
+      if (prev.length >= 3) return prev;
+      return [...prev, slug];
+    });
+  };
+
+  const handleCompareNow = () => {
+    if (compareList.length >= 2) {
+      router.push(`/clinics/compare?slugs=${compareList.join(",")}`);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -94,8 +112,7 @@ export default function ClinicsPage() {
           <div className="container">
             <h1 className="text-4xl font-bold mb-2">Browse All Clinics</h1>
             <p className="text-slate-400">
-              {clinics.length} verified clinics across Turkey — all vetted by
-              our team.
+              {clinics.length} verified clinics across Turkey — filter, compare and contact directly.
             </p>
           </div>
         </section>
@@ -239,12 +256,18 @@ export default function ClinicsPage() {
             </div>
           )}
 
-          {/* Results count */}
-          <p className="text-sm text-slate-500 mb-5">
-            Showing{" "}
-            <strong className="text-slate-900">{filtered.length}</strong>{" "}
-            clinic{filtered.length !== 1 ? "s" : ""}
-          </p>
+          {/* Results count + compare hint */}
+          <div className="flex items-center justify-between mb-5">
+            <p className="text-sm text-slate-500">
+              Showing <strong className="text-slate-900">{filtered.length}</strong>{" "}
+              clinic{filtered.length !== 1 ? "s" : ""}
+            </p>
+            {compareList.length === 0 && (
+              <p className="text-xs text-slate-400 hidden md:block">
+                Tip: click <strong>Compare</strong> on any clinic to compare side by side
+              </p>
+            )}
+          </div>
 
           {/* Clinic grid */}
           {filtered.length === 0 ? (
@@ -254,99 +277,175 @@ export default function ClinicsPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {filtered.map((clinic) => (
-                <div
-                  key={clinic.id}
-                  className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all group"
-                >
-                  {/* Image placeholder */}
-                  <div className="h-40 bg-gradient-to-br from-blue-100 to-blue-200 relative flex items-center justify-center">
-                    <span className="text-5xl opacity-30">🏥</span>
-                    <span
-                      className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${clinic.badgeColor}`}
-                    >
-                      {clinic.badge}
-                    </span>
-                  </div>
-
-                  <div className="p-5">
-                    <div className="flex items-start justify-between gap-2 mb-1">
-                      <h2 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-tight">
-                        {clinic.name}
-                      </h2>
-                    </div>
-
-                    <div className="flex items-center gap-1 text-slate-500 text-xs mb-3">
-                      <MapPin size={11} />
-                      {clinic.district}, {clinic.city}
-                    </div>
-
-                    <div className="flex items-center gap-2 mb-3">
-                      <Star
-                        size={13}
-                        className="text-yellow-400 fill-yellow-400"
-                      />
-                      <span className="text-sm font-semibold text-slate-800">
-                        {clinic.rating}
-                      </span>
-                      <span className="text-xs text-slate-400">
-                        ({clinic.reviewCount})
-                      </span>
-                      <span className="text-xs text-slate-300">·</span>
-                      <span className="text-xs text-slate-400">
-                        Est. {clinic.established}
-                      </span>
-                    </div>
-
-                    <div className="flex flex-wrap gap-1 mb-3">
-                      {clinic.treatments.slice(0, 3).map((t) => (
-                        <span
-                          key={t}
-                          className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                      {clinic.treatments.length > 3 && (
-                        <span className="text-xs text-slate-400 px-1">
-                          +{clinic.treatments.length - 3} more
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="flex flex-wrap gap-1 mb-4">
-                      {clinic.accreditations.slice(0, 2).map((a) => (
-                        <span
-                          key={a}
-                          className="flex items-center gap-1 text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full"
-                        >
-                          <CheckCircle size={10} />
-                          {a}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                      <div>
-                        <span className="text-xs text-slate-400">From</span>
-                        <div className="text-lg font-bold text-slate-900">
-                          €{clinic.priceFrom.toLocaleString()}
-                        </div>
-                      </div>
-                      <Link
-                        href={`/clinics/${clinic.slug}`}
-                        className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors"
+              {filtered.map((clinic) => {
+                const inCompare = compareList.includes(clinic.slug);
+                const compareDisabled = !inCompare && compareList.length >= 3;
+                return (
+                  <div
+                    key={clinic.id}
+                    className={`bg-white border-2 rounded-2xl overflow-hidden hover:shadow-lg transition-all group ${
+                      inCompare
+                        ? "border-blue-500 shadow-md"
+                        : "border-slate-200 hover:border-blue-200"
+                    }`}
+                  >
+                    {/* Image placeholder */}
+                    <div className="h-40 bg-gradient-to-br from-blue-100 to-blue-200 relative flex items-center justify-center">
+                      <span className="text-5xl opacity-30">🏥</span>
+                      <span
+                        className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${clinic.badgeColor}`}
                       >
-                        View Profile
-                      </Link>
+                        {clinic.badge}
+                      </span>
+                      {/* Compare toggle */}
+                      <button
+                        onClick={() => toggleCompare(clinic.slug)}
+                        disabled={compareDisabled}
+                        className={`absolute top-3 right-3 flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full border transition-all ${
+                          inCompare
+                            ? "bg-blue-600 text-white border-blue-600"
+                            : compareDisabled
+                            ? "bg-white/60 text-slate-400 border-slate-200 cursor-not-allowed"
+                            : "bg-white text-slate-700 border-slate-200 hover:border-blue-400 hover:text-blue-600"
+                        }`}
+                      >
+                        <GitCompareArrows size={11} />
+                        {inCompare ? "Selected" : "Compare"}
+                      </button>
+                    </div>
+
+                    <div className="p-5">
+                      <div className="flex items-start justify-between gap-2 mb-1">
+                        <h2 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-tight">
+                          {clinic.name}
+                        </h2>
+                      </div>
+
+                      <div className="flex items-center gap-1 text-slate-500 text-xs mb-3">
+                        <MapPin size={11} />
+                        {clinic.district}, {clinic.city}
+                      </div>
+
+                      <div className="flex items-center gap-2 mb-3">
+                        <Star size={13} className="text-yellow-400 fill-yellow-400" />
+                        <span className="text-sm font-semibold text-slate-800">
+                          {clinic.rating}
+                        </span>
+                        <span className="text-xs text-slate-400">
+                          ({clinic.reviewCount.toLocaleString()})
+                        </span>
+                        <span className="text-xs text-slate-300">·</span>
+                        <span className="text-xs text-slate-400">
+                          Est. {clinic.established}
+                        </span>
+                      </div>
+
+                      <div className="flex flex-wrap gap-1 mb-3">
+                        {clinic.treatments.slice(0, 3).map((t) => (
+                          <span
+                            key={t}
+                            className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                        {clinic.treatments.length > 3 && (
+                          <span className="text-xs text-slate-400 px-1">
+                            +{clinic.treatments.length - 3} more
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="flex flex-wrap gap-1 mb-4">
+                        {clinic.accreditations.slice(0, 2).map((a) => (
+                          <span
+                            key={a}
+                            className="flex items-center gap-1 text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full"
+                          >
+                            <CheckCircle size={10} />
+                            {a}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className="flex items-center justify-between pt-4 border-t border-slate-100">
+                        <div>
+                          <span className="text-xs text-slate-400">From</span>
+                          <div className="text-lg font-bold text-slate-900">
+                            €{clinic.priceFrom.toLocaleString()}
+                          </div>
+                        </div>
+                        <Link
+                          href={`/clinics/${clinic.slug}`}
+                          className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors"
+                        >
+                          View Profile
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
+
+        {/* Sticky compare bar */}
+        {compareList.length > 0 && (
+          <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 shadow-2xl">
+            <div className="container py-3">
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="text-sm font-semibold text-slate-700 shrink-0">
+                  Compare ({compareList.length}/3):
+                </span>
+                <div className="flex items-center gap-2 flex-1 flex-wrap">
+                  {compareList.map((slug) => {
+                    const c = clinics.find((cl) => cl.slug === slug);
+                    if (!c) return null;
+                    return (
+                      <span
+                        key={slug}
+                        className="flex items-center gap-1.5 text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full"
+                      >
+                        {c.name}
+                        <button
+                          onClick={() => toggleCompare(slug)}
+                          className="hover:text-red-500 transition-colors"
+                        >
+                          <X size={12} />
+                        </button>
+                      </span>
+                    );
+                  })}
+                  {compareList.length < 3 && (
+                    <span className="text-xs text-slate-400">
+                      + select {3 - compareList.length} more (or compare now)
+                    </span>
+                  )}
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  <button
+                    onClick={() => setCompareList([])}
+                    className="text-sm text-slate-400 hover:text-slate-600 px-3 py-1.5"
+                  >
+                    Clear
+                  </button>
+                  <button
+                    onClick={handleCompareNow}
+                    disabled={compareList.length < 2}
+                    className="flex items-center gap-2 px-5 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white text-sm font-semibold rounded-xl transition-colors"
+                  >
+                    <GitCompareArrows size={15} />
+                    Compare Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
+      {/* Extra bottom padding when compare bar is visible */}
+      {compareList.length > 0 && <div className="h-20" />}
       <Footer />
     </>
   );
