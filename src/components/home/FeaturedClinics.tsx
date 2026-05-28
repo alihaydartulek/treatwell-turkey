@@ -1,50 +1,23 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Star, MapPin, CheckCircle, ArrowRight } from "lucide-react";
+import { clinics } from "@/lib/clinics";
 
-const clinics = [
-  {
-    name: "Cosmedica Clinic",
-    city: "Istanbul",
-    slug: "cosmedica-clinic-istanbul",
-    specialties: ["FUE Hair Transplant", "DHI", "PRP Therapy"],
-    rating: 4.8,
-    reviewCount: 3200,
-    priceFrom: 1500,
-    badge: "Top Rated",
-    badgeColor: "bg-yellow-100 text-yellow-700",
-    accreditations: ["Turkish MOH", "ISO 9001"],
-    established: 2006,
-    ratingSource: "Google",
-  },
-  {
-    name: "Dentakay",
-    city: "Istanbul",
-    slug: "dentakay-istanbul",
-    specialties: ["Veneers", "Implants", "Hollywood Smile"],
-    rating: 4.7,
-    reviewCount: 5400,
-    priceFrom: 190,
-    badge: "Most Reviewed",
-    badgeColor: "bg-green-100 text-green-700",
-    accreditations: ["Turkish MOH", "ISO 9001"],
-    established: 2010,
-    ratingSource: "Google",
-  },
-  {
-    name: "Memorial Hospital",
-    city: "Istanbul",
-    slug: "memorial-hospital-istanbul",
-    specialties: ["Bariatric Surgery", "Orthopaedics", "IVF"],
-    rating: 4.6,
-    reviewCount: 8900,
-    priceFrom: 4000,
-    badge: "JCI Accredited",
-    badgeColor: "bg-blue-100 text-blue-700",
-    accreditations: ["JCI Accredited", "ISO 9001"],
-    established: 1998,
-    ratingSource: "Google",
-  },
+const featuredSlugs = [
+  "cosmedica-clinic-istanbul",
+  "dentakay-istanbul",
+  "memorial-hospital-istanbul",
 ];
+
+const featuredClinics = featuredSlugs
+  .map((slug) => clinics.find((c) => c.slug === slug))
+  .filter(Boolean) as (typeof clinics)[number][];
+
+function getInitials(name: string): string {
+  const words = name.split(/\s+/).filter((w) => w.length > 2);
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
+  return name.slice(0, 2).toUpperCase();
+}
 
 export default function FeaturedClinics() {
   return (
@@ -68,13 +41,30 @@ export default function FeaturedClinics() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {clinics.map((clinic) => (
+          {featuredClinics.map((clinic) => (
             <div
               key={clinic.slug}
               className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all group"
             >
-              <div className="h-44 bg-gradient-to-br from-blue-100 to-blue-200 relative flex items-center justify-center">
-                <span className="text-5xl opacity-30">🏥</span>
+              {/* Cover image */}
+              <div className="h-44 relative overflow-hidden">
+                {clinic.coverImage ? (
+                  <>
+                    <Image
+                      src={clinic.coverImage}
+                      alt={clinic.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  </>
+                ) : (
+                  <div className="h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                    <span className="text-4xl font-bold text-blue-400 opacity-40 select-none">
+                      {getInitials(clinic.name)}
+                    </span>
+                  </div>
+                )}
                 <span
                   className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${clinic.badgeColor}`}
                 >
@@ -98,16 +88,16 @@ export default function FeaturedClinics() {
                   <div className="flex items-center gap-1">
                     <Star size={13} className="text-yellow-400 fill-yellow-400" />
                     <span className="text-sm font-semibold text-slate-800">
-                      {clinic.rating}
+                      {clinic.googleRating ?? clinic.rating}
                     </span>
                   </div>
                   <span className="text-xs text-slate-400">
-                    ({clinic.reviewCount.toLocaleString()} Google reviews)
+                    ({(clinic.googleReviewCount ?? clinic.reviewCount).toLocaleString()} Google reviews)
                   </span>
                 </div>
 
                 <div className="flex flex-wrap gap-1 mb-3">
-                  {clinic.specialties.map((s) => (
+                  {clinic.treatments.slice(0, 3).map((s) => (
                     <span
                       key={s}
                       className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full"
@@ -118,7 +108,7 @@ export default function FeaturedClinics() {
                 </div>
 
                 <div className="flex flex-wrap gap-1 mb-4">
-                  {clinic.accreditations.map((a) => (
+                  {clinic.accreditations.slice(0, 2).map((a) => (
                     <span
                       key={a}
                       className="flex items-center gap-1 text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full"
