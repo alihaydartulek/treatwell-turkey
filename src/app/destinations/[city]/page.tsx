@@ -29,6 +29,19 @@ export async function generateMetadata({
   return {
     title: `Medical Tourism in ${dest.city}, Turkey — Clinics, Costs & Travel Guide | TreatWell Turkey`,
     description: `Complete guide to medical tourism in ${dest.city}. ${dest.clinicCount}+ verified clinics, top treatments, practical travel info and patient tips.`,
+    alternates: { canonical: `https://www.treatwellturkey.com/destinations/${city}` },
+    openGraph: {
+      title: `Medical Tourism in ${dest.city}, Turkey — Clinics & Travel Guide`,
+      description: `Complete guide to medical tourism in ${dest.city}. ${dest.clinicCount}+ verified clinics, top treatments, practical travel info.`,
+      url: `https://www.treatwellturkey.com/destinations/${city}`,
+      type: "website",
+      images: [{ url: "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=1200&h=630&auto=format&fit=crop&q=80", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Medical Tourism in ${dest.city}, Turkey`,
+      description: `Complete guide to medical tourism in ${dest.city}. ${dest.clinicCount}+ verified clinics.`,
+    },
   };
 }
 

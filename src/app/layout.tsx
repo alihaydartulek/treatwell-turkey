@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "TreatWell Turkey",
     images: [
       {
-        url: "/og-default.jpg",
+        url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80",
         width: 1200,
         height: 630,
         alt: "TreatWell Turkey — Compare Medical Clinics",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "TreatWell Turkey — Compare Verified Clinics & Save Up to 75%",
     description:
       "Compare 18 verified clinics in Turkey. Real Google ratings, transparent prices, direct contact.",
-    images: ["/og-default.jpg"],
+    images: ["https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80"],
   },
   alternates: {
     canonical: "https://www.treatwellturkey.com",
