@@ -197,6 +197,13 @@ export default async function ClinicProfilePage({
                   <MessageCircle size={14} />
                   WhatsApp
                 </a>
+                <a
+                  href={`mailto:${clinic.email}`}
+                  className="px-5 py-2.5 bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 font-semibold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-1.5"
+                >
+                  <Mail size={14} />
+                  Send Email
+                </a>
               </div>
             </div>
           </div>
