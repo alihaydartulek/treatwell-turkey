@@ -17,10 +17,20 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { clinics } from "@/lib/clinics";
 
-function getInitials(name: string): string {
-  const words = name.split(/\s+/).filter((w) => w.length > 2);
-  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
-  return name.slice(0, 2).toUpperCase();
+const categoryFallbackImages: Record<string, string> = {
+  "hair-transplant": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&auto=format&fit=crop&q=70",
+  "dental": "https://images.unsplash.com/photo-1588776814546-1ffbb7dfa48a?w=800&auto=format&fit=crop&q=70",
+  "bariatric": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=70",
+  "cosmetic": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&auto=format&fit=crop&q=70",
+  "eye-surgery": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&auto=format&fit=crop&q=70",
+  "ivf": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=70",
+};
+
+function getFallbackImage(treatmentSlugs: string[]): string {
+  for (const slug of treatmentSlugs) {
+    if (categoryFallbackImages[slug]) return categoryFallbackImages[slug];
+  }
+  return "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=70";
 }
 
 const allCities = ["All Cities", "Istanbul", "Ankara", "İzmir", "Antalya"];
@@ -309,11 +319,15 @@ export default function ClinicsPage() {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                         </>
                       ) : (
-                        <div className="h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                          <span className="text-4xl font-bold text-blue-400 opacity-40 select-none">
-                            {getInitials(clinic.name)}
-                          </span>
-                        </div>
+                        <>
+                          <Image
+                            src={getFallbackImage(clinic.treatmentSlugs)}
+                            alt={clinic.name}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10" />
+                        </>
                       )}
                       <span
                         className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${clinic.badgeColor}`}

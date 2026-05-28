@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "www.medicana.com.tr" },
       { protocol: "https", hostname: "www.esteworldturkey.com" },
       { protocol: "https", hostname: "www.otajinemedhastanesi.com" },
+      { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
 };
