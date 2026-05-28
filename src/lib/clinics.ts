@@ -1253,6 +1253,13 @@ export function getClinicsByTreatmentSlug(treatmentSlug: string): Clinic[] {
   return clinics.filter((c) => c.treatmentSlugs.includes(treatmentSlug));
 }
 
+export function getClinicsByCity(citySlug: string): Clinic[] {
+  // normalize: remove diacritics, lowercase for comparison
+  const normalize = (s: string) =>
+    s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace("ı", "i").replace("İ", "i");
+  return clinics.filter((c) => normalize(c.city) === normalize(citySlug));
+}
+
 export function getAllClinicSlugs(): string[] {
   return clinics.map((c) => c.slug);
 }

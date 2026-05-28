@@ -13,6 +13,8 @@ import {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getDestinationBySlug, getAllDestinationSlugs } from "@/lib/destinations";
+import { getClinicsByCity } from "@/lib/clinics";
+import { Star } from "lucide-react";
 
 export async function generateStaticParams() {
   return getAllDestinationSlugs().map((city) => ({ city }));
@@ -53,6 +55,8 @@ export default async function DestinationPage({
   const { city } = await params;
   const dest = getDestinationBySlug(city);
   if (!dest) notFound();
+
+  const cityClinics = getClinicsByCity(dest.city);
 
   return (
     <>
@@ -170,6 +174,83 @@ export default async function DestinationPage({
                   ))}
                 </div>
               </section>
+
+              {/* Clinics in this city */}
+              {cityClinics.length > 0 && (
+                <section>
+                  <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                    Verified Clinics in {dest.city}
+                  </h2>
+                  <div className="flex flex-col gap-4">
+                    {cityClinics.map((clinic) => (
+                      <div
+                        key={clinic.slug}
+                        className="border border-slate-200 rounded-2xl p-5 hover:shadow-md hover:border-blue-200 transition-all"
+                      >
+                        <div className="flex items-start justify-between gap-3 mb-3">
+                          <div>
+                            <div className="flex items-center gap-2 mb-1">
+                              <h3 className="font-bold text-slate-900">{clinic.name}</h3>
+                              <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${clinic.badgeColor}`}>
+                                {clinic.badge}
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-1 text-sm text-slate-500">
+                              <MapPin size={12} />
+                              {clinic.district}, {clinic.city}
+                            </div>
+                          </div>
+                          <div className="text-right shrink-0">
+                            <div className="text-xs text-slate-400">From</div>
+                            <div className="text-xl font-bold text-slate-900">
+                              €{clinic.priceFrom.toLocaleString()}
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-2 mb-3">
+                          <Star size={13} className="text-yellow-400 fill-yellow-400" />
+                          <span className="text-sm font-semibold">
+                            {clinic.googleRating ?? clinic.rating}
+                          </span>
+                          <span className="text-sm text-slate-400">
+                            ({(clinic.googleReviewCount ?? clinic.reviewCount).toLocaleString()} reviews)
+                          </span>
+                        </div>
+
+                        <div className="flex flex-wrap gap-1 mb-4">
+                          {clinic.accreditations.map((a) => (
+                            <span
+                              key={a}
+                              className="flex items-center gap-1 text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full"
+                            >
+                              <CheckCircle size={10} />
+                              {a}
+                            </span>
+                          ))}
+                        </div>
+
+                        <div className="flex gap-3">
+                          <Link
+                            href={`/clinics/${clinic.slug}`}
+                            className="flex-1 text-center py-2 text-sm font-semibold text-blue-600 border border-blue-200 hover:bg-blue-50 rounded-xl transition-colors"
+                          >
+                            View Profile
+                          </Link>
+                          <a
+                            href={`https://wa.me/${clinic.whatsapp.replace(/\D/g, "")}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 text-center py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-xl transition-colors"
+                          >
+                            WhatsApp
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
 
               {/* FAQ */}
               <section>
