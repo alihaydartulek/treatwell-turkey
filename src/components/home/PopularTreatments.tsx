@@ -3,7 +3,6 @@ import { ArrowRight } from "lucide-react";
 
 const treatments = [
   {
-    emoji: "💇",
     title: "Hair Transplant",
     slug: "hair-transplant",
     priceFrom: 1200,
@@ -12,7 +11,6 @@ const treatments = [
     desc: "FUE & DHI techniques from world-renowned Istanbul clinics.",
   },
   {
-    emoji: "🦷",
     title: "Dental Veneers",
     slug: "dental",
     priceFrom: 180,
@@ -21,7 +19,6 @@ const treatments = [
     desc: "Porcelain & zirconia veneers with natural-looking results.",
   },
   {
-    emoji: "⚖️",
     title: "Bariatric Surgery",
     slug: "bariatric",
     priceFrom: 3500,
@@ -30,7 +27,6 @@ const treatments = [
     desc: "Gastric sleeve, bypass and band by accredited surgeons.",
   },
   {
-    emoji: "👃",
     title: "Rhinoplasty",
     slug: "cosmetic",
     priceFrom: 2500,
@@ -39,7 +35,6 @@ const treatments = [
     desc: "Nose reshaping and functional correction at top clinics.",
   },
   {
-    emoji: "👁️",
     title: "Eye Surgery",
     slug: "eye-surgery",
     priceFrom: 800,
@@ -48,7 +43,6 @@ const treatments = [
     desc: "LASIK, PRK and lens implants for permanent clear vision.",
   },
   {
-    emoji: "🌸",
     title: "IVF & Fertility",
     slug: "ivf",
     priceFrom: 2200,
@@ -65,10 +59,10 @@ export default function PopularTreatments() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div>
             <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
-              40+ Treatments Available
+              Most Popular
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
-              Most Popular Treatments
+              Popular Treatments in Turkey
             </h2>
           </div>
           <Link
@@ -87,16 +81,15 @@ export default function PopularTreatments() {
               className="group bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-200 transition-all"
             >
               <div className="flex items-start justify-between mb-3">
-                <span className="text-3xl">{t.emoji}</span>
+                <h3 className="font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">
+                  {t.title}
+                </h3>
                 {t.popular && (
-                  <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full shrink-0 ml-2">
                     Most Popular
                   </span>
                 )}
               </div>
-              <h3 className="font-bold text-slate-900 text-lg mb-1 group-hover:text-blue-600 transition-colors">
-                {t.title}
-              </h3>
               <p className="text-sm text-slate-500 mb-4 leading-relaxed">
                 {t.desc}
               </p>
@@ -107,11 +100,9 @@ export default function PopularTreatments() {
                     €{t.priceFrom.toLocaleString()}
                   </div>
                 </div>
-                <div className="text-right">
-                  <span className="text-xs font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded-full">
-                    {t.saving}
-                  </span>
-                </div>
+                <span className="text-xs font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded-full">
+                  {t.saving}
+                </span>
               </div>
             </Link>
           ))}

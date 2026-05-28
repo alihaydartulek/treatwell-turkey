@@ -90,16 +90,15 @@ export default function TreatmentsPage() {
                 >
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
-                    <span className="text-4xl">{t.emoji}</span>
-                    <span className="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full">
+                    <h2 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                      {t.name}
+                    </h2>
+                    <span className="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full shrink-0 ml-2">
                       {t.category}
                     </span>
                   </div>
 
-                  {/* Name & tagline */}
-                  <h2 className="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-600 transition-colors">
-                    {t.name}
-                  </h2>
+                  {/* Tagline */}
                   <p className="text-sm text-slate-500 leading-relaxed mb-5 line-clamp-2">
                     {t.tagline}
                   </p>
