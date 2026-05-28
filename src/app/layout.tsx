@@ -2,17 +2,50 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TreatWell Turkey — Compare Top Clinics & Save Up to 70%",
+  title: {
+    default: "TreatWell Turkey — Compare Verified Clinics & Save Up to 75%",
+    template: "%s | TreatWell Turkey",
+  },
   description:
-    "Compare verified clinics in Turkey for hair transplant, dental, bariatric surgery and more. Free quotes, real reviews, dedicated patient coordinators.",
-  keywords:
-    "medical tourism turkey, hair transplant turkey, dental turkey, bariatric surgery turkey, compare clinics turkey",
+    "Compare 18 verified clinics in Turkey for hair transplant, dental veneers, bariatric surgery, IVF and more. Real Google ratings, transparent prices, direct clinic contact.",
+  keywords: [
+    "medical tourism turkey",
+    "hair transplant turkey",
+    "dental veneers turkey",
+    "dental turkey",
+    "bariatric surgery turkey",
+    "gastric sleeve turkey",
+    "IVF turkey",
+    "compare clinics turkey",
+    "istanbul clinics",
+    "turkey medical tourism cost",
+  ],
+  metadataBase: new URL("https://www.treatwellturkey.com"),
   openGraph: {
-    title: "TreatWell Turkey — Compare Top Clinics & Save Up to 70%",
+    title: "TreatWell Turkey — Compare Verified Clinics & Save Up to 75%",
     description:
-      "Compare verified clinics in Turkey for hair transplant, dental, bariatric surgery and more.",
+      "Compare 18 verified clinics in Turkey. Real Google ratings, transparent prices, direct contact — no middleman.",
     type: "website",
     locale: "en_GB",
+    siteName: "TreatWell Turkey",
+    images: [
+      {
+        url: "/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "TreatWell Turkey — Compare Medical Clinics",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TreatWell Turkey — Compare Verified Clinics & Save Up to 75%",
+    description:
+      "Compare 18 verified clinics in Turkey. Real Google ratings, transparent prices, direct contact.",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://www.treatwellturkey.com",
   },
 };
 

@@ -30,9 +30,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const clinic = getClinicBySlug(slug);
   if (!clinic) return {};
+  const ogImage = clinic.coverImage
+    ? clinic.coverImage
+    : "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80";
   return {
-    title: `${clinic.name} — ${clinic.city} | Reviews, Prices & Profile | TreatWell Turkey`,
-    description: `Read verified patient reviews for ${clinic.name} in ${clinic.city}. Treatments from €${clinic.priceFrom}. ${clinic.accreditations.join(", ")}. Get your free quote today.`,
+    title: `${clinic.name} — ${clinic.city} Reviews & Prices`,
+    description: `Read verified patient reviews for ${clinic.name} in ${clinic.city}. Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.accreditations.slice(0, 2).join(", ")}. Compare and contact directly.`,
+    alternates: { canonical: `https://www.treatwellturkey.com/clinics/${clinic.slug}` },
+    openGraph: {
+      title: `${clinic.name} — ${clinic.city} | TreatWell Turkey`,
+      description: `${clinic.tagline} Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.googleReviewCount ?? clinic.reviewCount} Google reviews.`,
+      url: `https://www.treatwellturkey.com/clinics/${clinic.slug}`,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: clinic.name }],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${clinic.name} — ${clinic.city}`,
+      description: `Treatments from €${clinic.priceFrom.toLocaleString()} · ${clinic.googleRating ?? clinic.rating}★ · ${clinic.city}`,
+      images: [ogImage],
+    },
   };
 }
 
@@ -66,8 +83,48 @@ export default async function ClinicProfilePage({
     ? `/get-a-quote?treatment=${encodeURIComponent(treatmentName)}&clinic=${clinic.slug}`
     : "/get-a-quote";
 
+  const clinicJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    name: clinic.name,
+    description: clinic.description.slice(0, 300),
+    url: `https://www.treatwellturkey.com/clinics/${clinic.slug}`,
+    ...(clinic.coverImage ? { image: clinic.coverImage } : {}),
+    telephone: clinic.phone,
+    email: clinic.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: clinic.district,
+      addressLocality: clinic.city,
+      addressCountry: "TR",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: String(clinic.googleRating ?? clinic.rating),
+      reviewCount: String(clinic.googleReviewCount ?? clinic.reviewCount),
+      bestRating: "5",
+      worstRating: "1",
+    },
+    priceRange: clinic.priceFrom < 500 ? "€" : clinic.priceFrom < 2000 ? "€€" : "€€€",
+    foundingDate: String(clinic.established),
+    ...(clinic.reviews.length > 0
+      ? {
+          review: clinic.reviews.slice(0, 3).map((r) => ({
+            "@type": "Review",
+            reviewRating: { "@type": "Rating", ratingValue: String(r.rating) },
+            author: { "@type": "Person", name: r.name },
+            reviewBody: r.text,
+          })),
+        }
+      : {}),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicJsonLd) }}
+      />
       <Header />
       <main>
         {/* Cover */}
