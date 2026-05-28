@@ -31,7 +31,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-slate-900/50">
       <div className="container">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -55,7 +55,7 @@ export default function Header() {
                 Treatments <ChevronDown size={14} />
               </button>
               {activeDrop === "treatments" && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-slate-200 rounded-xl shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg py-2 z-50">
                   {treatments.map((t) => (
                     <Link
                       key={t.href}
@@ -96,7 +96,7 @@ export default function Header() {
                 Destinations <ChevronDown size={14} />
               </button>
               {activeDrop === "destinations" && (
-                <div className="absolute top-full left-0 mt-1 w-44 bg-white border border-slate-200 rounded-xl shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-1 w-44 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg py-2 z-50">
                   {destinations.map((d) => (
                     <Link
                       key={d.href}
@@ -159,7 +159,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-slate-200 bg-white">
+        <div className="lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
           <div className="container py-4 flex flex-col gap-1">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-3 mb-1">
               Treatments
