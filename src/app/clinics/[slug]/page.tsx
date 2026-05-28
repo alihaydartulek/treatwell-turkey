@@ -53,11 +53,6 @@ export async function generateMetadata({
   };
 }
 
-function getInitials(name: string): string {
-  const words = name.split(/\s+/).filter((w) => w.length > 2);
-  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
-  return name.slice(0, 2).toUpperCase();
-}
 
 const slugToTreatmentName: Record<string, string> = {
   "hair-transplant": "Hair Transplant",
@@ -153,11 +148,6 @@ export default async function ClinicProfilePage({
             </div>
 
             <div className="flex flex-col md:flex-row gap-6 items-start">
-              {/* Clinic avatar — initials badge */}
-              <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-lg select-none">
-                {getInitials(clinic.name)}
-              </div>
-
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-3 mb-2">
                   <h1 className="text-3xl font-bold">{clinic.name}</h1>
