@@ -14,22 +14,22 @@ const trustPoints = [
   {
     icon: CheckCircle,
     title: "100% Free",
-    desc: "Our service is completely free for patients. We are paid by clinics only when a booking is made.",
+    desc: "Completely free for patients. Clinics pay a fixed listing fee — we take no commission from bookings.",
   },
   {
     icon: Clock,
-    title: "Reply in 2 Hours",
-    desc: "Your dedicated coordinator will contact you within 2 working hours during office hours.",
+    title: "Direct Contact",
+    desc: "Contact clinics directly via WhatsApp or email — no middleman, no waiting for a third party to relay your request.",
   },
   {
     icon: Shield,
     title: "GDPR Compliant",
-    desc: "Your data is encrypted and never shared with clinics without your explicit consent.",
+    desc: "Your data is encrypted and never shared without your explicit consent.",
   },
   {
     icon: Users,
     title: "No Commitment",
-    desc: "Receiving quotes doesn't mean you have to book. Take your time and compare at your own pace.",
+    desc: "Contacting clinics is free and non-binding. Take your time and compare at your own pace.",
   },
 ];
 

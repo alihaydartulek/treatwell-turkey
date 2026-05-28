@@ -36,7 +36,6 @@ const orgJsonLd = {
   "@type": "Organization",
   name: "TreatWell Turkey",
   url: "https://www.treatwellturkey.com",
-  logo: "https://www.treatwellturkey.com/logo.png",
   contactPoint: {
     "@type": "ContactPoint",
     email: "hello@treatwellturkey.com",
