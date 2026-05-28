@@ -137,7 +137,6 @@ export default function CostCalculatorTool() {
                         : "border-slate-200 text-slate-700 hover:border-blue-300"
                     }`}
                   >
-                    <span className="text-xl block mb-1">{t.emoji}</span>
                     {t.label}
                   </button>
                 ))}
