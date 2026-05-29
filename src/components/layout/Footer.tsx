@@ -69,11 +69,11 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-2 text-sm">
               <a
-                href="mailto:hello@cliniqturkey.com"
+                href="mailto:cliniqturkey@gmail.com"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
               >
                 <Mail size={14} />
-                hello@cliniqturkey.com
+                cliniqturkey@gmail.com
               </a>
               <span className="flex items-center gap-2 text-slate-400">
                 <MapPin size={14} />
