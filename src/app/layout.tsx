@@ -61,6 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
+      <head>
+        <meta name="google-site-verification" content="GSHUh0pkcK4QVH6KkbPSHdHa5c94Kyy_phdJhRM1Kwg" />
+      </head>
       <body className="min-h-full flex flex-col antialiased">
         <ThemeProvider>{children}</ThemeProvider>
         <GoogleAnalytics gaId="G-L0B915Z4FQ" />
