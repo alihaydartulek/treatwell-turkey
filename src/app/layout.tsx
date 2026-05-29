@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.cliniqturkey.com",
   },
+  verification: {
+    google: "GSHUh0pkcK4QVH6KkbPSHdHa5c94Kyy_phdJhRM1Kwg",
+  },
 };
 
 export default function RootLayout({
