@@ -5,16 +5,14 @@ import { useRouter } from "next/navigation";
 import { Search, Shield, Star, Users } from "lucide-react";
 
 const treatmentOptions = [
-  "Hair Transplant",
-  "Dental Veneers",
-  "Dental Implants",
-  "Bariatric Surgery",
-  "Rhinoplasty",
-  "IVF & Fertility",
-  "Eye Surgery (LASIK)",
-  "Breast Augmentation",
-  "Tummy Tuck",
-  "Other",
+  { label: "Hair Transplant",       slug: "hair-transplant" },
+  { label: "Dental Veneers",        slug: "dental" },
+  { label: "Dental Implants",       slug: "dental" },
+  { label: "Bariatric Surgery",     slug: "bariatric" },
+  { label: "Rhinoplasty",           slug: "cosmetic" },
+  { label: "Cosmetic Surgery",      slug: "cosmetic" },
+  { label: "IVF & Fertility",       slug: "ivf" },
+  { label: "Eye Surgery (LASIK)",   slug: "eye-surgery" },
 ];
 
 const cityOptions = ["Istanbul", "Ankara", "Izmir", "Antalya", "Any City"];
@@ -26,8 +24,7 @@ export default function HeroSection() {
 
   const handleSearch = () => {
     if (!treatment) return;
-    const slug = treatment.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    router.push(`/treatments/${slug}${city ? `?city=${city}` : ""}`);
+    router.push(`/treatments/${treatment}${city && city !== "Any City" ? `?city=${city}` : ""}`);
   };
 
   return (
@@ -66,8 +63,8 @@ export default function HeroSection() {
             >
               <option value="">Select Treatment</option>
               {treatmentOptions.map((t) => (
-                <option key={t} value={t}>
-                  {t}
+                <option key={t.slug + t.label} value={t.slug}>
+                  {t.label}
                 </option>
               ))}
             </select>
