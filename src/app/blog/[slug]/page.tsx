@@ -1,4 +1,4 @@
-ï»¿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, ArrowLeft, ArrowRight } from "lucide-react";
@@ -19,7 +19,7 @@ export async function generateMetadata({
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return {
-    title: `${post.title} | CliniqTurkey`,
+    title: `${post.title}`,
     description: post.excerpt,
     alternates: { canonical: `https://www.cliniqturkey.com/blog/${slug}` },
     openGraph: {
@@ -60,7 +60,7 @@ function renderMarkdown(content: string) {
         </p>
       );
     } else if (line.startsWith("| ")) {
-      // Table â€” collect all table lines
+      // Table — collect all table lines
       const tableLines: string[] = [];
       while (i < lines.length && lines[i].startsWith("|")) {
         tableLines.push(lines[i]);
@@ -119,7 +119,7 @@ function renderMarkdown(content: string) {
     } else if (line.trim() === "") {
       // skip empty lines
     } else {
-      // Regular paragraph â€” handle inline bold
+      // Regular paragraph — handle inline bold
       const parts = line.split(/(\*\*[^*]+\*\*)/g);
       elements.push(
         <p key={i} className="text-slate-600 leading-relaxed my-2">
@@ -209,7 +209,7 @@ export default async function BlogPostPage({
                     href="/get-a-quote"
                     className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
                   >
-                    Get Free Quotes â†’
+                    Get Free Quotes ›
                   </Link>
                 </div>
 

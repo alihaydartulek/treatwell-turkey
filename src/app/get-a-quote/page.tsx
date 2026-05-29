@@ -5,7 +5,7 @@ import LeadCaptureSection from "@/components/home/LeadCaptureSection";
 import { CheckCircle, Clock, Shield, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Get a Free Quote — Compare Clinics in Turkey | CliniqTurkey",
+  title: "Get a Free Quote — Compare Clinics in Turkey",
   description:
     "Submit your treatment request and receive personalised quotes from 2-3 verified Turkish clinics within 24 hours. Free, no commitment, GDPR compliant.",
 };

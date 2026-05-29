@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — CliniqTurkey",
+  title: "Privacy Policy",
   description: "How CliniqTurkey collects, uses and protects your personal data.",
 };
 

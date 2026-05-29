@@ -19,7 +19,7 @@ import { clinics } from "@/lib/clinics";
 
 const categoryFallbackImages: Record<string, string> = {
   "hair-transplant": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&auto=format&fit=crop&q=70",
-  "dental": "https://images.unsplash.com/photo-1588776814546-1ffbb7dfa48a?w=800&auto=format&fit=crop&q=70",
+  "dental": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&auto=format&fit=crop&q=70",
   "bariatric": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=70",
   "cosmetic": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&auto=format&fit=crop&q=70",
   "eye-surgery": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&auto=format&fit=crop&q=70",

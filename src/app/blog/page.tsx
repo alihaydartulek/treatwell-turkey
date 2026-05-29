@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import BlogList from "@/components/blog/BlogList";
 
 export const metadata: Metadata = {
-  title: "Patient Guides & Resources — CliniqTurkey",
+  title: "Patient Guides & Resources",
   description:
     "In-depth guides for patients considering medical treatment in Turkey — hair transplant, dental, bariatric surgery, IVF and more. Honest, independent advice.",
 };

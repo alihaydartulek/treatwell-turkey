@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Contact Us — CliniqTurkey",
+  title: "Contact Us",
   description: "Get in touch with the CliniqTurkey team.",
 };
 

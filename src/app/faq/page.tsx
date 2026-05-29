@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Answers to the most common questions about medical tourism in Turkey — is it safe, how much does it cost, how do I plan, and how does CliniqTurkey work.",
   alternates: { canonical: "https://www.cliniqturkey.com/faq" },
   openGraph: {
-    title: "FAQ — Medical Treatment in Turkey | CliniqTurkey",
+    title: "FAQ — Medical Treatment in Turkey",
     description:
       "Everything you need to know about medical tourism in Turkey — safety, costs, planning and more.",
     url: "https://www.cliniqturkey.com/faq",

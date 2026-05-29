@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { treatments } from "@/lib/treatments";
 
 export const metadata: Metadata = {
-  title: "All Treatments in Turkey — Compare Clinics & Prices | CliniqTurkey",
+  title: "All Treatments in Turkey — Compare Clinics & Prices",
   description:
     "Browse 40+ medical treatments available in Turkey. Compare verified clinics, real prices, and patient reviews for hair transplant, dental, bariatric surgery, IVF and more.",
 };

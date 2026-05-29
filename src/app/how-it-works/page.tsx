@@ -15,7 +15,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "How It Works — CliniqTurkey",
+  title: "How It Works",
   description:
     "Browse verified Turkish clinics, compare prices and contact them directly via WhatsApp or email. No middleman, no coordinator — just transparent information.",
 };

@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — CliniqTurkey",
+  title: "Terms of Use",
   description: "Terms and conditions for using the CliniqTurkey platform.",
 };
 

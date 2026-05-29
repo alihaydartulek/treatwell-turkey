@@ -1,4 +1,4 @@
-ï»¿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -29,11 +29,11 @@ export async function generateMetadata({
   const dest = getDestinationBySlug(city);
   if (!dest) return {};
   return {
-    title: `Medical Tourism in ${dest.city}, Turkey â€” Clinics, Costs & Travel Guide | CliniqTurkey`,
+    title: `Medical Tourism in ${dest.city}, Turkey — Clinics, Costs & Travel Guide`,
     description: `Complete guide to medical tourism in ${dest.city}. ${dest.clinicCount}+ verified clinics, top treatments, practical travel info and patient tips.`,
     alternates: { canonical: `https://www.cliniqturkey.com/destinations/${city}` },
     openGraph: {
-      title: `Medical Tourism in ${dest.city}, Turkey â€” Clinics & Travel Guide`,
+      title: `Medical Tourism in ${dest.city}, Turkey — Clinics & Travel Guide`,
       description: `Complete guide to medical tourism in ${dest.city}. ${dest.clinicCount}+ verified clinics, top treatments, practical travel info.`,
       url: `https://www.cliniqturkey.com/destinations/${city}`,
       type: "website",
@@ -203,7 +203,7 @@ export default async function DestinationPage({
                           <div className="text-right shrink-0">
                             <div className="text-xs text-slate-400">From</div>
                             <div className="text-xl font-bold text-slate-900">
-                              â‚¬{clinic.priceFrom.toLocaleString()}
+                              €{clinic.priceFrom.toLocaleString()}
                             </div>
                           </div>
                         </div>
@@ -288,13 +288,13 @@ export default async function DestinationPage({
                 </h3>
                 <p className="text-blue-100 text-sm mb-4">
                   Get personalised quotes from verified clinics in {dest.city}
-                  â€” free, no commitment.
+                  — free, no commitment.
                 </p>
                 <Link
                   href="/get-a-quote"
                   className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
                 >
-                  Get Free Quotes â†’
+                  Get Free Quotes ›
                 </Link>
               </div>
 
@@ -358,7 +358,7 @@ export default async function DestinationPage({
                         href={`/destinations/${s}`}
                         className="text-sm text-blue-600 hover:underline capitalize"
                       >
-                        â†’ {s.charAt(0).toUpperCase() + s.slice(1)}
+                        › {s.charAt(0).toUpperCase() + s.slice(1)}
                       </Link>
                     ))}
                 </div>

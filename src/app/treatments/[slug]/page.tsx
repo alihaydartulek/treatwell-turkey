@@ -1,4 +1,4 @@
-ï»¿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -27,12 +27,12 @@ export async function generateMetadata({
   const treatment = getTreatmentBySlug(slug);
   if (!treatment) return {};
   return {
-    title: `${treatment.name} in Turkey â€” Cost, Clinics & Reviews 2025`,
-    description: `Compare verified clinics for ${treatment.name} in Turkey. Prices from â‚¬${treatment.priceFrom.toLocaleString()}. Save up to 70% vs UK & Germany. Real Google reviews, direct clinic contact.`,
+    title: `${treatment.name} in Turkey — Cost, Clinics & Reviews 2025`,
+    description: `Compare verified clinics for ${treatment.name} in Turkey. Prices from €${treatment.priceFrom.toLocaleString()}. Save up to 70% vs UK & Germany. Real Google reviews, direct clinic contact.`,
     alternates: { canonical: `https://www.cliniqturkey.com/treatments/${treatment.slug}` },
     openGraph: {
-      title: `${treatment.name} in Turkey â€” Cost & Clinics | CliniqTurkey`,
-      description: `Prices from â‚¬${treatment.priceFrom.toLocaleString()} â€” save up to 70% vs UK. Compare verified clinics for ${treatment.name} in Turkey.`,
+      title: `${treatment.name} in Turkey — Cost & Clinics`,
+      description: `Prices from €${treatment.priceFrom.toLocaleString()} — save up to 70% vs UK. Compare verified clinics for ${treatment.name} in Turkey.`,
       url: `https://www.cliniqturkey.com/treatments/${treatment.slug}`,
       images: [{ url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80", width: 1200, height: 630 }],
       type: "website",
@@ -81,21 +81,21 @@ export default async function TreatmentPage({
               {/* Price compare pills */}
               <div className="flex flex-wrap gap-3 mb-8">
                 <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm">
-                  <span className="text-slate-400">ðŸ‡¬ðŸ‡§ UK average</span>
+                  <span className="text-slate-400">???? UK average</span>
                   <div className="text-lg font-bold text-slate-300 line-through">
-                    Â£{treatment.ukPrice.toLocaleString()}
+                    £{treatment.ukPrice.toLocaleString()}
                   </div>
                 </div>
                 <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm">
-                  <span className="text-slate-400">ðŸ‡©ðŸ‡ª Germany avg</span>
+                  <span className="text-slate-400">???? Germany avg</span>
                   <div className="text-lg font-bold text-slate-300 line-through">
-                    â‚¬{treatment.dePrice.toLocaleString()}
+                    €{treatment.dePrice.toLocaleString()}
                   </div>
                 </div>
                 <div className="bg-green-500/20 border border-green-400/40 rounded-xl px-4 py-3 text-sm">
-                  <span className="text-green-300">ðŸ‡¹ðŸ‡· Turkey from</span>
+                  <span className="text-green-300">???? Turkey from</span>
                   <div className="text-lg font-bold text-white">
-                    â‚¬{treatment.priceFrom.toLocaleString()}
+                    €{treatment.priceFrom.toLocaleString()}
                   </div>
                 </div>
                 <div className="bg-green-600/20 border border-green-500/40 rounded-xl px-4 py-3 text-sm flex items-center gap-2">
@@ -236,7 +236,7 @@ export default async function TreatmentPage({
                           <div className="text-right shrink-0">
                             <div className="text-xs text-slate-400">From</div>
                             <div className="text-xl font-bold text-slate-900">
-                              â‚¬{clinic.priceFrom.toLocaleString()}
+                              €{clinic.priceFrom.toLocaleString()}
                             </div>
                           </div>
                         </div>
@@ -326,7 +326,7 @@ export default async function TreatmentPage({
                 </p>
                 <ul className="flex flex-col gap-2 mb-5">
                   {[
-                    "100% free â€” no hidden fees",
+                    "100% free — no hidden fees",
                     "No commitment to book",
                     "Reply within 2 hours",
                     "GDPR compliant",
@@ -344,7 +344,7 @@ export default async function TreatmentPage({
                   href="/get-a-quote"
                   className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
                 >
-                  Get Free Quotes â†’
+                  Get Free Quotes ›
                 </Link>
               </div>
 
@@ -355,21 +355,21 @@ export default async function TreatmentPage({
                 </h3>
                 <div className="flex flex-col gap-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-slate-500">ðŸ‡¬ðŸ‡§ UK (private)</span>
+                    <span className="text-slate-500">???? UK (private)</span>
                     <span className="line-through text-slate-400">
-                      Â£{treatment.ukPrice.toLocaleString()}
+                      £{treatment.ukPrice.toLocaleString()}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">ðŸ‡©ðŸ‡ª Germany (private)</span>
+                    <span className="text-slate-500">???? Germany (private)</span>
                     <span className="line-through text-slate-400">
-                      â‚¬{treatment.dePrice.toLocaleString()}
+                      €{treatment.dePrice.toLocaleString()}
                     </span>
                   </div>
                   <div className="border-t border-slate-100 pt-3 flex justify-between font-semibold">
-                    <span className="text-slate-900">ðŸ‡¹ðŸ‡· Turkey from</span>
+                    <span className="text-slate-900">???? Turkey from</span>
                     <span className="text-blue-600">
-                      â‚¬{treatment.priceFrom.toLocaleString()}
+                      €{treatment.priceFrom.toLocaleString()}
                     </span>
                   </div>
                   <div className="bg-green-50 border border-green-100 rounded-xl p-3 flex justify-between font-semibold text-green-700">
@@ -383,7 +383,7 @@ export default async function TreatmentPage({
                   href="/cost-calculator"
                   className="block text-center text-sm text-blue-600 hover:underline mt-3"
                 >
-                  Calculate exact saving â†’
+                  Calculate exact saving ›
                 </Link>
               </div>
             </div>

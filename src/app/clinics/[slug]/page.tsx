@@ -1,4 +1,4 @@
-ï»¿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,20 +34,20 @@ export async function generateMetadata({
     ? clinic.coverImage
     : "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80";
   return {
-    title: `${clinic.name} â€” ${clinic.city} Reviews & Prices`,
-    description: `Read verified patient reviews for ${clinic.name} in ${clinic.city}. Treatments from â‚¬${clinic.priceFrom.toLocaleString()}. ${clinic.accreditations.slice(0, 2).join(", ")}. Compare and contact directly.`,
+    title: `${clinic.name} — ${clinic.city} Reviews & Prices`,
+    description: `Read verified patient reviews for ${clinic.name} in ${clinic.city}. Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.accreditations.slice(0, 2).join(", ")}. Compare and contact directly.`,
     alternates: { canonical: `https://www.cliniqturkey.com/clinics/${clinic.slug}` },
     openGraph: {
-      title: `${clinic.name} â€” ${clinic.city} | CliniqTurkey`,
-      description: `${clinic.tagline} Treatments from â‚¬${clinic.priceFrom.toLocaleString()}. ${clinic.googleReviewCount ?? clinic.reviewCount} Google reviews.`,
+      title: `${clinic.name} — ${clinic.city}`,
+      description: `${clinic.tagline} Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.googleReviewCount ?? clinic.reviewCount} Google reviews.`,
       url: `https://www.cliniqturkey.com/clinics/${clinic.slug}`,
       images: [{ url: ogImage, width: 1200, height: 630, alt: clinic.name }],
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${clinic.name} â€” ${clinic.city}`,
-      description: `Treatments from â‚¬${clinic.priceFrom.toLocaleString()} Â· ${clinic.googleRating ?? clinic.rating}â˜… Â· ${clinic.city}`,
+      title: `${clinic.name} — ${clinic.city}`,
+      description: `Treatments from €${clinic.priceFrom.toLocaleString()} · ${clinic.googleRating ?? clinic.rating}? · ${clinic.city}`,
       images: [ogImage],
     },
   };
@@ -100,7 +100,7 @@ export default async function ClinicProfilePage({
       bestRating: "5",
       worstRating: "1",
     },
-    priceRange: clinic.priceFrom < 500 ? "â‚¬" : clinic.priceFrom < 2000 ? "â‚¬â‚¬" : "â‚¬â‚¬â‚¬",
+    priceRange: clinic.priceFrom < 500 ? "€" : clinic.priceFrom < 2000 ? "€€" : "€€€",
     foundingDate: String(clinic.established),
     ...(clinic.reviews.length > 0
       ? {
@@ -259,7 +259,7 @@ export default async function ClinicProfilePage({
                     <thead className="bg-slate-50 border-b border-slate-200">
                       <tr>
                         <th className="text-left py-3 px-4 text-slate-600 font-semibold">Treatment</th>
-                        <th className="text-right py-3 px-4 text-blue-700 font-semibold">Price (â‚¬)</th>
+                        <th className="text-right py-3 px-4 text-blue-700 font-semibold">Price (€)</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -267,7 +267,7 @@ export default async function ClinicProfilePage({
                         <tr key={t} className={`border-b border-slate-100 ${i % 2 === 0 ? "bg-white" : "bg-slate-50/50"}`}>
                           <td className="py-3 px-4 text-slate-700">{t}</td>
                           <td className="py-3 px-4 text-right font-medium text-slate-900">
-                            From â‚¬{(clinic.priceFrom + i * 150).toLocaleString()}
+                            From €{(clinic.priceFrom + i * 150).toLocaleString()}
                           </td>
                         </tr>
                       ))}
@@ -293,7 +293,7 @@ export default async function ClinicProfilePage({
                           </span>
                         </div>
                         <p className="text-sm text-slate-500 mb-1">
-                          {doc.specialty} Â· {doc.experience} years experience
+                          {doc.specialty} · {doc.experience} years experience
                         </p>
                         <p className="text-sm text-slate-600 leading-relaxed">{doc.bio}</p>
                       </div>
@@ -367,7 +367,7 @@ export default async function ClinicProfilePage({
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:underline"
                         >
-                          View all {clinic.googleReviewCount.toLocaleString()} Google Reviews â†’
+                          View all {clinic.googleReviewCount.toLocaleString()} Google Reviews ›
                         </a>
                       </div>
                     )}
@@ -388,7 +388,7 @@ export default async function ClinicProfilePage({
                         rel="noopener noreferrer"
                         className="text-sm text-blue-600 hover:underline font-medium"
                       >
-                        View Google Reviews â†’
+                        View Google Reviews ›
                       </a>
                     )}
                   </div>
