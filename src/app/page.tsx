@@ -58,12 +58,12 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <HowItWorks />
         <PopularTreatments />
         <CostComparison />
         <FeaturedClinics />
         <Testimonials />
         <DestinationGuides />
+        <HowItWorks />
         <LeadCaptureSection />
       </main>
       <Footer />
