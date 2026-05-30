@@ -1,10 +1,33 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, TrendingDown, CheckCircle } from "lucide-react";
+import {
+  ArrowRight,
+  TrendingDown,
+  CheckCircle,
+  Scissors,
+  Smile,
+  HeartPulse,
+  Sparkles,
+  Eye,
+  Baby,
+  Bone,
+  Stethoscope,
+  type LucideIcon,
+} from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { treatments } from "@/lib/treatments";
 import PriceDisplay from "@/components/ui/PriceDisplay";
+
+const treatmentIcons: Record<string, LucideIcon> = {
+  "hair-transplant": Scissors,
+  dental: Smile,
+  bariatric: HeartPulse,
+  cosmetic: Sparkles,
+  "eye-surgery": Eye,
+  ivf: Baby,
+  orthopaedics: Bone,
+};
 
 export const metadata: Metadata = {
   title: "All Treatments in Turkey — Compare Clinics & Prices",
@@ -83,21 +106,26 @@ export default function TreatmentsPage() {
 
             {/* All treatments grid */}
             <div id="all" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {treatments.map((t) => (
+              {treatments.map((t) => {
+                const Icon = treatmentIcons[t.slug] ?? Stethoscope;
+                return (
                 <Link
                   key={t.slug}
                   href={`/treatments/${t.slug}`}
                   className="group border border-slate-200 rounded-2xl p-6 hover:shadow-lg hover:border-teal-200 transition-all bg-white"
                 >
                   {/* Header */}
-                  <div className="flex items-start justify-between mb-4">
-                    <h2 className="text-lg font-bold text-slate-900 group-hover:text-teal-600 transition-colors">
-                      {t.name}
-                    </h2>
-                    <span className="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full shrink-0 ml-2">
+                  <div className="flex items-start justify-between gap-2 mb-4">
+                    <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-teal-50 border border-teal-100 text-teal-600 shrink-0 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                      <Icon size={22} />
+                    </span>
+                    <span className="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full shrink-0">
                       {t.category}
                     </span>
                   </div>
+                  <h2 className="text-lg font-bold text-slate-900 group-hover:text-teal-600 transition-colors mb-2">
+                    {t.name}
+                  </h2>
 
                   {/* Tagline */}
                   <p className="text-sm text-slate-500 leading-relaxed mb-5 line-clamp-2">
@@ -143,7 +171,8 @@ export default function TreatmentsPage() {
                     </span>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
