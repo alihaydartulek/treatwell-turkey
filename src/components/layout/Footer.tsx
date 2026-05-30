@@ -12,6 +12,7 @@ const treatmentLinks = [
 ];
 
 const destinationLinks = [
+  { label: "All Destinations", href: "/destinations" },
   { label: "Istanbul", href: "/destinations/istanbul" },
   { label: "Ankara", href: "/destinations/ankara" },
   { label: "Izmir", href: "/destinations/izmir" },
@@ -122,6 +123,14 @@ export default function Footer() {
               Compare
             </h3>
             <ul className="flex flex-col gap-2">
+              <li>
+                <Link
+                  href="/compare"
+                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  Turkey vs UK Prices
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/clinics/compare"
