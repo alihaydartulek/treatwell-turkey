@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
-import { Suspense, Fragment } from "react";
+import { Suspense, useRef, useEffect, useLayoutEffect } from "react";
 import Link from "next/link";
 import {
   Star,
@@ -245,6 +245,56 @@ function CompareTable() {
     );
   };
 
+  // The frozen label column and the scrollable clinic columns are rendered
+  // as two separate tables so the label column physically lives outside the
+  // horizontal scroll container (robust on every browser, unlike sticky
+  // table cells which Safari/iOS handle poorly). We sync row heights so the
+  // two tables stay perfectly aligned.
+  const labelTableRef = useRef<HTMLTableElement>(null);
+  const dataTableRef = useRef<HTMLTableElement>(null);
+
+  const useIsoEffect =
+    typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
+  useIsoEffect(() => {
+    const syncHeights = () => {
+      const lt = labelTableRef.current;
+      const dt = dataTableRef.current;
+      if (!lt || !dt) return;
+      const lRows = [
+        lt.tHead?.rows[0],
+        ...Array.from(lt.tBodies[0]?.rows ?? []),
+      ].filter(Boolean) as HTMLTableRowElement[];
+      const dRows = [
+        dt.tHead?.rows[0],
+        ...Array.from(dt.tBodies[0]?.rows ?? []),
+      ].filter(Boolean) as HTMLTableRowElement[];
+      const n = Math.min(lRows.length, dRows.length);
+      for (let i = 0; i < n; i++) {
+        lRows[i].style.height = "auto";
+        dRows[i].style.height = "auto";
+      }
+      for (let i = 0; i < n; i++) {
+        const h = Math.max(
+          lRows[i].getBoundingClientRect().height,
+          dRows[i].getBoundingClientRect().height,
+        );
+        lRows[i].style.height = `${h}px`;
+        dRows[i].style.height = `${h}px`;
+      }
+    };
+    syncHeights();
+    const ro = new ResizeObserver(syncHeights);
+    if (labelTableRef.current) ro.observe(labelTableRef.current);
+    if (dataTableRef.current) ro.observe(dataTableRef.current);
+    window.addEventListener("resize", syncHeights);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", syncHeights);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slugParam]);
+
   if (selected.length < 2) {
     return (
       <div className="container py-20 text-center">
@@ -268,10 +318,31 @@ function CompareTable() {
   const rows = buildRows({ bestPrice, bestRating });
   const rowsByLabel = new Map(rows.map((r) => [r.label, r.render]));
 
-  // Fixed table layout keeps header cards perfectly aligned with their
-  // columns; min-width forces horizontal scroll on small screens instead
-  // of squashing the columns.
-  const tableMinWidth = selected.length === 3 ? 860 : 620;
+  // Flatten the grouped rows into a single ordered list shared by both
+  // tables so the row indexes line up 1:1 for height syncing. `bg` carries
+  // the zebra striping (only data rows are striped; group headers are bands).
+  type VisualRow =
+    | { kind: "group"; title: string; bg: string }
+    | { kind: "data"; label: string; bg: string };
+  const visualRows: VisualRow[] = [];
+  let dataCount = 0;
+  for (const group of ROW_GROUPS) {
+    const labels = group.labels.filter((l) => rowsByLabel.has(l));
+    if (!labels.length) continue;
+    visualRows.push({ kind: "group", title: group.title, bg: "" });
+    for (const label of labels) {
+      visualRows.push({
+        kind: "data",
+        label,
+        bg: dataCount % 2 === 0 ? "bg-slate-50" : "bg-white",
+      });
+      dataCount++;
+    }
+  }
+
+  // Per-clinic column min width forces horizontal scroll (of the clinic
+  // columns only) on small screens instead of squashing the columns.
+  const dataMinWidth = selected.length * 240;
 
   return (
     <div className="container py-8">
@@ -287,84 +358,94 @@ function CompareTable() {
         <span className="text-sm text-slate-700 font-medium">Comparing {selected.length} clinics</span>
       </div>
 
-      <div className="overflow-x-auto -mx-6 px-6 pb-2">
+      <div className="flex items-start">
+        {/* Frozen label column — its own table, outside the scroll area */}
         <table
-          className="w-full table-fixed border-separate border-spacing-0"
-          style={{ minWidth: tableMinWidth }}
+          ref={labelTableRef}
+          className="shrink-0 w-32 md:w-44 table-fixed border-separate border-spacing-0 border-r border-slate-100"
         >
-          <colgroup>
-            <col className="w-32 md:w-44" />
-            {selected.map((c) => (
-              <col key={c.slug} />
-            ))}
-          </colgroup>
-
-          {/* Clinic headers */}
           <thead>
             <tr>
-              <th className="sticky left-0 z-10 bg-white" />
-              {selected.map((clinic) => (
-                <th key={clinic.slug} className="pb-6 px-2 align-bottom">
-                  <div className="relative bg-white border-2 border-blue-200 rounded-2xl p-4 text-left h-full">
-                    <button
-                      type="button"
-                      onClick={() => removeClinic(clinic.slug)}
-                      aria-label={`Remove ${clinic.name} from comparison`}
-                      className="absolute top-2 right-2 flex items-center justify-center w-6 h-6 rounded-full text-slate-400 hover:text-red-600 hover:bg-red-50 transition-colors"
-                    >
-                      <X size={14} />
-                    </button>
-                    <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full mb-2 ${clinic.badgeColor}`}>
-                      {clinic.badge}
-                    </span>
-                    <div className="font-bold text-slate-900 text-base leading-tight mb-0.5 pr-6 break-words">
-                      {clinic.name}
-                    </div>
-                    <div className="text-xs text-slate-400">{clinic.city}</div>
-                  </div>
-                </th>
-              ))}
+              <th className="pb-6 align-bottom" />
             </tr>
           </thead>
-
           <tbody>
-            {ROW_GROUPS.map((group) => {
-              const groupRows = group.labels.filter((l) => rowsByLabel.has(l));
-              if (!groupRows.length) return null;
-              return (
-                <Fragment key={group.title}>
-                  <tr>
-                    <td
-                      colSpan={selected.length + 1}
-                      className="sticky left-0 pt-6 pb-2 text-xs font-bold text-blue-700 uppercase tracking-wider"
-                    >
-                      {group.title}
-                    </td>
-                  </tr>
-                  {groupRows.map((label, i) => (
-                    <tr
-                      key={label}
-                      className={i % 2 === 0 ? "bg-slate-50" : "bg-white"}
-                    >
-                      <td
-                        className={`sticky left-0 z-10 py-4 pr-3 text-xs font-semibold text-slate-500 uppercase tracking-wider align-top border-r border-slate-100 ${
-                          i % 2 === 0 ? "bg-slate-50" : "bg-white"
-                        }`}
-                      >
-                        {label}
-                      </td>
-                      {selected.map((clinic) => (
-                        <td key={clinic.slug} className="py-4 px-2 align-top break-words">
-                          {rowsByLabel.get(label)!(clinic)}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </Fragment>
-              );
-            })}
+            {visualRows.map((row, i) =>
+              row.kind === "group" ? (
+                <tr key={i}>
+                  <td className="pl-1 pr-3 pt-6 pb-2 align-bottom text-xs font-bold text-blue-700 uppercase tracking-wider">
+                    {row.title}
+                  </td>
+                </tr>
+              ) : (
+                <tr key={i} className={row.bg}>
+                  <td className="py-4 pl-1 pr-3 align-top text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                    {row.label}
+                  </td>
+                </tr>
+              ),
+            )}
           </tbody>
         </table>
+
+        {/* Scrollable clinic columns */}
+        <div className="overflow-x-auto pb-2 flex-1">
+          <table
+            ref={dataTableRef}
+            className="w-full table-fixed border-separate border-spacing-0"
+            style={{ minWidth: dataMinWidth }}
+          >
+            <colgroup>
+              {selected.map((c) => (
+                <col key={c.slug} />
+              ))}
+            </colgroup>
+
+            <thead>
+              <tr>
+                {selected.map((clinic) => (
+                  <th key={clinic.slug} className="pb-6 px-2 align-bottom">
+                    <div className="relative bg-white border-2 border-blue-200 rounded-2xl p-4 text-left h-full">
+                      <button
+                        type="button"
+                        onClick={() => removeClinic(clinic.slug)}
+                        aria-label={`Remove ${clinic.name} from comparison`}
+                        className="absolute top-2 right-2 flex items-center justify-center w-6 h-6 rounded-full text-slate-400 hover:text-red-600 hover:bg-red-50 transition-colors"
+                      >
+                        <X size={14} />
+                      </button>
+                      <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full mb-2 ${clinic.badgeColor}`}>
+                        {clinic.badge}
+                      </span>
+                      <div className="font-bold text-slate-900 text-base leading-tight mb-0.5 pr-6 break-words">
+                        {clinic.name}
+                      </div>
+                      <div className="text-xs text-slate-400">{clinic.city}</div>
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            <tbody>
+              {visualRows.map((row, i) =>
+                row.kind === "group" ? (
+                  <tr key={i}>
+                    <td colSpan={selected.length} className="pt-6 pb-2" />
+                  </tr>
+                ) : (
+                  <tr key={i} className={row.bg}>
+                    {selected.map((clinic) => (
+                      <td key={clinic.slug} className="py-4 px-2 align-top break-words">
+                        {rowsByLabel.get(row.label)!(clinic)}
+                      </td>
+                    ))}
+                  </tr>
+                ),
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       {/* Add more clinics CTA */}
