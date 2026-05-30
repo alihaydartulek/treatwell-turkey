@@ -13,6 +13,9 @@ import {
   ArrowLeft,
   MapPin,
   Globe,
+  Users,
+  Clock,
+  Stethoscope,
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -20,7 +23,15 @@ import { clinics, type Clinic } from "@/lib/clinics";
 import PriceDisplay from "@/components/ui/PriceDisplay";
 import { trackClinicCall, trackClinicEmail } from "@/lib/analytics";
 
-const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
+const currentYear = new Date().getFullYear();
+
+type RowCtx = { bestPrice: number; bestRating: number };
+
+function buildRows({
+  bestPrice,
+  bestRating,
+}: RowCtx): { label: string; render: (c: Clinic) => React.ReactNode }[] {
+  return [
   {
     label: "Location",
     render: (c) => (
@@ -32,25 +43,77 @@ const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
   },
   {
     label: "Google Rating",
+    render: (c) => {
+      const r = c.googleRating ?? c.rating;
+      const isBest = r === bestRating;
+      return (
+        <div className="flex flex-col gap-1">
+          <span className="flex items-center gap-1">
+            <Star size={14} className="text-yellow-400 fill-yellow-400" />
+            <span className="font-semibold text-slate-900">{r}</span>
+            <span className="text-xs text-slate-400">
+              ({(c.googleReviewCount ?? c.reviewCount).toLocaleString()} reviews)
+            </span>
+          </span>
+          {isBest && (
+            <span className="self-start text-[11px] font-semibold text-yellow-700 bg-yellow-50 border border-yellow-200 px-1.5 py-0.5 rounded-full">
+              ★ Top rated
+            </span>
+          )}
+        </div>
+      );
+    },
+  },
+  {
+    label: "Starting Price",
+    render: (c) => {
+      const isBest = c.priceFrom === bestPrice;
+      return (
+        <div className="flex flex-col gap-1">
+          <PriceDisplay eurAmount={c.priceFrom} className="text-lg font-bold text-slate-900" />
+          {isBest && (
+            <span className="self-start text-[11px] font-semibold text-green-700 bg-green-50 border border-green-200 px-1.5 py-0.5 rounded-full">
+              Lowest price
+            </span>
+          )}
+        </div>
+      );
+    },
+  },
+  {
+    label: "Patients Treated",
     render: (c) => (
-      <span className="flex items-center gap-1">
-        <Star size={14} className="text-yellow-400 fill-yellow-400" />
-        <span className="font-semibold text-slate-900">{c.googleRating ?? c.rating}</span>
-        <span className="text-xs text-slate-400">
-          ({(c.googleReviewCount ?? c.reviewCount).toLocaleString()} reviews)
-        </span>
+      <span className="flex items-center gap-1.5 text-slate-700 font-medium">
+        <Users size={13} className="text-slate-400 shrink-0" />
+        {c.patientCount}
       </span>
     ),
   },
   {
-    label: "Starting Price",
+    label: "Experience",
     render: (c) => (
-      <PriceDisplay eurAmount={c.priceFrom} className="text-lg font-bold text-slate-900" />
+      <span className="flex items-center gap-1.5 text-slate-600">
+        <Clock size={13} className="text-slate-400 shrink-0" />
+        {currentYear - c.established} years
+        <span className="text-xs text-slate-400">(est. {c.established})</span>
+      </span>
     ),
   },
   {
-    label: "Established",
-    render: (c) => <span className="text-slate-600">{c.established}</span>,
+    label: "Medical Team",
+    render: (c) => (
+      <div className="flex flex-col gap-0.5">
+        <span className="flex items-center gap-1.5 text-slate-700 font-medium text-sm">
+          <Stethoscope size={13} className="text-slate-400 shrink-0" />
+          {c.doctors.length} specialist{c.doctors.length !== 1 ? "s" : ""}
+        </span>
+        {c.doctors[0] && (
+          <span className="text-xs text-slate-400 leading-tight">
+            Lead: {c.doctors[0].name}
+          </span>
+        )}
+      </div>
+    ),
   },
   {
     label: "Accreditations",
@@ -147,7 +210,8 @@ const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
       </div>
     ),
   },
-];
+  ];
+}
 
 function CompareTable() {
   const searchParams = useSearchParams();
@@ -171,6 +235,13 @@ function CompareTable() {
       </div>
     );
   }
+
+  // Highlight the winning cell for price (lowest) and rating (highest).
+  const bestPrice = Math.min(...selected.map((c) => c.priceFrom));
+  const bestRating = Math.max(
+    ...selected.map((c) => c.googleRating ?? c.rating),
+  );
+  const rows = buildRows({ bestPrice, bestRating });
 
   // Fixed table layout keeps header cards perfectly aligned with their
   // columns; min-width forces horizontal scroll on small screens instead
