@@ -289,7 +289,7 @@ function CompareTable() {
 
       <div className="overflow-x-auto -mx-6 px-6 pb-2">
         <table
-          className="w-full table-fixed border-collapse"
+          className="w-full table-fixed border-separate border-spacing-0"
           style={{ minWidth: tableMinWidth }}
         >
           <colgroup>
@@ -344,7 +344,7 @@ function CompareTable() {
                   {groupRows.map((label, i) => (
                     <tr
                       key={label}
-                      className={i % 2 === 0 ? "bg-slate-50/60" : "bg-white"}
+                      className={i % 2 === 0 ? "bg-slate-50" : "bg-white"}
                     >
                       <td
                         className={`sticky left-0 z-10 py-4 pr-3 text-xs font-semibold text-slate-500 uppercase tracking-wider align-top border-r border-slate-100 ${
