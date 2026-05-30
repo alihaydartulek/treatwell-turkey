@@ -17,6 +17,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getClinicBySlug, getAllClinicSlugs } from "@/lib/clinics";
 import PriceDisplay from "@/components/ui/PriceDisplay";
+import TrackedContactLink from "@/components/ui/TrackedContactLink";
 
 export async function generateStaticParams() {
   return getAllClinicSlugs().map((slug) => ({ slug }));
@@ -188,20 +189,26 @@ export default async function ClinicProfilePage({
                 >
                   Get Free Quote
                 </Link>
-                <a
-                  href={`tel:${clinic.phone}`}
+                <TrackedContactLink
+                  kind="call"
+                  value={clinic.phone}
+                  clinicSlug={clinic.slug}
+                  source="profile-header"
                   className="px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-1.5"
                 >
                   <Phone size={14} />
                   Call Clinic
-                </a>
-                <a
-                  href={`mailto:${clinic.email}`}
+                </TrackedContactLink>
+                <TrackedContactLink
+                  kind="email"
+                  value={clinic.email}
+                  clinicSlug={clinic.slug}
+                  source="profile-header"
                   className="px-5 py-2.5 bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 font-semibold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-1.5"
                 >
                   <Mail size={14} />
                   Send Email
-                </a>
+                </TrackedContactLink>
               </div>
             </div>
           </div>
@@ -411,13 +418,16 @@ export default async function ClinicProfilePage({
                 >
                   Get Free Quote
                 </Link>
-                <a
-                  href={`tel:${clinic.phone}`}
+                <TrackedContactLink
+                  kind="call"
+                  value={clinic.phone}
+                  clinicSlug={clinic.slug}
+                  source="sidebar-cta"
                   className="flex items-center justify-center gap-2 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-colors text-sm"
                 >
                   <Phone size={15} />
                   Call Clinic
-                </a>
+                </TrackedContactLink>
               </div>
 
               {/* Contact info */}
@@ -426,14 +436,26 @@ export default async function ClinicProfilePage({
                   Contact Information
                 </h3>
                 <div className="flex flex-col gap-3 text-sm">
-                  <a href={`tel:${clinic.phone}`} className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
+                  <TrackedContactLink
+                    kind="call"
+                    value={clinic.phone}
+                    clinicSlug={clinic.slug}
+                    source="contact-info"
+                    className="flex items-center gap-2 text-slate-600 hover:text-blue-600"
+                  >
                     <Phone size={14} className="shrink-0" />
                     {clinic.phone}
-                  </a>
-                  <a href={`mailto:${clinic.email}`} className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
+                  </TrackedContactLink>
+                  <TrackedContactLink
+                    kind="email"
+                    value={clinic.email}
+                    clinicSlug={clinic.slug}
+                    source="contact-info"
+                    className="flex items-center gap-2 text-slate-600 hover:text-blue-600"
+                  >
                     <Mail size={14} className="shrink-0" />
                     {clinic.email}
-                  </a>
+                  </TrackedContactLink>
                   <div className="flex items-center gap-2 text-slate-600">
                     <Globe size={14} className="shrink-0" />
                     <span className="flex flex-wrap gap-1">

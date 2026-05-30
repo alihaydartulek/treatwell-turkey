@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search, Shield, Star, Users } from "lucide-react";
+import { trackTreatmentSearch } from "@/lib/analytics";
 
 const treatmentOptions = [
   { label: "Hair Transplant",       slug: "hair-transplant" },
@@ -30,6 +31,7 @@ export default function HeroSection() {
       return;
     }
     setError(false);
+    trackTreatmentSearch(treatment, city && city !== "Any City" ? city.toLowerCase() : undefined);
     router.push(`/treatments/${treatment}${city && city !== "Any City" ? `?city=${city.toLowerCase()}` : ""}`);
   };
 

@@ -5,6 +5,11 @@ import Link from "next/link";
 import { ArrowRight, Phone, Mail, CheckCircle, ExternalLink } from "lucide-react";
 import { clinics } from "@/lib/clinics";
 import { useCurrency } from "@/components/ui/CurrencyProvider";
+import {
+  trackClinicCall,
+  trackClinicEmail,
+  trackTreatmentSelect,
+} from "@/lib/analytics";
 
 const treatmentOptions = [
   "Hair Transplant",
@@ -97,6 +102,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                     onClick={() => {
                       setSelectedTreatment(t);
                       setStep(2);
+                      trackTreatmentSelect(t);
                     }}
                     className={`p-3 rounded-xl text-sm font-medium border-2 transition-all text-left ${
                       selectedTreatment === t
@@ -150,6 +156,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                       <div className="flex gap-2">
                         <a
                           href={`tel:${clinic.phone}`}
+                          onClick={() => trackClinicCall(clinic.slug, "lead-capture")}
                           className="flex-1 flex items-center justify-center gap-1.5 py-2 bg-green-600 hover:bg-green-700 text-white text-xs font-semibold rounded-lg transition-colors"
                         >
                           <Phone size={13} />
@@ -157,6 +164,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                         </a>
                         <a
                           href={`mailto:${clinic.email}`}
+                          onClick={() => trackClinicEmail(clinic.slug, "lead-capture")}
                           className="flex-1 flex items-center justify-center gap-1.5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg transition-colors"
                         >
                           <Mail size={13} />
