@@ -227,6 +227,48 @@ export const treatments: Treatment[] = [
       },
     ],
   },
+  {
+    slug: "orthopaedics",
+    name: "Orthopaedic Surgery",
+    emoji: "🦴",
+    category: "Orthopaedics",
+    tagline: "Knee replacement, hip replacement and spinal surgery in Turkey — JCI hospitals at 60% less.",
+    description:
+      "Turkey's JCI-accredited hospitals are equipped with the same Stryker, Zimmer Biomet and DePuy prosthesis systems used in UK private hospitals. Orthopaedic procedures in Turkey cost 55-65% less than UK private rates, and waiting times are measured in days rather than months. Ankara and Istanbul lead for orthopaedic surgery volume and specialist experience.",
+    priceFrom: 5500,
+    priceTo: 12000,
+    ukPrice: 16000,
+    dePrice: 18000,
+    durationDays: 7,
+    recoveryDays: 30,
+    includes: [
+      "Pre-operative assessment & imaging",
+      "Surgeon consultation",
+      "Procedure (knee / hip / spine)",
+      "Implant (Stryker, Zimmer Biomet or equivalent)",
+      "3–5 nights hospital stay",
+      "Physiotherapy (initial sessions)",
+      "Airport and hospital transfers",
+    ],
+    faqs: [
+      {
+        q: "Is knee or hip replacement safe in Turkey?",
+        a: "Yes — when performed in a JCI-accredited hospital. Turkey's top orthopaedic hospitals hold the same international accreditation as leading UK private hospitals and use the same globally certified implant systems.",
+      },
+      {
+        q: "How long will I need to stay in Turkey?",
+        a: "Knee and hip replacements typically require 5–7 days in hospital followed by 3–5 days recovery before flying. Most patients plan a 10–14 day trip total.",
+      },
+      {
+        q: "What implant systems are used?",
+        a: "Top Turkish orthopaedic hospitals use the same brands as UK and German hospitals — Stryker, Zimmer Biomet, DePuy Synthes, and Smith+Nephew are all available. Always confirm your implant brand in writing before booking.",
+      },
+      {
+        q: "Will I need physiotherapy after returning to the UK?",
+        a: "Yes — post-operative physiotherapy is essential and should be arranged in the UK before you travel. Your Turkish hospital will provide a rehabilitation protocol. Your UK GP can refer you to NHS physiotherapy or you can arrange private sessions.",
+      },
+    ],
+  },
 ];
 
 export function getTreatmentBySlug(slug: string): Treatment | undefined {

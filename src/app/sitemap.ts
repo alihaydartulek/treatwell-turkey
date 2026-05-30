@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "cosmetic",
     "eye-surgery",
     "ivf",
+    "orthopaedics",
   ];
 
   const treatmentRoutes = treatmentSlugs.map((slug) => ({
