@@ -47,6 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "lasik-eye-surgery-turkey-vs-uk",
     "bariatric-surgery-questions-answered",
     "medical-travel-turkey-packing-guide",
+    "hair-transplant-recovery-week-by-week",
+    "rhinoplasty-turkey-guide",
+    "dental-implants-turkey-guide",
   ];
 
   const blogRoutes = blogSlugs.map((slug) => ({

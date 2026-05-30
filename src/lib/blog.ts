@@ -876,6 +876,387 @@ Your clinic will provide a pre-operative medication guidance document. Follow it
     `,
   },
 
+  {
+    slug: "hair-transplant-recovery-week-by-week",
+    title: "Hair Transplant Recovery: Week-by-Week Guide for UK Patients (2025)",
+    excerpt: "What to expect after your hair transplant in Turkey — day by day, week by week. From post-op care on day one through to final results at 12 months.",
+    category: "Hair Transplant",
+    readTime: 10,
+    publishDate: "2025-05-02",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "📅",
+    relatedTreatment: "hair-transplant",
+    content: `
+## The Recovery Timeline Nobody Tells You About
+
+Hair transplant recovery is straightforward — but it has specific stages that every patient should understand before they fly to Turkey. Knowing what is normal versus what requires attention makes the entire process far less stressful.
+
+This guide covers every stage from procedure day through to 12-month results, based on standard FUE and DHI protocols used by Istanbul's leading clinics.
+
+## Day 0: Procedure Day
+
+Your procedure typically takes 6–9 hours including breaks. You will be awake throughout — local anaesthesia is used for both the donor and recipient areas.
+
+**What happens:**
+- Blood tests and consultation in the morning
+- Hairline design and graft count confirmation
+- Anaesthetic injection (the sharpest part of the day — 30–60 seconds)
+- Extraction phase (donor area, usually the back of the scalp)
+- Channel opening
+- Implantation
+
+**How you'll feel:** Tired but not in pain. Mild pressure on the scalp. Mild swelling may begin to develop by evening.
+
+**Evening care:**
+- Sleep semi-upright (at least 45 degrees) using the neck pillow provided
+- Do not touch the recipient area
+- Take prescribed medications (antibiotic, anti-inflammatory, pain relief)
+- Avoid alcohol completely
+
+## Days 1–3: Immediate Post-Op
+
+**What to expect:**
+- Swelling begins — this is normal and peaks at day 2–3
+- Swelling can move down to the forehead and around the eyes
+- Redness in the recipient area
+- Small scabs beginning to form around each graft
+
+**Day 1:** Your clinic will perform the first wash. This is a gentle salt-water spray. Do not wash your hair yourself on day 1.
+
+**Days 2–3:** Continue clinic washing routine if applicable, or follow the step-by-step wash instructions your clinic provides. Never rub — use only gentle patting motions.
+
+**What to avoid:**
+- Touching or scratching the recipient area
+- Bending forward (increases blood pressure to the scalp)
+- Strenuous activity
+- Direct sunlight on the transplanted area
+- Hats that touch the grafts (loose surgical caps only if essential)
+
+## Days 4–7: Scab Formation
+
+The small scabs (crusts) around each graft are completely normal. These are part of the healing process and protect the follicle as it anchors.
+
+**What to expect:**
+- Scabs clearly visible across the recipient area
+- Swelling begins to reduce
+- Donor area starts to feel less tender
+- Some mild itching (resist scratching)
+
+**Washing routine (days 4–7):**
+Apply the foam provided by your clinic (or a gentle baby shampoo) and leave on for 40–45 minutes. Rinse with lukewarm water using low pressure — never hot water. Pat gently with a clean towel.
+
+**Flying home:** Most patients fly home on day 2 or 3. Flying is safe from a medical standpoint. Cabin pressure does not affect grafts. Wear a loose surgical cap if needed. Stay well hydrated on the flight.
+
+## Week 2: Scabs Shedding
+
+By the end of week 2, most scabs will have shed through washing. The recipient area will look cleaner and slightly pink.
+
+**Important:** Some of the transplanted hairs will fall out along with the scabs. This is called **shock loss** and is completely normal. It is not a sign of transplant failure.
+
+**What to expect:**
+- Most scabs gone by day 12–14
+- Transplanted hairs beginning to shed
+- Donor area looking normal
+- Swelling fully resolved
+
+**You can return to office work** in week 2 if it is non-physical. Avoid gyms and strenuous activity.
+
+## Weeks 3–4: The Awkward Phase
+
+The recipient area may look sparse as the transplanted hairs have shed. This is the most psychologically challenging phase — patients sometimes worry the procedure did not work.
+
+**What to expect:**
+- Sparse, patchy appearance in recipient area
+- New donor area hairs growing back
+- Mild itching as follicles settle
+- Some patients experience slight numbness in patches — this resolves
+
+**The follicle is not gone.** The hair shaft has shed but the follicle remains dormant below the skin, preparing to re-enter the growth phase.
+
+## Months 2–3: Dormant Phase
+
+Very little visible change. The follicles are in the telogen (resting) phase. Some patients see very fine new hairs beginning to emerge by week 10–12.
+
+**Care at this stage:**
+- Continue gentle washing
+- Apply minoxidil if prescribed by your clinic
+- Protect from direct sun (SPF on the scalp)
+- Avoid tight hats
+
+## Months 4–6: Growth Begins
+
+This is when patients start to notice visible improvement. Fine, soft hairs emerge from the transplanted follicles and gradually thicken.
+
+**What to expect:**
+- Noticeable new hair growth in the recipient area
+- Hair is initially fine and soft — it thickens over time
+- Hairline becoming visible
+- High levels of patient satisfaction at this stage
+
+**Month 6** is typically when patients can first see a clear result, though it is not the final result.
+
+## Months 7–12: Thickening and Maturation
+
+The transplanted hairs thicken and mature. By month 9–10, most patients have approximately 80% of their final result visible.
+
+| Months Post-Op | Approximate Result Visible |
+|----------------|---------------------------|
+| 1–3 | Dormant phase — little visible growth |
+| 4–6 | Fine growth emerging |
+| 6–9 | Clear improvement visible |
+| 9–12 | 70–90% of final result |
+| 12–18 | Full, mature result |
+
+**Month 12 photos** are used by clinics for before/after comparisons — this is the gold standard comparison point.
+
+## When to Contact Your Clinic
+
+Contact your clinic if you experience:
+- Signs of infection (increasing redness, warmth, pus, fever)
+- Heavy bleeding that does not stop with gentle pressure
+- Sudden pain that worsens rather than improves
+- Loss of sensation in large areas that does not improve after week 4
+
+Normal: scabbing, mild itching, shock loss, swelling in the first week, temporary sparseness.
+
+## Follow-Up Consultations
+
+Most reputable Istanbul clinics offer free 6-month and 12-month video follow-up consultations. Use these. Send progress photos. Your clinic can confirm whether your growth is on track and advise on any additional treatments (PRP, minoxidil) if needed.
+    `,
+  },
+
+  {
+    slug: "rhinoplasty-turkey-guide",
+    title: "Rhinoplasty in Turkey: Complete Guide for UK & European Patients (2025)",
+    excerpt: "Considering a nose job in Turkey? This guide covers costs, what to look for in a surgeon, the procedure itself, recovery timeline, and realistic results.",
+    category: "Cosmetic Surgery",
+    readTime: 11,
+    publishDate: "2025-05-08",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "👃",
+    relatedTreatment: "cosmetic",
+    content: `
+## Why Turkey Has Become a Rhinoplasty Destination
+
+Istanbul has developed a particularly strong international reputation for rhinoplasty — arguably stronger than for any other procedure. There are several reasons for this:
+
+**Volume and specialisation.** Top Istanbul surgeons perform 400–600 rhinoplasty procedures per year. UK surgeons typically perform 50–150. High volume develops refined technique in ways that cannot be replicated at lower volumes.
+
+**Competitive pricing.** A primary rhinoplasty in the UK costs £5,000–£10,000. In Turkey, the same procedure from a comparable surgeon costs £2,500–£4,500 — typically including hospital stay, anaesthesia, and aftercare.
+
+**3D imaging as standard.** Leading Turkish clinics use Vectra 3D imaging to simulate outcomes before surgery. This is often charged as an extra in the UK; in Istanbul it is typically included.
+
+## Types of Rhinoplasty
+
+**Open rhinoplasty** involves a small incision across the columella (the tissue between the nostrils). It provides the surgeon with direct access to the underlying structures and is preferred for complex reshaping, tip work, and revision procedures.
+
+**Closed (endonasal) rhinoplasty** uses incisions entirely inside the nostrils. There are no external scars. It suits patients with less complex reshaping requirements and typically has a shorter recovery.
+
+**Revision rhinoplasty** corrects the results of a previous procedure. It is technically more demanding due to scar tissue and altered anatomy. Not all surgeons perform revision rhinoplasty — confirm experience if this applies to you.
+
+**Septorhinoplasty** combines cosmetic reshaping with correction of a deviated septum that causes breathing difficulty. Some patients find this partially covered by health insurance even when travelling abroad — worth checking.
+
+## Choosing a Rhinoplasty Surgeon in Turkey
+
+This is the most important decision you will make. Rhinoplasty is complex, highly technique-dependent, and not easily reversible.
+
+**What to look for:**
+
+**Board certification.** Your surgeon should be certified by the Turkish Board of Plastic, Reconstructive and Aesthetic Surgery (Plastik Cerrahi). This is non-negotiable.
+
+**Specialist experience.** Rhinoplasty sits across two specialties in Turkey — plastic surgery and ENT (otolaryngology). Both can produce excellent rhinoplasty surgeons. What matters is volume and focus — a surgeon who performs rhinoplasty as their primary procedure will outperform a general plastic surgeon who does it occasionally.
+
+**Portfolio match.** Look at before/after photos of patients with a similar nose type to yours — skin thickness, bridge structure, tip characteristics. Results vary significantly by anatomy.
+
+**Communication.** Your consultation should feel thorough. A good surgeon will discuss what is achievable given your anatomy, not just what you want. Be cautious of surgeons who agree to everything without discussion.
+
+**3D simulation.** This is not a guarantee of results, but it helps align expectations before surgery.
+
+## The Procedure: What to Expect
+
+**Day before:** Most clinics require a pre-operative consultation and blood tests. Nil by mouth from midnight if your procedure is the following morning.
+
+**Procedure day:** General anaesthesia is standard for rhinoplasty. Surgery takes 2–4 hours depending on complexity. You will wake up with a splint on your nose, possible packing inside the nostrils (if septum work was performed), and mild swelling.
+
+**Hospital stay:** Most rhinoplasty patients stay 1–2 nights in hospital. You will be reviewed by your surgeon before discharge.
+
+**Flying home:** Most surgeons recommend waiting 5–7 days before flying. Flying too early increases swelling and the risk of complications. Plan your trip accordingly — you will need at least 7 days in Turkey.
+
+## Recovery Timeline
+
+| Period | What to Expect |
+|--------|----------------|
+| Days 1–3 | Splint in place, swelling peaks, some bruising |
+| Days 5–7 | Splint removed, significant swelling still present |
+| Weeks 2–3 | Bruising resolves, public-ready for most patients |
+| Month 1 | Approximately 60–70% of final result visible |
+| Months 3–6 | Continued refinement, tip definition improving |
+| Month 12 | Final result — tip swelling fully resolves |
+| Months 12–18 | Thick-skinned patients may take longer |
+
+**The most important thing to understand:** rhinoplasty results at 3 months do not represent the final outcome. Tip swelling takes 12–18 months to fully resolve. Judge results only at the 12-month mark.
+
+## Costs: Turkey vs UK
+
+| | United Kingdom | Turkey |
+|--|---|---|
+| Primary open rhinoplasty | £5,000–£10,000 | £2,500–£4,500 |
+| Revision rhinoplasty | £7,000–£15,000 | £4,000–£7,000 |
+| Septorhinoplasty | £6,000–£12,000 | £3,000–£5,500 |
+| Hospital stay (1–2 nights) | Usually included | Usually included |
+| 3D imaging | Often extra | Usually included |
+| Follow-up consultations | 1–2 included | Video follow-up included |
+
+Prices above are guideline ranges. Always obtain a personalised quote based on your specific anatomy and requirements.
+
+## Questions to Ask at Consultation
+
+- How many rhinoplasty procedures do you perform per year?
+- What technique do you recommend for my anatomy, and why?
+- How do you handle revisions if I am not satisfied?
+- Can I see before/after photos of patients with a similar nose type?
+- What does the package price include (hospital, anaesthesia, transfers)?
+- What is the follow-up protocol once I return to the UK?
+
+## Common Concerns
+
+**"Will the result look natural?"** This depends on the surgeon's skill and your shared expectations. Natural-looking results come from surgeons who work with your anatomy, not against it. Discuss your goals clearly and review portfolio photos.
+
+**"What if something goes wrong after I return home?"** Reputable clinics offer video follow-up. For anything requiring in-person assessment, the UK's NHS can provide emergency care; for elective revision, you can return to Turkey or consult a UK surgeon. Get your surgical records from the clinic before you leave Turkey.
+
+**"Is Turkey safe for surgery?"** JCI-accredited hospitals in Istanbul meet the same international standards as top UK private hospitals. Your risk relates to surgeon skill and your own health — not geography.
+    `,
+  },
+
+  {
+    slug: "dental-implants-turkey-guide",
+    title: "Dental Implants in Turkey: Complete Guide (2025) — Costs, Clinics & What to Expect",
+    excerpt: "Dental implants in Turkey cost 50-65% less than in the UK. This complete guide covers implant types, the full treatment timeline, how to choose a dentist, and what's included in most packages.",
+    category: "Dental",
+    readTime: 10,
+    publishDate: "2025-05-14",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🦷",
+    relatedTreatment: "dental",
+    content: `
+## Why UK Patients Travel to Turkey for Dental Implants
+
+Dental implant costs in the UK have risen consistently over the past decade. A single implant with crown now costs £2,000–£3,500 in most UK private clinics. For patients needing multiple implants — or full-arch solutions like All-on-4 — the total cost in the UK can exceed £20,000–£40,000 per arch.
+
+In Turkey, the same implant systems (Nobel Biocare, Straumann, Osstem) are used at dramatically lower cost. A single implant with crown costs £600–£1,000. An All-on-4 arch ranges from £4,000–£7,500. These are not inferior products — they are the same global implant brands, placed by experienced oral surgeons and implantologists working in modern, well-equipped clinics.
+
+The price difference comes from lower operating costs, dentist salaries, and property costs in Turkey — not from compromising on materials or care.
+
+## Types of Dental Implants
+
+**Single tooth implant:** A titanium screw placed into the jawbone, with a ceramic crown attached. Replaces one missing tooth. The most common procedure.
+
+**Multiple implants:** Several individual implants to replace multiple missing teeth. More cost-effective than a full arch solution if you have healthy adjacent teeth.
+
+**All-on-4:** Four implants placed per arch support a full fixed bridge of 10–12 teeth. A same-day teeth solution — temporary teeth are fitted on the day of surgery. Final teeth (zirconia or acrylic) are placed at a follow-up appointment.
+
+**All-on-6:** Six implants per arch provide greater stability, particularly in patients with lower bone density or who have been without teeth for longer.
+
+**Implant-retained dentures:** A removable overdenture that clips onto implants. More stable than conventional dentures, lower cost than full fixed bridges.
+
+## Implant Brands Used in Turkey
+
+| Brand | Origin | Notes |
+|-------|--------|-------|
+| Nobel Biocare | Switzerland/USA | Global market leader, used by top clinics |
+| Straumann | Switzerland | Preferred by many European specialists |
+| Osstem | South Korea | High quality, widely used in Turkey |
+| MIS | Israel | Good quality mid-range option |
+| Megagen | South Korea | Popular in Turkey, good long-term data |
+
+Always ask your clinic which brand they use. Avoid clinics that will not confirm the implant brand.
+
+## The Treatment Process
+
+### Initial Consultation
+Your clinic reviews dental X-rays or CBCT (3D scan). This determines bone density, identifies any need for bone grafting, and allows treatment planning. Most clinics accept photos and panoramic X-rays sent in advance for remote consultation.
+
+### Extraction (if needed)
+Failing teeth are extracted. Some cases allow immediate implant placement post-extraction; others require healing time.
+
+### Bone Grafting (if needed)
+Insufficient bone density requires grafting before or at the time of implant placement. This adds time to the treatment timeline (3–6 months for graft healing in some cases).
+
+### Implant Placement
+The titanium implant screw is placed under local anaesthesia. The procedure takes 30–90 minutes per implant. You are awake throughout. Pain is minimal during the procedure; some soreness for 3–5 days afterwards is normal.
+
+### Osseointegration
+The implant fuses with the jawbone over 3–6 months. During this period you wear a temporary crown or denture. You return to Turkey for the final crown fitting once integration is confirmed.
+
+### Final Crown/Bridge Fitting
+Ceramic or zirconia crowns or bridges are fitted and adjusted. This is the final appointment — you leave with your permanent teeth.
+
+## Can It All Be Done in One Trip?
+
+For single implants: in most cases, placement and temporary crown can be done in trip 1, with final crown fitting in trip 2 after 3–6 months.
+
+For All-on-4/All-on-6: temporary fixed teeth are placed on the day of surgery (same-day teeth). Final zirconia teeth require a return trip after 3–6 months.
+
+**Some clinics offer an accelerated protocol** — particularly for All-on-4 using specific implant systems — where final teeth can be fitted within 5–7 days. Ask your clinic about their protocol.
+
+## Costs: Turkey vs UK
+
+| Treatment | United Kingdom | Turkey |
+|-----------|----------------|--------|
+| Single implant + crown | £2,000–£3,500 | £600–£1,000 |
+| All-on-4 (per arch) | £12,000–£20,000 | £4,000–£7,500 |
+| All-on-6 (per arch) | £15,000–£25,000 | £5,500–£9,000 |
+| Bone graft | £400–£1,500 | £150–£600 |
+| Sinus lift | £800–£2,000 | £300–£700 |
+
+Prices are guideline ranges and depend on clinic, implant brand, and complexity. Always get a written quote.
+
+## How to Choose a Dental Implant Clinic in Turkey
+
+**Verify the dentist's credentials.** Your implantologist should be a licensed dentist with specialist training in oral surgery or periodontology. Ask about their implant-specific training and how many implants they place per year.
+
+**Confirm the implant brand.** As noted above, request this in writing.
+
+**Check CBCT scanning.** Any reputable implant clinic will have CBCT (cone beam CT) scanning on-site. This is essential for treatment planning.
+
+**Look for a warranty.** Most reputable Turkish clinics offer a 5–10 year warranty on implants (covering the implant body — not the crown, which is a wear item).
+
+**Read reviews from implant patients specifically.** Implant patients have a different experience to veneer patients. Look for implant-specific reviews and before/after photos.
+
+## What's Typically Included in Turkey Packages
+
+- CBCT scan and treatment planning consultation
+- Implant placement surgery (Nobel, Straumann or equivalent)
+- Temporary crown/denture
+- Local anaesthesia
+- Post-operative medications
+- Airport transfers (often)
+- Final crown fitting on return visit
+
+**What is NOT typically included:** flights, accommodation, bone grafts (unless pre-agreed), extractions of remaining teeth.
+
+## Questions to Ask Your Clinic
+
+- Which implant brand do you use, and can I have it in writing?
+- Do I need bone grafting, and what is the protocol?
+- What is the timeline — how many trips and how far apart?
+- What warranty do you offer on the implant and the crown?
+- Who do I contact if I have a problem after I return to the UK?
+- What is your protocol if an implant fails?
+
+## Aftercare and Long-Term Success
+
+Implant survival rates at 10 years exceed 95% across all major brands when placed by experienced clinicians in healthy patients. Long-term success depends significantly on:
+
+- Good oral hygiene (electric toothbrush, interdental cleaning, water flosser)
+- Not smoking (smoking significantly increases implant failure rates)
+- Regular dental check-ups in the UK (every 6–12 months)
+- Protecting against bruxism (teeth grinding) with a night guard if indicated
+
+Your Turkey clinic should provide detailed aftercare instructions. Follow them. Your UK dentist can monitor your implants at routine appointments — show them your surgical records and implant documentation.
+    `,
+  },
+
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }
