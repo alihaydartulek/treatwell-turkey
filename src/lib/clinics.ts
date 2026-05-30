@@ -1318,6 +1318,45 @@ export const clinics: Clinic[] = [
     doctors: [],
     reviews: [],
   },
+
+  // ─── IZMIR (added May 2026, web-researched) ─────────────────────────────────
+
+  {
+    id: 21,
+    slug: "dr-ulusan-clinic-izmir",
+    name: "Dr. Ulusan Clinic",
+    city: "Izmir",
+    district: "Konak",
+    tagline: "A doctor-led hair transplant clinic in Izmir specialising in FUE, DHI and Sapphire techniques.",
+    description:
+      "Dr. Ulusan Clinic is a doctor-led hair restoration centre in Izmir, led by Dr. Sibel Ulusan and Dr. Zafer Ulusan. The clinic focuses on FUE, DHI and Sapphire FUE hair transplantation, along with beard and eyebrow transplants, female hair restoration and scalp micropigmentation. With a personalised, surgeon-led approach and international patient support, the clinic states it has performed thousands of procedures for patients from over 30 countries.",
+    treatments: ["Hair Transplant (FUE)", "Hair Transplant (DHI)", "Sapphire FUE", "Beard Transplant", "Eyebrow Transplant", "Scalp Micropigmentation"],
+    treatmentSlugs: ["hair-transplant"],
+    rating: 4.7,
+    reviewCount: 300,
+    googleRating: 4.7,
+    googleReviewCount: 300,
+    priceFrom: 1500,
+    established: 2010,
+    patientCount: "4,000+",
+    accreditations: ["Turkish Ministry of Health"],
+    languages: ["English", "Italian", "Turkish"],
+    phone: "+90 533 460 3994",
+    email: "info@medicalhair.org",
+    whatsapp: "+90 533 460 3994",
+    website: "https://drulusan.com",
+    badge: "Doctor-Led",
+    badgeColor: "bg-purple-100 text-purple-700",
+    realClinic: true,
+    highlights: [
+      "Doctor-led, surgeon-performed hair transplants",
+      "FUE, DHI and Sapphire FUE techniques",
+      "Beard, eyebrow and female hair restoration",
+      "International patient support — patients from 30+ countries",
+    ],
+    doctors: [],
+    reviews: [],
+  },
 ];
 
 export function getClinicBySlug(slug: string): Clinic | undefined {
