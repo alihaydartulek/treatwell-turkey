@@ -2184,6 +2184,248 @@ For elective treatment that German private insurance won't cover, Turkey can off
     `,
   },
 
+  {
+    slug: "hair-transplant-turkey-cost-by-grafts",
+    title: "Hair Transplant Turkey Cost by Graft Count (2026): 2,000 to 5,000 Grafts",
+    excerpt:
+      "What a hair transplant in Turkey actually costs depending on how many grafts you need — with honest price ranges, what should be included, and why per-graft pricing can mislead.",
+    category: "Hair Transplant",
+    readTime: 9,
+    publishDate: "2026-05-30",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "💰",
+    relatedTreatment: "hair-transplant",
+    content: `
+## How Hair Transplant Pricing Works in Turkey
+
+Most reputable Turkish clinics price a hair transplant as an **all-inclusive package** rather than charging strictly per graft. The package usually covers the procedure, anaesthesia, a post-operative medication kit, airport transfers, and often one or two hotel nights. The graft count still drives the price, but the figure you are quoted is for the whole case — not a running meter.
+
+This matters because the cheapest-sounding "per graft" offer is often the most expensive once extras are added. Below are realistic 2026 ranges, then how to work out what you actually need.
+
+## Cost by Graft Count
+
+These are typical all-inclusive ranges at established clinics. Premium, surgeon-performed DHI sits at the top of each band; technician-heavy budget operations sit below it (and warrant extra scrutiny).
+
+| Grafts | Typical Turkey package | Same case, UK |
+|--------|------------------------|---------------|
+| 2,000 | £1,300–£2,000 | £4,000–£7,000 |
+| 3,000 | £1,500–£2,500 | £6,000–£10,000 |
+| 4,000 | £1,800–£3,000 | £8,000–£13,000 |
+| 5,000 (often two sessions) | £2,200–£3,500 | £10,000–£16,000 |
+
+*Ranges are guidelines for procedure plus standard package extras. Always get an itemised written quote.*
+
+You can model your own numbers on our [cost calculator](/cost-calculator) and see live, currency-aware figures on the [hair transplant treatment page](/treatments/hair-transplant).
+
+## How Many Grafts Will You Need?
+
+Graft count is set by your degree of hair loss (the Norwood scale) and the area you want covered — not by your budget. As a rough guide, early recession needs 1,500–2,500 grafts, moderate loss 2,500–3,500, and extensive loss 4,000 or more. Our [complete hair transplant guide](/blog/hair-transplant-turkey-complete-guide) breaks the Norwood stages down in detail.
+
+Most clinics give a free graft estimate from photos within 24–48 hours, so you do not have to guess. Submit photos through [our quote form](/get-a-quote) to get estimates from more than one clinic and compare.
+
+## What the Price Should Include
+
+Before comparing two quotes, confirm both cover the same things:
+
+- Surgeon-led procedure (not technician-only)
+- Pre-operative blood tests
+- The implantation technique quoted (FUE, DHI or Sapphire)
+- Post-op medication kit and washing instructions
+- Airport and hotel transfers
+- A clear written aftercare and revision policy
+
+If one quote is £400 cheaper but excludes transfers, a hotel night, and PRP, it is not actually cheaper.
+
+## Why Per-Graft Pricing Can Be Misleading
+
+Two traps to watch for:
+
+**Inflated graft counts.** A clinic paid per graft has an incentive to quote a higher number than you need. A second opinion on your graft estimate is always worth getting.
+
+**Hidden minimums and add-ons.** "From £0.50 per graft" can balloon once a session fee, sedation, and PRP are added. Ask for the **total** price for your specific graft estimate, in writing.
+
+For a fuller list of charges that catch people out, read our guide to the [hidden costs of medical tourism in Turkey](/blog/hidden-costs-medical-tourism-turkey).
+
+## Does the City Change the Price?
+
+Istanbul has the largest cluster of high-volume clinics, but Antalya, Izmir and Ankara are competitive and often quieter. Compare clinics by city: [Istanbul](/treatments/hair-transplant/istanbul), [Antalya](/treatments/hair-transplant/antalya) — home to long-established clinics such as [DK Klinik](/clinics/dk-klinik-antalya) — [Izmir](/treatments/hair-transplant/izmir), where [Dr. Ulusan Clinic](/clinics/dr-ulusan-clinic-izmir) operates, and [Ankara](/treatments/hair-transplant/ankara), home to [Civas & Akpınar](/clinics/civas-akpinar-ankara).
+
+## The Bottom Line
+
+For most patients, a 3,000–4,000 graft hair transplant in Turkey lands between £1,500 and £3,000 all-in — a fraction of UK pricing for comparable technique. The smart move is not to chase the lowest per-graft figure, but to compare **total, itemised** quotes from verified clinics. Start with our [clinic directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
+  {
+    slug: "hair-transplant-turkey-for-women",
+    title: "Hair Transplant in Turkey for Women: What You Need to Know (2026)",
+    excerpt:
+      "Female hair loss is different from male pattern baldness — and so is the approach to transplantation. An honest guide to candidacy, techniques, costs and choosing the right clinic.",
+    category: "Hair Transplant",
+    readTime: 8,
+    publishDate: "2026-05-29",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "👩",
+    relatedTreatment: "hair-transplant",
+    content: `
+## Female Hair Loss Is Not the Same as Male Baldness
+
+Women rarely lose hair in the neat horseshoe pattern that defines male baldness. Instead, female hair loss usually shows up as **diffuse thinning** across the crown and a widening parting, often with the hairline preserved. The causes are broader too — hormonal changes, thyroid issues, iron deficiency, traction from tight styles, and genetics can all play a part.
+
+This matters because a hair transplant only redistributes the hair you already have. If an underlying medical cause is driving the loss, surgery alone will not fix it. A responsible clinic will want to understand the cause first.
+
+## Are Women Good Candidates?
+
+The best female candidates have a **stable, well-defined** area of loss and a healthy donor region at the back of the scalp. Common situations that suit transplantation include:
+
+- A naturally high or receding hairline a patient wants lowered
+- Thinning at the temples or parting with a strong donor area
+- Scarring or hair loss from previous cosmetic surgery (for example, a brow or facelift)
+- Eyebrow restoration
+
+Diffuse thinning with a weak donor area is harder to treat surgically, and an honest surgeon will say so. Be cautious of any clinic that approves every case without reviewing your donor density.
+
+## Techniques That Suit Women
+
+The two main techniques are the same as for men — [FUE and DHI](/blog/fue-vs-dhi-hair-transplant) — but one detail makes a big difference for women:
+
+**DHI without full shaving.** Many women understandably do not want their head shaved. DHI and "unshaven" FUE allow the surgeon to work through existing long hair, or shave only a small hidden donor strip, so day-to-day appearance is barely affected during recovery. Confirm the clinic offers an unshaven option before booking.
+
+## What to Expect
+
+Recovery follows the same broad timeline as any transplant: crusting in the first week, "shock loss" of transplanted hairs at 2–3 weeks, then steady regrowth from month three, with the final result around 12 months. Our [week-by-week recovery guide](/blog/hair-transplant-recovery-week-by-week) applies equally to women.
+
+## Cost
+
+Pricing is based on graft count, not gender — so the same ranges apply. A typical case runs from around £1,500 to £3,000 all-in at established Turkish clinics, against £6,000+ in the UK. See current figures on the [hair transplant page](/treatments/hair-transplant) and model your case on the [cost calculator](/cost-calculator).
+
+## Choosing the Right Clinic
+
+For women, surgeon experience with female and diffuse patterns matters more than headline price. Ask to see female before-and-after cases specifically, and confirm a doctor — not only technicians — designs the hairline and performs the procedure. Our guide on [how to choose and verify a clinic](/blog/how-to-choose-verify-clinic-turkey) walks through the checks.
+
+Doctor-led clinics that publish female cases are a good starting point — for example [Dr. Ulusan Clinic](/clinics/dr-ulusan-clinic-izmir) in Izmir and [Civas & Akpınar](/clinics/civas-akpinar-ankara) in Ankara, both dermatologist-led. Compare options across our [clinic directory](/clinics).
+
+## The Bottom Line
+
+Hair transplants can work very well for women with a clear area of loss and a strong donor region — but candidacy is more nuanced than for men, and ruling out medical causes comes first. Find a surgeon experienced with female patterns, insist on an unshaven option if you want one, and [request a free assessment](/get-a-quote) before committing.
+    `,
+  },
+
+  {
+    slug: "flying-after-hair-transplant",
+    title: "Can You Fly After a Hair Transplant? Travel Timing for Turkey Patients",
+    excerpt:
+      "How soon it is safe to fly home after a hair transplant, why most clinics ask you to stay 2–3 nights, and how to protect your new grafts on the journey.",
+    category: "Patient Guide",
+    readTime: 6,
+    publishDate: "2026-05-27",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "✈️",
+    relatedTreatment: "hair-transplant",
+    content: `
+## Can You Fly After a Hair Transplant?
+
+Yes — flying does not damage transplanted grafts, and there is no medical reason a short-haul flight harms your results. The cabin environment is fine. The real questions are **when** to fly and how to avoid knocking or rubbing the grafts while they are still fragile.
+
+Most Turkish clinics schedule your return flight for **2 to 3 days after** the procedure, and that timing exists for good reasons rather than caution for its own sake.
+
+## Why Most Clinics Ask You to Stay 2–3 Nights
+
+- **The first wash.** Clinics perform (or supervise) the first hair wash around 48 hours post-op and teach you the technique. Doing this correctly protects graft survival.
+- **A same-day check.** Staying lets the team inspect the donor and recipient areas before you leave the country.
+- **Swelling settles.** Mild forehead swelling often peaks on days 2–4; you would rather be resting in a hotel than rushing through an airport.
+
+For how this fits into the whole trip, see our [medical travel packing and planning guide](/blog/medical-travel-turkey-packing-guide).
+
+## Protecting Your Grafts During the Flight
+
+The grafts are most vulnerable for the first 10 days. On the journey home:
+
+- **Do not wear a tight hat or hoodie** that rubs the recipient area. If you want to hide the grafts, ask the clinic for a loose, brimmed surgical hat designed for this — many provide one.
+- **Avoid the window seat headrest.** Resting the back of your head (the donor area) against the seat is fine; pressing the new grafts against anything is not.
+- **Stay hydrated** and avoid alcohol, which thins the blood and can worsen swelling.
+- **Keep your medication and aftercare kit in hand luggage**, not checked.
+
+## What About Long-Haul Flights?
+
+The same rules apply; you are simply seated for longer. Patients routinely fly back to the UK, Europe, the Gulf and beyond within a few days. If you have a very long journey or a medical condition affecting clotting, mention it to the clinic so they can advise on timing and compression.
+
+## Planning Your Trip
+
+A typical hair transplant trip to Turkey is **three to four nights**: arrival and consultation, procedure day, first wash, then fly home. Build your itinerary around the clinic's wash schedule rather than the cheapest flight. Compare clinics by city — [Istanbul](/treatments/hair-transplant/istanbul), [Antalya](/treatments/hair-transplant/antalya), [Izmir](/treatments/hair-transplant/izmir) and [Ankara](/treatments/hair-transplant/ankara) — and [request a free quote](/get-a-quote) that confirms how many nights are included.
+
+## The Bottom Line
+
+Flying after a hair transplant is safe — the key is to stay long enough for the first wash and a final check (usually 2–3 nights), then protect the grafts from rubbing on the way home. Confirm the recommended stay with your clinic before booking flights.
+    `,
+  },
+
+  {
+    slug: "hollywood-smile-turkey-cost",
+    title: "Hollywood Smile in Turkey: Cost, Process & What's Included (2026)",
+    excerpt:
+      "What a Hollywood smile really involves, how much it costs in Turkey versus the UK and Europe, the difference between veneers and crowns, and how to avoid over-treatment.",
+    category: "Dental",
+    readTime: 8,
+    publishDate: "2026-05-25",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "😁",
+    relatedTreatment: "dental",
+    content: `
+## What Is a Hollywood Smile?
+
+A "Hollywood smile" is a marketing term, not a single procedure. It describes a full set of uniform, bright front teeth — usually created with **veneers** or **crowns** across the teeth visible when you smile (commonly 8 on top, sometimes 16–20 across both arches). The goal is even shape, colour and alignment.
+
+Because it is a cosmetic makeover rather than one fixed operation, the price and the right approach vary a lot by case. Understanding the options protects you from being over-treated.
+
+## Veneers vs Crowns — An Important Difference
+
+- **Veneers** are thin shells bonded to the front of the tooth. They require minimal removal of natural enamel and suit teeth that are healthy but discoloured, chipped or slightly misaligned.
+- **Crowns** cover the whole tooth and require more of the natural tooth to be shaved down. They are appropriate for teeth that are damaged, root-treated or heavily filled — but using crowns purely for cosmetics on healthy teeth is unnecessarily destructive.
+
+A common red flag is a clinic proposing crowns on perfectly healthy teeth because it is faster. If your teeth are sound, ask specifically about veneers. Our guide on [dental veneers in Turkey](/blog/dental-veneers-turkey-what-to-expect) explains what to expect.
+
+## Cost in Turkey vs the UK and Europe
+
+Pricing is per tooth, so the total depends on how many you treat.
+
+| | Per tooth (veneer) | Full upper arch (8) |
+|--|--------------------|---------------------|
+| UK | £500–£1,000 | £4,000–£8,000 |
+| Germany / EU private | €700–€1,000 | €5,600–€8,000 |
+| Turkey | from ~£180 | from ~£1,400 |
+
+*Guideline figures; always get an itemised quote. See live prices on the [dental treatment page](/treatments/dental).*
+
+## What's Included
+
+Reputable Turkish dental clinics typically build a package covering consultation and X-rays, the veneers or crowns, fittings, airport transfers and often a hotel stay. Confirm in writing whether the quote includes:
+
+- The material quoted (e.g. E-max or zirconia) and the number of units
+- Temporary veneers between visits
+- Any extractions, fillings or root canals needed first
+- A warranty on the work and what it covers
+
+## How Many Visits and How Long?
+
+A Hollywood smile usually needs **one trip of about 5–7 days**, sometimes split into two visits (preparation, then fitting). That is longer than a hair transplant trip, so plan accordingly — our [medical travel guide](/blog/medical-travel-turkey-packing-guide) helps.
+
+## Choosing Safely
+
+The biggest risk with cosmetic dentistry abroad is irreversible over-treatment. Protect yourself by:
+
+- Asking for a treatment plan that preserves healthy teeth (veneers over crowns where possible)
+- Confirming a qualified dentist, and seeing real before-and-after cases
+- Checking the warranty and who handles any issues once you are home
+
+Apply the full checklist in our guide to [choosing and verifying a clinic](/blog/how-to-choose-verify-clinic-turkey). Multi-speciality clinics such as [Soraca Med](/clinics/soraca-med-antalya) in Antalya offer dental alongside other treatments — compare your options across the [clinic directory](/clinics).
+
+## The Bottom Line
+
+A Hollywood smile in Turkey can cost a fraction of UK or EU prices, but the right plan depends on your teeth — and conservative, veneer-first treatment is usually better than crowning healthy teeth. Get an itemised plan in writing and [request free quotes](/get-a-quote) before you travel.
+    `,
+  },
+
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
