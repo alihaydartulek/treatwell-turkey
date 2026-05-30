@@ -413,6 +413,469 @@ The clinics listed on CliniqTurkey have been vetted against the criteria above. 
   },
 ];
 
+  {
+    slug: "fue-vs-dhi-hair-transplant",
+    title: "FUE vs DHI Hair Transplant: Which Technique is Right for You?",
+    excerpt:
+      "A detailed comparison of FUE and DHI hair transplant techniques — differences in method, results, recovery, cost, and which type of patient each suits best.",
+    category: "Hair Transplant",
+    readTime: 9,
+    publishDate: "2025-05-10",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "💇",
+    relatedTreatment: "hair-transplant",
+    content: `
+## The Two Dominant Hair Transplant Techniques
+
+If you have researched hair transplants in Turkey, you have almost certainly encountered both FUE and DHI. Both are modern, minimally invasive techniques that produce natural permanent results. But they differ in method, cost, and suitability — and understanding those differences will help you ask the right questions when comparing clinics.
+
+## FUE — Follicular Unit Extraction
+
+FUE is the most widely performed hair transplant technique globally. The procedure works in two distinct phases:
+
+**Phase 1 — Extraction:** Individual follicular units (groups of 1–4 hairs) are extracted from the donor area (typically the back and sides of the scalp) using a small punch tool (0.6–0.9mm diameter). The extraction leaves tiny circular scars that are virtually invisible once healed.
+
+**Phase 2 — Implantation:** The surgeon creates small recipient channels in the thinning or bald area, then technicians place the extracted follicles into those channels.
+
+The two-phase approach means extraction and implantation happen sequentially. Grafts are stored in a preservation solution between phases.
+
+**Best for:** Most patients. FUE is versatile, widely available, and cost-effective. It suits patients with sufficient donor density and standard hair loss patterns.
+
+## DHI — Direct Hair Implantation
+
+DHI uses a specialised implanter device called a Choi Pen. The key difference from FUE is that extraction and implantation are performed simultaneously — the Choi Pen extracts a follicle and implants it directly in a single motion, without the need to pre-create recipient channels.
+
+**Best for:**
+- Patients who want to avoid shaving the recipient area (DHI can be performed without shaving existing hair)
+- Patients prioritising maximum graft survival rates
+- Patients with early-stage hair loss adding density to areas with existing hair
+- Patients willing to pay a premium for the technique
+
+## Side-by-Side Comparison
+
+| Factor | FUE | DHI |
+|--------|-----|-----|
+| Shaving required | Full shave (donor + recipient) | Donor only (or neither for unshaved DHI) |
+| Graft survival rate | 85-92% | 90-95% |
+| Procedure time | 6-8 hours | 7-10 hours |
+| Cost in Turkey | EUR 1,200 - 2,500 | EUR 1,500 - 3,200 |
+| Recovery time | 10-14 days | 10-14 days |
+| Scar visibility | Minimal circular scars | Same as FUE |
+| Number of grafts possible | Up to 5,000+ | Usually up to 4,000 |
+
+## Micro Sapphire FUE
+
+Some Istanbul clinics offer Micro Sapphire FUE, where sapphire-tipped blades replace steel in creating recipient channels. The advantages are smaller incisions, faster healing, reduced post-operative redness, and the ability to create more precise angles. Cosmedica Clinic is particularly known for this technique. It is priced between standard FUE and DHI.
+
+## Which Should You Choose?
+
+**Choose FUE if:**
+- You are comfortable with a full shave
+- You need a large number of grafts (4,000+)
+- You want the most cost-effective option
+- You have standard diffuse hair loss
+
+**Choose DHI if:**
+- You want to avoid shaving your existing hair
+- You are adding density to areas with existing hair
+- You have early-stage hair loss
+- You want the highest possible graft survival rates
+
+**Ask your clinic for both quotes.** The difference is often EUR 400-800, and the right choice depends on your specific hair loss pattern, donor density, and personal priorities. Reputable Istanbul clinics will guide you honestly based on your photos during the free consultation.
+
+## Cost Summary
+
+| Technique | Istanbul average | UK equivalent |
+|-----------|-----------------|---------------|
+| FUE (3,000 grafts) | EUR 1,400 - 2,200 | GBP 6,000 - 10,000 |
+| DHI (3,000 grafts) | EUR 1,800 - 2,800 | GBP 7,500 - 13,000 |
+| Sapphire FUE (3,000 grafts) | EUR 1,600 - 2,500 | Not widely available |
+    `,
+  },
+  {
+    slug: "dental-veneers-turkey-what-to-expect",
+    title: "What to Expect from Dental Veneers in Turkey: A Day-by-Day Guide",
+    excerpt:
+      "Planning a dental trip to Turkey? Here is exactly what happens at each stage — from your first consultation to flying home with your new smile.",
+    category: "Dental",
+    readTime: 8,
+    publishDate: "2025-05-05",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🦷",
+    relatedTreatment: "dental",
+    content: `
+## Before You Travel: The Online Consultation
+
+Every reputable Turkish dental clinic offers a free online consultation before you book flights. You will typically submit:
+
+- Front-facing smile photos (natural and smiling)
+- Side profile photos
+- Close-up photos of individual teeth
+- A brief description of your goals
+
+Within 24-48 hours, a dentist will review your photos and provide a treatment plan, including the number of veneers recommended, the material options (e.max porcelain, zirconia, composite), and a full price quote.
+
+This is also the right time to ask: What is the shade range available? Will I see a digital smile preview before committing? What is included in the quoted price?
+
+## Day 1 — Arrival and Consultation
+
+Most clinics schedule a same-day or next-morning arrival consultation. This visit includes:
+
+- In-person examination and X-rays (panoramic and periapical)
+- 3D digital scanning (replacing traditional messy impressions at modern clinics)
+- Digital smile design preview — you see a simulation of your expected result on screen
+- Discussion and refinement of your treatment plan
+- Any necessary pre-treatment (scaling, minor adjustments)
+
+Many patients are surprised by how advanced the digital workflow is — the technology in Istanbul's leading dental clinics matches or exceeds what most UK private practices offer.
+
+## Day 2 — Tooth Preparation and Temporaries
+
+This is the main clinical appointment and typically takes 3-5 hours depending on the number of veneers.
+
+**What happens:**
+- Local anaesthetic is administered (you will not feel pain)
+- A thin layer of enamel is reduced from the front surface of each tooth (typically 0.3-0.5mm for e.max veneers)
+- Digital or physical impressions are taken and sent to the lab
+- High-quality temporary veneers are fitted — these look good, protect the prepared teeth, and allow you to experience the new shape and length
+
+**After the appointment:** Some sensitivity is normal for 24-48 hours. Avoid very hot or cold foods. Your temporaries will feel slightly different from your natural teeth — this is normal.
+
+## Days 3-5 — Recovery and Lab Time
+
+The dental lab (ideally on-site or local to the clinic) fabricates your permanent veneers during this period. This is your time to recover, explore Istanbul, or relax.
+
+**Tips for this period:**
+- Eat soft foods and avoid anything very sticky or hard on the temporaries
+- Rinse with warm salt water if any sensitivity persists
+- Keep the clinic contact number accessible if any temporary becomes loose
+
+Most patients feel comfortable enough for normal tourism activities by Day 3.
+
+## Day 6 — Final Fitting
+
+The permanent veneers are fitted. This appointment typically takes 2-3 hours:
+
+- Temporaries are carefully removed
+- Each veneer is checked individually for fit, shade, and translucency
+- You review the final result before bonding (important — speak up if anything looks wrong at this stage)
+- Veneers are bonded using dental adhesive and light-cured
+- Bite is checked and minor adjustments made if needed
+- Final polishing
+
+## Day 7 — Final Check and Departure
+
+A brief follow-up appointment the morning of departure is standard at reputable clinics. The dentist checks your bite again, answers any questions, and provides:
+
+- Written aftercare instructions
+- Emergency contact details
+- Your dental records and X-rays (digital copy)
+
+## Flying Home: What to Know
+
+Flying after dental veneer treatment is completely safe — veneers do not react to air pressure changes. You may experience some sensitivity to cold air for a few days after fitting; this typically resolves within a week.
+
+## Long-Term Care
+
+E.max porcelain veneers last 15-20 years with proper care:
+- Brush twice daily with a non-abrasive fluoride toothpaste
+- Use a soft toothbrush
+- Floss daily
+- Avoid biting very hard foods directly with veneered teeth
+- If you grind your teeth at night, ask your dentist about a night guard
+
+Annual check-ups with your UK dentist are recommended. Bring your Turkish dental records — any competent dentist can monitor and maintain the work.
+    `,
+  },
+  {
+    slug: "lasik-eye-surgery-turkey-vs-uk",
+    title: "LASIK Eye Surgery in Turkey vs UK: Cost, Quality & What to Know",
+    excerpt:
+      "Considering LASIK or SMILE eye surgery in Turkey? We compare costs, technology, eligibility and what to expect — so you can make an informed decision.",
+    category: "Eye Surgery",
+    readTime: 10,
+    publishDate: "2025-04-28",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "👁️",
+    relatedTreatment: "eye-surgery",
+    content: `
+## Why Eye Surgery is One of Turkey's Fastest-Growing Medical Tourism Segments
+
+LASIK and SMILE eye surgery in the UK costs GBP 1,800-3,500 per eye at reputable private clinics. The same procedures at JCI-accredited eye centres in Istanbul cost EUR 800-1,400 per eye — a saving of 50-65%.
+
+What makes eye surgery particularly well-suited to medical tourism is its outpatient nature. There is no hospitalisation, recovery is fast (most patients return to normal vision within 24-48 hours), and the procedure itself takes under 15 minutes per eye.
+
+## Types of Laser Eye Correction Available in Turkey
+
+**LASIK (Laser-Assisted In Situ Keratomileusis)**
+The most widely performed laser eye procedure globally. A thin corneal flap is created, the underlying tissue is reshaped with an excimer laser, and the flap is replaced. Results are typically immediate, with most patients achieving 20/20 vision or better. Recovery is fast — most patients drive the next day.
+
+**SMILE (Small Incision Lenticule Extraction)**
+A newer, flapless procedure using a femtosecond laser to remove a small disc of corneal tissue through a tiny incision. Advantages over LASIK: no flap complications, less dry eye risk, faster healing of corneal nerves. Better suited for patients with corneas that are too thin for LASIK. Slightly higher cost.
+
+**PRK / TransPRK (Photorefractive Keratectomy)**
+The original laser correction technique. No flap is created — the surface cells are removed and the cornea is reshaped directly. Longer recovery than LASIK (1-2 weeks for clear vision) but may be recommended for patients with thin corneas or active lifestyles where flap trauma is a concern.
+
+**PRESBYOND / Laser Blended Vision**
+For patients over 45 who have developed reading vision loss (presbyopia) in addition to distance correction needs. One eye is optimised for distance, the other for near — the brain blends the two. Not available at all clinics.
+
+## Am I a Suitable Candidate?
+
+General eligibility criteria for laser eye surgery:
+
+- Stable prescription for at least 12 months (not changed by more than 0.5 dioptre)
+- Myopia (short-sightedness) up to approximately -10 dioptres
+- Hyperopia (long-sightedness) up to approximately +4 dioptres
+- Astigmatism up to approximately 5 dioptres
+- Adequate corneal thickness
+- No active eye conditions (keratoconus, severe dry eye, glaucoma)
+- Age 21 or over
+
+A thorough pre-operative assessment — including corneal mapping, pupil measurement, and dry eye evaluation — determines final suitability. Turkish eye surgery centres typically perform this assessment on Day 1 of your trip.
+
+## What Does a Turkey Eye Surgery Trip Look Like?
+
+**Day 1 — Pre-operative Assessment (2-3 hours)**
+Comprehensive eye examination including refraction, corneal topography, corneal thickness measurement, pupil dilation, and dry eye assessment. Do not wear contact lenses for at least 3 days (soft) or 2 weeks (hard) before this appointment.
+
+**Day 2 — Procedure Day (1-2 hours total at clinic)**
+The procedure itself takes 10-15 minutes per eye. You will spend most of your clinic time in pre-operative preparation and post-operative monitoring. Most patients describe the experience as surprisingly comfortable.
+
+**Day 3 — Follow-up Check**
+Visual acuity is tested. Most patients achieve 20/20 vision or better by this appointment. You receive post-operative drops (antibiotic and anti-inflammatory) and a protective sleep shield.
+
+Most patients can fly home on Day 3 or 4. Avoid rubbing your eyes and wear sunglasses in bright light.
+
+## Cost Comparison
+
+| Procedure | Turkey (per eye) | UK (per eye) |
+|-----------|-----------------|--------------|
+| Standard LASIK | EUR 800-1,100 | GBP 1,200-1,800 |
+| Wavefront LASIK | EUR 1,000-1,300 | GBP 1,500-2,200 |
+| SMILE | EUR 1,100-1,500 | GBP 1,800-2,800 |
+| PRK / TransPRK | EUR 700-1,000 | GBP 1,000-1,600 |
+
+Prices are per eye. Most clinics offer both-eye packages at a discount.
+
+## What to Look for in an Eye Surgery Clinic
+
+For laser eye surgery, the technology matters as much as the surgeon. Ask specifically:
+
+1. Which laser platform do you use? (Zeiss, Alcon WaveLight, and Johnson & Johnson are globally recognised)
+2. Is the assessment performed by a specialist ophthalmologist?
+3. What is your enhancement (re-treatment) policy if my vision is not fully corrected?
+4. Do you have an ICL (Implantable Collamer Lens) option if I am not suitable for laser?
+
+Leading Turkish eye clinics use the same laser platforms as the best UK and European centres. The technology is global — the price difference is driven by market economics, not equipment.
+    `,
+  },
+  {
+    slug: "bariatric-surgery-questions-answered",
+    title: "10 Questions to Ask Before Bariatric Surgery in Turkey",
+    excerpt:
+      "The most important questions every patient should ask a Turkish bariatric surgeon before committing to weight loss surgery — and what good answers look like.",
+    category: "Bariatric",
+    readTime: 8,
+    publishDate: "2025-04-20",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "⚖️",
+    relatedTreatment: "bariatric",
+    content: `
+## Why These Questions Matter
+
+Bariatric surgery is a major, life-changing procedure. The right surgeon at the right hospital will produce excellent outcomes. The wrong choice can result in serious complications, inadequate follow-up, and long-term nutritional problems.
+
+These ten questions will help you assess any bariatric surgery provider in Turkey — and elsewhere. The quality of the answers you receive will tell you as much as the answers themselves.
+
+## 1. How many bariatric procedures do you perform per month?
+
+**Why it matters:** Volume correlates with outcomes. High-volume bariatric surgeons develop refined technique and encounter (and resolve) a wider range of complications. Look for surgeons performing a minimum of 20-30 bariatric procedures per month.
+
+**A good answer:** A specific number, not a vague response. "Over 50 per month" is better than "quite a few."
+
+## 2. What is your 30-day complication rate for gastric sleeve?
+
+**Why it matters:** Every honest surgeon tracks this. The internationally accepted benchmark for laparoscopic sleeve gastrectomy is a major complication rate of under 3%. Minor complications (nausea, temporary leaks detected and resolved) should also be disclosed.
+
+**A good answer:** A specific percentage and an explanation of what complications were included in that figure.
+
+## 3. Is your hospital JCI accredited?
+
+**Why it matters:** JCI accreditation is the international benchmark for hospital quality. For major abdominal surgery, operating in a JCI-accredited facility significantly reduces risks related to infection control, anaesthesia protocols, and emergency response capability.
+
+**A good answer:** Yes, with documentation available. If no, ask about Turkish Ministry of Health certification and ISO 9001 status at minimum.
+
+## 4. Who performs the pre-operative psychological evaluation?
+
+**Why it matters:** Most international bariatric guidelines recommend psychological assessment before surgery. It is not a formality — it identifies patients who may struggle with the post-operative dietary changes required for success.
+
+**A good answer:** A licensed psychologist or psychiatrist performs this assessment, not a coordinator or nurse.
+
+## 5. What nutritional support is included post-operatively?
+
+**Why it matters:** Bariatric surgery permanently alters nutrient absorption. Vitamin and mineral deficiencies — particularly B12, iron, calcium, and vitamin D — are a real long-term risk without proper supplementation and monitoring.
+
+**A good answer:** Specific supplement protocols, a follow-up dietitian appointment, and a clear schedule for long-term blood monitoring.
+
+## 6. What happens if I experience complications after I return home?
+
+**Why it matters:** Most complications that require intervention occur in the first 30 days. If you are back in the UK when this happens, you need to know the plan.
+
+**A good answer:** The clinic provides a 24/7 emergency contact number, will liaise with your UK GP or hospital if needed, and covers complications directly related to the procedure for a defined post-operative period.
+
+## 7. What is your leakage rate for gastric sleeve?
+
+**Why it matters:** Anastomotic leakage is the most serious complication of sleeve gastrectomy. The global benchmark for experienced surgeons is under 1%. Anything significantly higher is a concern.
+
+**A good answer:** A specific rate. Reluctance to answer this question is a warning sign.
+
+## 8. Do you perform revisional bariatric surgery?
+
+**Why it matters:** A clinic that only performs primary procedures may not fully appreciate the long-term picture for their patients. Clinics experienced in revisional surgery have typically treated a wider range of outcomes.
+
+**A good answer:** Yes, with specific experience in conversion from sleeve to bypass or SADI-S.
+
+## 9. What is your hospital's ICU capacity?
+
+**Why it matters:** Bariatric patients have specific anaesthesia and recovery requirements. In the rare event of a serious complication, ICU capacity and experience with high-BMI patients can be life-saving.
+
+**A good answer:** The hospital has a dedicated ICU with bariatric experience and advanced life support capability.
+
+## 10. Can I speak with a previous patient?
+
+**Why it matters:** No question is more revealing than the experiences of patients who have been through the process. Reputable clinics will readily facilitate this.
+
+**A good answer:** Yes — with the previous patient's consent — or a referral to an active online community of their patients.
+
+## Red Flags to Watch For
+
+- Pressure to book quickly before "the price goes up"
+- Inability or unwillingness to answer any of the above questions
+- Lack of a psychological evaluation in the pre-operative protocol
+- No clear plan for handling post-operative complications
+- No follow-up included in the quoted price
+- Quoted prices significantly below market average without explanation
+
+The best Turkish bariatric centres — those listed on CliniqTurkey — will answer every one of these questions without hesitation. If a provider deflects, dismisses, or rushes past these questions, look elsewhere.
+    `,
+  },
+  {
+    slug: "medical-travel-turkey-packing-guide",
+    title: "What to Pack for Medical Travel to Turkey: The Complete Checklist",
+    excerpt:
+      "A practical packing guide for patients travelling to Turkey for medical treatment — from documents to recovery essentials, organised by procedure type.",
+    category: "Patient Guide",
+    readTime: 7,
+    publishDate: "2025-05-15",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🧳",
+    relatedTreatment: undefined,
+    content: `
+## Documents — Non-Negotiable
+
+Before you think about what to wear or what medication to bring, make sure these documents are sorted:
+
+**Essential for every patient:**
+- Valid passport (check expiry — must be valid for at least 6 months beyond your travel dates)
+- UK/EU e-Visa confirmation for Turkey (apply at evisa.gov.tr — takes 5 minutes, costs approximately GBP 20)
+- Travel insurance policy documents (print a copy and save digitally)
+- Clinic booking confirmation and clinic address in Turkish
+- Your coordinator's WhatsApp number saved on your phone
+- Any existing medical records, blood test results, or imaging relevant to your treatment
+- A list of all medications you currently take (generic names, not just brand names)
+- Emergency contact details (family member or friend)
+
+**Store these in two places:** one physical copy in your bag and one digital copy in your email or cloud storage.
+
+## Travel Insurance: What to Check
+
+Standard travel insurance policies may exclude pre-planned medical procedures. Before you travel, confirm:
+
+- Does your policy cover the specific procedure you are having?
+- Does it cover emergency medical treatment unrelated to your procedure?
+- Does it include medical repatriation if needed?
+- What is the emergency number to call from Turkey?
+
+Some patients use specialist medical travel insurance (MASTA, Campbell Irvine, and others offer this). It is worth the additional cost for major procedures.
+
+## Clothing
+
+**For all procedures:**
+- Comfortable, loose-fitting clothing for clinic visits and recovery days
+- Layers — Turkish clinics can be cool inside
+- Easy slip-on shoes (you may be unsteady or uncomfortable bending after surgery)
+
+**Specifically for hair transplant patients:**
+- Button-up or zip-up shirts and jackets for the days immediately post-procedure — you cannot pull anything over your head without risking dislodging grafts
+- A loose-fitting hat or cap for the journey home (to protect the donor area from sun and cold — ask your clinic what type is safe for the recipient area)
+
+**Specifically for bariatric surgery patients:**
+- Loose elasticated waistbands for hospital stays and recovery
+- Comfortable non-restrictive underwear
+- Warm socks (hospitals can be cold)
+
+**Specifically for dental patients:**
+- Nothing specific — normal comfortable clothing is fine
+
+## Recovery Essentials
+
+**For hair transplant:**
+- Prescribed post-op medication will be provided by the clinic (shampoo, lotion, vitamins)
+- A neck pillow for the flight home (to avoid resting the donor area against a hard headrest)
+- Soft foods for the first few days if grafts are in the frontal region
+
+**For bariatric surgery:**
+- The clinic will provide your initial vitamin protocol
+- Pack liquid or chewable vitamins for the journey home
+- A small blender bottle for protein shakes (widely available in Istanbul if needed)
+- Comfortable compression socks for the flight home (DVT prevention)
+
+**For dental:**
+- Soft-bristle toothbrush
+- Non-alcoholic, gentle mouthwash
+- Pain relief (ibuprofen or paracetamol as back-up — your clinic will prescribe if needed)
+
+**For eye surgery:**
+- Sunglasses with UV protection (essential post-LASIK)
+- Artificial tear drops (your clinic will prescribe, but having extra is useful)
+- Avoid eye makeup for at least a week post-procedure
+
+## Electronics and Connectivity
+
+- Universal travel adapter (Turkey uses Type F sockets — same as continental Europe)
+- Portable phone charger / power bank
+- Headphones (for waiting times at clinics)
+- Downloaded entertainment for recovery days
+
+## Money
+
+- Mix of cash (Turkish Lira) and card
+- Notify your bank of travel dates to prevent card blocks
+- Avoid airport currency exchange — rates are poor
+- City-centre currency exchange offices (doviz) offer good rates for GBP and EUR
+- Most clinics accept card payment; some offer a small discount for cash — ask in advance
+
+## Medications to Bring
+
+Bring sufficient supply of any regular medications for the full trip duration plus 2-3 extra days. Declare these at customs if needed.
+
+**Do not bring without checking with your surgeon:**
+- Blood thinners (aspirin, warfarin, clopidogrel) — most surgeons require stopping these before invasive procedures
+- Anti-inflammatory medications (ibuprofen, naproxen) — often contraindicated before surgery
+- Herbal supplements including fish oil, garlic, and vitamin E — these can affect bleeding
+
+Your clinic will provide a pre-operative medication guidance document. Follow it precisely.
+
+## The Night Before
+
+- Confirm your airport transfer with the clinic
+- Charge all devices
+- Set two alarms
+- Do not eat or drink after midnight if your procedure is the following morning (nil by mouth protocols apply to hair transplant, bariatric, and invasive procedures)
+- Get a good night's sleep — recovery begins before the procedure
+    `,
+  },
+
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }

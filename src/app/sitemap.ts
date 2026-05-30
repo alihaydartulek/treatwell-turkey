@@ -42,6 +42,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "medical-tourism-istanbul-guide",
     "gastric-sleeve-turkey-guide",
     "is-medical-tourism-turkey-safe",
+    "fue-vs-dhi-hair-transplant",
+    "dental-veneers-turkey-what-to-expect",
+    "lasik-eye-surgery-turkey-vs-uk",
+    "bariatric-surgery-questions-answered",
+    "medical-travel-turkey-packing-guide",
   ];
 
   const blogRoutes = blogSlugs.map((slug) => ({
