@@ -131,6 +131,7 @@ export default function CostCalculatorTool() {
                         );
                       }
                     }}
+                    aria-pressed={selectedTreatment?.label === t.label}
                     className={`p-3 rounded-xl text-sm font-medium border-2 text-left transition-all ${
                       selectedTreatment?.label === t.label
                         ? "border-blue-600 bg-blue-50 text-blue-700"
@@ -155,6 +156,10 @@ export default function CostCalculatorTool() {
                       max={selectedTreatment.pricePerUnit.max}
                       value={quantity}
                       onChange={(e) => setQuantity(Number(e.target.value))}
+                      aria-label={`Number of ${selectedTreatment.pricePerUnit.unit}`}
+                      aria-valuemin={selectedTreatment.pricePerUnit.min}
+                      aria-valuemax={selectedTreatment.pricePerUnit.max}
+                      aria-valuenow={quantity}
                       className="flex-1 accent-blue-600"
                     />
                     <span className="text-2xl font-bold text-blue-600 w-20 text-right">
@@ -295,10 +300,10 @@ export default function CostCalculatorTool() {
 
               <div className="flex flex-col gap-3">
                 <Link
-                  href="/get-a-quote"
+                  href={selectedTreatment ? `/treatments/${selectedTreatment.slug}` : "/clinics"}
                   className="flex items-center justify-center gap-2 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-colors"
                 >
-                  Get Exact Quotes from Clinics <ArrowRight size={18} />
+                  Find {selectedTreatment?.label ?? ""} Clinics <ArrowRight size={18} />
                 </Link>
                 <button
                   onClick={() => setShowResult(false)}
