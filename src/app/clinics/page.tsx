@@ -16,6 +16,7 @@ import {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { clinics } from "@/lib/clinics";
+import { useCurrency } from "@/components/ui/CurrencyProvider";
 
 const categoryFallbackImages: Record<string, string> = {
   "hair-transplant": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&auto=format&fit=crop&q=70",
@@ -50,6 +51,7 @@ const sortOptions = [
 ];
 
 export default function ClinicsPage() {
+  const { format } = useCurrency();
   const router = useRouter();
   const [search, setSearch] = useState("");
   const [city, setCity] = useState("All Cities");
@@ -409,7 +411,7 @@ export default function ClinicsPage() {
                         <div>
                           <span className="text-xs text-slate-400">From</span>
                           <div className="text-lg font-bold text-slate-900">
-                            €{clinic.priceFrom.toLocaleString()}
+                            {format(clinic.priceFrom)}
                           </div>
                         </div>
                         <Link

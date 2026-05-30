@@ -239,6 +239,14 @@ export default async function BlogPostPage({
         {/* Content */}
         <section className="py-12 bg-white">
           <div className="container">
+            {/* Mobile back button — visible only on small screens */}
+            <Link
+              href="/blog"
+              className="lg:hidden inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 mb-6 transition-colors"
+            >
+              <ArrowLeft size={14} />
+              Back to all guides
+            </Link>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
               <article className="lg:col-span-2 prose-sm max-w-none">
                 {renderMarkdown(post.content)}

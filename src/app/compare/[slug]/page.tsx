@@ -304,10 +304,10 @@ export default async function ComparisonPage({
               clinics and send you real quotes within 24 hours. Free, no commitment.
             </p>
             <Link
-              href="/get-a-quote"
+              href={`/treatments/${data.treatment}`}
               className="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
             >
-              Get Free Quotes Now
+              Browse Verified Clinics →
             </Link>
           </div>
 

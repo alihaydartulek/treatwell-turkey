@@ -21,10 +21,16 @@ export default function HeroSection() {
   const router = useRouter();
   const [treatment, setTreatment] = useState("");
   const [city, setCity] = useState("");
+  const [error, setError] = useState(false);
 
   const handleSearch = () => {
-    if (!treatment) return;
-    router.push(`/treatments/${treatment}${city && city !== "Any City" ? `?city=${city}` : ""}`);
+    if (!treatment) {
+      setError(true);
+      setTimeout(() => setError(false), 2500);
+      return;
+    }
+    setError(false);
+    router.push(`/treatments/${treatment}${city && city !== "Any City" ? `?city=${city.toLowerCase()}` : ""}`);
   };
 
   return (
@@ -55,11 +61,11 @@ export default function HeroSection() {
           </p>
 
           {/* Search box */}
-          <div className="bg-white rounded-2xl p-2 flex flex-col md:flex-row gap-2 shadow-2xl max-w-2xl mx-auto">
+          <div className={`bg-white rounded-2xl p-2 flex flex-col md:flex-row gap-2 shadow-2xl max-w-2xl mx-auto transition-all ${error ? "ring-2 ring-red-400" : ""}`}>
             <select
               value={treatment}
-              onChange={(e) => setTreatment(e.target.value)}
-              className="flex-1 px-4 py-3 text-slate-800 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={(e) => { setTreatment(e.target.value); setError(false); }}
+              className={`flex-1 px-4 py-3 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${treatment ? "text-slate-800" : error ? "text-red-400" : "text-slate-400"}`}
             >
               <option value="">Select Treatment</option>
               {treatmentOptions.map((t) => (
@@ -94,8 +100,8 @@ export default function HeroSection() {
           </div>
 
           {/* Trust micro-text */}
-          <p className="text-blue-200 text-xs mt-4">
-            Free to use &middot; No commitment &middot; Results in 60 seconds
+          <p className={`text-xs mt-4 transition-all ${error ? "text-red-300 font-medium" : "text-blue-200"}`}>
+            {error ? "⚠ Please select a treatment first" : "Free to use · No commitment · Results in 60 seconds"}
           </p>
         </div>
 

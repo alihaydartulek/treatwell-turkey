@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, TrendingDown } from "lucide-react";
+import { useCurrency } from "@/components/ui/CurrencyProvider";
 
 const comparisons = [
   {
@@ -39,6 +42,7 @@ function savingPct(home: number, turkey: number) {
 }
 
 export default function CostComparison() {
+  const { format } = useCurrency();
   return (
     <section className="py-20 bg-white">
       <div className="container">
@@ -92,7 +96,7 @@ export default function CostComparison() {
                     €{row.de.toLocaleString()}
                   </td>
                   <td className="py-4 px-4 text-right font-bold text-blue-700">
-                    €{row.turkey.toLocaleString()}
+                    {format(row.turkey)}
                   </td>
                   <td className="py-4 px-4 text-right">
                     <span className="inline-flex items-center gap-1 font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded-full text-xs">

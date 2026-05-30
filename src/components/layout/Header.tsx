@@ -207,12 +207,22 @@ export default function Header() {
               </Link>
             ))}
             <div className="border-t border-slate-100 my-2" />
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-3 mb-1">
+              Explore
+            </p>
             <Link
               href="/clinics"
               onClick={() => setMobileOpen(false)}
               className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
             >
-              Clinics
+              All Clinics
+            </Link>
+            <Link
+              href="/compare"
+              onClick={() => setMobileOpen(false)}
+              className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              Turkey vs UK Prices
             </Link>
             <Link
               href="/cost-calculator"
@@ -222,18 +232,11 @@ export default function Header() {
               Cost Calculator
             </Link>
             <Link
-              href="/compare"
-              onClick={() => setMobileOpen(false)}
-              className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
-            >
-              Compare Prices
-            </Link>
-            <Link
               href="/blog"
               onClick={() => setMobileOpen(false)}
               className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
             >
-              Guides
+              Patient Guides
             </Link>
             <div className="border-t border-slate-100 my-2" />
             <Link

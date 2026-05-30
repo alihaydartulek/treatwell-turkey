@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Star, MapPin, CheckCircle, ArrowRight } from "lucide-react";
 import { clinics } from "@/lib/clinics";
+import { useCurrency } from "@/components/ui/CurrencyProvider";
 
 const featuredSlugs = [
   "cosmedica-clinic-istanbul",
@@ -30,6 +33,7 @@ function getFallbackImage(treatmentSlugs: string[]): string {
 }
 
 export default function FeaturedClinics() {
+  const { format } = useCurrency();
   return (
     <section className="py-20 bg-slate-50">
       <div className="container">
@@ -137,7 +141,7 @@ export default function FeaturedClinics() {
                   <div>
                     <span className="text-xs text-slate-400">From</span>
                     <div className="text-lg font-bold text-slate-900">
-                      €{clinic.priceFrom.toLocaleString()}
+                      {format(clinic.priceFrom)}
                     </div>
                   </div>
                   <Link

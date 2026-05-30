@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, MessageCircle, Mail, CheckCircle, ExternalLink } from "lucide-react";
 import { clinics } from "@/lib/clinics";
+import { useCurrency } from "@/components/ui/CurrencyProvider";
 
 const treatmentOptions = [
   "Hair Transplant",
@@ -36,6 +37,7 @@ type Props = {
 };
 
 export default function LeadCaptureSection({ initialTreatment = "", initialClinic = "" }: Props) {
+  const { format } = useCurrency();
   const [step, setStep] = useState<Step>(initialTreatment ? 2 : 1);
   const [selectedTreatment, setSelectedTreatment] = useState(initialTreatment);
 
@@ -143,7 +145,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                         </span>
                       </div>
                       <div className="text-xs text-slate-500 mb-3">
-                        ⭐ {clinic.googleRating ?? clinic.rating} · {(clinic.googleReviewCount ?? clinic.reviewCount).toLocaleString()} Google reviews · From €{clinic.priceFrom.toLocaleString()}
+                        ⭐ {clinic.googleRating ?? clinic.rating} · {(clinic.googleReviewCount ?? clinic.reviewCount).toLocaleString()} Google reviews · From {format(clinic.priceFrom)}
                       </div>
                       <div className="flex gap-2">
                         <a
@@ -186,12 +188,12 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
               </div>
 
               <div className="flex gap-2">
-                <button
-                  onClick={() => setStep(3)}
+                <Link
+                  href={`/treatments/${treatmentToSlug[selectedTreatment] ?? "hair-transplant"}`}
                   className="flex-1 flex items-center justify-center gap-2 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm"
                 >
                   See all {selectedTreatment} clinics <ArrowRight size={15} />
-                </button>
+                </Link>
               </div>
               <button
                 onClick={() => setStep(1)}
