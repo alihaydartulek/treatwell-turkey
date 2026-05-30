@@ -13,6 +13,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getTreatmentBySlug, getAllTreatmentSlugs } from "@/lib/treatments";
 import { getClinicsByTreatmentSlug } from "@/lib/clinics";
+import SocialProof from "@/components/ui/SocialProof";
 
 export async function generateStaticParams() {
   return getAllTreatmentSlugs().map((slug) => ({ slug }));
@@ -55,8 +56,28 @@ export default async function TreatmentPage({
 
   const matchedClinics = getClinicsByTreatmentSlug(slug);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: treatment.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
+  const medicalSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    name: treatment.name,
+    description: treatment.description,
+    procedureType: "https://health-lifesci.schema.org/MedicalProcedureType",
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalSchema) }} />
       <Header />
       <main>
         {/* Hero */}
@@ -108,7 +129,9 @@ export default async function TreatmentPage({
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-3">
+              <SocialProof baseCount={14} />
+
+              <div className="flex flex-wrap gap-3 mt-4">
                 <Link
                   href="/get-a-quote"
                   className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"

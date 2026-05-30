@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { CurrencyProvider } from "@/components/ui/CurrencyProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -65,7 +66,9 @@ export default function RootLayout({
         <meta name="google-site-verification" content="GSHUh0pkcK4QVH6KkbPSHdHa5c94Kyy_phdJhRM1Kwg" />
       </head>
       <body className="min-h-full flex flex-col antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <CurrencyProvider>{children}</CurrencyProvider>
+        </ThemeProvider>
         <GoogleAnalytics gaId="G-L0B915Z4FQ" />
       </body>
     </html>

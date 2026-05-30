@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { CurrencySelector } from "@/components/ui/CurrencyProvider";
 
 const treatments = [
   { label: "Hair Transplant", href: "/treatments/hair-transplant" },
@@ -128,6 +129,7 @@ export default function Header() {
 
           {/* Right side */}
           <div className="hidden lg:flex items-center gap-2">
+            <CurrencySelector />
             <ThemeToggle />
             <Link
               href="/clinics"
