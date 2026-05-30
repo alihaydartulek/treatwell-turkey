@@ -1501,6 +1501,226 @@ Compression garments, anaesthesia, and hospital stay are typically included in T
     `,
   },
 
+  {
+    slug: "breast-augmentation-turkey-guide",
+    title: "Breast Augmentation in Turkey: Complete UK Patient Guide (2025)",
+    excerpt: "Breast augmentation in Turkey costs 60-70% less than in the UK. This guide covers implant types, what to look for in a surgeon, the full procedure, and a realistic recovery timeline.",
+    category: "Cosmetic Surgery",
+    readTime: 10,
+    publishDate: "2025-05-27",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🏥",
+    relatedTreatment: "cosmetic",
+    content: `
+## Why UK Patients Choose Turkey for Breast Augmentation
+
+Breast augmentation is the most commonly performed cosmetic surgical procedure globally, and Turkey is one of Europe's leading destinations for UK patients seeking it abroad. The main factors:
+
+**Cost:** UK private clinics charge £5,000–£8,500 for breast augmentation including implants, anaesthesia and hospital stay. In Turkey, the same procedure with comparable-quality implants costs £2,200–£4,000 — typically including 1–2 nights hospital stay, anaesthesia, implants, airport transfers, and compression bra.
+
+**Surgeon experience:** Istanbul and Ankara's leading plastic surgeons perform significantly higher volumes of breast augmentation than typical UK surgeons, due to both domestic demand and the large volume of international patients.
+
+**Technology and implants:** European and American implant brands — Mentor, Motiva, Polytech, Sientra — are widely used in Turkey. You are not receiving inferior products.
+
+## Implant Types
+
+**Silicone gel implants** are the most common choice. Modern silicone implants use cohesive gel (often called "gummy bear") that holds its shape even if the outer shell is compromised. They feel natural and have excellent long-term safety data.
+
+**Round vs anatomical (teardrop) implants:**
+- **Round** implants create more fullness in the upper pole. They cannot rotate out of position. Preferred by many surgeons and patients for natural-looking fullness.
+- **Anatomical (teardrop)** implants have a tapered shape that more closely mimics natural breast anatomy. Preferred for patients seeking a subtler, natural-looking result. Must be textured (to prevent rotation), which has been associated with a very rare condition called BIA-ALCL — discuss this with your surgeon.
+
+**Smooth vs textured:** Smooth implants have lower capsular contracture rates in some studies. Textured implants adhere to surrounding tissue and are required for anatomical implants.
+
+**Implant placement:**
+- **Subglandular** (above the muscle): shorter recovery, more visible rippling risk, particularly in slim patients
+- **Submuscular** (under the pectoral muscle): more natural appearance in slim patients, slightly longer recovery, preferred for patients with less natural breast tissue
+- **Dual plane:** partial submuscular placement — the most commonly recommended technique for a natural result
+
+## Sizing
+
+Implant size is measured in cubic centimetres (cc), not cup sizes. Cup size varies by bra brand and your body frame, so it is not a reliable way to specify an outcome.
+
+Most surgeons use 3D imaging (Vectra or similar) to simulate results before surgery. Implant sizers can also be placed in a bra to give you a visual guide. A range of 200–350cc is common for moderate augmentation; 350–500cc for more significant volume increases.
+
+Be guided by your anatomy, not just a number. A 300cc implant will look very different on a small-framed patient than on a larger frame.
+
+## Incision Locations
+
+| Incision | Scar Location | Notes |
+|----------|--------------|-------|
+| Inframammary (IMF) | Crease under the breast | Most common, easiest surgeon access, well-hidden |
+| Periareolar | Around the nipple | Hidden in colour change, some sensation risk |
+| Transaxillary | In the armpit | No breast scar, more challenging technically |
+
+The inframammary incision is most commonly recommended and produces the most consistent outcomes.
+
+## The Procedure
+
+Breast augmentation is performed under general anaesthesia. Surgery takes 60–90 minutes. You will spend 1–2 nights in hospital. After discharge, you should plan to stay in Turkey for 5–7 days before flying home.
+
+**Immediately post-surgery:** Surgical bra is worn from day one. Drains are rarely used with modern techniques. Pain is managed with oral medication. Most patients describe pressure and tightness rather than sharp pain.
+
+## Recovery Timeline
+
+| Period | What to Expect |
+|--------|----------------|
+| Days 1–3 | Significant tightness, limited arm movement, some pain |
+| Days 3–7 | Pain reducing, compression bra worn at all times |
+| Week 2 | Most patients comfortable at rest, light tasks manageable |
+| Weeks 3–4 | Return to office work, avoid raising arms above head |
+| Month 1 | Compression bra still recommended, no exercise |
+| Months 2–3 | Return to most exercise (avoid chest exercises initially) |
+| Months 3–6 | Implants settle, swelling resolves, final position established |
+
+**Implant drop and fluff:** New implants sit high on the chest immediately after surgery and gradually settle (drop) over 3–6 months. The final position and softness (fluff) develop over this time. Do not judge early results.
+
+## Flying After Surgery
+
+Most surgeons recommend a minimum of 5–7 days before flying. DVT risk after any surgery is elevated. Wear compression stockings, walk regularly on the flight, and stay hydrated. For flights over 4 hours, some surgeons recommend waiting 10 days.
+
+## Costs: Turkey vs UK
+
+| | United Kingdom | Turkey |
+|--|--|--|
+| Breast augmentation (standard) | £5,000–£8,500 | £2,200–£4,000 |
+| Breast augmentation + uplift (mastopexy) | £7,500–£12,000 | £3,500–£5,500 |
+| Implant exchange / revision | £4,000–£7,000 | £2,000–£3,500 |
+| Motiva implants (premium) | £6,000–£9,500 | £2,800–£4,500 |
+
+## Questions to Ask Your Surgeon
+
+- Which implant brand do you recommend, and why?
+- What size and profile would you suggest for my anatomy?
+- Which placement (subglandular/submuscular/dual plane) and why?
+- Which incision do you prefer for my case?
+- What is your capsular contracture rate?
+- How do you handle revisions if I am not satisfied?
+- What does the package price include (implants, hospital, anaesthesia)?
+- What is your follow-up protocol for patients returning to the UK?
+
+## Safety Considerations
+
+Ensure your procedure is performed in a fully accredited surgical hospital, by a board-certified plastic surgeon. Turkish Board of Plastic, Reconstructive and Aesthetic Surgery (Plastik Cerrahi) certification is the relevant qualification.
+
+Breast implants are long-lasting but not considered lifetime devices. Current guidance (UK MHRA and US FDA) recommends monitoring with MRI every 2–3 years for silicone implants, and considering replacement at 10–15 years or sooner if any concerns arise. Discuss long-term surveillance with your surgeon.
+    `,
+  },
+
+  {
+    slug: "tummy-tuck-turkey-guide",
+    title: "Tummy Tuck (Abdominoplasty) in Turkey: Complete Guide for UK Patients (2025)",
+    excerpt: "A tummy tuck in Turkey costs 60-70% less than in the UK. This guide covers who is a good candidate, the procedure, recovery timeline, and what to expect at Turkish clinics.",
+    category: "Cosmetic Surgery",
+    readTime: 9,
+    publishDate: "2025-05-29",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "⚕️",
+    relatedTreatment: "cosmetic",
+    content: `
+## What is a Tummy Tuck?
+
+Abdominoplasty (commonly called a tummy tuck) removes excess skin and fat from the abdomen and tightens the underlying abdominal muscles (rectus diastasis repair). It is not a weight-loss procedure — it is a body contouring procedure for patients who have excess skin following significant weight loss, pregnancy, or age-related skin laxity that cannot be addressed through diet and exercise alone.
+
+Turkey has become a major destination for UK patients seeking abdominoplasty, primarily due to cost: a full tummy tuck in the UK costs £6,500–£11,000. In Turkey, the same procedure with an experienced plastic surgeon costs £2,800–£5,000.
+
+## Types of Abdominoplasty
+
+**Full abdominoplasty:** Addresses the entire abdomen (above and below the navel). Requires repositioning of the navel (belly button). A horizontal scar runs low across the abdomen (typically below the bikini line). Muscle repair (diastasis correction) is performed if required.
+
+**Mini abdominoplasty:** Addresses only the lower abdomen (below the navel). The navel is not repositioned. Suitable for patients with limited lower abdominal skin laxity and good upper abdominal skin quality. Shorter scar, faster recovery.
+
+**Extended abdominoplasty:** Extends the incision around the flanks and sometimes to the lower back to address excess skin in these areas as well. For patients with significant lateral skin laxity, often following bariatric surgery.
+
+**360 body lift (belt lipectomy):** A full circumferential procedure addressing excess skin around the entire torso. For patients who have lost very large amounts of weight. A major procedure requiring 2–5 nights hospital stay and a longer recovery.
+
+**Fleur-de-lis abdominoplasty:** Adds a vertical scar in addition to the horizontal scar to address excess skin in both directions. For patients with significant central skin laxity, particularly after massive weight loss.
+
+## Who is a Good Candidate?
+
+A tummy tuck is appropriate if you:
+- Have excess abdominal skin that hangs or sags and cannot be improved through exercise
+- Have completed your family (pregnancy after a tummy tuck is possible but will affect results)
+- Are at or close to your goal weight and have maintained it for at least 6 months
+- Are a non-smoker (or have stopped for at least 6 weeks before surgery)
+- Are in good general health with no uncontrolled medical conditions
+
+A tummy tuck is NOT a substitute for weight loss. Patients who are significantly overweight will achieve better and safer results by losing weight first.
+
+## Combined Procedures: The "Mummy Makeover"
+
+Many UK patients combine abdominoplasty with other procedures in a single visit:
+
+- **Abdominoplasty + breast augmentation or uplift** — the most common combination
+- **Abdominoplasty + liposuction of flanks and back** — enhances contouring
+- **Abdominoplasty + breast reduction** — combined in some cases
+
+Combining procedures increases total anaesthesia time and surgical risk. Most reputable surgeons limit combined cases to 5–6 hours of total operating time. Discuss the plan carefully with your surgeon before committing.
+
+## The Procedure
+
+Performed under general anaesthesia. A full abdominoplasty takes 2–3 hours; combined procedures longer. Hospital stay is typically 2 nights.
+
+**Surgical steps (full abdominoplasty):**
+1. Horizontal incision low on the abdomen
+2. Skin elevated to expose the abdominal muscles
+3. Diastasis (muscle separation) repaired if present
+4. Excess skin and fat removed
+5. Remaining skin re-draped and closed
+6. Navel repositioned and sutured into new position
+7. Drains placed (usually removed day 2–3)
+
+## Recovery Timeline
+
+| Period | What to Expect |
+|--------|----------------|
+| Days 1–3 | Hospital stay, significant discomfort, drains in place |
+| Days 4–7 | Drains removed, hunched posture to avoid tension on scar |
+| Week 2 | Gradually straightening up, short walks encouraged |
+| Weeks 3–4 | Light desk work possible, compression garment worn |
+| Month 1 | Scar forming, swelling still significant |
+| Months 2–3 | Return to most activities, avoid strenuous core exercises |
+| Months 3–6 | Swelling resolving, scar softening and fading |
+| Months 6–12 | Scar continues to mature — final appearance at 12–18 months |
+
+**The scar:** The horizontal scar is permanent but is placed below the bikini/underwear line in most cases. It matures from red/pink to a silver-white colour over 12–18 months. Silicone scar sheets and sun protection significantly improve scar appearance.
+
+## Flying After a Tummy Tuck
+
+Most surgeons recommend a minimum of 10–14 days before flying after a tummy tuck. DVT risk is higher after this procedure than most other cosmetic surgeries due to the combination of abdominal surgery and restricted movement. You should plan a stay of at least 10–14 days in Turkey.
+
+## Costs: Turkey vs UK
+
+| Procedure | United Kingdom | Turkey |
+|-----------|----------------|--------|
+| Mini abdominoplasty | £4,500–£7,500 | £2,000–£3,200 |
+| Full abdominoplasty | £6,500–£11,000 | £2,800–£5,000 |
+| Extended abdominoplasty | £8,000–£14,000 | £3,500–£6,000 |
+| 360 body lift | £12,000–£20,000 | £5,500–£9,000 |
+| Mummy makeover (tummy tuck + breast) | £10,000–£18,000 | £4,500–£8,000 |
+
+## Key Questions to Ask
+
+- Am I a good candidate for a full or mini abdominoplasty?
+- Do I have diastasis (muscle separation) that needs repair?
+- Where will the scar sit, and can you show me on my body?
+- What is your hospital stay protocol and drain management?
+- How long do you recommend I stay in Turkey before flying?
+- Do you recommend combining this with liposuction?
+- What is included in the package price (hospital, anaesthesia, compression garments)?
+- What follow-up support do you provide once I return to the UK?
+
+## What to Bring to Turkey
+
+- Comfortable, loose clothing that does not sit on the incision (wide-leg trousers, loose dresses)
+- Compression garment (provided by clinic, but check)
+- Slip-on shoes (bending will be difficult initially)
+- Travel pillow to hug when coughing or moving
+- Entertainment for recovery days (books, shows)
+- A travel companion if possible — you will need help in the first few days
+    `,
+  },
+
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }

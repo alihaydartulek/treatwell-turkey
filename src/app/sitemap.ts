@@ -52,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "dental-implants-turkey-guide",
     "ivf-turkey-complete-guide",
     "liposuction-turkey-guide",
+    "breast-augmentation-turkey-guide",
+    "tummy-tuck-turkey-guide",
   ];
 
   const blogRoutes = blogSlugs.map((slug) => ({
