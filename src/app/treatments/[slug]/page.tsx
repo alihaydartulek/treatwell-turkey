@@ -28,13 +28,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const treatment = getTreatmentBySlug(slug);
   if (!treatment) return {};
+  const year = new Date().getFullYear();
   return {
-    title: `${treatment.name} in Turkey � Cost, Clinics & Reviews 2025`,
-    description: `Compare verified clinics for ${treatment.name} in Turkey. Prices from �${treatment.priceFrom.toLocaleString()}. Save up to 70% vs UK & Germany. Real Google reviews, direct clinic contact.`,
+    title: `${treatment.name} in Turkey — Cost, Clinics & Reviews ${year}`,
+    description: `Compare verified clinics for ${treatment.name} in Turkey. Prices from €${treatment.priceFrom.toLocaleString()}. Save up to 70% vs UK & Germany. Real Google reviews, direct clinic contact.`,
     alternates: { canonical: `https://www.cliniqturkey.com/treatments/${treatment.slug}` },
     openGraph: {
-      title: `${treatment.name} in Turkey � Cost & Clinics`,
-      description: `Prices from �${treatment.priceFrom.toLocaleString()} � save up to 70% vs UK. Compare verified clinics for ${treatment.name} in Turkey.`,
+      title: `${treatment.name} in Turkey — Cost & Clinics`,
+      description: `Prices from €${treatment.priceFrom.toLocaleString()} — save up to 70% vs UK. Compare verified clinics for ${treatment.name} in Turkey.`,
       url: `https://www.cliniqturkey.com/treatments/${treatment.slug}`,
       images: [{ url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&auto=format&fit=crop&q=80", width: 1200, height: 630 }],
       type: "website",

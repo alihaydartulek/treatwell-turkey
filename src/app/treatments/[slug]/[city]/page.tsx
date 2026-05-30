@@ -45,8 +45,9 @@ export async function generateMetadata({
   if (!treatment || !validCities.includes(city)) return {};
 
   const cityLabel = cityLabels[city];
+  const year = new Date().getFullYear();
   return {
-    title: `${treatment.name} in ${cityLabel}, Turkey — Cost & Clinics 2025`,
+    title: `${treatment.name} in ${cityLabel}, Turkey — Cost & Clinics ${year}`,
     description: `Compare verified clinics for ${treatment.name} in ${cityLabel}, Turkey. Prices from EUR ${treatment.priceFrom.toLocaleString()}. Save up to 70% vs UK prices. Real Google reviews, direct contact.`,
     alternates: {
       canonical: `https://www.cliniqturkey.com/treatments/${slug}/${city}`,

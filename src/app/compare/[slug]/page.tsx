@@ -23,7 +23,7 @@ type ComparisonData = {
 const comparisons: ComparisonData[] = [
   {
     slug: "hair-transplant-turkey-vs-uk",
-    title: "Hair Transplant: Turkey vs UK Cost Comparison 2025",
+    title: "Hair Transplant: Turkey vs UK Cost Comparison",
     treatment: "hair-transplant",
     ukPrice: 8500,
     dePrice: 9500,
@@ -45,7 +45,7 @@ const comparisons: ComparisonData[] = [
   },
   {
     slug: "dental-veneers-turkey-vs-uk",
-    title: "Dental Veneers: Turkey vs UK Cost Comparison 2025",
+    title: "Dental Veneers: Turkey vs UK Cost Comparison",
     treatment: "dental",
     ukPrice: 900,
     dePrice: 1000,
@@ -67,7 +67,7 @@ const comparisons: ComparisonData[] = [
   },
   {
     slug: "bariatric-surgery-turkey-vs-uk",
-    title: "Bariatric Surgery: Turkey vs UK Cost Comparison 2025",
+    title: "Bariatric Surgery: Turkey vs UK Cost Comparison",
     treatment: "bariatric",
     ukPrice: 11000,
     dePrice: 13000,
@@ -91,7 +91,7 @@ const comparisons: ComparisonData[] = [
   },
   {
     slug: "lasik-turkey-vs-uk",
-    title: "LASIK Eye Surgery: Turkey vs UK Cost Comparison 2025",
+    title: "LASIK Eye Surgery: Turkey vs UK Cost Comparison",
     treatment: "eye-surgery",
     ukPrice: 2500,
     dePrice: 2800,
@@ -113,7 +113,7 @@ const comparisons: ComparisonData[] = [
   },
   {
     slug: "rhinoplasty-turkey-vs-uk",
-    title: "Rhinoplasty: Turkey vs UK Cost Comparison 2025",
+    title: "Rhinoplasty: Turkey vs UK Cost Comparison",
     treatment: "cosmetic",
     ukPrice: 7500,
     dePrice: 8500,
@@ -136,7 +136,7 @@ const comparisons: ComparisonData[] = [
   },
   {
     slug: "ivf-turkey-vs-uk",
-    title: "IVF Treatment: Turkey vs UK Cost Comparison 2025",
+    title: "IVF Treatment: Turkey vs UK Cost Comparison",
     treatment: "ivf",
     ukPrice: 5000,
     dePrice: 5500,
@@ -171,8 +171,9 @@ export async function generateMetadata({
   const { slug } = await params;
   const data = comparisons.find((c) => c.slug === slug);
   if (!data) return {};
+  const year = new Date().getFullYear();
   return {
-    title: `${data.title} | CliniqTurkey`,
+    title: `${data.title} ${year} | CliniqTurkey`,
     description: data.summary,
     alternates: { canonical: `https://www.cliniqturkey.com/compare/${slug}` },
   };
@@ -186,6 +187,8 @@ export default async function ComparisonPage({
   const { slug } = await params;
   const data = comparisons.find((c) => c.slug === slug);
   if (!data) notFound();
+
+  const year = new Date().getFullYear();
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -211,7 +214,7 @@ export default async function ComparisonPage({
               <span>/</span>
               <span className="text-white">{data.title.split(":")[0]}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{data.title}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{data.title} {year}</h1>
             <p className="text-slate-300 text-lg">{data.summary}</p>
           </div>
         </section>
