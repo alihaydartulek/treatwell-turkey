@@ -1357,6 +1357,45 @@ export const clinics: Clinic[] = [
     doctors: [],
     reviews: [],
   },
+
+  // ─── ANKARA (added May 2026, web-researched) ────────────────────────────────
+
+  {
+    id: 22,
+    slug: "civas-akpinar-ankara",
+    name: "Civas & Akpınar Hair Transplant",
+    city: "Ankara",
+    district: "Çankaya",
+    tagline: "A dermatologist-led hair transplant clinic in Ankara, operating since 1999, led by Dr. Ekrem Civas and Dr. Ümit Akpınar.",
+    description:
+      "Civas & Akpınar Hair Transplant is a dermatology and hair restoration clinic in the Çankaya district of Ankara, operating since 1999. It is led by Dr. Ekrem Civas, a Clinical Associate Professor of Dermatology and internationally recognised hair restoration surgeon, alongside Dr. Ümit Akpınar. The clinic specialises in FUE and DHI hair transplantation for both men and women, with a multilingual team supporting international patients.",
+    treatments: ["Hair Transplant (FUE)", "Hair Transplant (DHI)", "Beard Transplant", "Eyebrow Transplant", "Dermatology"],
+    treatmentSlugs: ["hair-transplant"],
+    rating: 4.5,
+    reviewCount: 96,
+    googleRating: 4.5,
+    googleReviewCount: 96,
+    priceFrom: 1500,
+    established: 1999,
+    patientCount: "1,000+",
+    accreditations: ["Turkish Ministry of Health", "ISHRS Member", "IAHRS Member"],
+    languages: ["English", "French", "German", "Italian", "Russian", "Arabic", "Turkish"],
+    phone: "+90 546 437 07 38",
+    email: "info@civashairtransplant.com",
+    whatsapp: "+90 546 437 07 38",
+    website: "https://civashairtransplant.com",
+    badge: "ISHRS Surgeon",
+    badgeColor: "bg-green-100 text-green-700",
+    realClinic: true,
+    highlights: [
+      "Led by Dr. Ekrem Civas — Clinical Associate Professor of Dermatology",
+      "Operating in Ankara since 1999",
+      "ISHRS and IAHRS member surgeons",
+      "Multilingual team: English, French, German, Italian, Russian, Arabic",
+    ],
+    doctors: [],
+    reviews: [],
+  },
 ];
 
 export function getClinicBySlug(slug: string): Clinic | undefined {
