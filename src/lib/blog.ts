@@ -1843,6 +1843,347 @@ All prices are guideline ranges. Always obtain an itemised written quote includi
     `,
   },
 
+  {
+    slug: "how-to-choose-verify-clinic-turkey",
+    title: "How to Choose & Verify a Clinic in Turkey: The Complete Safety Checklist",
+    excerpt:
+      "The single most important decision in medical tourism is the clinic — not the country. Here is exactly how to verify accreditation, spot red flags, and ask the right questions before you book.",
+    category: "Patient Guide",
+    readTime: 11,
+    publishDate: "2026-05-28",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🔍",
+    content: `
+## Why the Clinic Matters More Than the Country
+
+Turkey has world-class clinics and it also has unethical operators chasing a booming market. The difference between a great outcome and a bad one is almost never the country — it is the specific clinic and surgeon you choose. This guide is the checklist we wish every patient used before booking.
+
+Take your time here. A few hours of due diligence is the cheapest insurance you will ever buy.
+
+## Step 1: Confirm the Clinic is Licensed
+
+Every clinic operating legally in Turkey must hold a **Turkish Ministry of Health (MOH) licence**. This is the baseline — not a bonus. A clinic that cannot show you its licence number is an immediate dealbreaker.
+
+Stronger signals on top of the MOH licence:
+
+- **ISO 9001** — quality-management certification covering processes and patient safety.
+- **JCI accreditation** — Joint Commission International is the international gold standard, more common in full hospitals than in single-treatment clinics.
+
+You can browse the clinics on our [verified clinic directory](/clinics), where licences and accreditations are listed on each profile.
+
+## Step 2: Verify the Surgeon Actually Performs the Procedure
+
+This is the most common hidden problem in budget clinics. In some operations a technician does most of the work while the doctor is only briefly present. Ask directly:
+
+- Who performs each stage of my procedure?
+- What is the surgeon's name, and can I see their medical registration?
+- How many of this exact procedure does the surgeon perform per year?
+
+A reputable clinic answers these without hesitation.
+
+## Step 3: Read Reviews Like an Investigator
+
+**Use independent sources, not just the clinic's own website.** Google Reviews, Trustpilot, and treatment-specific communities (for example Reddit's r/HairTransplants or r/PlasticSurgery) are far more reliable than testimonials curated by the clinic itself.
+
+Look for patterns rather than individual five-star or one-star posts. Dozens of detailed, specific reviews over several years is a much stronger signal than a sudden burst of glowing one-line entries.
+
+## Step 4: Scrutinise the Before & After Photos
+
+- Results should be shown at **12+ months**, not at the flattering 6-month mark.
+- Lighting, angle, and haircut should be consistent between the two photos.
+- Be wary of clinics that only ever show their single best case.
+
+## Red Flags That Should Stop You
+
+**Pressure to pay a large deposit immediately.** Urgency is a sales tactic, not a medical necessity.
+
+**Prices far below everyone else.** Sterile operating rooms, trained surgeons, and genuine aftercare have real costs. A price that looks too good usually is.
+
+**No written, itemised quote.** You should know exactly what is and isn't included before you pay anything.
+
+**Communication only through a salesperson.** You should be able to reach medical staff with clinical questions.
+
+**Reluctance to discuss complications or revision policy.** Every honest clinic has a clear plan for if something does not go as expected.
+
+## The Questions to Ask Before You Book
+
+- Is the procedure performed by a licensed surgeon, start to finish?
+- What exactly is included in the price (transfers, hotel, medication, follow-up)?
+- What is your revision and complications policy?
+- Who do I contact after I fly home, and in what language?
+- Can you provide documentation I can give my GP for follow-up care?
+
+## A Sensible Final Process
+
+1. Shortlist three clinics, not one.
+2. Get a written, itemised quote from each.
+3. Compare them side by side — our [clinic comparison tool](/clinics) makes this easy.
+4. Have a video consultation with your top two before deciding.
+5. Only then book — and never pay the full amount before arrival unless you are certain.
+
+Choosing carefully is the whole game. If you want help comparing verified options, you can [request free quotes](/get-a-quote) and contact clinics directly, with no middleman.
+    `,
+  },
+
+  {
+    slug: "antalya-medical-tourism-guide",
+    title: "Antalya Medical Tourism Guide: Treatments, Clinics & Recovering by the Sea",
+    excerpt:
+      "Antalya pairs accredited clinics with a Mediterranean resort setting. Here is what to know about treatments, travel, and recovering on Turkey's turquoise coast.",
+    category: "Destination Guide",
+    readTime: 8,
+    publishDate: "2026-05-26",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🏖️",
+    content: `
+## Why Patients Choose Antalya
+
+Antalya is Turkey's Mediterranean resort capital, and a fast-growing medical tourism hub. Its appeal is simple: you can combine an accredited clinic with a genuine coastal recovery, often at prices that undercut both the UK and Western Europe.
+
+For treatments with a longer, gentler recovery — where you mostly need rest and a calm environment — recovering near the sea is a real quality-of-life upgrade over a busy city.
+
+## Getting to Antalya
+
+Antalya is served by **Antalya Airport (AYT)**, which receives extensive direct flights from across Europe, especially during the holiday season. That density of flights often means competitive fares and flexible scheduling.
+
+Most clinics on our platform include airport transfers in their packages — confirm this directly when you request a quote.
+
+## Popular Treatments in Antalya
+
+- [Hair transplant in Antalya](/treatments/hair-transplant/antalya) — FUE and DHI techniques in a resort setting.
+- [Dental treatment in Antalya](/treatments/dental/antalya) — veneers, implants and smile makeovers.
+- [Cosmetic surgery in Antalya](/treatments/cosmetic/antalya) — recover discreetly away from home.
+
+You can browse every category on our [treatments page](/treatments).
+
+## Recovering on the Coast
+
+Antalya's mild climate and resort infrastructure suit patients who want privacy and calm after a procedure. A few practical notes:
+
+**Sun exposure.** Many procedures — hair transplants, cosmetic surgery, laser eye work — require you to avoid direct sun during early healing. Enjoy the setting, but follow your clinic's aftercare instructions strictly.
+
+**Swimming.** Pools and the sea are usually off-limits for a defined period after surgery. Ask your clinic exactly when it is safe.
+
+**Travel home.** Confirm the minimum recommended time before flying. Do not book your return flight until your clinic confirms a safe window.
+
+## Is Antalya Right for You?
+
+Antalya is ideal if recovery comfort and a relaxed environment matter to you. If you prioritise the absolute widest choice of specialist clinics, you may also want to compare options in [Istanbul](/destinations/istanbul). The best approach is to compare verified clinics in more than one city before deciding — and you can [get free quotes](/get-a-quote) to do exactly that.
+    `,
+  },
+
+  {
+    slug: "izmir-medical-tourism-guide",
+    title: "Izmir Medical Tourism Guide: Aegean Clinics & a Calm Recovery",
+    excerpt:
+      "Izmir blends quality clinics with a laid-back Aegean atmosphere. A practical guide to treatments, travel, and what makes Turkey's third city a quiet alternative to Istanbul.",
+    category: "Destination Guide",
+    readTime: 8,
+    publishDate: "2026-05-24",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "⛵",
+    content: `
+## Why Patients Choose Izmir
+
+Izmir is Turkey's third-largest city and the gateway to the Aegean coast. It offers high-quality medical care with a noticeably more relaxed atmosphere than Istanbul — appealing if you want a quieter, less crowded experience without sacrificing modern facilities.
+
+Many international patients choose Izmir specifically to combine treatment with a calm seaside recovery along the Aegean.
+
+## Getting to Izmir
+
+Izmir is served by **Adnan Menderes Airport (ADB)**, with direct seasonal flights from several European cities and year-round connections via Istanbul (a short onward hop). If your dates fall outside peak season, factor a possible connection into your travel plans.
+
+Airport transfers are included in most clinic packages — confirm this when you request a quote.
+
+## Popular Treatments in Izmir
+
+- [Hair transplant in Izmir](/treatments/hair-transplant/izmir)
+- [Dental treatment in Izmir](/treatments/dental/izmir)
+- [Eye surgery (LASIK) in Izmir](/treatments/eye-surgery/izmir)
+
+See all categories on the [treatments page](/treatments).
+
+## What Recovery is Like
+
+Izmir's Aegean climate is mild and its pace unhurried, which suits the rest most procedures require. The same aftercare principles apply everywhere:
+
+**Follow the timeline.** Sun, swimming, and exercise are usually restricted for a set period — your clinic will give exact dates.
+
+**Plan your flight home around medical advice,** not the other way around.
+
+**Keep your aftercare contact.** Confirm who you can reach, in which language, once you are back home.
+
+## Is Izmir Right for You?
+
+Izmir is a strong choice if you value a calmer environment and an Aegean setting. For the largest concentration of specialist clinics, also compare [Istanbul](/destinations/istanbul). As always, line up verified clinics in more than one city and [request free quotes](/get-a-quote) before you commit.
+    `,
+  },
+
+  {
+    slug: "ankara-medical-tourism-guide",
+    title: "Ankara Medical Tourism Guide: The Capital's Clinics & Calmer Care",
+    excerpt:
+      "Turkey's capital offers strong medical facilities with lower patient volumes. A practical guide to treatments, travel via Esenboğa, and what Ankara does well.",
+    category: "Destination Guide",
+    readTime: 8,
+    publishDate: "2026-05-22",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🏛️",
+    content: `
+## Why Patients Choose Ankara
+
+Ankara is Turkey's capital and its second-largest city. It is less of a tourist magnet than Istanbul, and for some patients that is exactly the point: lower patient volumes can mean more personalised attention and shorter waiting times.
+
+The capital's medical infrastructure is substantial, with established hospitals and clinics serving both domestic and international patients.
+
+## Getting to Ankara
+
+Ankara is served by **Esenboğa Airport (ESB)**. There are direct flights from several European cities, and frequent onward connections from Istanbul (roughly a one-hour flight). Many UK travellers route through Istanbul and continue to Ankara on a short domestic leg.
+
+Confirm airport transfers with your clinic when requesting a quote — most packages include them.
+
+## Popular Treatments in Ankara
+
+- [Hair transplant in Ankara](/treatments/hair-transplant/ankara)
+- [Dental treatment in Ankara](/treatments/dental/ankara)
+- [Bariatric surgery in Ankara](/treatments/bariatric/ankara)
+
+Browse all categories on the [treatments page](/treatments).
+
+## What to Expect from Recovery
+
+As a working capital rather than a beach destination, Ankara offers a calm, low-key environment for recovery. The essentials are the same wherever you go:
+
+**Respect the aftercare timeline** your clinic gives you for activity, sun, and travel.
+
+**Do not book your return flight** until the clinic confirms a safe window.
+
+**Keep a direct line** to medical staff for questions once you are home.
+
+## Is Ankara Right for You?
+
+Ankara suits patients who want a quieter, more clinical setting and potentially shorter waits. If your priority is the widest possible choice of specialist clinics, compare [Istanbul](/destinations/istanbul) as well. Shortlist verified clinics in more than one city, then [get free quotes](/get-a-quote) and contact them directly.
+    `,
+  },
+
+  {
+    slug: "hidden-costs-medical-tourism-turkey",
+    title: "The Hidden Costs of Medical Tourism in Turkey (and How to Budget Honestly)",
+    excerpt:
+      "The treatment price is only part of the story. Here are the real extra costs of medical travel to Turkey — flights, nights, medication, revisions — and how to budget so there are no surprises.",
+    category: "Patient Guide",
+    readTime: 9,
+    publishDate: "2026-05-20",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "💷",
+    content: `
+## The Headline Price is Not the Full Price
+
+Turkey's treatment prices are genuinely lower — that part is real. But the quoted package price is rarely the total you will spend. Budgeting honestly upfront prevents nasty surprises and lets you compare clinics on a fair, like-for-like basis.
+
+Here is everything that can sit on top of the headline figure.
+
+## 1. Flights
+
+Most clinic packages do **not** include international flights. Costs vary widely by season, route, and how far ahead you book. Flexible dates and early booking are your best levers here.
+
+## 2. Extra Hotel Nights
+
+Packages often include one or two nights, but your medical timeline may need more — for consultation, the procedure, and a follow-up check before flying. Always confirm how many nights are included and budget for any extra.
+
+## 3. Medication & Aftercare Supplies
+
+Some medication is included; some is not. Ask for a written list of what the package covers and what you will buy separately, both in Turkey and once home.
+
+## 4. The Cost of a Revision
+
+This is the big one people forget. If a result needs adjustment, will you need to travel back? Some clinics include revisions in their policy; others do not. A clinic with a clear, fair revision policy may be worth more than one that is slightly cheaper upfront.
+
+## 5. Travel Insurance
+
+Standard travel insurance often excludes planned medical procedures. Specialist medical-travel cover exists and is worth pricing in. Do not assume your normal policy applies.
+
+## 6. Time Off Work
+
+Lost income during recovery is a real cost. Match the procedure's recovery time to your situation — some treatments let you work remotely within days; others need weeks.
+
+## A Realistic Budget Framework
+
+| Cost item | Included in package? | Budget separately? |
+|-----------|----------------------|--------------------|
+| Procedure | Usually yes | — |
+| Airport transfers | Often yes | Confirm |
+| 1–2 hotel nights | Often yes | Extra nights: yes |
+| Flights | Rarely | Yes |
+| Medication | Sometimes | Confirm |
+| Revision (if needed) | Policy varies | Possibly |
+| Travel insurance | No | Yes |
+| Time off work | No | Yes |
+
+## How to Avoid Surprises
+
+- Get a **written, itemised quote** from every clinic.
+- Ask the single best question: *"What will I spend that is not in this quote?"*
+- Compare clinics on the **total** cost, not the headline.
+- Use our [cost calculator](/cost-calculator) to estimate your all-in figure.
+
+Lower cost is one of the best reasons to consider Turkey — just make sure you are comparing the real total. When you are ready, [request free quotes](/get-a-quote) and ask each clinic to spell out exactly what is and isn't included.
+    `,
+  },
+
+  {
+    slug: "turkey-vs-germany-cost-comparison",
+    title: "Turkey vs Germany: Medical Treatment Cost Comparison for European Patients",
+    excerpt:
+      "For patients in Germany and across Europe, Turkey offers major savings on popular treatments. A clear, honest comparison of costs, quality, and what to weigh up.",
+    category: "Patient Guide",
+    readTime: 9,
+    publishDate: "2026-05-18",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🇩🇪",
+    content: `
+## Why German & European Patients Look to Turkey
+
+Private treatment in Germany is excellent — and expensive. For many elective procedures not covered by public insurance, patients across Germany, Austria, and Switzerland are increasingly comparing Turkish clinics, where prices can be a fraction of German private rates for comparable technique and equipment.
+
+This guide compares the two honestly: where the savings are real, and what you should weigh up beyond price.
+
+## The Cost Difference
+
+The following are guideline ranges for popular elective treatments. Always obtain an itemised written quote for your specific case.
+
+| Treatment | Germany (private) | Turkey (from) |
+|-----------|-------------------|---------------|
+| Hair transplant (FUE/DHI) | €7,000–€15,000 | from €1,200 |
+| Dental veneers (per tooth) | €700–€1,000 | from €180 |
+| Rhinoplasty | €6,000–€9,000 | competitive |
+| Bariatric surgery | €12,000–€18,000 | substantially lower |
+| LASIK (both eyes) | €3,000–€5,000 | substantially lower |
+
+You can see live, currency-aware prices on each [treatment page](/treatments) — switch the currency to euros to compare directly.
+
+## Why is Turkey Cheaper?
+
+The savings are driven by **lower labour and property costs**, a favourable exchange rate, and enormous procedure volume — not by lower standards at reputable clinics. Turkey's top clinics use the same techniques, implant brands, and equipment found in German practices.
+
+That said, "reputable" is the operative word. The price gap makes due diligence essential.
+
+## What to Weigh Up Beyond Price
+
+**Travel and follow-up.** Germany is close to Turkey by air, but follow-up care still needs planning. Confirm who handles aftercare once you are home.
+
+**Language.** Most international clinics offer English; many also have German-speaking coordinators. Confirm this for clinical conversations, not just sales.
+
+**Accreditation.** Apply the same standards you would at home — see our guide on [how to choose and verify a clinic](/blog/how-to-choose-verify-clinic-turkey).
+
+**The real total.** Factor flights, nights, and any revision policy — our guide to [hidden costs](/blog/hidden-costs-medical-tourism-turkey) breaks this down.
+
+## The Bottom Line
+
+For elective treatment that German private insurance won't cover, Turkey can offer genuine savings without compromising on technique — provided you choose a verified clinic carefully. Compare options on our [clinic directory](/clinics) and [request free quotes](/get-a-quote) to see real figures for your case.
+    `,
+  },
+
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
