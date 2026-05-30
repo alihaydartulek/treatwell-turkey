@@ -22,7 +22,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">1. Who We Are</h2>
               <p>CliniqTurkey is an independent medical tourism directory and comparison platform. We connect patients with verified Turkish clinics but do not act as a medical provider, agency or intermediary. Our platform is free for patients to use.</p>
-              <p className="mt-2">Contact: <a href="mailto:hello@cliniqturkey.com" className="text-blue-600 hover:underline">hello@cliniqturkey.com</a></p>
+              <p className="mt-2">Contact: <a href="mailto:cliniqturkey@gmail.com" className="text-blue-600 hover:underline">cliniqturkey@gmail.com</a></p>
             </section>
 
             <section>
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
                 <li>Object to processing</li>
                 <li>Lodge a complaint with your national data protection authority</li>
               </ul>
-              <p className="mt-2">To exercise any of these rights, email <a href="mailto:hello@cliniqturkey.com" className="text-blue-600 hover:underline">hello@cliniqturkey.com</a>.</p>
+              <p className="mt-2">To exercise any of these rights, email <a href="mailto:cliniqturkey@gmail.com" className="text-blue-600 hover:underline">cliniqturkey@gmail.com</a>.</p>
             </section>
 
             <section>

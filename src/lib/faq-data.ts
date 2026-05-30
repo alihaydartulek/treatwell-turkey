@@ -125,7 +125,7 @@ export const faqSections: FAQSection[] = [
       {
         question: "Can I trust the clinic profiles on CliniqTurkey?",
         answer:
-          "We verify the key facts before listing a clinic: Ministry of Health licence, accreditations, and that the clinic is an active, real business. Pricing ranges are provided by or agreed with the clinic and reflect their typical starting prices. However, final quotes always depend on individual assessment — always confirm pricing directly with the clinic. If you ever spot incorrect information on a profile, please contact us at hello@cliniqturkey.com and we will investigate promptly.",
+          "We verify the key facts before listing a clinic: Ministry of Health licence, accreditations, and that the clinic is an active, real business. Pricing ranges are provided by or agreed with the clinic and reflect their typical starting prices. However, final quotes always depend on individual assessment — always confirm pricing directly with the clinic. If you ever spot incorrect information on a profile, please contact us at cliniqturkey@gmail.com and we will investigate promptly.",
       },
     ],
   },

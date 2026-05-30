@@ -77,7 +77,7 @@ export default function FAQContent() {
               Browse Clinics <ArrowRight size={16} />
             </Link>
             <a
-              href="mailto:hello@cliniqturkey.com"
+              href="mailto:cliniqturkey@gmail.com"
               className="flex items-center gap-2 px-6 py-3 border border-slate-200 text-slate-700 hover:border-blue-300 hover:text-blue-600 font-medium rounded-xl transition-colors"
             >
               <MessageCircle size={16} />

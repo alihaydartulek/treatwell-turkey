@@ -21,7 +21,7 @@ export default function ContactPage() {
 
           <div className="flex flex-col gap-4 mb-10">
             <a
-              href="mailto:hello@cliniqturkey.com"
+              href="mailto:cliniqturkey@gmail.com"
               className="flex items-center gap-3 p-5 border border-slate-200 rounded-2xl hover:border-blue-300 transition-colors group"
             >
               <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
@@ -29,7 +29,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <div className="font-semibold text-slate-900">Email</div>
-                <div className="text-sm text-blue-600">hello@cliniqturkey.com</div>
+                <div className="text-sm text-blue-600">cliniqturkey@gmail.com</div>
               </div>
             </a>
 

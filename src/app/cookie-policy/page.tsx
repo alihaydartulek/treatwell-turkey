@@ -64,7 +64,7 @@ export default function CookiePolicyPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">More Information</h2>
-              <p>See our <Link href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link> for full details on how we handle your data. Questions: <a href="mailto:hello@cliniqturkey.com" className="text-blue-600 hover:underline">hello@cliniqturkey.com</a></p>
+              <p>See our <Link href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link> for full details on how we handle your data. Questions: <a href="mailto:cliniqturkey@gmail.com" className="text-blue-600 hover:underline">cliniqturkey@gmail.com</a></p>
             </section>
 
           </div>

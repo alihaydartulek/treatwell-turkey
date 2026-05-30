@@ -38,7 +38,7 @@ const orgJsonLd = {
   url: "https://www.cliniqturkey.com",
   contactPoint: {
     "@type": "ContactPoint",
-    email: "hello@cliniqturkey.com",
+    email: "cliniqturkey@gmail.com",
     contactType: "customer support",
     availableLanguage: ["English", "German"],
   },
