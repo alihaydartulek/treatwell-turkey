@@ -68,10 +68,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/cookie-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
+  const cities = ["istanbul", "ankara", "izmir", "antalya"];
+  const cityTreatmentRoutes = treatmentSlugs.flatMap((slug) =>
+    cities.map((city) => ({
+      url: `${BASE_URL}/treatments/${slug}/${city}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    }))
+  );
+
   return [
     ...staticRoutes,
     ...clinicRoutes,
     ...treatmentRoutes,
+    ...cityTreatmentRoutes,
     ...destinationRoutes,
     ...blogRoutes,
   ];
