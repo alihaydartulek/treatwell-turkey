@@ -18,6 +18,7 @@ import Footer from "@/components/layout/Footer";
 import { getClinicBySlug, getAllClinicSlugs } from "@/lib/clinics";
 import PriceDisplay from "@/components/ui/PriceDisplay";
 import TrackedContactLink from "@/components/ui/TrackedContactLink";
+import StickyContactBar from "@/components/ui/StickyContactBar";
 
 export async function generateStaticParams() {
   return getAllClinicSlugs().map((slug) => ({ slug }));
@@ -490,6 +491,13 @@ export default async function ClinicProfilePage({
           </div>
         </div>
       </main>
+      {/* Spacer so the fixed mobile bar never covers footer content */}
+      <div className="md:hidden h-20" aria-hidden="true" />
+      <StickyContactBar
+        clinicSlug={clinic.slug}
+        phone={clinic.phone}
+        email={clinic.email}
+      />
       <Footer />
     </>
   );
