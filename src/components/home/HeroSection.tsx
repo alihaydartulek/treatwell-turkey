@@ -34,11 +34,12 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 text-white overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-white rounded-full translate-x-1/3 translate-y-1/3" />
+    <section className="relative hero-mesh text-white overflow-hidden">
+      {/* Ambient glow orbs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-24 -left-24 w-[520px] h-[520px] bg-indigo-500/15 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[420px] h-[420px] bg-blue-400/12 rounded-full blur-3xl translate-x-1/4 translate-y-1/4" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[200px] bg-violet-600/8 rounded-full blur-3xl" />
       </div>
 
       <div className="container relative py-20 md:py-28">
@@ -92,7 +93,7 @@ export default function HeroSection() {
 
             <button
               onClick={handleSearch}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm btn-glow"
             >
               <Search size={16} />
               Compare Clinics
@@ -115,7 +116,7 @@ export default function HeroSection() {
           ].map(({ icon: Icon, value, label }) => (
             <div
               key={label}
-              className="bg-white/10 border border-white/20 rounded-xl p-4 text-center"
+              className="bg-white/10 border border-white/20 rounded-xl p-4 text-center backdrop-blur-sm stat-glow hover:bg-white/15 transition-colors"
             >
               <Icon size={20} className="mx-auto mb-2 text-blue-200" />
               <div className="text-2xl font-bold">{value}</div>

@@ -57,29 +57,29 @@ export default function PopularTreatments() {
             <Link
               key={t.slug}
               href={`/treatments/${t.slug}`}
-              className="group bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-200 transition-all"
+              className="card-glow group bg-white border border-slate-200 rounded-2xl p-6 hover:border-blue-200 transition-all block"
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">
+                <h3 className="font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors leading-snug">
                   {t.name}
                 </h3>
                 {popularSlugs.has(t.slug) && (
-                  <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full shrink-0 ml-2">
+                  <span className="text-xs font-semibold text-blue-600 bg-blue-50 border border-blue-100 px-2.5 py-0.5 rounded-full shrink-0 ml-2">
                     Most Popular
                   </span>
                 )}
               </div>
-              <p className="text-sm text-slate-500 mb-4 leading-relaxed line-clamp-2">
+              <p className="text-sm text-slate-500 mb-5 leading-relaxed line-clamp-2">
                 {t.tagline}
               </p>
-              <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                <div>
-                  <span className="text-xs text-slate-400">From</span>
-                  <div className="text-lg font-bold text-slate-900">
+              <div className="flex items-end justify-between pt-4 border-t border-slate-100">
+                <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-1.5">
+                  <span className="text-xs text-blue-500 block leading-none mb-0.5">Turkey from</span>
+                  <span className="text-base font-bold text-blue-700 leading-none">
                     {format(t.priceFrom)}
-                  </div>
+                  </span>
                 </div>
-                <span className="text-xs font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded-full">
+                <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-100 px-2.5 py-1 rounded-full">
                   {savingLabels[t.slug] ?? "Save up to 70%"}
                 </span>
               </div>

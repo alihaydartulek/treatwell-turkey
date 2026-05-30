@@ -106,3 +106,59 @@ html.dark,
 html.dark * {
   transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease;
 }
+
+/* ─── GLOW & SHADOW UTILITIES ────────────────────────────────────────────── */
+
+/* Card with soft blue glow on hover */
+.card-glow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+.card-glow:hover {
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.14),
+    0 8px 36px rgba(37, 99, 235, 0.16),
+    0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+html.dark .card-glow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.2);
+}
+html.dark .card-glow:hover {
+  box-shadow:
+    0 0 0 1px rgba(99, 102, 241, 0.22),
+    0 8px 36px rgba(99, 102, 241, 0.18),
+    0 4px 16px rgba(0, 0, 0, 0.35);
+  transform: translateY(-3px);
+}
+
+/* CTA button glow */
+.btn-glow {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.btn-glow:hover {
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.55);
+  transform: translateY(-1px);
+}
+
+/* Hero mesh gradient — deep navy / indigo */
+.hero-mesh {
+  background:
+    radial-gradient(ellipse 65% 65% at 15% 35%, rgba(99, 102, 241, 0.22) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 75% at 85% 65%, rgba(59, 130, 246, 0.20) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 40% at 50% 10%, rgba(139, 92, 246, 0.12) 0%, transparent 60%),
+    linear-gradient(145deg, #0f172a 0%, #1e3a8a 55%, #312e81 100%);
+}
+
+/* Green badge glow (verified / accreditation) */
+.badge-glow {
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.30);
+}
+
+/* Stat/price highlight glow */
+.stat-glow {
+  box-shadow:
+    0 2px 8px rgba(37, 99, 235, 0.12),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}

@@ -308,35 +308,21 @@ export default function ClinicsPage() {
                 return (
                   <div
                     key={clinic.id}
-                    className={`bg-white border-2 rounded-2xl overflow-hidden hover:shadow-lg transition-all group ${
+                    className={`card-glow bg-white border-2 rounded-2xl overflow-hidden transition-all group ${
                       inCompare
                         ? "border-blue-500 shadow-md"
                         : "border-slate-200 hover:border-blue-200"
                     }`}
                   >
                     {/* Cover image */}
-                    <div className="h-40 relative overflow-hidden">
-                      {clinic.coverImage ? (
-                        <>
-                          <Image
-                            src={clinic.coverImage}
-                            alt={clinic.name}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                        </>
-                      ) : (
-                        <>
-                          <Image
-                            src={getFallbackImage(clinic.treatmentSlugs)}
-                            alt={clinic.name}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10" />
-                        </>
-                      )}
+                    <div className="h-44 relative overflow-hidden">
+                      <Image
+                        src={clinic.coverImage ?? getFallbackImage(clinic.treatmentSlugs)}
+                        alt={clinic.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/65 via-slate-900/15 to-transparent" />
                       <span
                         className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${clinic.badgeColor}`}
                       >
@@ -371,18 +357,24 @@ export default function ClinicsPage() {
                         {clinic.district}, {clinic.city}
                       </div>
 
-                      <div className="flex items-center gap-2 mb-3">
-                        <Star size={13} className="text-yellow-400 fill-yellow-400" />
-                        <span className="text-sm font-semibold text-slate-800">
-                          {clinic.rating}
-                        </span>
-                        <span className="text-xs text-slate-400">
-                          ({clinic.reviewCount.toLocaleString()})
-                        </span>
-                        <span className="text-xs text-slate-300">·</span>
-                        <span className="text-xs text-slate-400">
-                          Est. {clinic.established}
-                        </span>
+                      <div className="mb-3">
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <Star size={13} className="text-yellow-400 fill-yellow-400" />
+                          <span className="text-sm font-semibold text-slate-800">
+                            {clinic.googleRating ?? clinic.rating}
+                          </span>
+                          <span className="text-xs text-slate-400">
+                            ({(clinic.googleReviewCount ?? clinic.reviewCount).toLocaleString()})
+                          </span>
+                          <span className="text-xs text-slate-300">·</span>
+                          <span className="text-xs text-slate-400">Est. {clinic.established}</span>
+                        </div>
+                        <div className="w-full h-1 bg-slate-100 rounded-full">
+                          <div
+                            className="h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full"
+                            style={{ width: `${((clinic.googleRating ?? clinic.rating) / 5) * 100}%` }}
+                          />
+                        </div>
                       </div>
 
                       <div className="flex flex-wrap gap-1 mb-3">
@@ -401,11 +393,11 @@ export default function ClinicsPage() {
                         )}
                       </div>
 
-                      <div className="flex flex-wrap gap-1 mb-4">
+                      <div className="flex flex-wrap gap-1.5 mb-4">
                         {clinic.accreditations.slice(0, 2).map((a) => (
                           <span
                             key={a}
-                            className="flex items-center gap-1 text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full"
+                            className="badge-glow flex items-center gap-1 text-xs font-medium text-emerald-700 bg-emerald-50 border border-emerald-100 px-2.5 py-0.5 rounded-full"
                           >
                             <CheckCircle size={10} />
                             {a}
@@ -414,15 +406,15 @@ export default function ClinicsPage() {
                       </div>
 
                       <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                        <div>
-                          <span className="text-xs text-slate-400">From</span>
-                          <div className="text-lg font-bold text-slate-900">
+                        <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-1.5">
+                          <span className="text-xs text-blue-500 block leading-none mb-0.5">From</span>
+                          <span className="text-base font-bold text-blue-700 leading-none">
                             {format(clinic.priceFrom)}
-                          </div>
+                          </span>
                         </div>
                         <Link
                           href={`/clinics/${clinic.slug}`}
-                          className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors"
+                          className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors btn-glow"
                         >
                           View Profile
                         </Link>
