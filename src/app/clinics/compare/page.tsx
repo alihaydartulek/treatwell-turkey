@@ -1,7 +1,7 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import { Suspense, Fragment } from "react";
 import Link from "next/link";
 import {
   Star,
@@ -213,13 +213,37 @@ function buildRows({
   ];
 }
 
+// Visual grouping of the comparison rows into logical sections.
+const ROW_GROUPS: { title: string; labels: string[] }[] = [
+  {
+    title: "Overview",
+    labels: ["Location", "Google Rating", "Starting Price", "Patients Treated", "Experience"],
+  },
+  {
+    title: "Medical & Services",
+    labels: ["Medical Team", "Accreditations", "Treatments", "Highlights"],
+  },
+  {
+    title: "Languages & Contact",
+    labels: ["Languages", "Website", "Contact"],
+  },
+];
+
 function CompareTable() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const slugParam = searchParams.get("slugs") ?? "";
   const slugs = slugParam.split(",").filter(Boolean).slice(0, 3);
   const selected = slugs
     .map((s) => clinics.find((c) => c.slug === s))
     .filter(Boolean) as Clinic[];
+
+  const removeClinic = (slug: string) => {
+    const next = slugs.filter((s) => s !== slug);
+    router.push(
+      next.length ? `/clinics/compare?slugs=${next.join(",")}` : "/clinics",
+    );
+  };
 
   if (selected.length < 2) {
     return (
@@ -242,6 +266,7 @@ function CompareTable() {
     ...selected.map((c) => c.googleRating ?? c.rating),
   );
   const rows = buildRows({ bestPrice, bestRating });
+  const rowsByLabel = new Map(rows.map((r) => [r.label, r.render]));
 
   // Fixed table layout keeps header cards perfectly aligned with their
   // columns; min-width forces horizontal scroll on small screens instead
@@ -280,11 +305,19 @@ function CompareTable() {
               <th className="sticky left-0 z-10 bg-white" />
               {selected.map((clinic) => (
                 <th key={clinic.slug} className="pb-6 px-2 align-bottom">
-                  <div className="bg-white border-2 border-blue-200 rounded-2xl p-4 text-left h-full">
+                  <div className="relative bg-white border-2 border-blue-200 rounded-2xl p-4 text-left h-full">
+                    <button
+                      type="button"
+                      onClick={() => removeClinic(clinic.slug)}
+                      aria-label={`Remove ${clinic.name} from comparison`}
+                      className="absolute top-2 right-2 flex items-center justify-center w-6 h-6 rounded-full text-slate-400 hover:text-red-600 hover:bg-red-50 transition-colors"
+                    >
+                      <X size={14} />
+                    </button>
                     <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full mb-2 ${clinic.badgeColor}`}>
                       {clinic.badge}
                     </span>
-                    <div className="font-bold text-slate-900 text-base leading-tight mb-0.5 break-words">
+                    <div className="font-bold text-slate-900 text-base leading-tight mb-0.5 pr-6 break-words">
                       {clinic.name}
                     </div>
                     <div className="text-xs text-slate-400">{clinic.city}</div>
@@ -295,25 +328,41 @@ function CompareTable() {
           </thead>
 
           <tbody>
-            {rows.map((row, i) => (
-              <tr
-                key={row.label}
-                className={i % 2 === 0 ? "bg-slate-50/60" : "bg-white"}
-              >
-                <td
-                  className={`sticky left-0 z-10 py-4 pr-3 text-xs font-semibold text-slate-500 uppercase tracking-wider align-top border-r border-slate-100 ${
-                    i % 2 === 0 ? "bg-slate-50" : "bg-white"
-                  }`}
-                >
-                  {row.label}
-                </td>
-                {selected.map((clinic) => (
-                  <td key={clinic.slug} className="py-4 px-2 align-top break-words">
-                    {row.render(clinic)}
-                  </td>
-                ))}
-              </tr>
-            ))}
+            {ROW_GROUPS.map((group) => {
+              const groupRows = group.labels.filter((l) => rowsByLabel.has(l));
+              if (!groupRows.length) return null;
+              return (
+                <Fragment key={group.title}>
+                  <tr>
+                    <td
+                      colSpan={selected.length + 1}
+                      className="sticky left-0 pt-6 pb-2 text-xs font-bold text-blue-700 uppercase tracking-wider"
+                    >
+                      {group.title}
+                    </td>
+                  </tr>
+                  {groupRows.map((label, i) => (
+                    <tr
+                      key={label}
+                      className={i % 2 === 0 ? "bg-slate-50/60" : "bg-white"}
+                    >
+                      <td
+                        className={`sticky left-0 z-10 py-4 pr-3 text-xs font-semibold text-slate-500 uppercase tracking-wider align-top border-r border-slate-100 ${
+                          i % 2 === 0 ? "bg-slate-50" : "bg-white"
+                        }`}
+                      >
+                        {label}
+                      </td>
+                      {selected.map((clinic) => (
+                        <td key={clinic.slug} className="py-4 px-2 align-top break-words">
+                          {rowsByLabel.get(label)!(clinic)}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </Fragment>
+              );
+            })}
           </tbody>
         </table>
       </div>
