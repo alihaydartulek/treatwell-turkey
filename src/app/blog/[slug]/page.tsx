@@ -6,6 +6,8 @@ import { Clock, ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getBlogPostBySlug, getAllBlogSlugs, blogPosts } from "@/lib/blog";
+import { treatments } from "@/lib/treatments";
+import { clinics } from "@/lib/clinics";
 
 export async function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }));
@@ -174,6 +176,23 @@ export default async function BlogPostPage({
     .filter((p) => p.slug !== slug && p.category === post.category)
     .slice(0, 2);
 
+  // Contextual internal links: the treatment this guide is about + the
+  // top clinics offering it. Rendered inside the article body to pass
+  // descriptive-anchor link equity to treatment & clinic pages (SEO).
+  const relatedTreatmentObj = post.relatedTreatment
+    ? treatments.find((t) => t.slug === post.relatedTreatment)
+    : undefined;
+
+  const relatedClinics = post.relatedTreatment
+    ? clinics
+        .filter((c) => c.treatmentSlugs.includes(post.relatedTreatment!))
+        .sort(
+          (a, b) =>
+            (b.googleRating ?? b.rating) - (a.googleRating ?? a.rating),
+        )
+        .slice(0, 3)
+    : [];
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -250,6 +269,59 @@ export default async function BlogPostPage({
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
               <article className="lg:col-span-2 prose-sm max-w-none">
                 {renderMarkdown(post.content)}
+
+                {/* Contextual internal links — treatment + top clinics */}
+                {relatedTreatmentObj && (
+                  <div className="mt-10 border border-blue-100 bg-blue-50/60 rounded-2xl p-6">
+                    <h2 className="text-xl font-bold text-slate-900 mt-0 mb-2">
+                      Compare {relatedTreatmentObj.name} Clinics in Turkey
+                    </h2>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                      See verified prices, Google ratings and accreditations on
+                      our{" "}
+                      <Link
+                        href={`/treatments/${relatedTreatmentObj.slug}`}
+                        className="text-blue-600 font-medium hover:underline"
+                      >
+                        {relatedTreatmentObj.name.toLowerCase()} in Turkey
+                      </Link>{" "}
+                      comparison page
+                      {relatedClinics.length > 0
+                        ? ", or go straight to a top-rated clinic:"
+                        : "."}
+                    </p>
+
+                    {relatedClinics.length > 0 && (
+                      <ul className="flex flex-col gap-2 mb-5 list-none ml-0">
+                        {relatedClinics.map((c) => (
+                          <li key={c.slug} className="ml-0">
+                            <Link
+                              href={`/clinics/${c.slug}`}
+                              className="flex items-center justify-between gap-2 bg-white border border-slate-200 hover:border-blue-300 rounded-xl px-4 py-2.5 text-sm transition-colors group"
+                            >
+                              <span className="font-medium text-slate-800 group-hover:text-blue-600">
+                                {c.name} — {c.city}
+                              </span>
+                              <span className="flex items-center gap-1 text-slate-400 shrink-0">
+                                ⭐ {c.googleRating ?? c.rating}
+                                <ArrowRight size={13} />
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    <Link
+                      href={`/treatments/${relatedTreatmentObj.slug}`}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:gap-2.5 transition-all"
+                    >
+                      View all {relatedTreatmentObj.name.toLowerCase()} clinics &
+                      prices
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                )}
               </article>
 
               {/* Sidebar */}
