@@ -55,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "liposuction-turkey-guide",
     "breast-augmentation-turkey-guide",
     "tummy-tuck-turkey-guide",
+    "knee-hip-replacement-turkey-guide",
   ];
 
   const blogRoutes = blogSlugs.map((slug) => ({

@@ -1721,6 +1721,128 @@ Most surgeons recommend a minimum of 10–14 days before flying after a tummy tu
     `,
   },
 
+  {
+    slug: "knee-hip-replacement-turkey-guide",
+    title: "Knee & Hip Replacement in Turkey: Complete Guide for UK Patients (2025)",
+    excerpt: "Joint replacement surgery in Turkey costs 55-65% less than UK private rates, with the same Stryker and Zimmer implants. This guide covers JCI hospitals, what to expect, recovery, and costs.",
+    category: "Orthopaedics",
+    readTime: 10,
+    publishDate: "2025-05-30",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🦴",
+    relatedTreatment: "orthopaedics",
+    content: `
+## Why UK Patients Are Choosing Turkey for Joint Replacement
+
+NHS waiting times for elective orthopaedic surgery have reached record highs. UK private orthopaedic surgery costs £12,000–£20,000 for a knee replacement and £14,000–£22,000 for a hip replacement. For many patients, Turkey offers a compelling alternative: the same globally certified implant systems, JCI-accredited hospitals, experienced surgeons — at 55-65% lower cost.
+
+A full knee replacement (primary, unilateral) at a leading Istanbul or Ankara hospital costs £5,500–£9,500 including implant, surgeon, anaesthesia, 3–5 nights hospital stay, physiotherapy, and transfers. Hip replacement ranges from £6,000–£10,000 on the same basis.
+
+## Implant Systems: Same Brands as the UK
+
+This is the most important reassurance for patients considering orthopaedic surgery abroad. Turkey's JCI-accredited hospitals use the same globally certified implant manufacturers:
+
+| Brand | Origin | Notes |
+|-------|--------|-------|
+| Stryker | USA | Global market leader, widely used in Turkey |
+| Zimmer Biomet | USA | Top choice for hip and knee systems |
+| DePuy Synthes (J&J) | USA | Strong track record, popular in Turkey |
+| Smith+Nephew | UK | Used in leading Turkish hospitals |
+
+Always ask your clinic which implant system and specific implant model they plan to use. Request this in writing before signing anything. Your documentation should include the implant brand, model, size, and batch/lot number.
+
+## JCI Accreditation: What It Means
+
+JCI (Joint Commission International) is the international equivalent of the UK's CQC (Care Quality Commission). JCI-accredited hospitals undergo rigorous inspection across clinical processes, safety protocols, infection control, and patient rights. Turkey has more JCI-accredited hospitals than any other country outside the USA.
+
+For orthopaedic surgery specifically, look for hospitals with a dedicated orthopaedic department — not all JCI hospitals perform joint replacements routinely. Volume matters: a hospital performing 500+ joint replacements per year will have more refined protocols than one performing 50.
+
+## Types of Procedure
+
+**Total knee replacement (TKR):** The entire knee joint surface is replaced with metal and plastic components. Most common orthopaedic procedure in Turkey for international patients. Surgery takes 1.5–2 hours.
+
+**Partial (unicompartmental) knee replacement:** Only the damaged compartment of the knee is replaced. Shorter surgery, faster recovery, preserves more bone. Not suitable for all patients — requires careful selection.
+
+**Total hip replacement (THR):** The ball and socket of the hip joint are replaced. Surgery takes 1–2 hours. Most patients walk the same day or the day after surgery.
+
+**Hip resurfacing:** The ball of the hip is capped with a metal prosthesis rather than removed and replaced. Preferred for younger, active patients. Not all surgeons offer resurfacing — confirm availability.
+
+**Revision joint replacement:** Replaces a failed or worn-out previous implant. More complex than primary replacement, requires longer hospital stay and recovery.
+
+## The Procedure: What to Expect
+
+**Pre-operative workup:** Your clinic will require recent imaging (X-rays or MRI), blood tests, ECG, and a cardiological clearance if you have cardiac history. Some of this can be done in the UK before travelling and shared with the Turkish hospital digitally.
+
+**Day of surgery:** Spinal or general anaesthesia. You will be up and walking (with assistance) on the same day for hip replacement, and day 1–2 for knee replacement. Physiotherapy begins immediately.
+
+**Hospital stay:** 3–5 nights is standard. Your physiotherapist will help you with stairs, transfers, and walking aids before discharge.
+
+**Discharge:** You will be discharged with a walking frame or crutches, oral pain medication, blood thinners (to prevent DVT), and a detailed rehabilitation programme.
+
+## Flying Home After Joint Replacement
+
+This is the biggest consideration for orthopaedic surgery abroad. The risk of DVT (deep vein thrombosis) is significantly elevated after joint replacement surgery. Most orthopaedic surgeons recommend a minimum of 10–14 days before flying.
+
+**What to do:**
+- Arrange a 10–14 day stay in Turkey minimum
+- Wear graduated compression stockings on the flight
+- Take blood thinners as prescribed until cleared by your surgeon
+- Walk the aisle regularly during the flight
+- Inform the airline of your recent surgery — request an aisle seat
+
+For long-haul flights (4+ hours), discuss timing with your surgeon. Some recommend 3 weeks before longer flights.
+
+## Recovery Timeline
+
+| Period | What to Expect |
+|--------|----------------|
+| Days 1–3 | Hospital stay, physiotherapy begins, walking with frame |
+| Days 4–7 | Discharge, assisted walking, managing stairs |
+| Week 2 | Increased walking distance, reducing frame use |
+| Weeks 3–4 | Transition to one crutch or walking stick |
+| Month 2 | Most patients walking independently |
+| Months 3–6 | Return to most daily activities, driving (check with surgeon) |
+| Month 6 | Golf, swimming, cycling typically permitted |
+| Month 12 | Full recovery; implant should feel natural |
+
+**Knee vs hip recovery:** Hip replacement typically has a faster functional recovery than knee replacement. Knee replacement requires more patient effort in physiotherapy and can be uncomfortable for longer.
+
+## Arranging UK Follow-Up Care
+
+Before travelling, arrange your post-operative care in the UK:
+
+**GP:** Inform your GP you are having surgery abroad. They will need to monitor your blood thinners, manage wound checks, and refer you for physiotherapy.
+
+**NHS physiotherapy:** Your GP can refer you to NHS physiotherapy. Prepare for a wait — consider private physiotherapy for early sessions.
+
+**Blood thinners:** Prescription for anticoagulants will be provided by the Turkish hospital. Ensure your UK GP can continue this prescription.
+
+**Wound checks:** Your Turkish hospital will advise on wound care and suture/staple removal timing. This can be done by your GP's practice nurse.
+
+## Costs: Turkey vs UK
+
+| Procedure | United Kingdom (Private) | Turkey |
+|-----------|--------------------------|--------|
+| Total knee replacement | £12,000–£20,000 | £5,500–£9,500 |
+| Total hip replacement | £14,000–£22,000 | £6,000–£10,000 |
+| Bilateral knee replacement | £20,000–£35,000 | £9,000–£16,000 |
+| Hip resurfacing | £14,000–£20,000 | £7,000–£11,000 |
+| Revision knee replacement | £16,000–£28,000 | £8,000–£14,000 |
+
+All prices are guideline ranges. Always obtain an itemised written quote including implant brand and model, surgeon fee, anaesthesia, hospital stay, and physiotherapy.
+
+## Key Questions to Ask Your Hospital
+
+- Which implant brand and model do you use, and why?
+- How many joint replacements does your department perform per year?
+- Who is my surgeon, and what is their specific experience with this procedure?
+- What physiotherapy is included during my hospital stay?
+- What is the minimum time you recommend before I fly home?
+- What documentation will I receive about my implant (for UK follow-up)?
+- Who do I contact if I have concerns after returning to the UK?
+    `,
+  },
+
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }

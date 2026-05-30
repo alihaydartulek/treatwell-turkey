@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Clock, ArrowRight } from "lucide-react";
 import { blogPosts } from "@/lib/blog";
 
-const categories = ["All", "Hair Transplant", "Dental", "Bariatric", "IVF", "Eye Surgery", "Cosmetic Surgery", "Destination Guide", "Patient Guide"];
+const categories = ["All", "Hair Transplant", "Dental", "Bariatric", "IVF", "Eye Surgery", "Cosmetic Surgery", "Orthopaedics", "Destination Guide", "Patient Guide"];
 
 export default function BlogList() {
   const [active, setActive] = useState("All");
