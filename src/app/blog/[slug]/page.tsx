@@ -1,5 +1,6 @@
 ﻿import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { Clock, ArrowLeft, ArrowRight } from "lucide-react";
 import Header from "@/components/layout/Header";
@@ -34,7 +35,7 @@ export async function generateMetadata({
 }
 
 // Renders inline markdown: bold (**text**) and links ([text](url))
-function renderInline(text: string): React.ReactNode[] {
+function renderInline(text: string): ReactNode[] {
   const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, j) => {
     if (part.startsWith("**") && part.endsWith("**")) {
@@ -63,7 +64,7 @@ function renderInline(text: string): React.ReactNode[] {
 
 function renderMarkdown(content: string) {
   const lines = content.trim().split("\n");
-  const elements: React.ReactNode[] = [];
+  const elements: ReactNode[] = [];
   let i = 0;
 
   while (i < lines.length) {
