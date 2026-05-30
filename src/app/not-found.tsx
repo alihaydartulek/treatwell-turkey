@@ -21,7 +21,7 @@ export default function NotFound() {
       <Header />
       <main id="main-content" className="flex-1">
         <section className="container py-24 text-center max-w-xl">
-          <p className="text-6xl font-extrabold text-blue-600 mb-3">404</p>
+          <p className="text-6xl font-extrabold text-teal-600 mb-3">404</p>
           <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
             We couldn&apos;t find that page
           </h1>
@@ -35,7 +35,7 @@ export default function NotFound() {
               <Link
                 key={href}
                 href={href}
-                className="flex items-center justify-center gap-2 px-5 py-3 bg-white border border-slate-200 hover:border-blue-300 hover:text-blue-600 text-slate-700 font-medium rounded-xl transition-colors"
+                className="flex items-center justify-center gap-2 px-5 py-3 bg-white border border-slate-200 hover:border-teal-300 hover:text-teal-600 text-slate-700 font-medium rounded-xl transition-colors"
               >
                 <Icon size={16} />
                 {label}
@@ -45,7 +45,7 @@ export default function NotFound() {
 
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors"
           >
             <Home size={16} />
             Back to Home

@@ -25,7 +25,7 @@ const steps = [
     icon: Search,
     number: "01",
     title: "Search & Compare Clinics",
-    color: "bg-blue-50 text-blue-600 border-blue-100",
+    color: "bg-teal-50 text-teal-600 border-teal-100",
     description:
       "Browse our directory of verified clinics across Istanbul, Ankara, Izmir and Antalya. Filter by treatment type, city, accreditation, price and patient rating. Read detailed clinic profiles with doctor information, treatment details and Google review scores.",
     sub: [
@@ -128,7 +128,7 @@ export default function HowItWorksPage() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24">
           <div className="container text-center max-w-2xl mx-auto">
-            <span className="text-sm font-semibold text-blue-300 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-300 uppercase tracking-wider">
               Transparent Process
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
@@ -142,7 +142,7 @@ export default function HowItWorksPage() {
         </section>
 
         {/* Trust strip */}
-        <div className="bg-blue-600 text-white py-4">
+        <div className="bg-teal-600 text-white py-4">
           <div className="container flex flex-wrap justify-center gap-6 text-sm">
             {[
               { icon: Shield, text: "Free for patients" },
@@ -151,7 +151,7 @@ export default function HowItWorksPage() {
               { icon: Star, text: "Real Google ratings" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-1.5">
-                <Icon size={14} className="text-blue-200" />
+                <Icon size={14} className="text-teal-200" />
                 <span>{text}</span>
               </div>
             ))}
@@ -239,15 +239,15 @@ export default function HowItWorksPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-blue-600 text-white text-center">
+        <section className="py-16 bg-teal-600 text-white text-center">
           <div className="container max-w-xl mx-auto">
             <h2 className="text-3xl font-bold mb-3">Ready to Start?</h2>
-            <p className="text-blue-100 mb-6">
+            <p className="text-teal-100 mb-6">
               Browse our verified clinic directory — free, no sign-up required.
             </p>
             <Link
               href="/clinics"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 font-bold text-lg rounded-xl hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-teal-700 font-bold text-lg rounded-xl hover:bg-teal-50 transition-colors"
             >
               Browse Clinics <ArrowRight size={18} />
             </Link>

@@ -16,7 +16,7 @@ export default function BlogPage() {
       <main id="main-content">
         <section className="bg-slate-900 text-white py-14">
           <div className="container">
-            <span className="text-sm font-semibold text-blue-300 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-300 uppercase tracking-wider">
               Independent Guides
             </span>
             <h1 className="text-4xl font-bold mt-2 mb-3">Patient Guides</h1>

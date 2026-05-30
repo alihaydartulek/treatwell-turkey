@@ -158,7 +158,7 @@ export const clinics: Clinic[] = [
     whatsapp: "+90 543 456 89 89",
     website: "https://veraclinic.net",
     badge: "Highly Rated",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-teal-100 text-teal-700",
     realClinic: true,
     highlights: [
       "Oxford Biomedical Accreditation",
@@ -436,7 +436,7 @@ export const clinics: Clinic[] = [
     whatsapp: "+90 212 314 66 66",
     website: "https://memorial.com.tr",
     badge: "JCI Accredited",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-teal-100 text-teal-700",
     realClinic: true,
     highlights: [
       "JCI Accredited — gold standard in global hospital quality",
@@ -504,7 +504,7 @@ export const clinics: Clinic[] = [
     whatsapp: "+90 216 544 44 44",
     website: "https://acibadem.com.tr",
     badge: "JCI Accredited",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-teal-100 text-teal-700",
     coverImage: "https://www.acibadem.com.tr/assets/images/menus/ana-sayfa-og-banner.webp",
     realClinic: true,
     highlights: [
@@ -633,7 +633,7 @@ export const clinics: Clinic[] = [
     whatsapp: "+90 312 428 08 08",
     website: "https://www.bayindir.com",
     badge: "Multi-Specialty",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-teal-100 text-teal-700",
     coverImage: undefined,
     realClinic: true,
     highlights: [
@@ -694,7 +694,7 @@ export const clinics: Clinic[] = [
     whatsapp: "+90 242 249 40 00",
     website: "https://www.medicalpark.com.tr",
     badge: "JCI Accredited",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-teal-100 text-teal-700",
     coverImage: undefined,
     realClinic: true,
     highlights: [
@@ -871,7 +871,7 @@ export const clinics: Clinic[] = [
     whatsapp: "+90 232 462 71 71",
     website: "https://www.medicana.com.tr",
     badge: "Hospital Group",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-teal-100 text-teal-700",
     coverImage: "https://www.medicana.com.tr/medicana/hospital/izmir.jpg",
     realClinic: true,
     highlights: [
@@ -1071,7 +1071,7 @@ export const clinics: Clinic[] = [
     whatsapp: "+90 850 222 44 69",
     website: "https://www.dunyagoz.com",
     badge: "JCI Accredited",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-teal-100 text-teal-700",
     realClinic: true,
     highlights: [
       "Turkey's largest eye hospital group — 31 locations across Turkey",

@@ -20,7 +20,7 @@ const cities = [
     clinicCount: "80+",
     topFor: ["Hair Transplant", "Rhinoplasty", "Dental Veneers", "Bariatric Surgery"],
     flightTime: "3.5–4.5h from UK",
-    gradient: "from-blue-600 to-blue-800",
+    gradient: "from-teal-600 to-teal-800",
     highlights: [
       "Most JCI-accredited hospitals in Turkey",
       "Direct flights from 60+ European cities",
@@ -50,7 +50,7 @@ const cities = [
     clinicCount: "25+",
     topFor: ["Dental Veneers", "Dental Implants", "IVF", "Cosmetic Surgery"],
     flightTime: "3.5–4h from UK",
-    gradient: "from-cyan-600 to-blue-700",
+    gradient: "from-cyan-600 to-teal-700",
     highlights: [
       "Particularly strong dental tourism reputation",
       "Relaxed, coastal atmosphere for recovery",
@@ -103,7 +103,7 @@ export default function DestinationsPage() {
               <Link
                 key={city.slug}
                 href={`/destinations/${city.slug}`}
-                className="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all"
+                className="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-teal-200 transition-all"
               >
                 <div
                   className={`bg-gradient-to-br ${city.gradient} text-white p-6`}
@@ -119,7 +119,7 @@ export default function DestinationsPage() {
                     {city.topFor.map((t) => (
                       <span
                         key={t}
-                        className="text-xs font-medium px-2.5 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded-full"
+                        className="text-xs font-medium px-2.5 py-1 bg-teal-50 text-teal-700 border border-teal-100 rounded-full"
                       >
                         {t}
                       </span>
@@ -146,7 +146,7 @@ export default function DestinationsPage() {
                         {city.flightTime}
                       </span>
                     </div>
-                    <span className="flex items-center gap-1 text-blue-600 font-semibold">
+                    <span className="flex items-center gap-1 text-teal-600 font-semibold">
                       Explore <ArrowRight size={13} />
                     </span>
                   </div>
@@ -201,17 +201,17 @@ export default function DestinationsPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-blue-600 text-white rounded-2xl p-8 text-center">
+          <div className="bg-teal-600 text-white rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-2">
               Not sure which city is right for you?
             </h2>
-            <p className="text-blue-100 mb-6 max-w-xl mx-auto">
+            <p className="text-teal-100 mb-6 max-w-xl mx-auto">
               Tell us your treatment and preferences and we will recommend the
               best-matched clinics — across all cities.
             </p>
             <Link
               href="/get-a-quote"
-              className="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
+              className="inline-block px-8 py-3 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors"
             >
               Get Free Clinic Recommendations
             </Link>

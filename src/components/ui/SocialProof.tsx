@@ -31,7 +31,7 @@ export default function SocialProof({ baseCount = 12 }: SocialProofProps) {
         {[...Array(3)].map((_, i) => (
           <div
             key={i}
-            className="w-5 h-5 rounded-full bg-blue-400 border-2 border-white text-white text-xs flex items-center justify-center font-bold"
+            className="w-5 h-5 rounded-full bg-teal-400 border-2 border-white text-white text-xs flex items-center justify-center font-bold"
             style={{ backgroundColor: ["#3b82f6", "#8b5cf6", "#10b981"][i] }}
           />
         ))}

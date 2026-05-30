@@ -18,7 +18,7 @@ function FAQItem({ faq }: { faq: FAQ }) {
           {faq.question}
         </span>
         {open ? (
-          <ChevronUp size={18} className="text-blue-600 shrink-0" />
+          <ChevronUp size={18} className="text-teal-600 shrink-0" />
         ) : (
           <ChevronDown size={18} className="text-slate-400 shrink-0" />
         )}
@@ -60,7 +60,7 @@ export default function FAQContent() {
       {/* CTA strip */}
       <section className="bg-slate-50 border-t border-slate-200 py-14">
         <div className="container max-w-2xl text-center">
-          <Shield size={32} className="text-blue-600 mx-auto mb-4" />
+          <Shield size={32} className="text-teal-600 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-slate-900 mb-3">
             Still have questions?
           </h2>
@@ -72,13 +72,13 @@ export default function FAQContent() {
           <div className="flex flex-wrap gap-3 justify-center">
             <Link
               href="/clinics"
-              className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
+              className="flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors"
             >
               Browse Clinics <ArrowRight size={16} />
             </Link>
             <a
               href="mailto:cliniqturkey@gmail.com"
-              className="flex items-center gap-2 px-6 py-3 border border-slate-200 text-slate-700 hover:border-blue-300 hover:text-blue-600 font-medium rounded-xl transition-colors"
+              className="flex items-center gap-2 px-6 py-3 border border-slate-200 text-slate-700 hover:border-teal-300 hover:text-teal-600 font-medium rounded-xl transition-colors"
             >
               <Mail size={16} />
               Email Us

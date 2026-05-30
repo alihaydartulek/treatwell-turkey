@@ -56,7 +56,7 @@ export default function AboutPage() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
           <div className="container max-w-3xl">
-            <span className="text-sm font-semibold text-blue-300 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-300 uppercase tracking-wider">
               Our Story
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6">
@@ -74,13 +74,13 @@ export default function AboutPage() {
         </section>
 
         {/* Stats */}
-        <div className="bg-blue-600 text-white py-8">
+        <div className="bg-teal-600 text-white py-8">
           <div className="container">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               {stats.map((s) => (
                 <div key={s.label}>
                   <div className="text-3xl font-bold">{s.value}</div>
-                  <div className="text-blue-200 text-sm mt-1">{s.label}</div>
+                  <div className="text-teal-200 text-sm mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -132,8 +132,8 @@ export default function AboutPage() {
                   key={v.title}
                   className="bg-white border border-slate-200 rounded-2xl p-6"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
-                    <v.icon size={18} className="text-blue-600" />
+                  <div className="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-4">
+                    <v.icon size={18} className="text-teal-600" />
                   </div>
                   <h3 className="font-bold text-slate-900 mb-2">{v.title}</h3>
                   <p className="text-sm text-slate-500 leading-relaxed">{v.desc}</p>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                   key={member.name}
                   className="flex gap-4 p-5 bg-white border border-slate-200 rounded-2xl"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-teal-600 flex items-center justify-center text-white font-bold shrink-0">
                     {member.initials}
                   </div>
                   <div>
@@ -210,7 +210,7 @@ export default function AboutPage() {
         </section>
 
         {/* Trustpilot-style CTA */}
-        <section className="py-16 bg-blue-600 text-white text-center">
+        <section className="py-16 bg-teal-600 text-white text-center">
           <div className="container max-w-xl">
             <div className="flex justify-center gap-1 mb-4">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -220,13 +220,13 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-3">
               Find the Right Clinic for You
             </h2>
-            <p className="text-blue-100 mb-6">
+            <p className="text-teal-100 mb-6">
               Browse verified clinics from the UK, Germany, Netherlands and
               across Europe — compare prices, read real Google reviews, contact directly.
             </p>
             <Link
               href="/get-a-quote"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 font-bold rounded-xl hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-teal-700 font-bold rounded-xl hover:bg-teal-50 transition-colors"
             >
               Get My Free Clinic Matches <ArrowRight size={18} />
             </Link>

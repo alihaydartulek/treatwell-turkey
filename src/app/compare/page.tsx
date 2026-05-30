@@ -86,9 +86,9 @@ export default function ComparePage() {
               <Link
                 key={c.slug}
                 href={`/compare/${c.slug}`}
-                className="border border-slate-200 rounded-2xl p-6 hover:shadow-md hover:border-blue-200 transition-all group"
+                className="border border-slate-200 rounded-2xl p-6 hover:shadow-md hover:border-teal-200 transition-all group"
               >
-                <h2 className="font-bold text-slate-900 text-lg mb-4 group-hover:text-blue-600 transition-colors">
+                <h2 className="font-bold text-slate-900 text-lg mb-4 group-hover:text-teal-600 transition-colors">
                   {c.title}
                 </h2>
                 <div className="flex flex-col gap-2 text-sm mb-4">
@@ -98,7 +98,7 @@ export default function ComparePage() {
                   </div>
                   <div className="flex justify-between font-semibold">
                     <span className="text-slate-700">Turkey</span>
-                    <span className="text-blue-600">{c.turkeyPrice}</span>
+                    <span className="text-teal-600">{c.turkeyPrice}</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
@@ -106,7 +106,7 @@ export default function ComparePage() {
                     <TrendingDown size={14} />
                     Save {c.saving}
                   </div>
-                  <span className="flex items-center gap-1 text-sm text-blue-600 font-medium">
+                  <span className="flex items-center gap-1 text-sm text-teal-600 font-medium">
                     Full comparison <ArrowRight size={13} />
                   </span>
                 </div>
@@ -114,8 +114,8 @@ export default function ComparePage() {
             ))}
           </div>
 
-          <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center">
-            <CheckCircle size={32} className="text-blue-600 mx-auto mb-4" />
+          <div className="mt-12 bg-teal-50 border border-teal-100 rounded-2xl p-8 text-center">
+            <CheckCircle size={32} className="text-teal-600 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-slate-900 mb-2">
               All prices verified from real clinic quotes
             </h2>
@@ -125,7 +125,7 @@ export default function ComparePage() {
             </p>
             <Link
               href="/get-a-quote"
-              className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors"
+              className="inline-block px-6 py-3 bg-teal-600 text-white font-semibold rounded-xl hover:bg-teal-700 transition-colors"
             >
               Get Your Free Personal Quote
             </Link>

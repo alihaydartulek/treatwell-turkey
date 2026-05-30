@@ -135,7 +135,7 @@ export default async function TreatmentPage({
               <div className="flex flex-wrap gap-3 mt-4">
                 <Link
                   href="/get-a-quote"
-                  className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
+                  className="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors"
                 >
                   Get Free Quotes
                 </Link>
@@ -155,14 +155,14 @@ export default async function TreatmentPage({
           <div className="container">
             <div className="flex flex-wrap gap-6 text-sm text-slate-600">
               <div className="flex items-center gap-2">
-                <Clock size={15} className="text-blue-500" />
+                <Clock size={15} className="text-teal-500" />
                 <span>
                   <strong>Procedure:</strong> {treatment.durationDays} day
                   {treatment.durationDays !== 1 ? "s" : ""}
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock size={15} className="text-blue-500" />
+                <Clock size={15} className="text-teal-500" />
                 <span>
                   <strong>Recovery:</strong> {treatment.recoveryDays} day
                   {treatment.recoveryDays !== 1 ? "s" : ""}
@@ -237,7 +237,7 @@ export default async function TreatmentPage({
                     {matchedClinics.map((clinic) => (
                       <div
                         key={clinic.slug}
-                        className="border border-slate-200 rounded-2xl p-5 hover:shadow-md hover:border-blue-200 transition-all"
+                        className="border border-slate-200 rounded-2xl p-5 hover:shadow-md hover:border-teal-200 transition-all"
                       >
                         <div className="flex items-start justify-between gap-3 mb-3">
                           <div>
@@ -292,13 +292,13 @@ export default async function TreatmentPage({
                         <div className="flex gap-3">
                           <Link
                             href={`/clinics/${clinic.slug}`}
-                            className="flex-1 text-center py-2 text-sm font-semibold text-blue-600 border border-blue-200 hover:bg-blue-50 rounded-xl transition-colors"
+                            className="flex-1 text-center py-2 text-sm font-semibold text-teal-600 border border-teal-200 hover:bg-teal-50 rounded-xl transition-colors"
                           >
                             View Full Profile
                           </Link>
                           <Link
                             href="/get-a-quote"
-                            className="flex-1 text-center py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors"
+                            className="flex-1 text-center py-2 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-xl transition-colors"
                           >
                             Get Quote
                           </Link>
@@ -339,11 +339,11 @@ export default async function TreatmentPage({
             {/* Sidebar */}
             <div className="flex flex-col gap-5">
               {/* CTA card */}
-              <div className="bg-blue-600 text-white rounded-2xl p-6 sticky top-24">
+              <div className="bg-teal-600 text-white rounded-2xl p-6 sticky top-24">
                 <h3 className="font-bold text-lg mb-2">
                   Get Your Free Clinic Matches
                 </h3>
-                <p className="text-blue-100 text-sm mb-5">
+                <p className="text-teal-100 text-sm mb-5">
                   Tell us about your case and we&apos;ll send you quotes from
                   2-3 verified clinics within 24 hours.
                 </p>
@@ -356,7 +356,7 @@ export default async function TreatmentPage({
                   ].map((item) => (
                     <li
                       key={item}
-                      className="flex items-center gap-2 text-sm text-blue-100"
+                      className="flex items-center gap-2 text-sm text-teal-100"
                     >
                       <CheckCircle size={13} className="text-green-300 shrink-0" />
                       {item}
@@ -365,7 +365,7 @@ export default async function TreatmentPage({
                 </ul>
                 <Link
                   href="/get-a-quote"
-                  className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
+                  className="block text-center py-3 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors"
                 >
                   Get Free Quotes →
                 </Link>
@@ -391,7 +391,7 @@ export default async function TreatmentPage({
                   </div>
                   <div className="border-t border-slate-100 pt-3 flex justify-between font-semibold">
                     <span className="text-slate-900">🇹🇷 Turkey from</span>
-                    <span className="text-blue-600">
+                    <span className="text-teal-600">
                       <PriceDisplay eurAmount={treatment.priceFrom} />
                     </span>
                   </div>
@@ -404,7 +404,7 @@ export default async function TreatmentPage({
                 </div>
                 <Link
                   href="/cost-calculator"
-                  className="block text-center text-sm text-blue-600 hover:underline mt-3"
+                  className="block text-center text-sm text-teal-600 hover:underline mt-3"
                 >
                   Calculate exact saving →
                 </Link>

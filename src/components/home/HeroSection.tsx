@@ -40,7 +40,7 @@ export default function HeroSection() {
       {/* Ambient glow orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-24 -left-24 w-[520px] h-[520px] bg-indigo-500/15 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-[420px] h-[420px] bg-blue-400/12 rounded-full blur-3xl translate-x-1/4 translate-y-1/4" />
+        <div className="absolute bottom-0 right-0 w-[420px] h-[420px] bg-teal-400/12 rounded-full blur-3xl translate-x-1/4 translate-y-1/4" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[200px] bg-violet-600/8 rounded-full blur-3xl" />
       </div>
 
@@ -55,10 +55,10 @@ export default function HeroSection() {
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
             Compare Top Clinics in Turkey.{" "}
-            <span className="text-yellow-300">Save Up to 70%.</span>
+            <span className="text-amber-300">Save Up to 70%.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-teal-100 mb-10 max-w-xl mx-auto">
             Hair transplant, dental, bariatric surgery and more — find verified
             clinics, real prices, and free expert guidance.
           </p>
@@ -69,7 +69,7 @@ export default function HeroSection() {
               value={treatment}
               onChange={(e) => { setTreatment(e.target.value); setError(false); }}
               aria-label="Select treatment"
-              className={`flex-1 px-4 py-3 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${treatment ? "text-slate-800" : error ? "text-red-400" : "text-slate-400"}`}
+              className={`flex-1 px-4 py-3 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 ${treatment ? "text-slate-800" : error ? "text-red-400" : "text-slate-400"}`}
             >
               <option value="">Select Treatment</option>
               {treatmentOptions.map((t) => (
@@ -85,7 +85,7 @@ export default function HeroSection() {
               value={city}
               onChange={(e) => setCity(e.target.value)}
               aria-label="Select city"
-              className="flex-1 px-4 py-3 text-slate-800 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 px-4 py-3 text-slate-800 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
             >
               <option value="">Any City</option>
               {cityOptions.map((c) => (
@@ -97,7 +97,7 @@ export default function HeroSection() {
 
             <button
               onClick={handleSearch}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm btn-glow"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors text-sm btn-glow"
             >
               <Search size={16} />
               Compare Clinics
@@ -105,7 +105,7 @@ export default function HeroSection() {
           </div>
 
           {/* Trust micro-text */}
-          <p className={`text-xs mt-4 transition-all ${error ? "text-red-300 font-medium" : "text-blue-200"}`}>
+          <p className={`text-xs mt-4 transition-all ${error ? "text-red-300 font-medium" : "text-teal-200"}`}>
             {error ? "⚠ Please select a treatment first" : "Free to use · No commitment · Results in 60 seconds"}
           </p>
         </div>
@@ -122,9 +122,9 @@ export default function HeroSection() {
               key={label}
               className="bg-white/10 border border-white/20 rounded-xl p-4 text-center backdrop-blur-sm stat-glow hover:bg-white/15 transition-colors"
             >
-              <Icon size={20} className="mx-auto mb-2 text-blue-200" />
+              <Icon size={20} className="mx-auto mb-2 text-teal-200" />
               <div className="text-2xl font-bold">{value}</div>
-              <div className="text-xs text-blue-200 mt-0.5">{label}</div>
+              <div className="text-xs text-teal-200 mt-0.5">{label}</div>
             </div>
           ))}
         </div>

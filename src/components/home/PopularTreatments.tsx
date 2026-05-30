@@ -37,7 +37,7 @@ export default function PopularTreatments() {
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div>
-            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider">
               Most Popular
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
@@ -46,7 +46,7 @@ export default function PopularTreatments() {
           </div>
           <Link
             href="/treatments"
-            className="flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline shrink-0"
+            className="flex items-center gap-1 text-sm font-medium text-teal-600 hover:underline shrink-0"
           >
             View All Treatments <ArrowRight size={14} />
           </Link>
@@ -57,14 +57,14 @@ export default function PopularTreatments() {
             <Link
               key={t.slug}
               href={`/treatments/${t.slug}`}
-              className="card-glow group bg-white border border-slate-200 rounded-2xl p-6 hover:border-blue-200 transition-all block"
+              className="card-glow group bg-white border border-slate-200 rounded-2xl p-6 hover:border-teal-200 transition-all block"
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors leading-snug">
+                <h3 className="font-bold text-slate-900 text-lg group-hover:text-teal-600 transition-colors leading-snug">
                   {t.name}
                 </h3>
                 {popularSlugs.has(t.slug) && (
-                  <span className="text-xs font-semibold text-blue-600 bg-blue-50 border border-blue-100 px-2.5 py-0.5 rounded-full shrink-0 ml-2">
+                  <span className="text-xs font-semibold text-teal-600 bg-teal-50 border border-teal-100 px-2.5 py-0.5 rounded-full shrink-0 ml-2">
                     Most Popular
                   </span>
                 )}
@@ -73,9 +73,9 @@ export default function PopularTreatments() {
                 {t.tagline}
               </p>
               <div className="flex items-end justify-between pt-4 border-t border-slate-100">
-                <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-1.5">
-                  <span className="text-xs text-blue-500 block leading-none mb-0.5">Turkey from</span>
-                  <span className="text-base font-bold text-blue-700 leading-none">
+                <div className="bg-teal-50 border border-teal-100 rounded-xl px-3 py-1.5">
+                  <span className="text-xs text-teal-500 block leading-none mb-0.5">Turkey from</span>
+                  <span className="text-base font-bold text-teal-700 leading-none">
                     {format(t.priceFrom)}
                   </span>
                 </div>

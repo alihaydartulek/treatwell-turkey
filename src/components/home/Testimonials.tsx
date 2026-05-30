@@ -63,7 +63,7 @@ export default function Testimonials() {
     <section className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+          <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider">
             Real Patient Stories
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">
@@ -79,7 +79,7 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="flex flex-col gap-3 p-5 border border-slate-200 rounded-2xl hover:border-blue-200 hover:shadow-sm transition-all"
+              className="flex flex-col gap-3 p-5 border border-slate-200 rounded-2xl hover:border-teal-200 hover:shadow-sm transition-all"
             >
               {/* Stars */}
               <div className="flex gap-0.5">
@@ -109,7 +109,7 @@ export default function Testimonials() {
                 </div>
                 <Link
                   href={`/clinics/${t.clinicSlug}`}
-                  className="text-xs text-blue-600 hover:underline shrink-0"
+                  className="text-xs text-teal-600 hover:underline shrink-0"
                 >
                   {t.clinic}
                 </Link>
@@ -121,7 +121,7 @@ export default function Testimonials() {
         <div className="text-center">
           <Link
             href="/clinics"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors text-sm"
           >
             Read more reviews — Browse Clinics <ArrowRight size={15} />
           </Link>

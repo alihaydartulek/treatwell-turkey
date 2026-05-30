@@ -148,7 +148,7 @@ export default async function TreatmentCityPage({
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/get-a-quote"
-                  className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
+                  className="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors"
                 >
                   Get Free Quotes in {cityLabel}
                 </Link>
@@ -187,7 +187,7 @@ export default async function TreatmentCityPage({
                     {cityClinics.map((clinic) => (
                       <div
                         key={clinic.slug}
-                        className="border border-slate-200 rounded-2xl p-5 hover:shadow-md hover:border-blue-200 transition-all"
+                        className="border border-slate-200 rounded-2xl p-5 hover:shadow-md hover:border-teal-200 transition-all"
                       >
                         <div className="flex items-start justify-between gap-3 mb-3">
                           <div>
@@ -228,13 +228,13 @@ export default async function TreatmentCityPage({
                         <div className="flex gap-3">
                           <Link
                             href={`/clinics/${clinic.slug}`}
-                            className="flex-1 text-center py-2 text-sm font-semibold text-blue-600 border border-blue-200 hover:bg-blue-50 rounded-xl transition-colors"
+                            className="flex-1 text-center py-2 text-sm font-semibold text-teal-600 border border-teal-200 hover:bg-teal-50 rounded-xl transition-colors"
                           >
                             View Profile
                           </Link>
                           <Link
                             href="/get-a-quote"
-                            className="flex-1 text-center py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors"
+                            className="flex-1 text-center py-2 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-xl transition-colors"
                           >
                             Get Quote
                           </Link>
@@ -253,7 +253,7 @@ export default async function TreatmentCityPage({
                     </p>
                     <Link
                       href={`/treatments/${slug}`}
-                      className="inline-block px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors"
+                      className="inline-block px-5 py-2.5 bg-teal-600 text-white font-semibold rounded-xl hover:bg-teal-700 transition-colors"
                     >
                       View All {treatment.name} Clinics
                     </Link>
@@ -294,7 +294,7 @@ export default async function TreatmentCityPage({
                     <Link
                       key={c}
                       href={`/treatments/${slug}/${c}`}
-                      className="flex items-center gap-1.5 px-4 py-2 border border-slate-200 rounded-xl text-sm text-slate-700 hover:border-blue-300 hover:text-blue-600 transition-colors"
+                      className="flex items-center gap-1.5 px-4 py-2 border border-slate-200 rounded-xl text-sm text-slate-700 hover:border-teal-300 hover:text-teal-600 transition-colors"
                     >
                       <MapPin size={13} />
                       {treatment.name} in {cityLabels[c]}
@@ -306,16 +306,16 @@ export default async function TreatmentCityPage({
 
             {/* Sidebar */}
             <div className="flex flex-col gap-5">
-              <div className="bg-blue-600 text-white rounded-2xl p-6 sticky top-24">
+              <div className="bg-teal-600 text-white rounded-2xl p-6 sticky top-24">
                 <h3 className="font-bold text-lg mb-2">
                   Get Quotes from {cityLabel} Clinics
                 </h3>
-                <p className="text-blue-100 text-sm mb-5">
+                <p className="text-teal-100 text-sm mb-5">
                   Tell us about your case and we&apos;ll match you with verified clinics in {cityLabel} within 24 hours.
                 </p>
                 <ul className="flex flex-col gap-2 mb-5">
                   {["100% free — no hidden fees", "No commitment to book", "Reply within 2 hours", "GDPR compliant"].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-sm text-blue-100">
+                    <li key={item} className="flex items-center gap-2 text-sm text-teal-100">
                       <CheckCircle size={13} className="text-green-300 shrink-0" />
                       {item}
                     </li>
@@ -323,7 +323,7 @@ export default async function TreatmentCityPage({
                 </ul>
                 <Link
                   href="/get-a-quote"
-                  className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
+                  className="block text-center py-3 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors"
                 >
                   Get Free Quotes
                 </Link>
@@ -342,7 +342,7 @@ export default async function TreatmentCityPage({
                   </div>
                   <div className="border-t border-slate-100 pt-3 flex justify-between font-semibold">
                     <span className="text-slate-900">{cityLabel}, Turkey from</span>
-                    <span className="text-blue-600"><PriceDisplay eurAmount={treatment.priceFrom} /></span>
+                    <span className="text-teal-600"><PriceDisplay eurAmount={treatment.priceFrom} /></span>
                   </div>
                   <div className="bg-green-50 border border-green-100 rounded-xl p-3 flex justify-between font-semibold text-green-700">
                     <span>Your saving</span>

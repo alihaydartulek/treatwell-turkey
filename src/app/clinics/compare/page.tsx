@@ -159,7 +159,7 @@ function buildRows({
       <div className="flex flex-col gap-1">
         {c.highlights.slice(0, 3).map((h) => (
           <span key={h} className="text-xs text-slate-600 flex items-start gap-1">
-            <CheckCircle size={11} className="text-blue-500 mt-0.5 shrink-0" />
+            <CheckCircle size={11} className="text-teal-500 mt-0.5 shrink-0" />
             {h}
           </span>
         ))}
@@ -173,7 +173,7 @@ function buildRows({
         href={c.website}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-1 text-xs text-blue-600 hover:underline"
+        className="flex items-center gap-1 text-xs text-teal-600 hover:underline"
       >
         <Globe size={11} />
         Visit website
@@ -195,14 +195,14 @@ function buildRows({
         <a
           href={`mailto:${c.email}`}
           onClick={() => trackClinicEmail(c.slug, "compare-tool")}
-          className="flex items-center justify-center gap-1.5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg transition-colors"
+          className="flex items-center justify-center gap-1.5 py-2 bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold rounded-lg transition-colors"
         >
           <Mail size={12} />
           Email
         </a>
         <Link
           href={`/clinics/${c.slug}`}
-          className="flex items-center justify-center gap-1.5 py-2 border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-600 text-xs font-semibold rounded-lg transition-colors"
+          className="flex items-center justify-center gap-1.5 py-2 border border-slate-200 text-slate-600 hover:border-teal-300 hover:text-teal-600 text-xs font-semibold rounded-lg transition-colors"
         >
           <ExternalLink size={11} />
           Full Profile
@@ -301,7 +301,7 @@ function CompareTable() {
         <p className="text-slate-500 mb-4">Select at least 2 clinics to compare.</p>
         <Link
           href="/clinics"
-          className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline"
+          className="inline-flex items-center gap-2 text-sm text-teal-600 hover:underline"
         >
           <ArrowLeft size={14} />
           Back to clinics
@@ -349,7 +349,7 @@ function CompareTable() {
       <div className="flex items-center gap-3 mb-6">
         <Link
           href="/clinics"
-          className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 transition-colors"
+          className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-600 transition-colors"
         >
           <ArrowLeft size={14} />
           Back to clinics
@@ -373,7 +373,7 @@ function CompareTable() {
             {visualRows.map((row, i) =>
               row.kind === "group" ? (
                 <tr key={i}>
-                  <td className="pl-1 pr-3 pt-6 pb-2 align-bottom text-xs font-bold text-blue-700 uppercase tracking-wider">
+                  <td className="pl-1 pr-3 pt-6 pb-2 align-bottom text-xs font-bold text-teal-700 uppercase tracking-wider">
                     {row.title}
                   </td>
                 </tr>
@@ -405,7 +405,7 @@ function CompareTable() {
               <tr>
                 {selected.map((clinic) => (
                   <th key={clinic.slug} className="pb-6 px-2 align-bottom">
-                    <div className="relative bg-white border-2 border-blue-200 rounded-2xl p-4 text-left h-full">
+                    <div className="relative bg-white border-2 border-teal-200 rounded-2xl p-4 text-left h-full">
                       <button
                         type="button"
                         onClick={() => removeClinic(clinic.slug)}
@@ -456,7 +456,7 @@ function CompareTable() {
           </p>
           <Link
             href="/clinics"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:underline"
           >
             <X size={13} className="rotate-45" />
             Add another clinic

@@ -151,7 +151,7 @@ export default async function DestinationPage({
                   {dest.topTreatments.map((t) => (
                     <span
                       key={t}
-                      className="px-4 py-2 bg-blue-50 border border-blue-100 text-blue-700 font-medium text-sm rounded-xl"
+                      className="px-4 py-2 bg-teal-50 border border-teal-100 text-teal-700 font-medium text-sm rounded-xl"
                     >
                       {t}
                     </span>
@@ -167,7 +167,7 @@ export default async function DestinationPage({
                 <div className="flex flex-col gap-3">
                   {dest.neighborhoods.map((n) => (
                     <div key={n.name} className="flex gap-3 p-4 border border-slate-200 rounded-xl">
-                      <MapPin size={18} className="text-blue-500 mt-0.5 shrink-0" />
+                      <MapPin size={18} className="text-teal-500 mt-0.5 shrink-0" />
                       <div>
                         <h3 className="font-semibold text-slate-900">{n.name}</h3>
                         <p className="text-sm text-slate-500 mt-0.5">{n.desc}</p>
@@ -187,7 +187,7 @@ export default async function DestinationPage({
                     {cityClinics.map((clinic) => (
                       <div
                         key={clinic.slug}
-                        className="border border-slate-200 rounded-2xl p-5 hover:shadow-md hover:border-blue-200 transition-all"
+                        className="border border-slate-200 rounded-2xl p-5 hover:shadow-md hover:border-teal-200 transition-all"
                       >
                         <div className="flex items-start justify-between gap-3 mb-3">
                           <div>
@@ -235,7 +235,7 @@ export default async function DestinationPage({
                         <div className="flex gap-3">
                           <Link
                             href={`/clinics/${clinic.slug}`}
-                            className="flex-1 text-center py-2 text-sm font-semibold text-blue-600 border border-blue-200 hover:bg-blue-50 rounded-xl transition-colors"
+                            className="flex-1 text-center py-2 text-sm font-semibold text-teal-600 border border-teal-200 hover:bg-teal-50 rounded-xl transition-colors"
                           >
                             View Profile
                           </Link>
@@ -248,7 +248,7 @@ export default async function DestinationPage({
                           </a>
                           <a
                             href={`mailto:${clinic.email}`}
-                            className="flex items-center justify-center gap-1.5 flex-1 text-center py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors"
+                            className="flex items-center justify-center gap-1.5 flex-1 text-center py-2 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-xl transition-colors"
                           >
                             <Mail size={13} />
                             Email
@@ -290,17 +290,17 @@ export default async function DestinationPage({
             {/* Sidebar */}
             <div className="flex flex-col gap-5">
               {/* CTA */}
-              <div className="bg-blue-600 text-white rounded-2xl p-6 sticky top-24">
+              <div className="bg-teal-600 text-white rounded-2xl p-6 sticky top-24">
                 <h3 className="font-bold text-lg mb-2">
                   Find Clinics in {dest.city}
                 </h3>
-                <p className="text-blue-100 text-sm mb-4">
+                <p className="text-teal-100 text-sm mb-4">
                   Get personalised quotes from verified clinics in {dest.city}
                   — free, no commitment.
                 </p>
                 <Link
                   href="/get-a-quote"
-                  className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
+                  className="block text-center py-3 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors"
                 >
                   Get Free Quotes →
                 </Link>
@@ -313,14 +313,14 @@ export default async function DestinationPage({
                 </h3>
                 <div className="flex flex-col gap-3 text-sm">
                   <div className="flex items-start gap-2">
-                    <Plane size={14} className="text-blue-500 mt-0.5 shrink-0" />
+                    <Plane size={14} className="text-teal-500 mt-0.5 shrink-0" />
                     <div>
                       <div className="font-medium text-slate-700">Flight time</div>
                       <div className="text-slate-500">{dest.practicalInfo.flightTime}</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <Plane size={14} className="text-blue-500 mt-0.5 shrink-0" />
+                    <Plane size={14} className="text-teal-500 mt-0.5 shrink-0" />
                     <div>
                       <div className="font-medium text-slate-700">Direct flights from</div>
                       <div className="text-slate-500">
@@ -329,21 +329,21 @@ export default async function DestinationPage({
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <Globe size={14} className="text-blue-500 mt-0.5 shrink-0" />
+                    <Globe size={14} className="text-teal-500 mt-0.5 shrink-0" />
                     <div>
                       <div className="font-medium text-slate-700">Language</div>
                       <div className="text-slate-500">{dest.practicalInfo.language}</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <Clock size={14} className="text-blue-500 mt-0.5 shrink-0" />
+                    <Clock size={14} className="text-teal-500 mt-0.5 shrink-0" />
                     <div>
                       <div className="font-medium text-slate-700">Timezone</div>
                       <div className="text-slate-500">{dest.practicalInfo.timezone}</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <MapPin size={14} className="text-blue-500 mt-0.5 shrink-0" />
+                    <MapPin size={14} className="text-teal-500 mt-0.5 shrink-0" />
                     <div>
                       <div className="font-medium text-slate-700">Best time to visit</div>
                       <div className="text-slate-500">{dest.practicalInfo.bestTime}</div>
@@ -364,7 +364,7 @@ export default async function DestinationPage({
                       <Link
                         key={s}
                         href={`/destinations/${s}`}
-                        className="text-sm text-blue-600 hover:underline capitalize"
+                        className="text-sm text-teal-600 hover:underline capitalize"
                       >
                         → {s.charAt(0).toUpperCase() + s.slice(1)}
                       </Link>

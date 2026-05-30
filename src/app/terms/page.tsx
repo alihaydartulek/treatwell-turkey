@@ -61,7 +61,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">9. Contact</h2>
-              <p>Questions about these terms: <a href="mailto:cliniqturkey@gmail.com" className="text-blue-600 hover:underline">cliniqturkey@gmail.com</a></p>
+              <p>Questions about these terms: <a href="mailto:cliniqturkey@gmail.com" className="text-teal-600 hover:underline">cliniqturkey@gmail.com</a></p>
             </section>
 
           </div>

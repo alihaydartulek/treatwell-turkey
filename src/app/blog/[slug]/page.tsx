@@ -51,11 +51,11 @@ function renderInline(text: string): ReactNode[] {
     if (linkMatch) {
       const isExternal = linkMatch[2].startsWith("http");
       return isExternal ? (
-        <a key={j} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        <a key={j} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
           {linkMatch[1]}
         </a>
       ) : (
-        <Link key={j} href={linkMatch[2]} className="text-blue-600 hover:underline">
+        <Link key={j} href={linkMatch[2]} className="text-teal-600 hover:underline">
           {linkMatch[1]}
         </Link>
       );
@@ -238,7 +238,7 @@ export default async function BlogPostPage({
             </div>
 
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold text-blue-300 bg-blue-900/40 border border-blue-800 px-2.5 py-1 rounded-full">
+              <span className="text-xs font-semibold text-teal-300 bg-teal-900/40 border border-teal-800 px-2.5 py-1 rounded-full">
                 {post.category}
               </span>
               <span className="flex items-center gap-1 text-xs text-slate-400">
@@ -261,7 +261,7 @@ export default async function BlogPostPage({
             {/* Mobile back button — visible only on small screens */}
             <Link
               href="/blog"
-              className="lg:hidden inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 mb-6 transition-colors"
+              className="lg:hidden inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-600 mb-6 transition-colors"
             >
               <ArrowLeft size={14} />
               Back to all guides
@@ -272,7 +272,7 @@ export default async function BlogPostPage({
 
                 {/* Contextual internal links — treatment + top clinics */}
                 {relatedTreatmentObj && (
-                  <div className="mt-10 border border-blue-100 bg-blue-50/60 rounded-2xl p-6">
+                  <div className="mt-10 border border-teal-100 bg-teal-50/60 rounded-2xl p-6">
                     <h2 className="text-xl font-bold text-slate-900 mt-0 mb-2">
                       Compare {relatedTreatmentObj.name} Clinics in Turkey
                     </h2>
@@ -281,7 +281,7 @@ export default async function BlogPostPage({
                       our{" "}
                       <Link
                         href={`/treatments/${relatedTreatmentObj.slug}`}
-                        className="text-blue-600 font-medium hover:underline"
+                        className="text-teal-600 font-medium hover:underline"
                       >
                         {relatedTreatmentObj.name.toLowerCase()} in Turkey
                       </Link>{" "}
@@ -297,9 +297,9 @@ export default async function BlogPostPage({
                           <li key={c.slug} className="ml-0">
                             <Link
                               href={`/clinics/${c.slug}`}
-                              className="flex items-center justify-between gap-2 bg-white border border-slate-200 hover:border-blue-300 rounded-xl px-4 py-2.5 text-sm transition-colors group"
+                              className="flex items-center justify-between gap-2 bg-white border border-slate-200 hover:border-teal-300 rounded-xl px-4 py-2.5 text-sm transition-colors group"
                             >
-                              <span className="font-medium text-slate-800 group-hover:text-blue-600">
+                              <span className="font-medium text-slate-800 group-hover:text-teal-600">
                                 {c.name} — {c.city}
                               </span>
                               <span className="flex items-center gap-1 text-slate-400 shrink-0">
@@ -314,7 +314,7 @@ export default async function BlogPostPage({
 
                     <Link
                       href={`/treatments/${relatedTreatmentObj.slug}`}
-                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:gap-2.5 transition-all"
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-600 hover:gap-2.5 transition-all"
                     >
                       View all {relatedTreatmentObj.name.toLowerCase()} clinics &
                       prices
@@ -327,16 +327,16 @@ export default async function BlogPostPage({
               {/* Sidebar */}
               <aside className="flex flex-col gap-5">
                 {/* CTA */}
-                <div className="bg-blue-600 text-white rounded-2xl p-6 sticky top-24">
+                <div className="bg-teal-600 text-white rounded-2xl p-6 sticky top-24">
                   <h3 className="font-bold text-lg mb-2">
                     Ready to Get Quotes?
                   </h3>
-                  <p className="text-blue-100 text-sm mb-4">
+                  <p className="text-teal-100 text-sm mb-4">
                     Free, personalised quotes from verified clinics in 24 hours.
                   </p>
                   <Link
                     href="/get-a-quote"
-                    className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
+                    className="block text-center py-3 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors"
                   >
                     Get Free Quotes →
                   </Link>
@@ -350,7 +350,7 @@ export default async function BlogPostPage({
                     </h3>
                     <Link
                       href={`/treatments/${post.relatedTreatment}`}
-                      className="flex items-center justify-between text-sm text-blue-600 hover:underline font-medium"
+                      className="flex items-center justify-between text-sm text-teal-600 hover:underline font-medium"
                     >
                       Compare clinics & prices
                       <ArrowRight size={14} />
@@ -369,7 +369,7 @@ export default async function BlogPostPage({
                         <Link
                           key={r.slug}
                           href={`/blog/${r.slug}`}
-                          className="text-sm text-blue-600 hover:underline leading-snug"
+                          className="text-sm text-teal-600 hover:underline leading-snug"
                         >
                           {r.title}
                         </Link>
@@ -386,7 +386,7 @@ export default async function BlogPostPage({
         <div className="container py-6 border-t border-slate-200">
           <Link
             href="/blog"
-            className="flex items-center gap-2 text-sm text-slate-500 hover:text-blue-600 transition-colors"
+            className="flex items-center gap-2 text-sm text-slate-500 hover:text-teal-600 transition-colors"
           >
             <ArrowLeft size={14} />
             Back to all guides

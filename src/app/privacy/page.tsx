@@ -22,7 +22,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">1. Who We Are</h2>
               <p>CliniqTurkey is an independent medical tourism directory and comparison platform. We connect patients with verified Turkish clinics but do not act as a medical provider, agency or intermediary. Our platform is free for patients to use.</p>
-              <p className="mt-2">Contact: <a href="mailto:cliniqturkey@gmail.com" className="text-blue-600 hover:underline">cliniqturkey@gmail.com</a></p>
+              <p className="mt-2">Contact: <a href="mailto:cliniqturkey@gmail.com" className="text-teal-600 hover:underline">cliniqturkey@gmail.com</a></p>
             </section>
 
             <section>
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
               <ul className="list-disc ml-6 mt-2 space-y-1">
                 <li><strong>Usage data</strong> — pages visited, browser type, country of origin (via standard analytics)</li>
                 <li><strong>Contact form data</strong> — if you use our contact form: name, email address, message content</li>
-                <li><strong>Cookies</strong> — see our <Link href="/cookie-policy" className="text-blue-600 hover:underline">Cookie Policy</Link></li>
+                <li><strong>Cookies</strong> — see our <Link href="/cookie-policy" className="text-teal-600 hover:underline">Cookie Policy</Link></li>
               </ul>
               <p className="mt-2">We do <strong>not</strong> collect medical information. If you send medical information directly to a clinic by phone or email, that data is between you and the clinic — not us.</p>
             </section>
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
                 <li>Object to processing</li>
                 <li>Lodge a complaint with your national data protection authority</li>
               </ul>
-              <p className="mt-2">To exercise any of these rights, email <a href="mailto:cliniqturkey@gmail.com" className="text-blue-600 hover:underline">cliniqturkey@gmail.com</a>.</p>
+              <p className="mt-2">To exercise any of these rights, email <a href="mailto:cliniqturkey@gmail.com" className="text-teal-600 hover:underline">cliniqturkey@gmail.com</a>.</p>
             </section>
 
             <section>

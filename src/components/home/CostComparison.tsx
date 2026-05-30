@@ -72,7 +72,7 @@ export default function CostComparison() {
                 <th className="text-right py-3 px-4 text-slate-500 font-medium">
                   🇩🇪 Germany
                 </th>
-                <th className="text-right py-3 px-4 text-blue-700 font-semibold">
+                <th className="text-right py-3 px-4 text-teal-700 font-semibold">
                   🇹🇷 Turkey
                 </th>
                 <th className="text-right py-3 px-4 text-green-600 font-semibold">
@@ -95,7 +95,7 @@ export default function CostComparison() {
                   <td className="py-4 px-4 text-right text-slate-500">
                     €{row.de.toLocaleString()}
                   </td>
-                  <td className="py-4 px-4 text-right font-bold text-blue-700">
+                  <td className="py-4 px-4 text-right font-bold text-teal-700">
                     {format(row.turkey)}
                   </td>
                   <td className="py-4 px-4 text-right">
@@ -115,17 +115,17 @@ export default function CostComparison() {
           assessment. Turkey prices shown in EUR for clarity.
         </p>
 
-        <div className="mt-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
+        <div className="mt-10 bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-2">
             Want to know your exact saving?
           </h3>
-          <p className="text-blue-100 mb-6">
+          <p className="text-teal-100 mb-6">
             Use our free cost calculator — enter your treatment and home country
             to get a personalised estimate in 30 seconds.
           </p>
           <Link
             href="/cost-calculator"
-            className="inline-flex items-center gap-2 bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-teal-700 font-semibold px-6 py-3 rounded-xl hover:bg-teal-50 transition-colors"
           >
             Open Cost Calculator <ArrowRight size={16} />
           </Link>

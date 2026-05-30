@@ -59,8 +59,8 @@ export default async function GetAQuotePage({
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
               {trustPoints.map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3">
-                    <Icon size={18} className="text-blue-600" />
+                  <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-3">
+                    <Icon size={18} className="text-teal-600" />
                   </div>
                   <h3 className="font-semibold text-slate-900 text-sm mb-1">{title}</h3>
                   <p className="text-xs text-slate-500 leading-relaxed">{desc}</p>

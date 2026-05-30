@@ -5,7 +5,7 @@ export default function Loading() {
       role="status"
       aria-live="polite"
     >
-      <div className="h-10 w-10 rounded-full border-4 border-slate-200 border-t-blue-600 animate-spin" />
+      <div className="h-10 w-10 rounded-full border-4 border-slate-200 border-t-teal-600 animate-spin" />
       <span className="sr-only">Loading…</span>
     </div>
   );

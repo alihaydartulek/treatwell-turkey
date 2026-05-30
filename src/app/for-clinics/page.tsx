@@ -139,7 +139,7 @@ export default function ForClinicsPage() {
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
           <div className="container">
             <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-300 bg-blue-900/40 border border-blue-800 rounded-full px-3 py-1 mb-4">
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-300 bg-teal-900/40 border border-teal-800 rounded-full px-3 py-1 mb-4">
                 <Zap size={13} />
                 For Clinics & Hospitals
               </span>
@@ -169,7 +169,7 @@ export default function ForClinicsPage() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/for-clinics/apply"
-                  className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
+                  className="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors"
                 >
                   Apply to List Your Clinic
                 </Link>
@@ -202,8 +202,8 @@ export default function ForClinicsPage() {
                   key={b.title}
                   className="p-6 border border-slate-200 rounded-2xl hover:shadow-md transition-shadow"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
-                    <b.icon size={18} className="text-blue-600" />
+                  <div className="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-4">
+                    <b.icon size={18} className="text-teal-600" />
                   </div>
                   <h3 className="font-bold text-slate-900 mb-2">{b.title}</h3>
                   <p className="text-sm text-slate-500 leading-relaxed">{b.desc}</p>
@@ -230,12 +230,12 @@ export default function ForClinicsPage() {
                   key={plan.name}
                   className={`rounded-2xl p-6 flex flex-col ${
                     plan.highlight
-                      ? "bg-blue-600 text-white border-2 border-blue-600 shadow-xl"
+                      ? "bg-teal-600 text-white border-2 border-teal-600 shadow-xl"
                       : "bg-white border border-slate-200"
                   }`}
                 >
                   {plan.highlight && (
-                    <span className="text-xs font-bold text-blue-200 uppercase tracking-wider mb-3">
+                    <span className="text-xs font-bold text-teal-200 uppercase tracking-wider mb-3">
                       Most Popular
                     </span>
                   )}
@@ -256,7 +256,7 @@ export default function ForClinicsPage() {
                     </span>
                     <span
                       className={`text-sm ml-1 ${
-                        plan.highlight ? "text-blue-200" : "text-slate-400"
+                        plan.highlight ? "text-teal-200" : "text-slate-400"
                       }`}
                     >
                       {plan.priceNote}
@@ -269,12 +269,12 @@ export default function ForClinicsPage() {
                         <CheckCircle
                           size={13}
                           className={`mt-0.5 shrink-0 ${
-                            plan.highlight ? "text-blue-200" : "text-green-500"
+                            plan.highlight ? "text-teal-200" : "text-green-500"
                           }`}
                         />
                         <span
                           className={
-                            plan.highlight ? "text-blue-100" : "text-slate-600"
+                            plan.highlight ? "text-teal-100" : "text-slate-600"
                           }
                         >
                           {f}
@@ -287,8 +287,8 @@ export default function ForClinicsPage() {
                     href={plan.ctaHref}
                     className={`block text-center py-3 rounded-xl font-semibold text-sm transition-colors ${
                       plan.highlight
-                        ? "bg-white text-blue-700 hover:bg-blue-50"
-                        : "bg-blue-600 text-white hover:bg-blue-700"
+                        ? "bg-white text-teal-700 hover:bg-teal-50"
+                        : "bg-teal-600 text-white hover:bg-teal-700"
                     }`}
                   >
                     {plan.cta}
@@ -325,22 +325,22 @@ export default function ForClinicsPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-blue-600 text-white text-center">
+        <section className="py-16 bg-teal-600 text-white text-center">
           <div className="container max-w-xl">
             <h2 className="text-3xl font-bold mb-3">
               Ready to Grow Your International Patient Base?
             </h2>
-            <p className="text-blue-100 mb-6">
+            <p className="text-teal-100 mb-6">
               Applications reviewed within 3 working days. Most clinics go
               live within 5 days of approval.
             </p>
             <Link
               href="/for-clinics/apply"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 font-bold text-lg rounded-xl hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-teal-700 font-bold text-lg rounded-xl hover:bg-teal-50 transition-colors"
             >
               Apply Now — It&apos;s Free <ArrowRight size={18} />
             </Link>
-            <p className="text-blue-200 text-sm mt-4">
+            <p className="text-teal-200 text-sm mt-4">
               Questions? Email us at{" "}
               <a
                 href="mailto:clinics@cliniqturkey.com"

@@ -50,11 +50,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-teal-600 flex items-center justify-center">
               <span className="text-white text-sm font-bold">CT</span>
             </div>
             <span className="font-bold text-slate-900 text-lg">
-              Cliniq<span className="text-blue-600">Turkey</span>
+              Cliniq<span className="text-teal-600">Turkey</span>
             </span>
           </Link>
 
@@ -64,7 +64,7 @@ export default function Header() {
             <div className="relative">
               <button
                 onClick={() => toggleDrop("treatments")}
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
               >
                 Treatments <ChevronDown size={14} />
               </button>
@@ -75,7 +75,7 @@ export default function Header() {
                       key={t.href}
                       href={t.href}
                       onClick={() => setActiveDrop(null)}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
                     >
                       {t.label}
                     </Link>
@@ -84,7 +84,7 @@ export default function Header() {
                     <Link
                       href="/treatments"
                       onClick={() => setActiveDrop(null)}
-                      className="block px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+                      className="block px-4 py-2 text-sm font-medium text-teal-600 hover:bg-teal-50 transition-colors"
                     >
                       View All Treatments →
                     </Link>
@@ -96,7 +96,7 @@ export default function Header() {
             {/* Clinics */}
             <Link
               href="/clinics"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
             >
               Clinics
             </Link>
@@ -105,7 +105,7 @@ export default function Header() {
             <div className="relative">
               <button
                 onClick={() => toggleDrop("destinations")}
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
               >
                 Destinations <ChevronDown size={14} />
               </button>
@@ -116,7 +116,7 @@ export default function Header() {
                       key={d.href}
                       href={d.href}
                       onClick={() => setActiveDrop(null)}
-                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                      className="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
                     >
                       {d.label}
                     </Link>
@@ -125,7 +125,7 @@ export default function Header() {
                     <Link
                       href="/destinations"
                       onClick={() => setActiveDrop(null)}
-                      className="block px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+                      className="block px-4 py-2 text-sm font-medium text-teal-600 hover:bg-teal-50 transition-colors"
                     >
                       All Destinations →
                     </Link>
@@ -136,21 +136,21 @@ export default function Header() {
 
             <Link
               href="/cost-calculator"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
             >
               Cost Calculator
             </Link>
 
             <Link
               href="/compare"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
             >
               Compare
             </Link>
 
             <Link
               href="/blog"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
             >
               Guides
             </Link>
@@ -162,13 +162,13 @@ export default function Header() {
             <ThemeToggle />
             <Link
               href="/clinics"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
             >
               Browse Clinics
             </Link>
             <Link
               href="/get-a-quote"
-              className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-lg transition-colors"
             >
               Find a Clinic
             </Link>
@@ -255,7 +255,7 @@ export default function Header() {
             <Link
               href="/get-a-quote"
               onClick={() => setMobileOpen(false)}
-              className="mx-3 py-2.5 text-sm font-semibold text-center text-white bg-blue-600 hover:bg-blue-700 rounded-lg"
+              className="mx-3 py-2.5 text-sm font-semibold text-center text-white bg-teal-600 hover:bg-teal-700 rounded-lg"
             >
               Get Free Quote
             </Link>

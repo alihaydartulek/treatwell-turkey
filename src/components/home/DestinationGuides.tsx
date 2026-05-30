@@ -8,7 +8,7 @@ const destinations = [
     tagline: "Europe's medical tourism capital",
     clinicCount: 80,
     highlights: ["World-class hospitals", "Direct flights from 50+ cities", "Rich culture & cuisine"],
-    gradient: "from-blue-600 to-blue-800",
+    gradient: "from-teal-600 to-teal-800",
     emoji: "🕌",
   },
   {
@@ -45,7 +45,7 @@ export default function DestinationGuides() {
     <section className="py-20 bg-slate-50">
       <div className="container">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+          <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider">
             City Guides
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">

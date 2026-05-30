@@ -149,14 +149,14 @@ export default function ClinicsPage() {
                 placeholder="Search clinics, cities or treatments…"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full pl-9 pr-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
               />
             </div>
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
               aria-label="Sort clinics"
-              className="px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-700"
+              className="px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-700"
             >
               {sortOptions.map((o) => (
                 <option key={o.value} value={o.value}>
@@ -171,7 +171,7 @@ export default function ClinicsPage() {
               <SlidersHorizontal size={15} />
               Filters
               {activeFilters.length > 0 && (
-                <span className="w-5 h-5 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center">
+                <span className="w-5 h-5 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center">
                   {activeFilters.length}
                 </span>
               )}
@@ -193,8 +193,8 @@ export default function ClinicsPage() {
                         onClick={() => setCity(c)}
                         className={`px-3 py-1.5 rounded-lg text-sm border transition-colors ${
                           city === c
-                            ? "bg-blue-600 text-white border-blue-600"
-                            : "bg-white text-slate-700 border-slate-200 hover:border-blue-300"
+                            ? "bg-teal-600 text-white border-teal-600"
+                            : "bg-white text-slate-700 border-slate-200 hover:border-teal-300"
                         }`}
                       >
                         {c}
@@ -213,8 +213,8 @@ export default function ClinicsPage() {
                         onClick={() => setTreatment(t)}
                         className={`px-3 py-1.5 rounded-lg text-sm border transition-colors ${
                           treatment === t
-                            ? "bg-blue-600 text-white border-blue-600"
-                            : "bg-white text-slate-700 border-slate-200 hover:border-blue-300"
+                            ? "bg-teal-600 text-white border-teal-600"
+                            : "bg-white text-slate-700 border-slate-200 hover:border-teal-300"
                         }`}
                       >
                         {t}
@@ -230,8 +230,8 @@ export default function ClinicsPage() {
                     onClick={() => setJciOnly((v) => !v)}
                     className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm border transition-colors ${
                       jciOnly
-                        ? "bg-blue-600 text-white border-blue-600"
-                        : "bg-white text-slate-700 border-slate-200 hover:border-blue-300"
+                        ? "bg-teal-600 text-white border-teal-600"
+                        : "bg-white text-slate-700 border-slate-200 hover:border-teal-300"
                     }`}
                   >
                     <CheckCircle size={13} />
@@ -248,7 +248,7 @@ export default function ClinicsPage() {
               {activeFilters.map((f) => (
                 <span
                   key={f}
-                  className="flex items-center gap-1 text-xs font-medium text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-full"
+                  className="flex items-center gap-1 text-xs font-medium text-teal-700 bg-teal-50 border border-teal-200 px-2.5 py-1 rounded-full"
                 >
                   {f}
                   <button
@@ -296,7 +296,7 @@ export default function ClinicsPage() {
               <p className="text-sm mb-5">Try broadening your search or removing a filter</p>
               <button
                 onClick={() => { setSearch(""); setCity("All Cities"); setTreatment("All Treatments"); setJciOnly(false); }}
-                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors"
+                className="px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold rounded-xl transition-colors"
               >
                 Clear All Filters
               </button>
@@ -311,8 +311,8 @@ export default function ClinicsPage() {
                     key={clinic.id}
                     className={`card-glow bg-white border-2 rounded-2xl overflow-hidden transition-all group ${
                       inCompare
-                        ? "border-blue-500 shadow-md"
-                        : "border-slate-200 hover:border-blue-200"
+                        ? "border-teal-500 shadow-md"
+                        : "border-slate-200 hover:border-teal-200"
                     }`}
                   >
                     {/* Cover image */}
@@ -336,10 +336,10 @@ export default function ClinicsPage() {
                         disabled={compareDisabled}
                         className={`absolute top-3 right-3 flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full border transition-all ${
                           inCompare
-                            ? "bg-blue-600 text-white border-blue-600"
+                            ? "bg-teal-600 text-white border-teal-600"
                             : compareDisabled
                             ? "bg-white/60 text-slate-400 border-slate-200 cursor-not-allowed"
-                            : "bg-white text-slate-700 border-slate-200 hover:border-blue-400 hover:text-blue-600"
+                            : "bg-white text-slate-700 border-slate-200 hover:border-teal-400 hover:text-teal-600"
                         }`}
                       >
                         <GitCompareArrows size={11} />
@@ -349,7 +349,7 @@ export default function ClinicsPage() {
 
                     <div className="p-5">
                       <div className="flex items-start justify-between gap-2 mb-1">
-                        <h2 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-tight">
+                        <h2 className="font-bold text-slate-900 group-hover:text-teal-600 transition-colors leading-tight">
                           {clinic.name}
                         </h2>
                       </div>
@@ -408,15 +408,15 @@ export default function ClinicsPage() {
                       </div>
 
                       <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                        <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-1.5">
-                          <span className="text-xs text-blue-500 block leading-none mb-0.5">From</span>
-                          <span className="text-base font-bold text-blue-700 leading-none">
+                        <div className="bg-teal-50 border border-teal-100 rounded-xl px-3 py-1.5">
+                          <span className="text-xs text-teal-500 block leading-none mb-0.5">From</span>
+                          <span className="text-base font-bold text-teal-700 leading-none">
                             {format(clinic.priceFrom)}
                           </span>
                         </div>
                         <Link
                           href={`/clinics/${clinic.slug}`}
-                          className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors btn-glow"
+                          className="px-4 py-2 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-xl transition-colors btn-glow"
                         >
                           View Profile
                         </Link>
@@ -444,7 +444,7 @@ export default function ClinicsPage() {
                     return (
                       <span
                         key={slug}
-                        className="flex items-center gap-1.5 text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full"
+                        className="flex items-center gap-1.5 text-sm font-medium bg-teal-50 text-teal-700 border border-teal-200 px-3 py-1 rounded-full"
                       >
                         {c.name}
                         <button
@@ -473,7 +473,7 @@ export default function ClinicsPage() {
                   <button
                     onClick={handleCompareNow}
                     disabled={compareList.length < 2}
-                    className="flex items-center gap-2 px-5 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white text-sm font-semibold rounded-xl transition-colors"
+                    className="flex items-center gap-2 px-5 py-2 bg-teal-600 hover:bg-teal-700 disabled:bg-slate-300 text-white text-sm font-semibold rounded-xl transition-colors"
                   >
                     <GitCompareArrows size={15} />
                     Compare Now

@@ -31,7 +31,7 @@ export const destinations: Destination[] = [
     description:
       "Istanbul straddles two continents and has long been a crossroads of the world. Today, it also sits at the intersection of medical excellence and affordability. The city is home to over 80 of Turkey's top international clinics, many holding JCI accreditation — the same gold standard as leading UK and US hospitals. With direct flights from every major European city and a vibrant tourist infrastructure, Istanbul has become the first choice for hundreds of thousands of medical tourists each year.",
     clinicCount: 80,
-    gradient: "from-blue-600 to-blue-800",
+    gradient: "from-teal-600 to-teal-800",
     highlights: [
       "80+ verified international clinics",
       "Direct flights from 60+ European cities",

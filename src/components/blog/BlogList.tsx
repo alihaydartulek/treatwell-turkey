@@ -32,8 +32,8 @@ export default function BlogList() {
             aria-pressed={active === c}
             className={`px-4 py-2 rounded-xl text-sm font-medium border transition-colors ${
               active === c
-                ? "bg-blue-600 text-white border-blue-600"
-                : "border-slate-200 text-slate-700 hover:border-blue-400 hover:text-blue-600"
+                ? "bg-teal-600 text-white border-teal-600"
+                : "border-slate-200 text-slate-700 hover:border-teal-400 hover:text-teal-600"
             }`}
           >
             {c}
@@ -51,15 +51,15 @@ export default function BlogList() {
       {featured && (
         <Link
           href={`/blog/${featured.slug}`}
-          className="group block mb-10 border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all"
+          className="group block mb-10 border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-teal-200 transition-all"
         >
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="h-56 md:h-auto bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+            <div className="h-56 md:h-auto bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
               <span className="text-8xl opacity-40">{featured.coverEmoji}</span>
             </div>
             <div className="p-8 flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">
+                <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-2.5 py-1 rounded-full">
                   {featured.category}
                 </span>
                 <span className="flex items-center gap-1 text-xs text-slate-400">
@@ -67,13 +67,13 @@ export default function BlogList() {
                   {featured.readTime} min read
                 </span>
               </div>
-              <h2 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-3">
+              <h2 className="text-2xl font-bold text-slate-900 group-hover:text-teal-600 transition-colors mb-3">
                 {featured.title}
               </h2>
               <p className="text-slate-500 text-sm leading-relaxed mb-4">
                 {featured.excerpt}
               </p>
-              <span className="flex items-center gap-1 text-sm font-semibold text-blue-600">
+              <span className="flex items-center gap-1 text-sm font-semibold text-teal-600">
                 Read guide <ArrowRight size={14} />
               </span>
             </div>
@@ -88,14 +88,14 @@ export default function BlogList() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md hover:border-blue-200 transition-all"
+              className="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md hover:border-teal-200 transition-all"
             >
               <div className="h-36 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
                 <span className="text-6xl opacity-40">{post.coverEmoji}</span>
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-2 py-0.5 rounded-full">
                     {post.category}
                   </span>
                   <span className="flex items-center gap-1 text-xs text-slate-400">
@@ -103,7 +103,7 @@ export default function BlogList() {
                     {post.readTime} min
                   </span>
                 </div>
-                <h2 className="font-bold text-slate-900 text-sm leading-snug group-hover:text-blue-600 transition-colors mb-2">
+                <h2 className="font-bold text-slate-900 text-sm leading-snug group-hover:text-teal-600 transition-colors mb-2">
                   {post.title}
                 </h2>
                 <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">

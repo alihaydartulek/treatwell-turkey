@@ -28,7 +28,7 @@ export default function StickyContactBar({ clinicSlug, phone, email }: Props) {
       <a
         href={`mailto:${email}`}
         onClick={() => trackClinicEmail(clinicSlug, "mobile-sticky")}
-        className="flex-1 flex items-center justify-center gap-1.5 py-3 bg-blue-600 active:bg-blue-700 text-white font-semibold rounded-xl text-sm"
+        className="flex-1 flex items-center justify-center gap-1.5 py-3 bg-teal-600 active:bg-teal-700 text-white font-semibold rounded-xl text-sm"
       >
         <Mail size={16} />
         Email

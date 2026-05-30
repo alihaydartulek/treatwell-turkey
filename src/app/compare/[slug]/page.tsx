@@ -295,17 +295,17 @@ export default async function ComparisonPage({
           </div>
 
           {/* CTA */}
-          <div className="bg-blue-600 text-white rounded-2xl p-8 text-center">
+          <div className="bg-teal-600 text-white rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-2">
               Ready to see your personal quote?
             </h2>
-            <p className="text-blue-100 mb-6">
+            <p className="text-teal-100 mb-6">
               Tell us about your case and we will match you with 2-3 verified
               clinics and send you real quotes within 24 hours. Free, no commitment.
             </p>
             <Link
               href={`/treatments/${data.treatment}`}
-              className="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
+              className="inline-block px-8 py-3 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors"
             >
               Browse Verified Clinics →
             </Link>
@@ -314,7 +314,7 @@ export default async function ComparisonPage({
           <div className="mt-8 text-center">
             <Link
               href={`/treatments/${data.treatment}`}
-              className="text-blue-600 hover:underline text-sm"
+              className="text-teal-600 hover:underline text-sm"
             >
               Browse verified clinics for this treatment &rarr;
             </Link>

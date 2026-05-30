@@ -61,16 +61,16 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
     : [];
 
   return (
-    <section className="py-20 bg-blue-600 text-white">
+    <section className="py-20 bg-teal-600 text-white">
       <div className="container max-w-2xl mx-auto">
         <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-blue-200 uppercase tracking-wider">
+          <span className="text-sm font-semibold text-teal-200 uppercase tracking-wider">
             Direct Clinic Contact
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-3">
             Find Your Clinic & Get in Touch
           </h2>
-          <p className="text-blue-100">
+          <p className="text-teal-100">
             Select your treatment, see matched clinics, and contact them
             directly by phone or email — no middleman.
           </p>
@@ -106,8 +106,8 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                     }}
                     className={`p-3 rounded-xl text-sm font-medium border-2 transition-all text-left ${
                       selectedTreatment === t
-                        ? "border-blue-600 bg-blue-50 text-blue-700"
-                        : "border-slate-200 text-slate-700 hover:border-blue-300"
+                        ? "border-teal-600 bg-teal-50 text-teal-700"
+                        : "border-slate-200 text-slate-700 hover:border-teal-300"
                     }`}
                   >
                     {t}
@@ -135,7 +135,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                   matchedClinics.map((clinic) => (
                     <div
                       key={clinic.slug}
-                      className="border-2 border-slate-200 hover:border-blue-300 rounded-xl p-4 transition-colors"
+                      className="border-2 border-slate-200 hover:border-teal-300 rounded-xl p-4 transition-colors"
                     >
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <div>
@@ -165,14 +165,14 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                         <a
                           href={`mailto:${clinic.email}`}
                           onClick={() => trackClinicEmail(clinic.slug, "lead-capture")}
-                          className="flex-1 flex items-center justify-center gap-1.5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg transition-colors"
+                          className="flex-1 flex items-center justify-center gap-1.5 py-2 bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold rounded-lg transition-colors"
                         >
                           <Mail size={13} />
                           Email
                         </a>
                         <Link
                           href={`/clinics/${clinic.slug}`}
-                          className="flex items-center justify-center gap-1.5 px-3 py-2 border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-600 text-xs font-semibold rounded-lg transition-colors"
+                          className="flex items-center justify-center gap-1.5 px-3 py-2 border border-slate-200 text-slate-600 hover:border-teal-300 hover:text-teal-600 text-xs font-semibold rounded-lg transition-colors"
                         >
                           <ExternalLink size={12} />
                           Profile
@@ -185,7 +185,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                     <p className="text-sm mb-3">No exact matches yet — browse all clinics</p>
                     <Link
                       href="/clinics"
-                      className="text-sm font-medium text-blue-600 hover:underline"
+                      className="text-sm font-medium text-teal-600 hover:underline"
                     >
                       View all clinics →
                     </Link>
@@ -196,7 +196,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
               <div className="flex gap-2">
                 <Link
                   href={`/treatments/${treatmentToSlug[selectedTreatment] ?? "hair-transplant"}`}
-                  className="flex-1 flex items-center justify-center gap-2 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm"
+                  className="flex-1 flex items-center justify-center gap-2 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors text-sm"
                 >
                   See all {selectedTreatment} clinics <ArrowRight size={15} />
                 </Link>
@@ -213,7 +213,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
         </div>
 
         {/* Trust signals */}
-        <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-blue-200">
+        <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-teal-200">
           {[
             "Direct clinic contact",
             "No middleman",

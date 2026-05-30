@@ -187,7 +187,7 @@ export default async function ClinicProfilePage({
               <div className="flex flex-col gap-2 shrink-0">
                 <Link
                   href={quoteUrl}
-                  className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl text-sm transition-colors text-center"
+                  className="px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl text-sm transition-colors text-center"
                 >
                   Get Free Quote
                 </Link>
@@ -275,7 +275,7 @@ export default async function ClinicProfilePage({
                         <div key={review.name} className="p-5 bg-slate-50 border border-slate-200 rounded-2xl">
                           <div className="flex items-start justify-between mb-3">
                             <div className="flex items-center gap-3">
-                              <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-sm font-bold">
+                              <div className="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center text-white text-sm font-bold">
                                 {review.name[0]}
                               </div>
                               <div>
@@ -308,7 +308,7 @@ export default async function ClinicProfilePage({
                           href={`https://www.google.com/search?q=${encodeURIComponent(clinic.name + " " + clinic.city + " reviews")}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:underline"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:underline"
                         >
                           View all {clinic.googleReviewCount.toLocaleString()} Google Reviews →
                         </a>
@@ -329,7 +329,7 @@ export default async function ClinicProfilePage({
                         href={`https://www.google.com/search?q=${encodeURIComponent(clinic.name + " " + clinic.city + " reviews")}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-blue-600 hover:underline font-medium"
+                        className="text-sm text-teal-600 hover:underline font-medium"
                       >
                         View Google Reviews →
                       </a>
@@ -343,8 +343,8 @@ export default async function ClinicProfilePage({
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">Why Choose {clinic.name}?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {clinic.highlights.map((h) => (
-                    <div key={h} className="flex items-start gap-2 p-4 bg-blue-50 border border-blue-100 rounded-xl text-sm">
-                      <CheckCircle size={15} className="text-blue-500 mt-0.5 shrink-0" />
+                    <div key={h} className="flex items-start gap-2 p-4 bg-teal-50 border border-teal-100 rounded-xl text-sm">
+                      <CheckCircle size={15} className="text-teal-500 mt-0.5 shrink-0" />
                       <span className="text-slate-700">{h}</span>
                     </div>
                   ))}
@@ -359,7 +359,7 @@ export default async function ClinicProfilePage({
                     <thead className="bg-slate-50 border-b border-slate-200">
                       <tr>
                         <th className="text-left py-3 px-4 text-slate-600 font-semibold">Treatment</th>
-                        <th className="text-right py-3 px-4 text-blue-700 font-semibold">Indicative Price</th>
+                        <th className="text-right py-3 px-4 text-teal-700 font-semibold">Indicative Price</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -388,7 +388,7 @@ export default async function ClinicProfilePage({
                       <div>
                         <div className="flex flex-wrap items-center gap-2 mb-1">
                           <h3 className="font-bold text-slate-900">{doc.name}</h3>
-                          <span className="text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                          <span className="text-xs text-teal-600 bg-teal-50 px-2 py-0.5 rounded-full">
                             {doc.title}
                           </span>
                         </div>
@@ -406,17 +406,17 @@ export default async function ClinicProfilePage({
             {/* Sidebar */}
             <div className="flex flex-col gap-5 sticky top-24 self-start">
               {/* CTA */}
-              <div className="bg-blue-600 text-white rounded-2xl p-6">
+              <div className="bg-teal-600 text-white rounded-2xl p-6">
                 <h3 className="font-bold text-lg mb-2">
                   Request a Free Quote
                 </h3>
-                <p className="text-blue-100 text-sm mb-4">
+                <p className="text-teal-100 text-sm mb-4">
                   Get a personalised quote from {clinic.name} within 24 hours.
                   No commitment.
                 </p>
                 <Link
                   href={quoteUrl}
-                  className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors mb-3"
+                  className="block text-center py-3 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors mb-3"
                 >
                   Get Free Quote
                 </Link>
@@ -443,7 +443,7 @@ export default async function ClinicProfilePage({
                     value={clinic.phone}
                     clinicSlug={clinic.slug}
                     source="contact-info"
-                    className="flex items-center gap-2 text-slate-600 hover:text-blue-600"
+                    className="flex items-center gap-2 text-slate-600 hover:text-teal-600"
                   >
                     <Phone size={14} className="shrink-0" />
                     {clinic.phone}
@@ -453,7 +453,7 @@ export default async function ClinicProfilePage({
                     value={clinic.email}
                     clinicSlug={clinic.slug}
                     source="contact-info"
-                    className="flex items-center gap-2 text-slate-600 hover:text-blue-600"
+                    className="flex items-center gap-2 text-slate-600 hover:text-teal-600"
                   >
                     <Mail size={14} className="shrink-0" />
                     {clinic.email}
@@ -476,7 +476,7 @@ export default async function ClinicProfilePage({
               {/* Accreditations */}
               <div className="border border-slate-200 rounded-2xl p-5">
                 <h3 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
-                  <Award size={16} className="text-blue-500" />
+                  <Award size={16} className="text-teal-500" />
                   Accreditations
                 </h3>
                 <div className="flex flex-col gap-2">

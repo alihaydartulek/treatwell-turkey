@@ -134,8 +134,8 @@ export default function CostCalculatorTool() {
                     aria-pressed={selectedTreatment?.label === t.label}
                     className={`p-3 rounded-xl text-sm font-medium border-2 text-left transition-all ${
                       selectedTreatment?.label === t.label
-                        ? "border-blue-600 bg-blue-50 text-blue-700"
-                        : "border-slate-200 text-slate-700 hover:border-blue-300"
+                        ? "border-teal-600 bg-teal-50 text-teal-700"
+                        : "border-slate-200 text-slate-700 hover:border-teal-300"
                     }`}
                   >
                     {t.label}
@@ -160,9 +160,9 @@ export default function CostCalculatorTool() {
                       aria-valuemin={selectedTreatment.pricePerUnit.min}
                       aria-valuemax={selectedTreatment.pricePerUnit.max}
                       aria-valuenow={quantity}
-                      className="flex-1 accent-blue-600"
+                      className="flex-1 accent-teal-600"
                     />
-                    <span className="text-2xl font-bold text-blue-600 w-20 text-right">
+                    <span className="text-2xl font-bold text-teal-600 w-20 text-right">
                       {quantity.toLocaleString()}
                     </span>
                   </div>
@@ -185,8 +185,8 @@ export default function CostCalculatorTool() {
                       onClick={() => setSelectedCountry(c)}
                       className={`p-3 rounded-xl text-sm font-medium border-2 transition-all ${
                         selectedCountry.code === c.code
-                          ? "border-blue-600 bg-blue-50 text-blue-700"
-                          : "border-slate-200 text-slate-700 hover:border-blue-300"
+                          ? "border-teal-600 bg-teal-50 text-teal-700"
+                          : "border-slate-200 text-slate-700 hover:border-teal-300"
                       }`}
                     >
                       {c.label}
@@ -207,8 +207,8 @@ export default function CostCalculatorTool() {
                       onClick={() => setNights(n)}
                       className={`px-4 py-2 rounded-xl text-sm font-medium border-2 transition-all ${
                         nights === n
-                          ? "border-blue-600 bg-blue-50 text-blue-700"
-                          : "border-slate-200 text-slate-700 hover:border-blue-300"
+                          ? "border-teal-600 bg-teal-50 text-teal-700"
+                          : "border-slate-200 text-slate-700 hover:border-teal-300"
                       }`}
                     >
                       {n}
@@ -220,7 +220,7 @@ export default function CostCalculatorTool() {
               <button
                 onClick={handleCalculate}
                 disabled={!selectedTreatment}
-                className="w-full flex items-center justify-center gap-2 py-4 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white font-bold text-lg rounded-xl transition-colors"
+                className="w-full flex items-center justify-center gap-2 py-4 bg-teal-600 hover:bg-teal-700 disabled:bg-slate-300 text-white font-bold text-lg rounded-xl transition-colors"
               >
                 Calculate My Saving <ArrowRight size={20} />
               </button>
@@ -242,14 +242,14 @@ export default function CostCalculatorTool() {
                   </div>
                 </div>
 
-                <div className="p-5 bg-blue-50 border border-blue-200 rounded-2xl text-center">
-                  <div className="text-blue-600 text-sm mb-1 font-medium">
+                <div className="p-5 bg-teal-50 border border-teal-200 rounded-2xl text-center">
+                  <div className="text-teal-600 text-sm mb-1 font-medium">
                     🇹🇷 Turkey (treatment + travel)
                   </div>
-                  <div className="text-3xl font-bold text-blue-700">
+                  <div className="text-3xl font-bold text-teal-700">
                     €{totalTurkeyCost.toLocaleString()}
                   </div>
-                  <div className="text-xs text-blue-500 mt-1">
+                  <div className="text-xs text-teal-500 mt-1">
                     incl. ~€{travelCost} flights &amp; hotel
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export default function CostCalculatorTool() {
                   </div>
                   <div className="border-t border-slate-100 pt-2 flex justify-between font-semibold text-slate-900">
                     <span>Total Turkey cost</span>
-                    <span className="text-blue-700">€{totalTurkeyCost.toLocaleString()}</span>
+                    <span className="text-teal-700">€{totalTurkeyCost.toLocaleString()}</span>
                   </div>
                 </div>
               </div>
@@ -301,7 +301,7 @@ export default function CostCalculatorTool() {
               <div className="flex flex-col gap-3">
                 <Link
                   href={selectedTreatment ? `/treatments/${selectedTreatment.slug}` : "/clinics"}
-                  className="flex items-center justify-center gap-2 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-colors"
+                  className="flex items-center justify-center gap-2 py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-xl transition-colors"
                 >
                   Find {selectedTreatment?.label ?? ""} Clinics <ArrowRight size={18} />
                 </Link>

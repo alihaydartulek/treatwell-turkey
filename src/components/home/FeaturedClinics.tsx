@@ -57,7 +57,7 @@ export default function FeaturedClinics() {
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div>
-            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider">
               Real Clinics, Verified Data
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
@@ -66,7 +66,7 @@ export default function FeaturedClinics() {
           </div>
           <Link
             href="/clinics"
-            className="flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline shrink-0"
+            className="flex items-center gap-1 text-sm font-medium text-teal-600 hover:underline shrink-0"
           >
             Browse All Clinics <ArrowRight size={14} />
           </Link>
@@ -82,7 +82,7 @@ export default function FeaturedClinics() {
               <Link
                 key={clinic.slug}
                 href={`/clinics/${clinic.slug}`}
-                className="card-glow bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-blue-200 transition-all group block"
+                className="card-glow bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-teal-200 transition-all group block"
               >
                 {/* Cover image */}
                 <div className="h-48 relative overflow-hidden">
@@ -117,7 +117,7 @@ export default function FeaturedClinics() {
 
                 <div className="p-5">
                   {/* Name */}
-                  <h3 className="font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors mb-1 leading-snug">
+                  <h3 className="font-bold text-slate-900 text-lg group-hover:text-teal-600 transition-colors mb-1 leading-snug">
                     {clinic.name}
                   </h3>
 
@@ -144,13 +144,13 @@ export default function FeaturedClinics() {
 
                   {/* Price + CTA */}
                   <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                    <div className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-1.5">
-                      <span className="text-xs text-blue-500 block leading-none mb-0.5">From</span>
-                      <span className="text-base font-bold text-blue-700 leading-none">
+                    <div className="bg-teal-50 border border-teal-100 rounded-xl px-3 py-1.5">
+                      <span className="text-xs text-teal-500 block leading-none mb-0.5">From</span>
+                      <span className="text-base font-bold text-teal-700 leading-none">
                         {format(clinic.priceFrom)}
                       </span>
                     </div>
-                    <span className="flex items-center gap-1 text-sm font-semibold text-blue-600 group-hover:gap-2 transition-all">
+                    <span className="flex items-center gap-1 text-sm font-semibold text-teal-600 group-hover:gap-2 transition-all">
                       View Profile <ArrowRight size={14} />
                     </span>
                   </div>

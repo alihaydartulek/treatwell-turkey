@@ -35,7 +35,7 @@ export default function TreatmentsPage() {
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-14">
           <div className="container">
             <div className="max-w-2xl">
-              <span className="text-sm font-semibold text-blue-300 uppercase tracking-wider">
+              <span className="text-sm font-semibold text-teal-300 uppercase tracking-wider">
                 40+ Treatments Available
               </span>
               <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
@@ -50,7 +50,7 @@ export default function TreatmentsPage() {
         </section>
 
         {/* Why Turkey strip */}
-        <div className="bg-blue-600 text-white py-4">
+        <div className="bg-teal-600 text-white py-4">
           <div className="container flex flex-wrap justify-center gap-6 text-sm">
             {[
               "Save 50–75% vs UK & German prices",
@@ -59,7 +59,7 @@ export default function TreatmentsPage() {
               "Direct clinic contact — no middleman",
             ].map((t) => (
               <span key={t} className="flex items-center gap-1.5">
-                <CheckCircle size={13} className="text-blue-200" />
+                <CheckCircle size={13} className="text-teal-200" />
                 {t}
               </span>
             ))}
@@ -74,7 +74,7 @@ export default function TreatmentsPage() {
                 <a
                   key={c.value}
                   href={c.value === "all" ? "#all" : `#${c.value.toLowerCase().replace(" ", "-")}`}
-                  className="px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 text-slate-700 hover:border-blue-400 hover:text-blue-600 transition-colors"
+                  className="px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 text-slate-700 hover:border-teal-400 hover:text-teal-600 transition-colors"
                 >
                   {c.label}
                 </a>
@@ -87,11 +87,11 @@ export default function TreatmentsPage() {
                 <Link
                   key={t.slug}
                   href={`/treatments/${t.slug}`}
-                  className="group border border-slate-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-200 transition-all bg-white"
+                  className="group border border-slate-200 rounded-2xl p-6 hover:shadow-lg hover:border-teal-200 transition-all bg-white"
                 >
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
-                    <h2 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                    <h2 className="text-lg font-bold text-slate-900 group-hover:text-teal-600 transition-colors">
                       {t.name}
                     </h2>
                     <span className="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full shrink-0 ml-2">
@@ -138,7 +138,7 @@ export default function TreatmentsPage() {
                     <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-lg">
                       {t.recoveryDays}d recovery
                     </span>
-                    <span className="flex items-center gap-1 text-xs text-blue-600 font-medium ml-auto group-hover:translate-x-0.5 transition-transform">
+                    <span className="flex items-center gap-1 text-xs text-teal-600 font-medium ml-auto group-hover:translate-x-0.5 transition-transform">
                       View clinics <ArrowRight size={11} />
                     </span>
                   </div>
@@ -160,7 +160,7 @@ export default function TreatmentsPage() {
             </p>
             <Link
               href="/clinics"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors"
             >
               Browse All Clinics <ArrowRight size={16} />
             </Link>

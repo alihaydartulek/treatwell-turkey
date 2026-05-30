@@ -57,11 +57,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-teal-600 flex items-center justify-center">
                 <span className="text-white text-sm font-bold">CT</span>
               </div>
               <span className="font-bold text-white text-lg">
-                Cliniq<span className="text-blue-400">Turkey</span>
+                Cliniq<span className="text-teal-400">Turkey</span>
               </span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-4 max-w-xs">

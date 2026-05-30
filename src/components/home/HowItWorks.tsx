@@ -7,7 +7,7 @@ const steps = [
     title: "Search & Compare",
     description:
       "Browse verified clinics, compare real prices, and read genuine patient reviews — all in one place.",
-    color: "bg-blue-50 text-blue-600",
+    color: "bg-teal-50 text-teal-600",
   },
   {
     icon: MessageSquare,
@@ -40,7 +40,7 @@ export default function HowItWorks() {
     <section className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+          <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider">
             Simple Process
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">
@@ -85,7 +85,7 @@ export default function HowItWorks() {
           </p>
           <a
             href="/how-it-works"
-            className="text-sm font-medium text-blue-600 hover:underline"
+            className="text-sm font-medium text-teal-600 hover:underline"
           >
             Learn more about our process →
           </a>

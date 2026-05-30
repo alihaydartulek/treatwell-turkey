@@ -22,14 +22,14 @@ export default function ContactPage() {
           <div className="flex flex-col gap-4 mb-10">
             <a
               href="mailto:cliniqturkey@gmail.com"
-              className="flex items-center gap-3 p-5 border border-slate-200 rounded-2xl hover:border-blue-300 transition-colors group"
+              className="flex items-center gap-3 p-5 border border-slate-200 rounded-2xl hover:border-teal-300 transition-colors group"
             >
-              <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
-                <Mail size={18} className="text-blue-600" />
+              <div className="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center group-hover:bg-teal-100 transition-colors">
+                <Mail size={18} className="text-teal-600" />
               </div>
               <div>
                 <div className="font-semibold text-slate-900">Email</div>
-                <div className="text-sm text-blue-600">cliniqturkey@gmail.com</div>
+                <div className="text-sm text-teal-600">cliniqturkey@gmail.com</div>
               </div>
             </a>
 
@@ -44,9 +44,9 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-sm text-slate-600">
+          <div className="bg-teal-50 border border-teal-100 rounded-2xl p-6 text-sm text-slate-600">
             <p className="font-semibold text-slate-900 mb-1">Looking for a clinic?</p>
-            <p>We don&apos;t arrange medical procedures — patients contact clinics directly. Browse our <a href="/clinics" className="text-blue-600 hover:underline">clinic directory</a> to find and contact the right clinic for you.</p>
+            <p>We don&apos;t arrange medical procedures — patients contact clinics directly. Browse our <a href="/clinics" className="text-teal-600 hover:underline">clinic directory</a> to find and contact the right clinic for you.</p>
           </div>
         </div>
       </main>
