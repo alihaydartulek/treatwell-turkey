@@ -30,6 +30,7 @@ export type Clinic = {
   treatmentSlugs: string[];
   rating: number;
   reviewCount: number;
+  ratingSource?: string;
   googleRating?: number;
   googleReviewCount?: number;
   googlePlaceId?: string;
@@ -1243,6 +1244,80 @@ export const clinics: Clinic[] = [
       },
     ],
   } as unknown as Clinic,
+
+  // ─── ANTALYA (added May 2026, web-researched) ───────────────────────────────
+
+  {
+    id: 19,
+    slug: "dk-klinik-antalya",
+    name: "DK Klinik",
+    city: "Antalya",
+    district: "Muratpaşa",
+    tagline: "The first clinic in Antalya licensed by the Ministry of Health for hair transplantation, operating since 2002.",
+    description:
+      "DK Klinik is a dermatology, hair restoration and aesthetics centre in the Şirinyalı neighbourhood of Muratpaşa, Antalya. Established in 2002, it was the first clinic in Antalya to receive a hair transplant licence from the Turkish Ministry of Health. The clinic offers FUE and DHI hair transplantation, beard transplants, dermatology and aesthetic treatments, with a multilingual team serving international patients in English, German and Russian.",
+    treatments: ["Hair Transplant (FUE)", "Hair Transplant (DHI)", "Beard Transplant", "Dermatology", "Aesthetic Treatments"],
+    treatmentSlugs: ["hair-transplant"],
+    rating: 4.8,
+    reviewCount: 1239,
+    ratingSource: "Trustindex",
+    priceFrom: 1500,
+    established: 2002,
+    patientCount: "1,000+",
+    accreditations: ["Turkish Ministry of Health", "ISHRS Member", "EADV", "ESCAD"],
+    languages: ["English", "German", "Russian", "Turkish"],
+    phone: "+90 242 317 10 00",
+    email: "info@dk-klinik.com.tr",
+    whatsapp: "+90 546 765 21 51",
+    website: "https://www.dk-klinik.com.tr",
+    badge: "Ministry Licensed",
+    badgeColor: "bg-green-100 text-green-700",
+    realClinic: true,
+    highlights: [
+      "First clinic in Antalya licensed by the Ministry of Health for hair transplants",
+      "Operating since 2002 — two decades of experience",
+      "ISHRS, EADV and ESCAD member",
+      "Multilingual team: English, German, Russian, Turkish",
+    ],
+    doctors: [],
+    reviews: [],
+  },
+
+  {
+    id: 20,
+    slug: "soraca-med-antalya",
+    name: "Soraca Med",
+    city: "Antalya",
+    district: "Konyaaltı",
+    tagline: "A Ministry of Health–regulated multi-speciality clinic in Antalya offering hair, dental and aesthetic treatments.",
+    description:
+      "Soraca Med is a multi-speciality clinic in the Konyaaltı district of Antalya, regulated by the Turkish Ministry of Health. Established in 2021, it offers hair transplantation (DHI and Sapphire FUE), dental treatments such as implants and veneers, and aesthetic procedures. The clinic supports international patients in several languages, including English, Russian, German, Spanish and Italian.",
+    treatments: ["Hair Transplant (DHI)", "Hair Transplant (Sapphire FUE)", "Dental Implants", "Veneers", "Aesthetic Surgery"],
+    treatmentSlugs: ["hair-transplant", "dental", "cosmetic"],
+    rating: 4.9,
+    reviewCount: 374,
+    ratingSource: "Trustpilot",
+    priceFrom: 1500,
+    established: 2021,
+    patientCount: "1,000+",
+    accreditations: ["Turkish Ministry of Health"],
+    languages: ["English", "Russian", "German", "Spanish", "Italian", "Turkish"],
+    phone: "+90 507 070 10 26",
+    email: "info@soracamed.com",
+    whatsapp: "+90 507 070 10 26",
+    website: "https://soracamed.com",
+    badge: "Multi-Speciality",
+    badgeColor: "bg-teal-100 text-teal-700",
+    realClinic: true,
+    highlights: [
+      "Multi-speciality: hair, dental and aesthetic treatments under one roof",
+      "Ministry of Health–regulated clinic in Konyaaltı, Antalya",
+      "Multilingual support: English, Russian, German, Spanish, Italian",
+      "Rated 4.9 on Trustpilot across hundreds of patient reviews",
+    ],
+    doctors: [],
+    reviews: [],
+  },
 ];
 
 export function getClinicBySlug(slug: string): Clinic | undefined {

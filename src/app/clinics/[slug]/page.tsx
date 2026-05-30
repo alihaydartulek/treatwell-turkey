@@ -41,7 +41,7 @@ export async function generateMetadata({
     alternates: { canonical: `https://www.cliniqturkey.com/clinics/${clinic.slug}` },
     openGraph: {
       title: `${clinic.name} — ${clinic.city} | CliniqTurkey`,
-      description: `${clinic.tagline} Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.googleReviewCount ?? clinic.reviewCount} Google reviews.`,
+      description: `${clinic.tagline} Treatments from €${clinic.priceFrom.toLocaleString()}. ${clinic.googleReviewCount ? `${clinic.googleReviewCount} Google reviews` : `${clinic.reviewCount.toLocaleString()} reviews${clinic.ratingSource ? ` on ${clinic.ratingSource}` : ""}`}.`,
       url: `https://www.cliniqturkey.com/clinics/${clinic.slug}`,
       images: [{ url: ogImage, width: 1200, height: 630, alt: clinic.name }],
       type: "website",
@@ -170,7 +170,10 @@ export default async function ClinicProfilePage({
                   <div className="flex items-center gap-1.5">
                     <Star size={14} className="text-yellow-400 fill-yellow-400" />
                     <strong className="text-white">{clinic.rating}</strong>
-                    <span>({clinic.reviewCount} reviews)</span>
+                    <span>
+                      ({clinic.reviewCount.toLocaleString()} reviews
+                      {clinic.ratingSource ? ` · ${clinic.ratingSource}` : ""})
+                    </span>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <Calendar size={14} />
@@ -321,8 +324,9 @@ export default async function ClinicProfilePage({
                       No reviews added yet
                     </p>
                     <p className="text-xs text-slate-400 mb-4">
-                      This clinic has{" "}
-                      {clinic.googleReviewCount?.toLocaleString()} reviews on Google.
+                      {clinic.googleReviewCount
+                        ? `This clinic has ${clinic.googleReviewCount.toLocaleString()} reviews on Google.`
+                        : `This clinic holds a ${clinic.rating}★ rating from ${clinic.reviewCount.toLocaleString()} reviews${clinic.ratingSource ? ` on ${clinic.ratingSource}` : ""}.`}
                     </p>
                     {clinic.website && (
                       <a
@@ -331,7 +335,7 @@ export default async function ClinicProfilePage({
                         rel="noopener noreferrer"
                         className="text-sm text-teal-600 hover:underline font-medium"
                       >
-                        View Google Reviews →
+                        {clinic.googleReviewCount ? "View Google Reviews →" : "Search reviews →"}
                       </a>
                     )}
                   </div>
@@ -492,8 +496,8 @@ export default async function ClinicProfilePage({
               {/* Data freshness — backs up the "verified data" positioning */}
               <p className="flex items-center gap-1.5 text-xs text-slate-400 px-1">
                 <CheckCircle size={12} className="text-green-500 shrink-0" />
-                Prices &amp; ratings last reviewed {DATA_LAST_REVIEWED}. Google
-                ratings are publicly sourced.
+                Prices &amp; ratings last reviewed {DATA_LAST_REVIEWED}. Ratings
+                are publicly sourced from independent review platforms.
               </p>
             </div>
           </div>

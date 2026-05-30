@@ -162,7 +162,7 @@ export default function FeaturedClinics() {
 
         <div className="mt-8 flex items-center justify-center gap-2 text-sm text-slate-500">
           <CheckCircle size={15} className="text-green-500" />
-          <span>Google ratings shown are publicly sourced. Platform verification independent.</span>
+          <span>Ratings shown are publicly sourced from independent review platforms.</span>
         </div>
       </div>
     </section>
