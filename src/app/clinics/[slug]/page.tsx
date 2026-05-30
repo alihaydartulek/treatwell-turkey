@@ -17,6 +17,7 @@ import {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getClinicBySlug, getAllClinicSlugs } from "@/lib/clinics";
+import PriceDisplay from "@/components/ui/PriceDisplay";
 
 export async function generateStaticParams() {
   return getAllClinicSlugs().map((slug) => ({ slug }));
@@ -259,7 +260,7 @@ export default async function ClinicProfilePage({
                     <thead className="bg-slate-50 border-b border-slate-200">
                       <tr>
                         <th className="text-left py-3 px-4 text-slate-600 font-semibold">Treatment</th>
-                        <th className="text-right py-3 px-4 text-blue-700 font-semibold">Price (€)</th>
+                        <th className="text-right py-3 px-4 text-blue-700 font-semibold">Indicative Price</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -267,7 +268,7 @@ export default async function ClinicProfilePage({
                         <tr key={t} className={`border-b border-slate-100 ${i % 2 === 0 ? "bg-white" : "bg-slate-50/50"}`}>
                           <td className="py-3 px-4 text-slate-700">{t}</td>
                           <td className="py-3 px-4 text-right font-medium text-slate-900">
-                            From €{(clinic.priceFrom + i * 150).toLocaleString()}
+                            From <PriceDisplay eurAmount={clinic.priceFrom + i * 150} />
                           </td>
                         </tr>
                       ))}

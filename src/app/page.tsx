@@ -7,7 +7,6 @@ import PopularTreatments from "@/components/home/PopularTreatments";
 import FeaturedClinics from "@/components/home/FeaturedClinics";
 import CostComparison from "@/components/home/CostComparison";
 import Testimonials from "@/components/home/Testimonials";
-import DestinationGuides from "@/components/home/DestinationGuides";
 import LeadCaptureSection from "@/components/home/LeadCaptureSection";
 
 export const metadata: Metadata = {
@@ -58,12 +57,11 @@ export default function Home() {
       <Header />
       <main id="main-content" className="flex-1">
         <HeroSection />
+        <HowItWorks />
         <PopularTreatments />
         <CostComparison />
         <FeaturedClinics />
         <Testimonials />
-        <DestinationGuides />
-        <HowItWorks />
         <LeadCaptureSection />
       </main>
       <Footer />

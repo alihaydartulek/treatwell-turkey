@@ -29,7 +29,7 @@ const treatmentToSlug: Record<string, string> = {
   "Cosmetic Surgery": "cosmetic",
 };
 
-type Step = 1 | 2 | 3;
+type Step = 1 | 2;
 
 type Props = {
   initialTreatment?: string;
@@ -75,7 +75,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
         <div className="bg-white/20 rounded-full h-1.5 mb-8">
           <div
             className="bg-white rounded-full h-1.5 transition-all duration-300"
-            style={{ width: step === 1 ? "33%" : step === 2 ? "66%" : "100%" }}
+            style={{ width: step === 1 ? "50%" : "100%" }}
           />
         </div>
 
@@ -85,7 +85,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
           {step === 1 && (
             <div>
               <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-                Step 1 of 3
+                Step 1 of 2
               </p>
               <h3 className="text-xl font-bold text-slate-900 mb-6">
                 What treatment are you looking for?
@@ -115,7 +115,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
           {step === 2 && (
             <div>
               <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-                Step 2 of 3
+                Step 2 of 2
               </p>
               <h3 className="text-xl font-bold text-slate-900 mb-1">
                 Clinics matching &ldquo;{selectedTreatment}&rdquo;
@@ -204,44 +204,6 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
             </div>
           )}
 
-          {/* Step 3 — Full clinic list CTA */}
-          {step === 3 && (
-            <div className="text-center">
-              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-                Step 3 of 3
-              </p>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">
-                Ready to compare all options?
-              </h3>
-              <p className="text-sm text-slate-500 mb-6">
-                Browse the full list of verified clinics for{" "}
-                <strong>{selectedTreatment}</strong> — filter by city, price,
-                and accreditation.
-              </p>
-
-              <div className="flex flex-col gap-3">
-                <Link
-                  href={`/treatments/${treatmentToSlug[selectedTreatment] ?? "hair-transplant"}`}
-                  className="flex items-center justify-center gap-2 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
-                >
-                  Compare All {selectedTreatment} Clinics <ArrowRight size={16} />
-                </Link>
-                <Link
-                  href="/clinics"
-                  className="flex items-center justify-center gap-2 py-3 border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-600 font-medium rounded-xl transition-colors text-sm"
-                >
-                  Browse All Clinics
-                </Link>
-              </div>
-
-              <button
-                onClick={() => setStep(2)}
-                className="mt-4 text-sm text-slate-400 hover:text-slate-600"
-              >
-                ← Back to clinic list
-              </button>
-            </div>
-          )}
         </div>
 
         {/* Trust signals */}
