@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CurrencySelector } from "@/components/ui/CurrencyProvider";
@@ -26,10 +26,23 @@ const destinations = [
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDrop, setActiveDrop] = useState<string | null>(null);
+  const navRef = useRef<HTMLDivElement>(null);
 
   const toggleDrop = (name: string) => {
     setActiveDrop((prev) => (prev === name ? null : name));
   };
+
+  // Close dropdown on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setActiveDrop(null);
+        setMobileOpen(false);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-slate-900/50">

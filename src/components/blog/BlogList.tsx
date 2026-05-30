@@ -29,6 +29,7 @@ export default function BlogList() {
           <button
             key={c}
             onClick={() => setActive(c)}
+            aria-pressed={active === c}
             className={`px-4 py-2 rounded-xl text-sm font-medium border transition-colors ${
               active === c
                 ? "bg-blue-600 text-white border-blue-600"

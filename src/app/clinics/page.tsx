@@ -291,8 +291,14 @@ export default function ClinicsPage() {
           {/* Clinic grid */}
           {filtered.length === 0 ? (
             <div className="text-center py-16 text-slate-400">
-              <p className="text-lg font-medium mb-2">No clinics found</p>
-              <p className="text-sm">Try adjusting your filters</p>
+              <p className="text-lg font-medium text-slate-700 mb-2">No clinics match your filters</p>
+              <p className="text-sm mb-5">Try broadening your search or removing a filter</p>
+              <button
+                onClick={() => { setSearch(""); setCity("All Cities"); setTreatment("All Treatments"); setJciOnly(false); }}
+                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors"
+              >
+                Clear All Filters
+              </button>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -450,6 +456,7 @@ export default function ClinicsPage() {
                         <button
                           onClick={() => toggleCompare(slug)}
                           className="hover:text-red-500 transition-colors"
+                          aria-label={`Remove ${c.name} from comparison`}
                         >
                           <X size={12} />
                         </button>
