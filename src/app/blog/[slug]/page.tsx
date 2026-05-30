@@ -33,6 +33,34 @@ export async function generateMetadata({
   };
 }
 
+// Renders inline markdown: bold (**text**) and links ([text](url))
+function renderInline(text: string): React.ReactNode[] {
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, j) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={j} className="text-slate-900 font-semibold">
+          {part.replace(/\*\*/g, "")}
+        </strong>
+      );
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      const isExternal = linkMatch[2].startsWith("http");
+      return isExternal ? (
+        <a key={j} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+          {linkMatch[1]}
+        </a>
+      ) : (
+        <Link key={j} href={linkMatch[2]} className="text-blue-600 hover:underline">
+          {linkMatch[1]}
+        </Link>
+      );
+    }
+    return part;
+  });
+}
+
 function renderMarkdown(content: string) {
   const lines = content.trim().split("\n");
   const elements: React.ReactNode[] = [];
@@ -113,25 +141,16 @@ function renderMarkdown(content: string) {
     } else if (line.startsWith("- ")) {
       elements.push(
         <li key={i} className="text-slate-600 text-sm leading-relaxed ml-4 list-disc">
-          {line.replace("- ", "")}
+          {renderInline(line.replace(/^- /, ""))}
         </li>
       );
     } else if (line.trim() === "") {
       // skip empty lines
     } else {
-      // Regular paragraph — handle inline bold
-      const parts = line.split(/(\*\*[^*]+\*\*)/g);
+      // Regular paragraph — handle inline bold and links
       elements.push(
         <p key={i} className="text-slate-600 leading-relaxed my-2">
-          {parts.map((part, j) =>
-            part.startsWith("**") && part.endsWith("**") ? (
-              <strong key={j} className="text-slate-900 font-semibold">
-                {part.replace(/\*\*/g, "")}
-              </strong>
-            ) : (
-              part
-            )
-          )}
+          {renderInline(line)}
         </p>
       );
     }

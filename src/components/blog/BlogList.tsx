@@ -10,9 +10,13 @@ const categories = ["All", "Hair Transplant", "Dental", "Bariatric", "IVF", "Eye
 export default function BlogList() {
   const [active, setActive] = useState("All");
 
+  const sorted = [...blogPosts].sort(
+    (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+  );
+
   const filtered = active === "All"
-    ? blogPosts
-    : blogPosts.filter((p) => p.category === active);
+    ? sorted
+    : sorted.filter((p) => p.category === active);
 
   const featured = filtered[0];
   const rest = filtered.slice(1);
