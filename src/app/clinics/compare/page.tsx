@@ -172,7 +172,10 @@ function CompareTable() {
     );
   }
 
-  const colWidth = selected.length === 2 ? "w-1/2" : "w-1/3";
+  // Fixed table layout keeps header cards perfectly aligned with their
+  // columns; min-width forces horizontal scroll on small screens instead
+  // of squashing the columns.
+  const tableMinWidth = selected.length === 3 ? 860 : 620;
 
   return (
     <div className="container py-8">
@@ -188,19 +191,29 @@ function CompareTable() {
         <span className="text-sm text-slate-700 font-medium">Comparing {selected.length} clinics</span>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse">
+      <div className="overflow-x-auto -mx-6 px-6 pb-2">
+        <table
+          className="w-full table-fixed border-collapse"
+          style={{ minWidth: tableMinWidth }}
+        >
+          <colgroup>
+            <col className="w-32 md:w-44" />
+            {selected.map((c) => (
+              <col key={c.slug} />
+            ))}
+          </colgroup>
+
           {/* Clinic headers */}
           <thead>
             <tr>
-              <th className="w-32 md:w-44" />
+              <th className="sticky left-0 z-10 bg-white" />
               {selected.map((clinic) => (
-                <th key={clinic.slug} className={`${colWidth} pb-6 px-3 align-top`}>
-                  <div className="bg-white border-2 border-blue-200 rounded-2xl p-4 text-left">
+                <th key={clinic.slug} className="pb-6 px-2 align-bottom">
+                  <div className="bg-white border-2 border-blue-200 rounded-2xl p-4 text-left h-full">
                     <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full mb-2 ${clinic.badgeColor}`}>
                       {clinic.badge}
                     </span>
-                    <div className="font-bold text-slate-900 text-base leading-tight mb-0.5">
+                    <div className="font-bold text-slate-900 text-base leading-tight mb-0.5 break-words">
                       {clinic.name}
                     </div>
                     <div className="text-xs text-slate-400">{clinic.city}</div>
@@ -216,11 +229,15 @@ function CompareTable() {
                 key={row.label}
                 className={i % 2 === 0 ? "bg-slate-50/60" : "bg-white"}
               >
-                <td className="py-4 px-3 text-xs font-semibold text-slate-500 uppercase tracking-wider align-top w-32 md:w-44">
+                <td
+                  className={`sticky left-0 z-10 py-4 pr-3 text-xs font-semibold text-slate-500 uppercase tracking-wider align-top border-r border-slate-100 ${
+                    i % 2 === 0 ? "bg-slate-50" : "bg-white"
+                  }`}
+                >
                   {row.label}
                 </td>
                 {selected.map((clinic) => (
-                  <td key={clinic.slug} className={`py-4 px-3 align-top ${colWidth}`}>
+                  <td key={clinic.slug} className="py-4 px-2 align-top break-words">
                     {row.render(clinic)}
                   </td>
                 ))}
