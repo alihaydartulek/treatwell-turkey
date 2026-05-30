@@ -24,6 +24,83 @@ const cityDescriptions: Record<string, string> = {
   antalya: "Antalya is a growing medical tourism hub on Turkey's turquoise coast. Recover in a resort-quality setting while benefiting from modern, accredited clinics and highly competitive pricing.",
 };
 
+// City-specific travel facts (general knowledge, not fabricated figures) used to
+// build unique per-city FAQs so each treatment/city page has distinct content.
+const cityTravel: Record<
+  string,
+  { airports: string; access: string; setting: string }
+> = {
+  istanbul: {
+    airports: "Istanbul Airport (IST) and Sabiha Gökçen (SAW)",
+    access:
+      "direct flights from most UK and European cities — roughly a 4-hour flight from London",
+    setting:
+      "a large metropolitan city with the widest choice of accredited clinics, hotels and English-speaking staff",
+  },
+  ankara: {
+    airports: "Esenboğa Airport (ESB)",
+    access:
+      "direct flights from several European cities, with frequent onward connections from Istanbul (about a 1-hour flight)",
+    setting:
+      "Turkey's calmer capital, where lower patient volumes can mean more personalised care and shorter waiting times",
+  },
+  izmir: {
+    airports: "Adnan Menderes Airport (ADB)",
+    access:
+      "direct seasonal flights from several European cities, plus year-round connections via Istanbul",
+    setting:
+      "a relaxed Aegean coastal city that many patients choose to combine treatment with a quiet seaside recovery",
+  },
+  antalya: {
+    airports: "Antalya Airport (AYT)",
+    access:
+      "extensive direct flights from across Europe, especially during the holiday season",
+    setting:
+      "a Mediterranean resort city where you can recover in a coastal, holiday-style setting",
+  },
+};
+
+function buildCityFaqs(
+  cityLabel: string,
+  cityKey: string,
+  treatmentName: string,
+  durationDays: number,
+  recoveryDays: number,
+  clinicCount: number
+): { q: string; a: string }[] {
+  const travel = cityTravel[cityKey];
+  const stayNote =
+    recoveryDays > 0
+      ? `Most patients plan a stay covering the ${durationDays}-day procedure plus early recovery; many fly home before the full ${recoveryDays}-day recovery is complete and continue aftercare remotely with the clinic.`
+      : `Most patients plan a short stay around the ${durationDays}-day procedure and continue any aftercare with the clinic remotely.`;
+
+  const faqs: { q: string; a: string }[] = [
+    {
+      q: `How do I travel to ${cityLabel} for ${treatmentName}?`,
+      a: `${cityLabel} is served by ${travel.airports}, with ${travel.access}. Most clinics on our platform include airport transfers in their packages — confirm this directly with the clinic when you request a quote.`,
+    },
+    {
+      q: `Why choose ${cityLabel} for ${treatmentName} over other Turkish cities?`,
+      a: `${cityLabel} is ${travel.setting}. The right city depends on your priorities — clinic choice, travel convenience and recovery environment — so we'd encourage comparing verified clinics in more than one city before deciding.`,
+    },
+    {
+      q: `How long should I stay in ${cityLabel} for ${treatmentName}?`,
+      a: stayNote,
+    },
+  ];
+
+  if (clinicCount > 0) {
+    faqs.push({
+      q: `Are there verified ${treatmentName} clinics in ${cityLabel}?`,
+      a: `Yes — we currently list ${clinicCount} verified ${
+        clinicCount === 1 ? "clinic" : "clinics"
+      } offering ${treatmentName} in ${cityLabel}. Each holds a Turkish Ministry of Health licence, and you can contact them directly with no middleman.`,
+    });
+  }
+
+  return faqs;
+}
+
 export async function generateStaticParams() {
   const slugs = getAllTreatmentSlugs();
   const params = [];
@@ -83,10 +160,21 @@ export default async function TreatmentCityPage({
       c.treatmentSlugs.includes(slug)
   );
 
+  // City-specific FAQs first (unique per page), then the shared treatment FAQs.
+  const cityFaqs = buildCityFaqs(
+    cityLabel,
+    city,
+    treatment.name,
+    treatment.durationDays,
+    treatment.recoveryDays,
+    cityClinics.length
+  );
+  const allFaqs = [...cityFaqs, ...treatment.faqs];
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: treatment.faqs.map((faq) => ({
+    mainEntity: allFaqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
       acceptedAnswer: { "@type": "Answer", text: faq.a },
@@ -265,10 +353,10 @@ export default async function TreatmentCityPage({
               {/* FAQ */}
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">
-                  Frequently Asked Questions
+                  {treatment.name} in {cityLabel}: FAQs
                 </h2>
                 <div className="flex flex-col gap-3">
-                  {treatment.faqs.map((faq) => (
+                  {allFaqs.map((faq) => (
                     <details
                       key={faq.q}
                       className="group border border-slate-200 rounded-xl overflow-hidden"
