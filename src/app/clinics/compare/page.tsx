@@ -7,7 +7,7 @@ import {
   Star,
   CheckCircle,
   X,
-  MessageCircle,
+  Phone,
   Mail,
   ExternalLink,
   ArrowLeft,
@@ -122,13 +122,11 @@ const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
     render: (c) => (
       <div className="flex flex-col gap-2">
         <a
-          href={`https://wa.me/${c.whatsapp.replace(/\D/g, "")}`}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={`tel:${c.phone}`}
           className="flex items-center justify-center gap-1.5 py-2 bg-green-600 hover:bg-green-700 text-white text-xs font-semibold rounded-lg transition-colors"
         >
-          <MessageCircle size={12} />
-          WhatsApp
+          <Phone size={12} />
+          Call
         </a>
         <a
           href={`mailto:${c.email}`}

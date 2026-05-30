@@ -6,7 +6,6 @@ import {
   MapPin,
   Phone,
   Mail,
-  MessageCircle,
   Star,
   CheckCircle,
   Globe,
@@ -190,13 +189,11 @@ export default async function ClinicProfilePage({
                   Get Free Quote
                 </Link>
                 <a
-                  href={`https://wa.me/${clinic.whatsapp.replace(/\D/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`tel:${clinic.phone}`}
                   className="px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-1.5"
                 >
-                  <MessageCircle size={14} />
-                  WhatsApp
+                  <Phone size={14} />
+                  Call Clinic
                 </a>
                 <a
                   href={`mailto:${clinic.email}`}
@@ -415,13 +412,11 @@ export default async function ClinicProfilePage({
                   Get Free Quote
                 </Link>
                 <a
-                  href={`https://wa.me/${clinic.whatsapp.replace(/\D/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`tel:${clinic.phone}`}
                   className="flex items-center justify-center gap-2 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-colors text-sm"
                 >
-                  <MessageCircle size={15} />
-                  Chat on WhatsApp
+                  <Phone size={15} />
+                  Call Clinic
                 </a>
               </div>
 

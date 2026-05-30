@@ -17,7 +17,7 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "Browse verified Turkish clinics, compare prices and contact them directly via WhatsApp or email. No middleman, no coordinator — just transparent information.",
+    "Browse verified Turkish clinics, compare prices and contact them directly via phone or email. No middleman, no coordinator — just transparent information.",
 };
 
 const steps = [
@@ -41,9 +41,9 @@ const steps = [
     title: "Contact the Clinic Directly",
     color: "bg-green-50 text-green-600 border-green-100",
     description:
-      "Every clinic on our platform has a WhatsApp button and email address on their profile. You contact them directly — no form to fill in, no intermediary, no coordinator. The clinic's own international patient team responds to you personally.",
+      "Every clinic on our platform has a phone number and email address on their profile. You contact them directly — no form to fill in, no intermediary, no coordinator. The clinic's own international patient team responds to you personally.",
     sub: [
-      "WhatsApp or email — your choice",
+      "phone or email — your choice",
       "You speak directly with the clinic, not with us",
       "No account or sign-up required",
       "Your personal data stays between you and the clinic",
@@ -83,9 +83,9 @@ const steps = [
     title: "Aftercare via the Clinic",
     color: "bg-teal-50 text-teal-600 border-teal-100",
     description:
-      "After you return home, the clinic's aftercare team stays in contact via WhatsApp or email. Follow-up video consultations are standard at all established Turkish clinics. You remain in direct contact with the clinical team throughout your recovery.",
+      "After you return home, the clinic's aftercare team stays in contact via phone or email. Follow-up video consultations are standard at all established Turkish clinics. You remain in direct contact with the clinical team throughout your recovery.",
     sub: [
-      "WhatsApp aftercare with the clinic's medical team",
+      "Direct aftercare with the clinic's medical team",
       "Video follow-up consultations included in most packages",
       "Direct line to the clinic — not via a platform",
       "Leave a Google review to help future patients",

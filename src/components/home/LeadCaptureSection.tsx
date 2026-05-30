@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, MessageCircle, Mail, CheckCircle, ExternalLink } from "lucide-react";
+import { ArrowRight, Phone, Mail, CheckCircle, ExternalLink } from "lucide-react";
 import { clinics } from "@/lib/clinics";
 import { useCurrency } from "@/components/ui/CurrencyProvider";
 
@@ -149,13 +149,11 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
                       </div>
                       <div className="flex gap-2">
                         <a
-                          href={`https://wa.me/${clinic.whatsapp.replace(/\D/g, "")}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href={`tel:${clinic.phone}`}
                           className="flex-1 flex items-center justify-center gap-1.5 py-2 bg-green-600 hover:bg-green-700 text-white text-xs font-semibold rounded-lg transition-colors"
                         >
-                          <MessageCircle size={13} />
-                          WhatsApp
+                          <Phone size={13} />
+                          Call
                         </a>
                         <a
                           href={`mailto:${clinic.email}`}

@@ -19,7 +19,7 @@ const trustPoints = [
   {
     icon: Clock,
     title: "Direct Contact",
-    desc: "Contact clinics directly via WhatsApp or email — no middleman, no waiting for a third party to relay your request.",
+    desc: "Contact clinics directly via phone or email — no middleman, no waiting for a third party to relay your request.",
   },
   {
     icon: Shield,

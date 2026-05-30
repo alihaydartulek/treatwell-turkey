@@ -9,6 +9,8 @@ import {
   CheckCircle,
   ChevronDown,
   ArrowRight,
+  Phone,
+  Mail,
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -238,12 +240,18 @@ export default async function DestinationPage({
                             View Profile
                           </Link>
                           <a
-                            href={`https://wa.me/${clinic.whatsapp.replace(/\D/g, "")}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 text-center py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-xl transition-colors"
+                            href={`tel:${clinic.phone}`}
+                            className="flex items-center justify-center gap-1.5 flex-1 text-center py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-xl transition-colors"
                           >
-                            WhatsApp
+                            <Phone size={13} />
+                            Call
+                          </a>
+                          <a
+                            href={`mailto:${clinic.email}`}
+                            className="flex items-center justify-center gap-1.5 flex-1 text-center py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors"
+                          >
+                            <Mail size={13} />
+                            Email
                           </a>
                         </div>
                       </div>

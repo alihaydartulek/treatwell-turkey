@@ -29,7 +29,7 @@ const benefits = [
   {
     icon: Users,
     title: "Direct Patient Enquiries",
-    desc: "Patients browse your profile and contact you directly via WhatsApp or email. No middleman — you own the relationship from the first message.",
+    desc: "Patients browse your profile and contact you directly via phone or email. No middleman — you own the relationship from the first message.",
   },
   {
     icon: TrendingUp,
@@ -121,7 +121,7 @@ const steps = [
   {
     number: "03",
     title: "Receive Direct Enquiries",
-    desc: "Patients contact you directly via WhatsApp or email from your profile. You own the relationship — no middleman, no delay.",
+    desc: "Patients contact you directly via phone or email from your profile. You own the relationship — no middleman, no delay.",
   },
   {
     number: "04",
