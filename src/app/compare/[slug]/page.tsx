@@ -187,8 +187,19 @@ export default async function ComparisonPage({
   const data = comparisons.find((c) => c.slug === slug);
   if (!data) notFound();
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cliniqturkey.com" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.cliniqturkey.com/compare" },
+      { "@type": "ListItem", position: 3, name: data.title, item: `https://www.cliniqturkey.com/compare/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
       <main>
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">

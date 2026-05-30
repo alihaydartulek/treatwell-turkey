@@ -154,8 +154,37 @@ export default async function BlogPostPage({
     .filter((p) => p.slug !== slug && p.category === post.category)
     .slice(0, 2);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    author: { "@type": "Organization", name: "CliniqTurkey Editorial" },
+    publisher: {
+      "@type": "Organization",
+      name: "CliniqTurkey",
+      url: "https://www.cliniqturkey.com",
+    },
+    datePublished: post.publishDate,
+    dateModified: post.publishDate,
+    url: `https://www.cliniqturkey.com/blog/${slug}`,
+    mainEntityOfPage: `https://www.cliniqturkey.com/blog/${slug}`,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cliniqturkey.com" },
+      { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.cliniqturkey.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://www.cliniqturkey.com/blog/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
       <main>
         {/* Hero */}
