@@ -253,7 +253,7 @@ export default function ComparePage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <section className="bg-slate-900 text-white py-10">
           <div className="container">
             <h1 className="text-3xl font-bold mb-1">Side-by-Side Comparison</h1>

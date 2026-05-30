@@ -42,7 +42,7 @@ export default function FAQPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
           <div className="container max-w-3xl">

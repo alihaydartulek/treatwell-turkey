@@ -43,7 +43,7 @@ export default async function GetAQuotePage({
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Trust strip */}
         <section className="bg-slate-50 border-b border-slate-200 py-10">
           <div className="container">

@@ -61,7 +61,7 @@ export default async function DestinationPage({
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section
           className={`bg-gradient-to-br ${dest.gradient} text-white py-20`}

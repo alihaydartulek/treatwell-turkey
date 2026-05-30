@@ -124,7 +124,7 @@ export default function HowItWorksPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24">
           <div className="container text-center max-w-2xl mx-auto">

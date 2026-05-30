@@ -201,7 +201,7 @@ export default async function ComparisonPage({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
-      <main>
+      <main id="main-content">
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
           <div className="container max-w-3xl">
             <div className="flex items-center gap-2 text-slate-400 text-sm mb-4">

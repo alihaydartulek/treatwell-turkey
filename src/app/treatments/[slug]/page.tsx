@@ -14,6 +14,7 @@ import Footer from "@/components/layout/Footer";
 import { getTreatmentBySlug, getAllTreatmentSlugs } from "@/lib/treatments";
 import { getClinicsByTreatmentSlug } from "@/lib/clinics";
 import SocialProof from "@/components/ui/SocialProof";
+import PriceDisplay from "@/components/ui/PriceDisplay";
 
 export async function generateStaticParams() {
   return getAllTreatmentSlugs().map((slug) => ({ slug }));
@@ -79,7 +80,7 @@ export default async function TreatmentPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalSchema) }} />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24">
           <div className="container">
@@ -115,7 +116,7 @@ export default async function TreatmentPage({
                 <div className="bg-green-500/20 border border-green-400/40 rounded-xl px-4 py-3 text-sm">
                   <span className="text-green-300">TR &middot; Turkey from</span>
                   <div className="text-lg font-bold text-white">
-                    €{treatment.priceFrom.toLocaleString()}
+                    <PriceDisplay eurAmount={treatment.priceFrom} />
                   </div>
                 </div>
                 <div className="bg-green-600/20 border border-green-500/40 rounded-xl px-4 py-3 text-sm flex items-center gap-2">
@@ -258,7 +259,7 @@ export default async function TreatmentPage({
                           <div className="text-right shrink-0">
                             <div className="text-xs text-slate-400">From</div>
                             <div className="text-xl font-bold text-slate-900">
-                              �{clinic.priceFrom.toLocaleString()}
+                              <PriceDisplay eurAmount={clinic.priceFrom} />
                             </div>
                           </div>
                         </div>
@@ -348,7 +349,7 @@ export default async function TreatmentPage({
                 </p>
                 <ul className="flex flex-col gap-2 mb-5">
                   {[
-                    "100% free � no hidden fees",
+                    "100% free — no hidden fees",
                     "No commitment to book",
                     "Reply within 2 hours",
                     "GDPR compliant",
@@ -366,7 +367,7 @@ export default async function TreatmentPage({
                   href="/get-a-quote"
                   className="block text-center py-3 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors"
                 >
-                  Get Free Quotes �
+                  Get Free Quotes →
                 </Link>
               </div>
 
@@ -377,21 +378,21 @@ export default async function TreatmentPage({
                 </h3>
                 <div className="flex flex-col gap-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-slate-500">???? UK (private)</span>
+                    <span className="text-slate-500">🇬🇧 UK (private)</span>
                     <span className="line-through text-slate-400">
                       £{treatment.ukPrice.toLocaleString()}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">???? Germany (private)</span>
+                    <span className="text-slate-500">🇩🇪 Germany (private)</span>
                     <span className="line-through text-slate-400">
                       €{treatment.dePrice.toLocaleString()}
                     </span>
                   </div>
                   <div className="border-t border-slate-100 pt-3 flex justify-between font-semibold">
-                    <span className="text-slate-900">???? Turkey from</span>
+                    <span className="text-slate-900">🇹🇷 Turkey from</span>
                     <span className="text-blue-600">
-                      €{treatment.priceFrom.toLocaleString()}
+                      <PriceDisplay eurAmount={treatment.priceFrom} />
                     </span>
                   </div>
                   <div className="bg-green-50 border border-green-100 rounded-xl p-3 flex justify-between font-semibold text-green-700">
@@ -405,7 +406,7 @@ export default async function TreatmentPage({
                   href="/cost-calculator"
                   className="block text-center text-sm text-blue-600 hover:underline mt-3"
                 >
-                  Calculate exact saving �
+                  Calculate exact saving →
                 </Link>
               </div>
             </div>

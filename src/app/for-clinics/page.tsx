@@ -134,7 +134,7 @@ export default function ForClinicsPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
           <div className="container">

@@ -125,7 +125,7 @@ export default function ClinicsPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-slate-900 text-white py-12">
           <div className="container">

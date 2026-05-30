@@ -206,7 +206,7 @@ export default async function BlogPostPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-slate-900 text-white py-14">
           <div className="container max-w-3xl">

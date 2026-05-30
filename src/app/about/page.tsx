@@ -52,7 +52,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
           <div className="container max-w-3xl">

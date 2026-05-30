@@ -121,7 +121,7 @@ export default async function ClinicProfilePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicJsonLd) }}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Cover */}
         <section className="bg-gradient-to-br from-slate-800 to-slate-900 text-white">
           {/* Cover photo strip */}

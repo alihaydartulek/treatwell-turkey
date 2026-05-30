@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getTreatmentBySlug, getAllTreatmentSlugs } from "@/lib/treatments";
 import { clinics } from "@/lib/clinics";
+import PriceDisplay from "@/components/ui/PriceDisplay";
 
 const validCities = ["istanbul", "ankara", "izmir", "antalya"];
 
@@ -98,7 +99,7 @@ export default async function TreatmentCityPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-20">
           <div className="container">
@@ -132,7 +133,7 @@ export default async function TreatmentCityPage({
                 <div className="bg-green-500/20 border border-green-400/40 rounded-xl px-4 py-3 text-sm">
                   <span className="text-green-300">{cityLabel}, Turkey from</span>
                   <div className="text-lg font-bold text-white">
-                    &euro;{treatment.priceFrom.toLocaleString()}
+                    <PriceDisplay eurAmount={treatment.priceFrom} />
                   </div>
                 </div>
                 <div className="bg-green-600/20 border border-green-500/40 rounded-xl px-4 py-3 text-sm flex items-center gap-2">
@@ -204,7 +205,7 @@ export default async function TreatmentCityPage({
                           <div className="text-right shrink-0">
                             <div className="text-xs text-slate-400">From</div>
                             <div className="text-xl font-bold text-slate-900">
-                              &euro;{clinic.priceFrom.toLocaleString()}
+                              <PriceDisplay eurAmount={clinic.priceFrom} />
                             </div>
                           </div>
                         </div>
@@ -341,7 +342,7 @@ export default async function TreatmentCityPage({
                   </div>
                   <div className="border-t border-slate-100 pt-3 flex justify-between font-semibold">
                     <span className="text-slate-900">{cityLabel}, Turkey from</span>
-                    <span className="text-blue-600">&euro;{treatment.priceFrom.toLocaleString()}</span>
+                    <span className="text-blue-600"><PriceDisplay eurAmount={treatment.priceFrom} /></span>
                   </div>
                   <div className="bg-green-50 border border-green-100 rounded-xl p-3 flex justify-between font-semibold text-green-700">
                     <span>Your saving</span>

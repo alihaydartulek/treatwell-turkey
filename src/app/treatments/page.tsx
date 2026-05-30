@@ -4,6 +4,7 @@ import { ArrowRight, TrendingDown, CheckCircle } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { treatments } from "@/lib/treatments";
+import PriceDisplay from "@/components/ui/PriceDisplay";
 
 export const metadata: Metadata = {
   title: "All Treatments in Turkey — Compare Clinics & Prices",
@@ -29,7 +30,7 @@ export default function TreatmentsPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-14">
           <div className="container">
@@ -109,7 +110,7 @@ export default function TreatmentsPage() {
                       <div>
                         <span className="text-xs text-slate-400 block">Turkey from</span>
                         <span className="text-2xl font-bold text-slate-900">
-                          €{t.priceFrom.toLocaleString()}
+                          <PriceDisplay eurAmount={t.priceFrom} />
                         </span>
                       </div>
                       <div className="text-right">

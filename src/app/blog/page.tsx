@@ -13,7 +13,7 @@ export default function BlogPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <section className="bg-slate-900 text-white py-14">
           <div className="container">
             <span className="text-sm font-semibold text-blue-300 uppercase tracking-wider">

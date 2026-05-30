@@ -13,7 +13,7 @@ export default function CostCalculatorPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-16">
           <div className="container text-center max-w-2xl mx-auto">
             <span className="text-sm font-semibold text-blue-200 uppercase tracking-wider">

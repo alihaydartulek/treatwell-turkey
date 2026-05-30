@@ -66,7 +66,7 @@ export default function ComparePage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
           <div className="container max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">

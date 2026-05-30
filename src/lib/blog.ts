@@ -411,7 +411,7 @@ Medical tourism in Turkey is safe for patients who choose accredited clinics, do
 The clinics listed on CliniqTurkey have been vetted against the criteria above. We do not list clinics that fail to meet our minimum standards, regardless of commercial considerations.
     `,
   },
-];
+
 
   {
     slug: "fue-vs-dhi-hair-transplant",
@@ -1842,6 +1842,8 @@ All prices are guideline ranges. Always obtain an itemised written quote includi
 - Who do I contact if I have concerns after returning to the UK?
     `,
   },
+
+];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
