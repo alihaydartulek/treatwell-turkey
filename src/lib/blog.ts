@@ -1257,6 +1257,250 @@ Your Turkey clinic should provide detailed aftercare instructions. Follow them. 
     `,
   },
 
+  {
+    slug: "ivf-turkey-complete-guide",
+    title: "IVF in Turkey: Complete Guide for UK Patients (2025) — Costs, Clinics & Success Rates",
+    excerpt: "IVF in Turkey costs 50-60% less than the UK. This guide covers what's included, how to choose a fertility clinic, legal considerations, and realistic success rates.",
+    category: "IVF",
+    readTime: 11,
+    publishDate: "2025-05-19",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🍼",
+    relatedTreatment: "ivf",
+    content: `
+## Why UK Couples Travel to Turkey for IVF
+
+IVF is one of the most financially demanding medical journeys a couple can undertake. In the UK, a single NHS cycle (where funding is available) can take years to access. Private IVF in the UK costs £3,500–£6,000 per cycle — and that is before medications, which add £1,500–£3,000 per cycle. For couples who need multiple attempts, total costs can reach £20,000–£30,000.
+
+In Turkey, a full IVF cycle including ICSI costs £1,800–£3,000 at leading clinics. Medications are a separate cost in both countries, but are often less expensive in Turkey. Embryo freezing and storage for the first year are frequently included.
+
+Turkish fertility clinics, particularly in Istanbul and Ankara, use the same laboratory technology, embryo culture systems, and chromosomal testing platforms as top European clinics. The difference is operating costs — not clinical standards.
+
+## Legal Considerations
+
+Before booking IVF in Turkey, understand the legal framework:
+
+**What is permitted in Turkey:**
+- IVF for heterosexual married couples using own eggs and sperm
+- ICSI (intracytoplasmic sperm injection)
+- Embryo cryopreservation
+- PGT-A chromosomal testing (preimplantation genetic testing)
+
+**What is NOT permitted in Turkey:**
+- Egg donation (third-party eggs)
+- Sperm donation
+- Surrogacy
+- IVF for single women or same-sex couples
+
+If your treatment requires egg or sperm donation, Turkey is not the correct destination. Cyprus, Czech Republic, Spain, or Greece are common alternatives where donation is legal.
+
+**Your UK legal status:** Children born through IVF in Turkey have the same legal status in the UK as children born through IVF anywhere. There is no requirement to register or declare overseas IVF treatment in the UK.
+
+## What's Typically Included in a Turkey IVF Package
+
+| Included | Often Excluded |
+|---------|----------------|
+| Initial consultation and assessment | Medications (significant cost) |
+| Hormone level baseline tests | Additional monitoring scans above a set number |
+| Follicle monitoring ultrasounds | PGT-A testing (genetic screening of embryos) |
+| Egg retrieval procedure | Embryo storage beyond the first year |
+| ICSI fertilisation | Travel and accommodation |
+| Embryo culture (5-day blastocyst) | |
+| Embryo transfer | |
+| First-year embryo freezing and storage | |
+| Follow-up pregnancy test protocol | |
+
+Always obtain a detailed, itemised quote before committing. Ask specifically about medication cost estimates.
+
+## Success Rates: What to Expect
+
+IVF success rates are expressed as live birth rate per transfer. They vary significantly by age and diagnosis. Clinics in Turkey report rates consistent with European averages:
+
+| Age | Live Birth Rate per Transfer (European average) |
+|-----|-------------------------------------------------|
+| Under 35 | 35–45% |
+| 35–37 | 28–36% |
+| 38–40 | 18–26% |
+| 41–42 | 10–15% |
+| Over 42 | 5–10% |
+
+**How to read clinic success rate claims:** Always ask for live birth rates (not clinical pregnancy rates, which are higher). Ask how many cycles the rate is based on. Be cautious of very high claimed rates — 60%+ per cycle at any age is extraordinary.
+
+**Cumulative rates** (the chance of a live birth across multiple attempts) are more meaningful for most couples than single-cycle rates.
+
+## The IVF Treatment Timeline
+
+**Cycle days 1–3:** Baseline assessment — blood tests (AMH, FSH, LH, oestradiol) and baseline ultrasound. This determines your protocol.
+
+**Days 2–12 (approximately):** Ovarian stimulation — self-injected hormone medications taken at home. Monitoring scans every 2–3 days at a clinic near your home, or at the Turkish clinic if you are already in country.
+
+**Day 12–14 (approximately):** Trigger injection — final maturation of eggs. Egg retrieval 36 hours later.
+
+**Egg retrieval:** A short procedure (15–20 minutes) under sedation or light general anaesthesia. Eggs are retrieved transvaginally using ultrasound guidance. You go home the same day.
+
+**Day 1–5 after retrieval:** Fertilisation and embryo culture in the laboratory. You receive daily (or alternate day) updates on fertilisation and embryo development.
+
+**Day 5:** Blastocyst transfer — the strongest embryo(s) are transferred. Fresh transfer on day 5, or embryos are frozen for a later frozen embryo transfer (FET).
+
+**Days 9–12 after transfer:** Pregnancy blood test.
+
+**Typical trip to Turkey:** Most couples spend 10–14 days for a full stimulated cycle with fresh transfer. Some clinics can accommodate monitoring in the UK (via local clinic) with travel only for egg retrieval and transfer — a 5–7 day trip.
+
+## Frozen Embryo Transfer (FET)
+
+If embryos are frozen after retrieval, a frozen embryo transfer cycle is much simpler — a short medicated cycle (2–3 weeks at home) followed by a 2–3 day trip to Turkey for the transfer. FET cycles cost £600–£1,200 at Turkish clinics.
+
+## Choosing a Fertility Clinic in Turkey
+
+**Key questions:**
+- What are your live birth rates by age group, and how many cycles is this based on?
+- Which embryologist will oversee our case, and what is their training?
+- What embryo culture system and incubators do you use?
+- Do you have an on-site laboratory, or is it shared with another clinic?
+- What is your embryo freezing protocol (vitrification)?
+- How do you communicate with patients during stimulation if we are in the UK?
+- Who do I contact out of hours if I have a concern during stimulation?
+
+**Accreditations to look for:**
+- ISO 15189 (laboratory quality standard)
+- ESHRE membership (European Society of Human Reproduction and Embryology)
+- Turkish Ministry of Health licensed reproductive medicine centre
+
+## Costs: Turkey vs UK
+
+| | United Kingdom | Turkey |
+|--|--|--|
+| Standard IVF cycle (own eggs and sperm, ICSI) | £3,500–£6,000 | £1,800–£3,000 |
+| Medications | £1,500–£3,000 | £800–£2,000 |
+| PGT-A (genetic screening) | £2,000–£3,500 | £800–£1,500 |
+| Embryo freezing (first year) | £500–£1,000 | Often included |
+| Frozen embryo transfer (FET) | £1,200–£2,500 | £600–£1,200 |
+
+For a couple doing one stimulated cycle with PGT-A and one FET, total UK private cost is typically £8,000–£14,000. In Turkey, £4,000–£7,500.
+
+## Practical Tips for IVF Travel
+
+- Schedule your travel after your baseline scan confirms your cycle is on track
+- Build in flexibility — egg retrieval is date-dependent on follicle development
+- Book refundable flights and accommodation if possible
+- Bring all previous fertility test results and any prior IVF records
+- Ask your GP for a letter summarising your medical history
+- Check that your travel insurance covers medical complications abroad
+- Join online communities of UK patients who have done IVF in Turkey — first-hand accounts are invaluable
+    `,
+  },
+
+  {
+    slug: "liposuction-turkey-guide",
+    title: "Liposuction in Turkey: Complete Guide for UK Patients (2025)",
+    excerpt: "Liposuction in Turkey costs 60-70% less than in the UK using the same Vaser and power-assisted techniques. This guide covers what to expect, recovery, costs, and how to choose a safe clinic.",
+    category: "Cosmetic Surgery",
+    readTime: 9,
+    publishDate: "2025-05-23",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "✨",
+    relatedTreatment: "cosmetic",
+    content: `
+## Why Turkey for Liposuction?
+
+Liposuction is one of the most commonly performed cosmetic procedures in Turkey. UK patients choose Istanbul for two primary reasons: significant cost savings (60–70% less than UK private clinics) and access to experienced surgeons who perform high volumes of body contouring procedures.
+
+UK private clinics charge £3,500–£6,500 for a standard liposuction procedure. In Turkey, the same procedure with comparable technique costs £1,200–£2,500, typically including anaesthesia, hospital stay, compression garments, and transfers.
+
+## Types of Liposuction Available in Turkey
+
+**Traditional liposuction (SAL):** Suction-assisted liposuction. A cannula is inserted through small incisions and fat is mechanically removed. Effective for most areas. Most common technique.
+
+**Vaser liposuction (UAL):** Ultrasound energy liquefies fat cells before removal, reducing trauma to surrounding tissue. Results in less bruising, smoother outcomes, and is preferred for fibrous areas (male chest, back, flanks). Higher cost than SAL.
+
+**Power-assisted liposuction (PAL):** A vibrating cannula improves precision and reduces surgeon fatigue in large-volume cases. Similar results to traditional SAL.
+
+**J-Plasma (Renuvion):** A newer technique that combines helium plasma with radiofrequency energy to tighten the overlying skin after fat removal. Not standard, but increasingly offered by body contouring specialists for cases with skin laxity.
+
+**High-definition liposuction (HD Lipo):** Selective fat removal to enhance muscle definition — the "six-pack" effect. Technique-dependent and requires a specialist in body sculpting.
+
+## Areas Treatable with Liposuction
+
+| Area | Notes |
+|------|-------|
+| Abdomen | Most common area, often combined with flanks |
+| Flanks / love handles | Frequently treated with abdomen |
+| Thighs (inner and outer) | Good results in most patients |
+| Arms | Results vary with skin laxity |
+| Back | Often requires Vaser for fibrous tissue |
+| Male chest (gynecomastia) | Very common, glandular tissue may also require excision |
+| Chin / neck | Highly effective, visible result |
+| Knees and calves | Specialised; not all surgeons offer |
+
+## What Liposuction Does Not Do
+
+It is important to understand what liposuction achieves — and what it does not:
+
+- It removes localised fat deposits. It is not a weight-loss procedure.
+- It does not significantly improve skin laxity. Loose skin after fat removal may require a separate procedure (abdominoplasty, arm lift, thigh lift).
+- It does not treat cellulite (the dimpled appearance of the skin surface).
+- Results depend partly on lifestyle — maintaining weight after the procedure is essential for lasting results.
+
+## The Procedure: What to Expect
+
+**Pre-operative consultation:** Your surgeon marks the treatment areas while you are standing. Photographs are taken. You confirm the areas and goals. Anaesthesia type is agreed — most medium-to-large volume liposuction is performed under general anaesthesia; small areas (chin, small flanks) may be done under local with sedation.
+
+**The procedure:** Duration varies — 1–3 hours depending on area and volume. Tumescent fluid (saline with local anaesthetic and adrenaline) is injected first to reduce bleeding and make fat removal easier. Cannulas are inserted through small (3–5mm) incisions. These incisions are usually closed with a single suture or left to drain.
+
+**Hospital stay:** Most patients stay 1 night in hospital. Large-volume or combined cases (e.g., liposuction + tummy tuck) may require 2 nights.
+
+## Recovery Timeline
+
+| Period | What to Expect |
+|--------|----------------|
+| Days 1–3 | Significant swelling, bruising, draining fluid from incisions (normal) |
+| Days 4–7 | Bruising peaks, wearing compression garment full-time |
+| Week 2 | Swelling beginning to reduce, most patients comfortable at rest |
+| Weeks 3–4 | Return to desk work, light walking |
+| Month 1 | Compression garment still worn, significant swelling remains |
+| Months 2–3 | Swelling reducing, result becoming visible |
+| Months 4–6 | Final result visible — swelling fully resolved |
+
+**Compression garment:** You will wear a compression garment 24 hours a day for 4–6 weeks. This is essential — it controls swelling, supports healing tissue, and improves the final contour. Your clinic will provide the garment; bring it home with you.
+
+## Flying After Liposuction
+
+Most surgeons recommend waiting 5–7 days before flying. Deep vein thrombosis (DVT) risk is elevated after any surgical procedure. For flights under 3 hours, day 5–7 is generally considered safe with appropriate precautions (compression socks, regular movement). For longer flights, discuss timing with your surgeon.
+
+## Costs: Turkey vs UK
+
+| Procedure | United Kingdom | Turkey |
+|-----------|----------------|--------|
+| Single area (e.g. chin) | £1,500–£3,000 | £600–£1,000 |
+| Standard (2–3 areas, e.g. abdomen + flanks) | £3,500–£6,500 | £1,200–£2,500 |
+| Large volume (4–5 areas) | £6,000–£10,000 | £2,000–£4,000 |
+| Vaser liposuction (3 areas) | £4,500–£8,000 | £1,800–£3,200 |
+| HD liposuction (definition) | £6,000–£12,000 | £2,500–£5,000 |
+
+Compression garments, anaesthesia, and hospital stay are typically included in Turkish package prices.
+
+## How to Choose a Safe Clinic
+
+**Confirm surgical qualifications.** Your surgeon should be certified by the Turkish Board of Plastic, Reconstructive and Aesthetic Surgery. This is verifiable — ask for their certificate number and look them up.
+
+**Assess the consultation.** A good plastic surgeon will assess your skin elasticity, discuss realistic outcomes, and flag if additional procedures (skin removal) might be needed for best results. They will not simply agree to everything.
+
+**Check the facility.** Liposuction should be performed in a fully equipped surgical clinic or hospital — not a beauty clinic or non-surgical centre. General anaesthesia requires anaesthesia monitoring equipment and a licensed anaesthesiologist.
+
+**Large-volume limits.** High-volume liposuction (removing more than 5 litres of fat) carries increased complication risk. Reputable surgeons will stage large cases rather than attempting everything in one session.
+
+## Questions to Ask Before Booking
+
+- Are you certified by the Turkish Board of Plastic Surgery?
+- How many liposuction procedures do you perform per year?
+- Will the procedure be performed in a licensed surgical facility?
+- Is general anaesthesia included, and who is the anaesthesiologist?
+- What compression garment is provided, and what is the wearing protocol?
+- What is your follow-up plan once I return to the UK?
+- What is your complication rate, and how are complications handled?
+    `,
+  },
+
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }

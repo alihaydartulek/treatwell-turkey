@@ -50,6 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "hair-transplant-recovery-week-by-week",
     "rhinoplasty-turkey-guide",
     "dental-implants-turkey-guide",
+    "ivf-turkey-complete-guide",
+    "liposuction-turkey-guide",
   ];
 
   const blogRoutes = blogSlugs.map((slug) => ({
