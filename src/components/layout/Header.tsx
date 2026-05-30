@@ -97,7 +97,7 @@ export default function Header() {
                 Destinations <ChevronDown size={14} />
               </button>
               {activeDrop === "destinations" && (
-                <div className="absolute top-full left-0 mt-1 w-44 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg py-2 z-50">
                   {destinations.map((d) => (
                     <Link
                       key={d.href}
@@ -108,6 +108,15 @@ export default function Header() {
                       {d.label}
                     </Link>
                   ))}
+                  <div className="border-t border-slate-100 mt-2 pt-2">
+                    <Link
+                      href="/destinations"
+                      onClick={() => setActiveDrop(null)}
+                      className="block px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+                    >
+                      All Destinations →
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -117,6 +126,13 @@ export default function Header() {
               className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
             >
               Cost Calculator
+            </Link>
+
+            <Link
+              href="/compare"
+              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+            >
+              Compare
             </Link>
 
             <Link
@@ -204,6 +220,13 @@ export default function Header() {
               className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
             >
               Cost Calculator
+            </Link>
+            <Link
+              href="/compare"
+              onClick={() => setMobileOpen(false)}
+              className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              Compare Prices
             </Link>
             <Link
               href="/blog"
