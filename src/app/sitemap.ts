@@ -73,6 +73,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/cookie-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
+  const compareSlugs = [
+    "hair-transplant-turkey-vs-uk",
+    "dental-veneers-turkey-vs-uk",
+    "bariatric-surgery-turkey-vs-uk",
+    "lasik-turkey-vs-uk",
+    "rhinoplasty-turkey-vs-uk",
+    "ivf-turkey-vs-uk",
+  ];
+
+  const compareRoutes = [
+    { url: `${BASE_URL}/compare`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
+    ...compareSlugs.map((slug) => ({
+      url: `${BASE_URL}/compare/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+  ];
+
   const cities = ["istanbul", "ankara", "izmir", "antalya"];
   const cityTreatmentRoutes = treatmentSlugs.flatMap((slug) =>
     cities.map((city) => ({
@@ -88,6 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...clinicRoutes,
     ...treatmentRoutes,
     ...cityTreatmentRoutes,
+    ...compareRoutes,
     ...destinationRoutes,
     ...blogRoutes,
   ];
