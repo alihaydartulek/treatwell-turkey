@@ -68,6 +68,7 @@ export default function HeroSection() {
             <select
               value={treatment}
               onChange={(e) => { setTreatment(e.target.value); setError(false); }}
+              aria-label="Select treatment"
               className={`flex-1 px-4 py-3 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${treatment ? "text-slate-800" : error ? "text-red-400" : "text-slate-400"}`}
             >
               <option value="">Select Treatment</option>
@@ -83,6 +84,7 @@ export default function HeroSection() {
             <select
               value={city}
               onChange={(e) => setCity(e.target.value)}
+              aria-label="Select city"
               className="flex-1 px-4 py-3 text-slate-800 bg-transparent rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Any City</option>

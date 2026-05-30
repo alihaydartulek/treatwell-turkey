@@ -65,6 +65,7 @@ export function CurrencySelector() {
     <select
       value={currency}
       onChange={(e) => setCurrency(e.target.value as Currency)}
+      aria-label="Select currency"
       className="text-xs border border-slate-200 rounded-lg px-2 py-1.5 text-slate-600 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
     >
       <option value="EUR">€ EUR</option>

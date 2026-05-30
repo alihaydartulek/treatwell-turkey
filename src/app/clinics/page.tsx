@@ -155,6 +155,7 @@ export default function ClinicsPage() {
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
+              aria-label="Sort clinics"
               className="px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-700"
             >
               {sortOptions.map((o) => (
@@ -320,6 +321,7 @@ export default function ClinicsPage() {
                         src={clinic.coverImage ?? getFallbackImage(clinic.treatmentSlugs)}
                         alt={clinic.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/65 via-slate-900/15 to-transparent" />

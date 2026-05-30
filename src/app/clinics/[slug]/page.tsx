@@ -133,6 +133,7 @@ export default async function ClinicProfilePage({
                 src={clinic.coverImage}
                 alt={clinic.name}
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority
               />
