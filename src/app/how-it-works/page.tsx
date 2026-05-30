@@ -2,7 +2,7 @@
 import Link from "next/link";
 import {
   Search,
-  MessageCircle,
+  Phone,
   Plane,
   CheckCircle,
   Shield,
@@ -36,7 +36,7 @@ const steps = [
     ],
   },
   {
-    icon: MessageCircle,
+    icon: Phone,
     number: "02",
     title: "Contact the Clinic Directly",
     color: "bg-green-50 text-green-600 border-green-100",
@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: "Do I have to go through you to contact a clinic?",
-    a: "No. Every clinic on our platform has its own website, WhatsApp and email. You can contact them directly at any time, with or without using CliniqTurkey. We just make it easier to find and compare them.",
+    a: "No. Every clinic on our platform has its own website, phone and email. You can contact them directly at any time, with or without using CliniqTurkey. We just make it easier to find and compare them.",
   },
   {
     q: "How do you make money if it is free for patients?",

@@ -63,7 +63,7 @@ export const faqSections: FAQSection[] = [
       {
         question: "Does the clinic arrange airport transfers and accommodation?",
         answer:
-          "Many Turkish clinics, particularly the larger ones, offer airport transfer services and can recommend partner hotels near their facility. This varies by clinic — check each profile's highlights section or contact the clinic directly via WhatsApp to ask. Istanbul has a large concentration of clinics in the Şişli and Nişantaşı neighbourhoods, where many international patient-friendly hotels are located.",
+          "Many Turkish clinics, particularly the larger ones, offer airport transfer services and can recommend partner hotels near their facility. This varies by clinic — check each profile's highlights section or contact the clinic directly by phone or email to ask. Istanbul has a large concentration of clinics in the Şişli and Nişantaşı neighbourhoods, where many international patient-friendly hotels are located.",
       },
     ],
   },
@@ -105,7 +105,7 @@ export const faqSections: FAQSection[] = [
       {
         question: "How does CliniqTurkey work?",
         answer:
-          "CliniqTurkey is an independent comparison and directory platform. We verify clinics, display their real Google ratings and pricing, and allow patients to contact them directly. We do not act as an intermediary or coordinator — there is no middleman between you and the clinic. You browse profiles, find a clinic you like, and contact them directly via WhatsApp or email from their profile page.",
+          "CliniqTurkey is an independent comparison and directory platform. We verify clinics, display their real Google ratings and pricing, and allow patients to contact them directly. We do not act as an intermediary or coordinator — there is no middleman between you and the clinic. You browse profiles, find a clinic you like, and contact them directly by phone or email from their profile page.",
       },
       {
         question: "Is CliniqTurkey free to use?",

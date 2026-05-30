@@ -67,7 +67,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
           </h2>
           <p className="text-blue-100">
             Select your treatment, see matched clinics, and contact them
-            directly via WhatsApp or email — no middleman.
+            directly by phone or email — no middleman.
           </p>
         </div>
 

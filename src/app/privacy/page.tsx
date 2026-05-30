@@ -33,7 +33,7 @@ export default function PrivacyPage() {
                 <li><strong>Contact form data</strong> — if you use our contact form: name, email address, message content</li>
                 <li><strong>Cookies</strong> — see our <Link href="/cookie-policy" className="text-blue-600 hover:underline">Cookie Policy</Link></li>
               </ul>
-              <p className="mt-2">We do <strong>not</strong> collect medical information. If you send medical information directly to a clinic via WhatsApp or email, that data is between you and the clinic — not us.</p>
+              <p className="mt-2">We do <strong>not</strong> collect medical information. If you send medical information directly to a clinic by phone or email, that data is between you and the clinic — not us.</p>
             </section>
 
             <section>
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-xl font-bold text-slate-900 mb-3">6. Third-Party Links</h2>
-              <p>Our platform links to clinic websites and WhatsApp. Once you leave our platform, their own privacy policies apply. We are not responsible for third-party data practices.</p>
+              <p>Our platform links to clinic websites. Once you leave our platform, their own privacy policies apply. We are not responsible for third-party data practices.</p>
             </section>
 
             <section>

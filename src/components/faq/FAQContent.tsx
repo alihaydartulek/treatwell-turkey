@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, ChevronUp, ArrowRight, Shield, MessageCircle } from "lucide-react";
+import { ChevronDown, ChevronUp, ArrowRight, Shield, Mail } from "lucide-react";
 import { faqSections, type FAQ } from "@/lib/faq-data";
 
 function FAQItem({ faq }: { faq: FAQ }) {
@@ -80,7 +80,7 @@ export default function FAQContent() {
               href="mailto:cliniqturkey@gmail.com"
               className="flex items-center gap-2 px-6 py-3 border border-slate-200 text-slate-700 hover:border-blue-300 hover:text-blue-600 font-medium rounded-xl transition-colors"
             >
-              <MessageCircle size={16} />
+              <Mail size={16} />
               Email Us
             </a>
           </div>
