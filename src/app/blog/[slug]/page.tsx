@@ -78,11 +78,11 @@ function renderMarkdown(content: string) {
       );
       elements.push(
         <div key={i} className="overflow-x-auto my-6">
-          <table className="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
-            <thead className="bg-slate-50">
+          <table className="w-full text-sm border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+            <thead className="bg-slate-800 dark:bg-slate-700">
               <tr>
                 {headers.map((h, j) => (
-                  <th key={j} className="text-left py-2 px-4 font-semibold text-slate-700 border-b border-slate-200">
+                  <th key={j} className="text-left py-3 px-4 font-semibold text-white border-b border-slate-600">
                     {h}
                   </th>
                 ))}
@@ -90,9 +90,9 @@ function renderMarkdown(content: string) {
             </thead>
             <tbody>
               {rows.map((row, j) => (
-                <tr key={j} className={j % 2 === 0 ? "bg-white" : "bg-slate-50/50"}>
+                <tr key={j} className={j % 2 === 0 ? "bg-slate-900 dark:bg-slate-900" : "bg-slate-800 dark:bg-slate-800"}>
                   {row.map((cell, k) => (
-                    <td key={k} className="py-2 px-4 text-slate-600 border-b border-slate-100">
+                    <td key={k} className="py-2.5 px-4 text-slate-300 border-b border-slate-700">
                       {cell}
                     </td>
                   ))}
