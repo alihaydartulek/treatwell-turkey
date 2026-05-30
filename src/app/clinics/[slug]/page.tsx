@@ -236,70 +236,6 @@ export default async function ClinicProfilePage({
                 <p className="text-slate-600 leading-relaxed">{clinic.description}</p>
               </section>
 
-              {/* Highlights */}
-              <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Why Choose {clinic.name}?</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {clinic.highlights.map((h) => (
-                    <div key={h} className="flex items-start gap-2 p-4 bg-blue-50 border border-blue-100 rounded-xl text-sm">
-                      <CheckCircle size={15} className="text-blue-500 mt-0.5 shrink-0" />
-                      <span className="text-slate-700">{h}</span>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Treatments & prices */}
-              <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Treatments & Prices</h2>
-                <div className="border border-slate-200 rounded-2xl overflow-hidden">
-                  <table className="w-full text-sm">
-                    <thead className="bg-slate-50 border-b border-slate-200">
-                      <tr>
-                        <th className="text-left py-3 px-4 text-slate-600 font-semibold">Treatment</th>
-                        <th className="text-right py-3 px-4 text-blue-700 font-semibold">Indicative Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {clinic.treatments.map((t, i) => (
-                        <tr key={t} className={`border-b border-slate-100 ${i % 2 === 0 ? "bg-white" : "bg-slate-50/50"}`}>
-                          <td className="py-3 px-4 text-slate-700">{t}</td>
-                          <td className="py-3 px-4 text-right font-medium text-slate-900">
-                            From <PriceDisplay eurAmount={clinic.priceFrom + i * 150} />
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-xs text-slate-400 mt-2 px-1">
-                  * Prices are indicative. Exact quotes depend on individual assessment. Request a free personalised quote.
-                </p>
-              </section>
-
-              {/* Doctors */}
-              <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">Our Medical Team</h2>
-                <div className="flex flex-col gap-5">
-                  {clinic.doctors.map((doc) => (
-                    <div key={doc.name} className="flex gap-4 p-5 border border-slate-200 rounded-2xl">
-                      <div>
-                        <div className="flex flex-wrap items-center gap-2 mb-1">
-                          <h3 className="font-bold text-slate-900">{doc.name}</h3>
-                          <span className="text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
-                            {doc.title}
-                          </span>
-                        </div>
-                        <p className="text-sm text-slate-500 mb-1">
-                          {doc.specialty} · {doc.experience} years experience
-                        </p>
-                        <p className="text-sm text-slate-600 leading-relaxed">{doc.bio}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
               {/* Reviews */}
               <section>
                 <div className="flex items-center justify-between mb-6">
@@ -392,7 +328,71 @@ export default async function ClinicProfilePage({
                   </div>
                 )}
               </section>
-            </div>
+            
+              {/* Highlights */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">Why Choose {clinic.name}?</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {clinic.highlights.map((h) => (
+                    <div key={h} className="flex items-start gap-2 p-4 bg-blue-50 border border-blue-100 rounded-xl text-sm">
+                      <CheckCircle size={15} className="text-blue-500 mt-0.5 shrink-0" />
+                      <span className="text-slate-700">{h}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* Treatments & prices */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">Treatments & Prices</h2>
+                <div className="border border-slate-200 rounded-2xl overflow-hidden">
+                  <table className="w-full text-sm">
+                    <thead className="bg-slate-50 border-b border-slate-200">
+                      <tr>
+                        <th className="text-left py-3 px-4 text-slate-600 font-semibold">Treatment</th>
+                        <th className="text-right py-3 px-4 text-blue-700 font-semibold">Indicative Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {clinic.treatments.map((t, i) => (
+                        <tr key={t} className={`border-b border-slate-100 ${i % 2 === 0 ? "bg-white" : "bg-slate-50/50"}`}>
+                          <td className="py-3 px-4 text-slate-700">{t}</td>
+                          <td className="py-3 px-4 text-right font-medium text-slate-900">
+                            From <PriceDisplay eurAmount={clinic.priceFrom + i * 150} />
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-xs text-slate-400 mt-2 px-1">
+                  * Prices are indicative. Exact quotes depend on individual assessment. Request a free personalised quote.
+                </p>
+              </section>
+
+              {/* Doctors */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">Our Medical Team</h2>
+                <div className="flex flex-col gap-5">
+                  {clinic.doctors.map((doc) => (
+                    <div key={doc.name} className="flex gap-4 p-5 border border-slate-200 rounded-2xl">
+                      <div>
+                        <div className="flex flex-wrap items-center gap-2 mb-1">
+                          <h3 className="font-bold text-slate-900">{doc.name}</h3>
+                          <span className="text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                            {doc.title}
+                          </span>
+                        </div>
+                        <p className="text-sm text-slate-500 mb-1">
+                          {doc.specialty} · {doc.experience} years experience
+                        </p>
+                        <p className="text-sm text-slate-600 leading-relaxed">{doc.bio}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+</div>
 
             {/* Sidebar */}
             <div className="flex flex-col gap-5 sticky top-24 self-start">
