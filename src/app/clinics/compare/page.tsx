@@ -17,6 +17,8 @@ import {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { clinics, type Clinic } from "@/lib/clinics";
+import PriceDisplay from "@/components/ui/PriceDisplay";
+import { trackClinicCall, trackClinicEmail } from "@/lib/analytics";
 
 const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
   {
@@ -43,9 +45,7 @@ const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
   {
     label: "Starting Price",
     render: (c) => (
-      <span className="text-lg font-bold text-slate-900">
-        €{c.priceFrom.toLocaleString()}
-      </span>
+      <PriceDisplay eurAmount={c.priceFrom} className="text-lg font-bold text-slate-900" />
     ),
   },
   {
@@ -123,6 +123,7 @@ const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
       <div className="flex flex-col gap-2">
         <a
           href={`tel:${c.phone}`}
+          onClick={() => trackClinicCall(c.slug, "compare-tool")}
           className="flex items-center justify-center gap-1.5 py-2 bg-green-600 hover:bg-green-700 text-white text-xs font-semibold rounded-lg transition-colors"
         >
           <Phone size={12} />
@@ -130,6 +131,7 @@ const rows: { label: string; render: (c: Clinic) => React.ReactNode }[] = [
         </a>
         <a
           href={`mailto:${c.email}`}
+          onClick={() => trackClinicEmail(c.slug, "compare-tool")}
           className="flex items-center justify-center gap-1.5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg transition-colors"
         >
           <Mail size={12} />

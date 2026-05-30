@@ -50,7 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: BASE_URL, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${BASE_URL}/clinics`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
-    { url: `${BASE_URL}/clinics/compare`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    // Note: /clinics/compare is an interactive tool (requires ?slugs=...),
+    // intentionally excluded from the sitemap and set to noindex.
     { url: `${BASE_URL}/treatments`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/get-a-quote`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/cost-calculator`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
