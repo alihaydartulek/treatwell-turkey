@@ -57,11 +57,11 @@ export default function Home() {
       <Header />
       <main id="main-content" className="flex-1">
         <HeroSection />
-        <HowItWorks />
         <PopularTreatments />
         <CostComparison />
         <FeaturedClinics />
         <Testimonials />
+        <HowItWorks />
         <LeadCaptureSection />
       </main>
       <Footer />
