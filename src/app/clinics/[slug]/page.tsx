@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { getClinicBySlug, getAllClinicSlugs } from "@/lib/clinics";
+import { getClinicBySlug, getAllClinicSlugs, DATA_LAST_REVIEWED } from "@/lib/clinics";
 import PriceDisplay from "@/components/ui/PriceDisplay";
 import TrackedContactLink from "@/components/ui/TrackedContactLink";
 import StickyContactBar from "@/components/ui/StickyContactBar";
@@ -487,6 +487,13 @@ export default async function ClinicProfilePage({
                   ))}
                 </div>
               </div>
+
+              {/* Data freshness — backs up the "verified data" positioning */}
+              <p className="flex items-center gap-1.5 text-xs text-slate-400 px-1">
+                <CheckCircle size={12} className="text-green-500 shrink-0" />
+                Prices &amp; ratings last reviewed {DATA_LAST_REVIEWED}. Google
+                ratings are publicly sourced.
+              </p>
             </div>
           </div>
         </div>

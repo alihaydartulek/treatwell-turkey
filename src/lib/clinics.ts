@@ -1263,3 +1263,10 @@ export function getClinicsByCity(citySlug: string): Clinic[] {
 export function getAllClinicSlugs(): string[] {
   return clinics.map((c) => c.slug);
 }
+
+/**
+ * When the clinic dataset (prices, ratings, accreditations) was last
+ * reviewed. Shown on clinic profiles to back up the "verified data"
+ * positioning. Update this whenever you refresh the data.
+ */
+export const DATA_LAST_REVIEWED = "May 2026";
