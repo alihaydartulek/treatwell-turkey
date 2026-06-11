@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Shield, CheckCircle, Users, Heart, ArrowRight, Star } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { clinics } from "@/lib/clinics";
 
 export const metadata: Metadata = {
   title: "About CliniqTurkey — Who We Are & Why We Built This",
@@ -34,7 +35,7 @@ const values = [
 ];
 
 const stats = [
-  { value: "18", label: "Verified Clinics Listed" },
+  { value: String(clinics.length), label: "Verified Clinics Listed" },
   { value: "4", label: "Destinations Covered" },
   { value: "8+", label: "Countries Served" },
   { value: "Free", label: "For Patients" },

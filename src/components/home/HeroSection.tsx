@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search, Shield, Star, Users } from "lucide-react";
 import { trackTreatmentSearch } from "@/lib/analytics";
+import { clinics } from "@/lib/clinics";
 
 const treatmentOptions = [
   { label: "Hair Transplant",       slug: "hair-transplant" },
@@ -49,7 +50,7 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
             <Star size={14} className="text-yellow-300 fill-yellow-300" />
-            <span>Trusted by 10,000+ patients from UK, Germany &amp; Europe</span>
+            <span>Independent clinic comparison — honest data, no middleman</span>
           </div>
 
           {/* Headline */}
@@ -113,7 +114,7 @@ export default function HeroSection() {
         {/* Stats bar */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {[
-            { icon: Shield, value: "18", label: "Verified Clinics" },
+            { icon: Shield, value: String(clinics.length), label: "Verified Clinics" },
             { icon: Star, value: "4.7★", label: "Avg. Google Rating" },
             { icon: Users, value: "50–75%", label: "Average Savings" },
             { icon: Search, value: "40+", label: "Treatments Covered" },

@@ -13,7 +13,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getTreatmentBySlug, getAllTreatmentSlugs } from "@/lib/treatments";
 import { getClinicsByTreatmentSlug } from "@/lib/clinics";
-import SocialProof from "@/components/ui/SocialProof";
 import PriceDisplay from "@/components/ui/PriceDisplay";
 
 export async function generateStaticParams() {
@@ -130,8 +129,6 @@ export default async function TreatmentPage({
                   </div>
                 </div>
               </div>
-
-              <SocialProof baseCount={14} />
 
               <div className="flex flex-wrap gap-3 mt-4">
                 <Link
