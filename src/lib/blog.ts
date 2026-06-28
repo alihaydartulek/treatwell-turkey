@@ -2601,6 +2601,215 @@ A dental implant in Turkey can cost a fraction of UK prices, but it is a staged 
     `,
   },
 
+  {
+    slug: "all-on-4-implants-turkey-cost",
+    title: "All-on-4 Dental Implants in Turkey: Cost & What to Know (2026)",
+    excerpt:
+      "What All-on-4 implants cost in Turkey versus the UK, who they suit, how many visits you need, and the questions to ask before booking full-arch treatment.",
+    category: "Dental",
+    readTime: 8,
+    publishDate: "2026-05-16",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🦷",
+    relatedTreatment: "dental",
+    content: `
+## What Is All-on-4?
+
+All-on-4 is a technique that replaces a full arch of teeth (upper or lower) using just four dental implants to support a fixed bridge. It is designed for people who have lost most or all of their teeth, or whose remaining teeth need removing. Because it uses four strategically placed implants instead of one per tooth, it is more affordable and often avoids the need for bone grafting.
+
+If you are new to the terms here, our [glossary](/glossary#dental-implant) explains implants, crowns and more in plain English.
+
+## The Cost
+
+All-on-4 is priced per arch. These are guideline ranges — always get an itemised written quote.
+
+| | All-on-4 (per arch) |
+|--|---------------------|
+| UK (private) | £9,000–£15,000 |
+| Turkey (from) | £2,500–£5,000 |
+
+For both arches, the price roughly doubles. See live pricing on the [dental treatment page](/treatments/dental) and estimate your trip on the [cost calculator](/cost-calculator).
+
+## Who Is It For?
+
+All-on-4 suits patients who:
+
+- Have lost most teeth in an arch, or wear dentures they dislike
+- Want a fixed (non-removable) solution
+- Have enough bone for four implants (often without grafting)
+
+It is not the right answer for everyone — a good clinic will assess your jaw with a CT scan and tell you honestly if a different approach fits better.
+
+## How Many Visits?
+
+All-on-4 usually needs **two trips**:
+
+1. **First visit:** any extractions, the four implants placed, and a temporary fixed bridge fitted.
+2. **Healing period:** a few months for the implants to fuse with the bone.
+3. **Second visit:** the final permanent bridge fitted.
+
+Budget for two sets of flights and accommodation — our guide to [hidden costs](/blog/hidden-costs-medical-tourism-turkey) explains the extras people forget.
+
+## Questions to Ask First
+
+- Is a CT scan used to plan the implants?
+- Which implant brand and bridge material do you use?
+- Is the temporary bridge fixed or removable between visits?
+- What warranty covers the implants and the bridge?
+
+Take our printable [clinic question checklist](/clinic-checklist) to every consultation, and read [how we verify the clinics we list](/how-we-verify).
+
+## The Bottom Line
+
+All-on-4 in Turkey can cost a third or less of UK prices for a fixed, full-arch solution — but it is staged treatment that usually needs two trips and careful planning. Choose a clinic that scans, uses reputable components and offers a clear warranty. Compare verified dental clinics on our [directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
+  {
+    slug: "turkey-vs-dubai-hair-transplant",
+    title: "Hair Transplant: Turkey vs Dubai — Cost & Quality Compared",
+    excerpt:
+      "How a hair transplant in Turkey compares with Dubai on price, experience and aftercare — and how to decide which is right for you.",
+    category: "Hair Transplant",
+    readTime: 7,
+    publishDate: "2026-05-14",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🌍",
+    relatedTreatment: "hair-transplant",
+    content: `
+## Two Popular Destinations, Very Different Prices
+
+Turkey and Dubai are both well-known for hair transplants, but they sit at opposite ends of the price scale. Understanding why helps you choose with your eyes open.
+
+## The Cost Difference
+
+| | FUE/DHI hair transplant |
+|--|-------------------------|
+| Dubai | £4,000–£10,000+ |
+| Turkey (from) | £1,200–£2,500 |
+
+The gap is large — a Turkey procedure can cost a quarter of a Dubai one for comparable technique. Dubai's higher prices reflect higher operating costs, not necessarily better surgery. See live pricing on the [hair transplant page](/treatments/hair-transplant).
+
+## Experience and Volume
+
+Turkey performs more hair transplants than any country in the world — over a million procedures a year — and its top surgeons have refined techniques across enormous case volumes. Dubai has excellent individual clinics, but nothing like Turkey's concentration of high-volume hair restoration centres.
+
+That volume is the real reason so many patients choose Turkey: not just price, but the depth of experience behind it. The trade-off is that Turkey also has a wide range of clinics, so [choosing carefully](/blog/how-to-choose-verify-clinic-turkey) matters.
+
+## What to Weigh Up
+
+- **Cost:** Turkey is dramatically cheaper for comparable technique.
+- **Experience:** Turkey's volume is unmatched; verify the specific clinic either way.
+- **Travel:** Both are short-to-medium haul from Europe and the Gulf.
+- **Aftercare:** Confirm who handles follow-up once you are home, wherever you go.
+
+Whichever you pick, apply the same checks — our [clinic question checklist](/clinic-checklist) works for any country.
+
+## The Bottom Line
+
+For most patients, Turkey offers comparable hair transplant technique to Dubai at a fraction of the price, backed by the world's largest pool of experience — provided you choose a verified clinic. Compare options on our [clinic directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
+  {
+    slug: "mommy-makeover-turkey-cost",
+    title: "Mommy Makeover in Turkey: What's Included & Costs (2026)",
+    excerpt:
+      "What a mommy makeover involves, what it costs in Turkey versus the UK, recovery expectations, and the safety questions that matter for combined surgery.",
+    category: "Cosmetic Surgery",
+    readTime: 8,
+    publishDate: "2026-05-12",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🌸",
+    relatedTreatment: "cosmetic",
+    content: `
+## What Is a Mommy Makeover?
+
+A "mommy makeover" is a combination of cosmetic procedures done together to address changes after pregnancy and breastfeeding. It typically combines a [tummy tuck](/blog/tummy-tuck-turkey-guide) with breast surgery (lift, augmentation or reduction), and sometimes liposuction. Because several procedures are done in one operation, it is major surgery — so the safety side matters as much as the cost.
+
+## What's Usually Included
+
+A mommy makeover is tailored to you, but commonly combines:
+
+- **Tummy tuck (abdominoplasty)** — removes loose skin and tightens the abdominal muscles
+- **Breast surgery** — a lift, implants, or reduction depending on your goals
+- **Liposuction** — to contour the waist, hips or flanks
+
+The exact combination should be decided with a qualified plastic surgeon based on your body and goals — not a fixed package.
+
+## The Cost
+
+Guideline ranges for the combined surgery — always get an itemised, personalised quote.
+
+| | Mommy makeover (combined) |
+|--|---------------------------|
+| UK (private) | £12,000–£20,000 |
+| Turkey (from) | £4,500–£8,000 |
+
+See related pricing on the [cosmetic surgery page](/treatments/cosmetic) and plan your trip with the [cost calculator](/cost-calculator).
+
+## Recovery and Staying Safe
+
+Combined procedures mean a longer recovery and more to monitor, so safety checks are essential:
+
+- Is the surgery done in a **fully licensed hospital** with an anaesthetist?
+- Is your surgeon a qualified, experienced **plastic surgeon**?
+- How long should you stay in Turkey before flying? (Often 7–10 days for combined surgery.)
+- What is the aftercare plan and who manages it once you are home?
+
+Longer flights after major surgery carry a clot risk, so timing matters — confirm it with your surgeon. Use our [clinic question checklist](/clinic-checklist) and read [how we verify clinics](/how-we-verify).
+
+## The Bottom Line
+
+A mommy makeover in Turkey can cost roughly half of UK private prices, but combining procedures is major surgery — prioritise a licensed hospital, a qualified plastic surgeon and a clear recovery plan over the lowest quote. Compare verified clinics on our [directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
+  {
+    slug: "best-time-hair-transplant-turkey",
+    title: "The Best Time of Year for a Hair Transplant in Turkey",
+    excerpt:
+      "Whether the season really matters for a hair transplant, the quieter and cheaper months to travel, and how weather affects your recovery in Turkey.",
+    category: "Hair Transplant",
+    readTime: 6,
+    publishDate: "2026-05-10",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "📅",
+    relatedTreatment: "hair-transplant",
+    content: `
+## Does the Season Actually Matter?
+
+A hair transplant can be done at any time of year — the procedure itself is indoors and the result does not depend on the season. But the timing of your trip can affect your comfort during recovery, the price, and how easy it is to keep the grafts protected. Here is what genuinely matters.
+
+## Weather and Recovery
+
+The grafts are delicate for the first couple of weeks, and two things to manage are **sun** and **sweat**:
+
+- **Direct sun** should be avoided on the healing scalp for several weeks. Turkey's summers (June–August) are hot and sunny, especially in [Antalya](/treatments/hair-transplant/antalya) and [Izmir](/treatments/hair-transplant/izmir).
+- **Heavy sweating** can irritate healing grafts, so intense summer heat is less ideal for the first days.
+
+This makes **spring (March–May)** and **autumn (September–November)** the most comfortable windows: mild weather, easy to keep the scalp protected, and pleasant for getting around.
+
+## Price and Availability
+
+- **Summer** is peak tourist season — flights and hotels cost more, and good clinics book up.
+- **Late autumn and winter** are often quieter and cheaper to travel, with more clinic availability.
+
+If budget is a priority, the off-peak months can save you money on the [travel side](/blog/hidden-costs-medical-tourism-turkey) — though the procedure price itself does not change with the season.
+
+## Planning Around Your Life
+
+Many people also time it around:
+
+- **Time off work** — you will want a few days around the procedure (see our guide to [flying after a hair transplant](/blog/flying-after-hair-transplant)).
+- **Growing-in time** — visible results take months, so some plan it well before a big event.
+
+## The Bottom Line
+
+You can have a hair transplant in Turkey year-round, but spring and autumn offer the most comfortable recovery weather, while late autumn and winter can be cheaper and quieter for travel. Pick the window that suits your recovery and budget, then compare verified clinics on our [directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
