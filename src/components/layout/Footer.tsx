@@ -22,6 +22,9 @@ const destinationLinks = [
 const companyLinks = [
   { label: "About Us", href: "/about" },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "How We Verify Clinics", href: "/how-we-verify" },
+  { label: "Clinic Question Checklist", href: "/clinic-checklist" },
+  { label: "Glossary", href: "/glossary" },
   { label: "FAQ", href: "/faq" },
   { label: "For Clinics", href: "/for-clinics" },
   { label: "Patient Guides", href: "/blog" },
@@ -40,7 +43,7 @@ export default function Footer() {
               { icon: CheckCircle, text: "Free for Patients" },
               { icon: Shield, text: "GDPR Compliant Platform" },
               { icon: Star, text: "All Clinics Verified" },
-              { icon: Users, text: "10+ Destinations Covered" },
+              { icon: Users, text: "4 Cities Covered" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2">
                 <Icon size={16} className="text-green-400 shrink-0" />

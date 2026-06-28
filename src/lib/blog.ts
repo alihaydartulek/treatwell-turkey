@@ -2426,6 +2426,181 @@ A Hollywood smile in Turkey can cost a fraction of UK or EU prices, but the righ
     `,
   },
 
+  {
+    slug: "gastric-sleeve-turkey-cost",
+    title: "Gastric Sleeve in Turkey: Cost & What's Included (2026)",
+    excerpt:
+      "What a gastric sleeve really costs in Turkey versus the UK, what a reputable package includes, and the safety checks that matter more than the price.",
+    category: "Bariatric",
+    readTime: 8,
+    publishDate: "2026-05-23",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "⚖️",
+    relatedTreatment: "bariatric",
+    content: `
+## Why Turkey for a Gastric Sleeve?
+
+A gastric sleeve (sleeve gastrectomy) is one of the most common weight-loss operations, and Turkey has become a leading destination for it. The reason is the same as for other treatments: experienced bariatric teams and modern hospitals at a fraction of UK private prices. But bariatric surgery is major surgery — so the safety checks matter far more than the headline cost.
+
+## The Cost
+
+These are guideline ranges. Always get an itemised written quote for your case.
+
+| | Gastric sleeve |
+|--|----------------|
+| UK (private) | £9,000–£14,000 |
+| Turkey (from) | £2,800–£4,500 |
+
+You can model your own numbers on our [cost calculator](/cost-calculator) and see live prices on the [bariatric treatment page](/treatments/bariatric).
+
+## What a Reputable Package Includes
+
+Because this is hospital surgery, the package should be comprehensive:
+
+- Pre-operative tests, consultations and anaesthetist review
+- The procedure in a fully equipped hospital
+- Several nights' hospital stay (not just a hotel)
+- Post-operative monitoring before discharge
+- Dietitian guidance and an aftercare plan
+- Airport and hotel transfers
+
+**Confirm in writing** how many hospital nights are included and what happens if you need to stay longer.
+
+## Safety Comes Before Price
+
+For bariatric surgery, these questions matter more than saving a few hundred pounds:
+
+- Is the surgery performed in a licensed **hospital** (not a small clinic)?
+- What is the surgeon's bariatric experience and complication rate?
+- What is the aftercare plan once you are home — and who manages it?
+- How are emergencies handled if something goes wrong during your stay?
+
+Use our printable [clinic question checklist](/clinic-checklist) at every consultation, and read [how we verify the clinics we list](/how-we-verify).
+
+## Recovery and Travel
+
+Most patients stay in Turkey for around 5–7 days so the team can monitor the early recovery before you fly. The first weeks at home involve a staged diet (liquids, then soft foods). Plan time off work and confirm the aftercare contact before you travel — our guide to [hidden costs](/blog/hidden-costs-medical-tourism-turkey) covers the extras people forget.
+
+## The Bottom Line
+
+A gastric sleeve in Turkey can cost roughly a third of UK private prices, but this is major surgery — choose a licensed hospital with a clear aftercare plan over the cheapest quote. Compare verified options on our [clinic directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
+  {
+    slug: "veneers-vs-crowns-turkey",
+    title: "Veneers vs Crowns in Turkey: Which Do You Actually Need?",
+    excerpt:
+      "The honest difference between veneers and crowns, when each is appropriate, and how to avoid having healthy teeth unnecessarily crowned abroad.",
+    category: "Dental",
+    readTime: 7,
+    publishDate: "2026-05-21",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🦷",
+    relatedTreatment: "dental",
+    content: `
+## The Difference That Saves Your Teeth
+
+When people book a "smile makeover" in Turkey, the single most important decision is veneers versus crowns — because one preserves your natural teeth and the other removes much more of them.
+
+**Veneers** are thin shells bonded to the front of the tooth. They need only minimal removal of enamel.
+
+**Crowns** cover the whole tooth and require it to be shaped right down. They are the right choice for damaged, root-treated or heavily filled teeth — but using them on healthy teeth purely for looks is irreversible over-treatment.
+
+See plain-English definitions in our [glossary](/glossary#veneer).
+
+## When Each Is Appropriate
+
+| Situation | Usually best |
+|-----------|--------------|
+| Healthy but discoloured or slightly uneven teeth | Veneers |
+| Chipped or worn front teeth | Veneers |
+| Heavily filled, cracked or root-treated teeth | Crowns |
+| A tooth restored after an implant | Crown |
+
+## The Red Flag to Watch For
+
+A common problem with cheap "Hollywood smile" packages is clinics proposing **crowns on perfectly healthy teeth** because it is faster and uniform. If your teeth are sound, ask specifically: *"Why not veneers?"* A good dentist will explain their reasoning and prefer the most conservative option that achieves your goal.
+
+## Cost
+
+In Turkey, both are priced per tooth and cost far less than in the UK — veneers from around £180 per tooth versus £500+ in the UK. See live prices on the [dental treatment page](/treatments/dental) and read our full guide to the [Hollywood smile cost](/blog/hollywood-smile-turkey-cost).
+
+## How to Protect Yourself
+
+- Ask for a written treatment plan that states veneers or crowns for each tooth
+- Ask why crowns are proposed if your teeth are healthy
+- Confirm the material (E-max, zirconia) and the warranty
+- See real before-and-after cases from the same clinic
+
+Run through our [clinic question checklist](/clinic-checklist) before you commit, and check [how to choose a clinic](/blog/how-to-choose-verify-clinic-turkey).
+
+## The Bottom Line
+
+Veneers preserve your teeth; crowns remove more of them. For healthy teeth, veneers-first is almost always the better, safer choice — and a clinic that pushes crowns on sound teeth is a warning sign. Compare verified dental clinics on our [directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
+  {
+    slug: "dental-implants-turkey-cost",
+    title: "Dental Implants in Turkey: Cost Per Tooth (2026)",
+    excerpt:
+      "What a single dental implant costs in Turkey versus the UK, why the number of visits matters, and what should be included in the price.",
+    category: "Dental",
+    readTime: 7,
+    publishDate: "2026-05-17",
+    author: "CliniqTurkey Editorial",
+    coverEmoji: "🦷",
+    relatedTreatment: "dental",
+    content: `
+## What a Dental Implant Actually Is
+
+A dental implant replaces a missing tooth at the root: a titanium post is placed into the jawbone, the bone heals around it, and a crown is fitted on top. Because the bone needs time to heal, implants usually involve more than one stage — and that affects both cost and how long you stay.
+
+## The Cost Per Tooth
+
+Guideline ranges — always get an itemised quote.
+
+| | Single implant (post + crown) |
+|--|-------------------------------|
+| UK (private) | £2,000–£3,500 |
+| Turkey (from) | £400–£900 |
+
+See live prices on the [dental treatment page](/treatments/dental) and model your own case on the [cost calculator](/cost-calculator).
+
+## Why the Number of Visits Matters
+
+Implant treatment often needs **two trips**:
+
+1. **First visit:** the implant post is placed, sometimes with bone grafting if needed.
+2. **Healing period:** the bone fuses to the implant over a few months (osseointegration).
+3. **Second visit:** the permanent crown is fitted.
+
+Some clinics offer faster protocols, but ask honestly whether they suit your case — rushing the healing stage risks the implant. Factor two sets of flights into your budget; our guide to [hidden costs](/blog/hidden-costs-medical-tourism-turkey) explains why.
+
+## What Should Be Included
+
+- Consultation, X-rays or a CT scan
+- The implant post (ask the brand) and the crown
+- Any bone graft or extraction needed first
+- A temporary solution between visits if relevant
+- A warranty on the implant and crown
+
+## Choosing Safely
+
+- Confirm a qualified dentist or oral surgeon places the implant
+- Ask which implant brand is used (quality varies a lot)
+- Check the warranty and who handles issues once you are home
+- Run through our [clinic question checklist](/clinic-checklist)
+
+You can also read [how we verify the clinics we list](/how-we-verify).
+
+## The Bottom Line
+
+A dental implant in Turkey can cost a fraction of UK prices, but it is a staged treatment — plan for the healing period and possibly two trips, and choose a clinic that uses a reputable implant brand with a clear warranty. Compare verified clinics on our [directory](/clinics) and [request free quotes](/get-a-quote).
+    `,
+  },
+
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
