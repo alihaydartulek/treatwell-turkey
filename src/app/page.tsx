@@ -6,13 +6,14 @@ import HowItWorks from "@/components/home/HowItWorks";
 import PopularTreatments from "@/components/home/PopularTreatments";
 import FeaturedClinics from "@/components/home/FeaturedClinics";
 import CostComparison from "@/components/home/CostComparison";
-import Testimonials from "@/components/home/Testimonials";
+import WhyTrustUs from "@/components/home/WhyTrustUs";
 import LeadCaptureSection from "@/components/home/LeadCaptureSection";
+import { clinics } from "@/lib/clinics";
 
 export const metadata: Metadata = {
   title: "Compare Medical Clinics in Turkey — Hair Transplant, Dental & More",
   description:
-    "Find and compare 18 verified clinics in Turkey for hair transplant, dental veneers, bariatric surgery, IVF and cosmetic surgery. Save 50–75% vs UK prices. Real Google reviews, direct clinic contact.",
+    `Find and compare ${clinics.length} verified clinics in Turkey for hair transplant, dental veneers, bariatric surgery, IVF and cosmetic surgery. Save 50–75% vs UK prices. Real clinic reviews, direct clinic contact.`,
   alternates: { canonical: "https://www.cliniqturkey.com" },
 };
 
@@ -60,7 +61,7 @@ export default function Home() {
         <PopularTreatments />
         <CostComparison />
         <FeaturedClinics />
-        <Testimonials />
+        <WhyTrustUs />
         <HowItWorks />
         <LeadCaptureSection />
       </main>

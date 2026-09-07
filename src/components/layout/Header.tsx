@@ -154,6 +154,13 @@ export default function Header() {
             >
               Guides
             </Link>
+
+            <Link
+              href="/how-we-verify"
+              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-teal-600 hover:bg-slate-50 rounded-lg transition-colors"
+            >
+              Why Us
+            </Link>
           </nav>
 
           {/* Right side */}
@@ -250,6 +257,20 @@ export default function Header() {
               className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
             >
               Patient Guides
+            </Link>
+            <Link
+              href="/how-we-verify"
+              onClick={() => setMobileOpen(false)}
+              className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              How We Verify Clinics
+            </Link>
+            <Link
+              href="/clinic-checklist"
+              onClick={() => setMobileOpen(false)}
+              className="px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              Clinic Checklist
             </Link>
             <div className="border-t border-slate-100 my-2" />
             <Link

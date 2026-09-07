@@ -7,9 +7,12 @@ import { clinics } from "@/lib/clinics";
 import { useCurrency } from "@/components/ui/CurrencyProvider";
 
 const featuredSlugs = [
+  "hairneva-istanbul",
   "cosmedica-clinic-istanbul",
+  "drgo-smile-istanbul",
   "dentakay-istanbul",
-  "memorial-hospital-istanbul",
+  "drgo-clinic-istanbul",
+  "quartz-clinique-istanbul",
 ];
 
 const featuredClinics = featuredSlugs
