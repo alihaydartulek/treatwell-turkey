@@ -7,8 +7,15 @@ import PopularTreatments from "@/components/home/PopularTreatments";
 import FeaturedClinics from "@/components/home/FeaturedClinics";
 import CostComparison from "@/components/home/CostComparison";
 import WhyTrustUs from "@/components/home/WhyTrustUs";
+import ClinicStrip from "@/components/home/ClinicStrip";
 import LeadCaptureSection from "@/components/home/LeadCaptureSection";
 import { clinics } from "@/lib/clinics";
+
+const topRatedClinics = [...clinics]
+  .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount)
+  .slice(0, 4);
+
+const newestClinics = [...clinics].sort((a, b) => b.id - a.id).slice(0, 4);
 
 export const metadata: Metadata = {
   title: "Compare Medical Clinics in Turkey — Hair Transplant, Dental & More",
@@ -61,6 +68,20 @@ export default function Home() {
         <PopularTreatments />
         <CostComparison />
         <FeaturedClinics />
+        <ClinicStrip
+          eyebrow="Highest Rated"
+          title="Top Rated Clinics"
+          subtitle="Ranked by real, publicly sourced Google ratings — not by payment."
+          clinics={topRatedClinics}
+          bg="slate"
+        />
+        <ClinicStrip
+          eyebrow="Just Added"
+          title="New on CliniqTurkey"
+          subtitle="The most recently verified clinics to join the directory."
+          clinics={newestClinics}
+          bg="white"
+        />
         <WhyTrustUs />
         <HowItWorks />
         <LeadCaptureSection />
