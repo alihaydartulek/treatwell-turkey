@@ -11,7 +11,7 @@ const featuredSlugs = [
   "cosmedica-clinic-istanbul",
   "drgo-smile-istanbul",
   "dentakay-istanbul",
-  "drgo-clinic-istanbul",
+  "dr-guncel-ozturk-istanbul",
   "quartz-clinique-istanbul",
 ];
 

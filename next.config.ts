@@ -20,6 +20,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/clinics/drgo-clinic-istanbul",
+        destination: "/clinics/dr-guncel-ozturk-istanbul",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -248,6 +248,40 @@ export default async function ClinicProfilePage({
                 <p className="text-slate-600 leading-relaxed">{clinic.description}</p>
               </section>
 
+              {/* Treatments & Prices */}
+              {clinic.priceList && clinic.priceList.length > 0 && (
+                <section>
+                  <h2 className="text-2xl font-bold text-slate-900 mb-4">Treatments &amp; Prices</h2>
+                  <div className="border border-slate-200 rounded-2xl overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-50 border-b border-slate-200">
+                          <th className="text-left font-semibold text-slate-700 px-5 py-3">Treatment</th>
+                          <th className="text-right font-semibold text-slate-700 px-5 py-3">Starting from</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {clinic.priceList.map((p, i) => (
+                          <tr
+                            key={p.treatment}
+                            className={i % 2 === 1 ? "bg-slate-50/60" : ""}
+                          >
+                            <td className="px-5 py-3 text-slate-700">{p.treatment}</td>
+                            <td className="px-5 py-3 text-right font-semibold text-slate-900">
+                              <PriceDisplay eurAmount={p.from} />
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <p className="text-xs text-slate-400 mt-2">
+                    Starting (&ldquo;from&rdquo;) prices supplied by the clinic. Your final quote depends
+                    on your individual case — contact the clinic directly for a personalised price.
+                  </p>
+                </section>
+              )}
+
               {/* Reviews */}
               <section>
                 <div className="flex items-center justify-between mb-6">
