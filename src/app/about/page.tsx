@@ -55,16 +55,16 @@ export default function AboutPage() {
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-20">
           <div className="container max-w-3xl">
-            <span className="text-sm font-semibold text-teal-300 ">
+            <span className="text-sm font-medium text-teal-700">
               Our Story
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6">
+            <h1 className="text-4xl md:text-5xl text-slate-900 mt-2 mb-6">
               We&apos;re on your side. <br />
               Not the clinic&apos;s.
             </h1>
-            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
+            <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
               CliniqTurkey was built because finding honest, independent
               information about medical tourism was too hard. Every site we found
               was either run by a clinic, an agency, or was clearly prioritising

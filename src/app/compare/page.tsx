@@ -67,12 +67,12 @@ export default function ComparePage() {
     <>
       <Header />
       <main id="main-content">
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-16">
           <div className="container max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 mb-4">
               Turkey vs UK: Real Treatment Cost Comparisons
             </h1>
-            <p className="text-lg text-slate-300">
+            <p className="text-lg text-slate-600">
               Honest, up-to-date price comparisons for the most popular medical
               treatments abroad. See exactly how much you can save at verified
               Turkish clinics.

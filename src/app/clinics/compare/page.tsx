@@ -472,10 +472,10 @@ export default function ComparePage() {
     <>
       <Header />
       <main id="main-content">
-        <section className="bg-slate-900 text-white py-10">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-10">
           <div className="container">
-            <h1 className="text-3xl font-bold mb-1">Side-by-Side Comparison</h1>
-            <p className="text-slate-400 text-sm">
+            <h1 className="text-3xl text-slate-900 mb-1">Side-by-Side Comparison</h1>
+            <p className="text-slate-600 text-sm">
               Compare clinics on rating, price, accreditations, languages and more.
             </p>
           </div>

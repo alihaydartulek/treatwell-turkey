@@ -79,17 +79,17 @@ export default function DestinationsPage() {
     <>
       <Header />
       <main id="main-content">
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-16">
           <div className="container max-w-3xl">
-            <div className="flex items-center gap-2 text-slate-400 text-sm mb-4">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span>/</span>
-              <span className="text-white">Destinations</span>
+            <div className="flex items-center gap-2 text-slate-500 text-sm mb-4">
+              <Link href="/" className="hover:text-teal-700">Home</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-700">Destinations</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 mb-4">
               Medical Tourism Destinations in Turkey
             </h1>
-            <p className="text-lg text-slate-300">
+            <p className="text-lg text-slate-600">
               Turkey's four main medical tourism cities each offer distinct
               advantages. Compare them to find the right fit for your treatment
               and travel preferences.

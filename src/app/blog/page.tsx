@@ -14,13 +14,13 @@ export default function BlogPage() {
     <>
       <Header />
       <main id="main-content">
-        <section className="bg-slate-900 text-white py-14">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-14">
           <div className="container">
-            <span className="text-sm font-semibold text-teal-300 ">
+            <span className="text-sm font-medium text-teal-700">
               Independent Guides
             </span>
-            <h1 className="text-4xl font-bold mt-2 mb-3">Patient Guides</h1>
-            <p className="text-slate-400 max-w-xl">
+            <h1 className="text-4xl text-slate-900 mt-2 mb-3">Patient Guides</h1>
+            <p className="text-slate-600 max-w-xl">
               Everything you need to make an informed decision — written by our
               editorial team, not by clinics.
             </p>

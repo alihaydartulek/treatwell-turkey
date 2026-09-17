@@ -227,28 +227,28 @@ export default async function BlogPostPage({
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-slate-900 text-white py-14">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-14">
           <div className="container max-w-3xl">
-            <div className="flex items-center gap-2 text-slate-400 text-sm mb-6">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span>/</span>
-              <Link href="/blog" className="hover:text-white">Guides</Link>
-              <span>/</span>
-              <span className="text-slate-300 truncate">{post.title}</span>
+            <div className="flex items-center gap-2 text-slate-500 text-sm mb-6">
+              <Link href="/" className="hover:text-teal-700">Home</Link>
+              <span className="text-slate-300">/</span>
+              <Link href="/blog" className="hover:text-teal-700">Guides</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-600 truncate">{post.title}</span>
             </div>
 
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold text-teal-300 bg-teal-900/40 border border-teal-800 px-2.5 py-1 rounded-full">
+              <span className="text-xs font-medium text-teal-700 bg-teal-50 border border-teal-100 px-2.5 py-1 rounded-full">
                 {post.category}
               </span>
-              <span className="flex items-center gap-1 text-xs text-slate-400">
+              <span className="flex items-center gap-1 text-xs text-slate-500">
                 <Clock size={11} />
                 {post.readTime} min read
               </span>
-              <span className="text-xs text-slate-500">{post.publishDate}</span>
+              <span className="text-xs text-slate-400">{post.publishDate}</span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
+            <h1 className="text-3xl md:text-4xl text-slate-900 mb-4 leading-snug">
               {post.title}
             </h1>
             <p className="text-slate-300 text-lg">{post.excerpt}</p>

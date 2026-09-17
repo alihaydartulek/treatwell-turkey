@@ -190,46 +190,46 @@ export default async function TreatmentCityPage({
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-20">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-16 md:py-20">
           <div className="container">
             <div className="max-w-3xl">
               {/* Breadcrumb */}
-              <div className="flex items-center gap-1.5 text-slate-400 text-sm mb-4 flex-wrap">
-                <Link href="/" className="hover:text-white">Home</Link>
-                <ChevronRight size={13} />
-                <Link href="/treatments" className="hover:text-white">Treatments</Link>
-                <ChevronRight size={13} />
-                <Link href={`/treatments/${slug}`} className="hover:text-white">{treatment.name}</Link>
-                <ChevronRight size={13} />
-                <span className="text-white">{cityLabel}</span>
+              <div className="flex items-center gap-1.5 text-slate-500 text-sm mb-4 flex-wrap">
+                <Link href="/" className="hover:text-teal-700">Home</Link>
+                <ChevronRight size={13} className="text-slate-300" />
+                <Link href="/treatments" className="hover:text-teal-700">Treatments</Link>
+                <ChevronRight size={13} className="text-slate-300" />
+                <Link href={`/treatments/${slug}`} className="hover:text-teal-700">{treatment.name}</Link>
+                <ChevronRight size={13} className="text-slate-300" />
+                <span className="text-slate-700">{cityLabel}</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl text-slate-900 mb-4">
                 {treatment.name} in {cityLabel}, Turkey
               </h1>
-              <p className="text-lg text-slate-300 mb-6 max-w-xl">
+              <p className="text-lg text-slate-600 mb-6 max-w-xl">
                 Compare verified clinics for {treatment.name} in {cityLabel}. Real prices, real reviews — no middleman.
               </p>
 
-              {/* Price pills */}
+              {/* Price comparison */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm">
-                  <span className="text-slate-400">UK average</span>
-                  <div className="text-lg font-bold text-slate-300 line-through">
+                <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm">
+                  <span className="text-slate-500">UK average</span>
+                  <div className="text-lg font-bold text-slate-400 line-through">
                     &pound;{treatment.ukPrice.toLocaleString()}
                   </div>
                 </div>
-                <div className="bg-green-500/20 border border-green-400/40 rounded-xl px-4 py-3 text-sm">
-                  <span className="text-green-300">{cityLabel}, Turkey from</span>
-                  <div className="text-lg font-bold text-white">
+                <div className="bg-teal-50 border border-teal-200 rounded-xl px-4 py-3 text-sm">
+                  <span className="text-teal-700">{cityLabel}, Turkey from</span>
+                  <div className="text-lg font-bold text-slate-900">
                     <PriceDisplay eurAmount={treatment.priceFrom} />
                   </div>
                 </div>
-                <div className="bg-green-600/20 border border-green-500/40 rounded-xl px-4 py-3 text-sm flex items-center gap-2">
-                  <TrendingDown size={16} className="text-green-400" />
+                <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-sm flex items-center gap-2">
+                  <TrendingDown size={16} className="text-amber-600" />
                   <div>
-                    <div className="text-green-300 text-xs">You save</div>
-                    <div className="text-white font-bold">{saving}% vs UK</div>
+                    <div className="text-amber-700 text-xs">You save</div>
+                    <div className="text-slate-900 font-bold">{saving}% vs UK</div>
                   </div>
                 </div>
               </div>
@@ -237,15 +237,15 @@ export default async function TreatmentCityPage({
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/get-a-quote"
-                  className="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl transition-colors"
+                  className="px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white font-semibold rounded-xl transition-colors"
                 >
-                  Get Free Quotes in {cityLabel}
+                  Get free quotes in {cityLabel}
                 </Link>
                 <Link
                   href={`/treatments/${slug}`}
-                  className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-colors"
+                  className="px-6 py-3 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold rounded-xl transition-colors"
                 >
-                  All Turkey Clinics
+                  All Turkey clinics
                 </Link>
               </div>
             </div>

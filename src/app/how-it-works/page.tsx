@@ -126,15 +126,15 @@ export default function HowItWorksPage() {
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-16 md:py-24">
           <div className="container text-center max-w-2xl mx-auto">
-            <span className="text-sm font-semibold text-teal-300 ">
+            <span className="text-sm font-medium text-teal-700">
               Transparent Process
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 mt-2 mb-4">
               How It Works
             </h1>
-            <p className="text-lg text-slate-300">
+            <p className="text-lg text-slate-600">
               Browse verified clinics, compare prices, and contact them directly.
               No middleman. No coordinator. No hidden fees.
             </p>

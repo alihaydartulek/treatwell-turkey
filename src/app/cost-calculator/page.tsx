@@ -14,15 +14,15 @@ export default function CostCalculatorPage() {
     <>
       <Header />
       <main id="main-content">
-        <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-16">
           <div className="container text-center max-w-2xl mx-auto">
-            <span className="text-sm font-semibold text-teal-200 ">
+            <span className="text-sm font-medium text-teal-700">
               Free Tool
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 mt-2 mb-4">
               Cost Calculator
             </h1>
-            <p className="text-lg text-teal-100">
+            <p className="text-lg text-slate-600">
               See exactly how much you could save by having your treatment in
               Turkey — including a realistic flight &amp; hotel estimate.
             </p>

@@ -55,16 +55,16 @@ export default function TreatmentsPage() {
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-14">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-14">
           <div className="container">
             <div className="max-w-2xl">
-              <span className="text-sm font-semibold text-teal-300 ">
-                40+ Treatments Available
+              <span className="text-sm font-medium text-teal-700">
+                Every treatment, compared
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
+              <h1 className="text-4xl md:text-5xl text-slate-900 mt-2 mb-4">
                 All Treatments in Turkey
               </h1>
-              <p className="text-slate-300 text-lg">
+              <p className="text-slate-600 text-lg">
                 Browse every treatment category — compare verified clinics,
                 real prices, and see exactly how much you save vs home.
               </p>

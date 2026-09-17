@@ -205,17 +205,17 @@ export default async function ComparisonPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
       <main id="main-content">
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-16">
           <div className="container max-w-3xl">
-            <div className="flex items-center gap-2 text-slate-400 text-sm mb-4">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span>/</span>
-              <Link href="/compare" className="hover:text-white">Compare</Link>
-              <span>/</span>
-              <span className="text-white">{data.title.split(":")[0]}</span>
+            <div className="flex items-center gap-2 text-slate-500 text-sm mb-4">
+              <Link href="/" className="hover:text-teal-700">Home</Link>
+              <span className="text-slate-300">/</span>
+              <Link href="/compare" className="hover:text-teal-700">Compare</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-700">{data.title.split(":")[0]}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{data.title} {year}</h1>
-            <p className="text-slate-300 text-lg">{data.summary}</p>
+            <h1 className="text-4xl md:text-5xl text-slate-900 mb-4">{data.title} {year}</h1>
+            <p className="text-slate-600 text-lg">{data.summary}</p>
           </div>
         </section>
 

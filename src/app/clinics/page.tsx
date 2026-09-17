@@ -127,10 +127,10 @@ export default function ClinicsPage() {
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-slate-900 text-white py-12">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-12">
           <div className="container">
-            <h1 className="text-4xl font-bold mb-2">Browse All Clinics</h1>
-            <p className="text-slate-400">
+            <h1 className="text-4xl text-slate-900 mb-2">Browse All Clinics</h1>
+            <p className="text-slate-600">
               {clinics.length} verified clinics across Turkey — filter, compare and contact directly.
             </p>
           </div>

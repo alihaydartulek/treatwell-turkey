@@ -44,15 +44,15 @@ export default function FAQPage() {
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-16">
           <div className="container max-w-3xl">
-            <span className="text-sm font-semibold text-teal-300 ">
+            <span className="text-sm font-medium text-teal-700">
               Patient Resources
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 mt-2 mb-4">
               Frequently Asked Questions
             </h1>
-            <p className="text-slate-300 text-lg max-w-2xl">
+            <p className="text-slate-600 text-lg max-w-2xl">
               Everything you need to know about medical treatment in Turkey —
               safety, costs, planning, and how our platform works.
             </p>

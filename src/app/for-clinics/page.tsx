@@ -136,18 +136,18 @@ export default function ForClinicsPage() {
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-20">
           <div className="container">
             <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-300 bg-teal-900/40 border border-teal-800 rounded-full px-3 py-1 mb-4">
+              <span className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-700 bg-teal-50 border border-teal-100 rounded-full px-3 py-1 mb-4">
                 <Zap size={13} />
-                For Clinics & Hospitals
+                For Clinics &amp; Hospitals
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold mb-5">
-                Reach Thousands of <br />
-                Pre-Qualified European Patients
+              <h1 className="text-4xl md:text-5xl text-slate-900 mb-5">
+                Reach European patients <br />
+                looking for a clinic in Turkey
               </h1>
-              <p className="text-lg text-slate-300 mb-8 max-w-xl">
+              <p className="text-lg text-slate-600 mb-8 max-w-xl">
                 Get listed on CliniqTurkey — the independent platform
                 connecting UK, German, Dutch and Scandinavian patients with
                 verified clinics in Turkey.
