@@ -47,7 +47,7 @@ export default function CostComparison() {
     <section className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold text-green-600 uppercase tracking-wider">
+          <span className="text-sm font-medium text-teal-300">
             Real Price Comparison
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">

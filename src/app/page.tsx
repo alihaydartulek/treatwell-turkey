@@ -69,14 +69,14 @@ export default function Home() {
         <CostComparison />
         <FeaturedClinics />
         <ClinicStrip
-          eyebrow="Highest Rated"
+          eyebrow="Highest rated"
           title="Top Rated Clinics"
           subtitle="Ranked by real, publicly sourced Google ratings — not by payment."
           clinics={topRatedClinics}
           bg="slate"
         />
         <ClinicStrip
-          eyebrow="Just Added"
+          eyebrow="Just added"
           title="New on CliniqTurkey"
           subtitle="The most recently verified clinics to join the directory."
           clinics={newestClinics}

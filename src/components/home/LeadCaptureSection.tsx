@@ -64,7 +64,7 @@ export default function LeadCaptureSection({ initialTreatment = "", initialClini
     <section className="py-20 bg-teal-600 text-white">
       <div className="container max-w-2xl mx-auto">
         <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-teal-200 uppercase tracking-wider">
+          <span className="text-sm font-medium text-teal-200">
             Direct Clinic Contact
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-3">

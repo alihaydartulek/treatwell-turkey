@@ -60,8 +60,8 @@ export default function FeaturedClinics() {
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div>
-            <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider">
-              Real Clinics, Verified Data
+            <span className="text-sm font-medium text-teal-700">
+              Real clinics, verified data
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
               Featured Clinics

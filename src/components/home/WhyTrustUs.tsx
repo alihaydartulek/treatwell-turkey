@@ -36,8 +36,8 @@ export default function WhyTrustUs() {
     <section className="py-20 bg-slate-50 border-y border-slate-200">
       <div className="container">
         <div className="text-center mb-12 max-w-2xl mx-auto">
-          <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider">
-            Independent &amp; Transparent
+          <span className="text-sm font-medium text-teal-700">
+            Independent &amp; transparent
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">
             Why patients trust CliniqTurkey
