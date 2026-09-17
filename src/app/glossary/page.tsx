@@ -35,16 +35,16 @@ export default function GlossaryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="hero-mesh text-white">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800">
           <div className="container py-16 md:py-20 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
-              <BookOpen size={14} className="text-teal-200" />
-              <span>Glossary</span>
+            <div className="flex items-center gap-2 mb-6">
+              <BookOpen size={15} className="text-teal-700" />
+              <span className="text-sm font-medium text-teal-800 dark:text-teal-300">Glossary</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 leading-tight mb-4">
               Medical tourism terms, explained simply
             </h1>
-            <p className="text-lg text-teal-100 leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed">
               Researching treatment abroad means meeting a lot of jargon. Here are
               clear, plain-English definitions of the words you will come across.
             </p>

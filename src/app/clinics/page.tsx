@@ -183,7 +183,7 @@ export default function ClinicsPage() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 mb-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div>
-                  <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-2">
+                  <label className="text-xs font-semibold text-slate-500  block mb-2">
                     City
                   </label>
                   <div className="flex flex-wrap gap-2">
@@ -203,7 +203,7 @@ export default function ClinicsPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-2">
+                  <label className="text-xs font-semibold text-slate-500  block mb-2">
                     Treatment
                   </label>
                   <div className="flex flex-wrap gap-2">
@@ -223,7 +223,7 @@ export default function ClinicsPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-2">
+                  <label className="text-xs font-semibold text-slate-500  block mb-2">
                     Accreditation
                   </label>
                   <button

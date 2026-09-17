@@ -16,7 +16,7 @@ export default function CostCalculatorPage() {
       <main id="main-content">
         <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16">
           <div className="container text-center max-w-2xl mx-auto">
-            <span className="text-sm font-semibold text-teal-200 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-200 ">
               Free Tool
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">

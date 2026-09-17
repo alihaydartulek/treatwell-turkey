@@ -128,7 +128,7 @@ export default function HowItWorksPage() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24">
           <div className="container text-center max-w-2xl mx-auto">
-            <span className="text-sm font-semibold text-teal-300 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-300 ">
               Transparent Process
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">

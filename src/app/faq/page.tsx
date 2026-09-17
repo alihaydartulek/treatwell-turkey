@@ -46,7 +46,7 @@ export default function FAQPage() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
           <div className="container max-w-3xl">
-            <span className="text-sm font-semibold text-teal-300 uppercase tracking-wider">
+            <span className="text-sm font-semibold text-teal-300 ">
               Patient Resources
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">

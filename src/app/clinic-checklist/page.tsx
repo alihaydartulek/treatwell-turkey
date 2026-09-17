@@ -66,16 +66,16 @@ export default function ClinicChecklistPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="hero-mesh text-white print:hidden">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 print:hidden">
           <div className="container py-16 md:py-20 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
-              <ClipboardCheck size={14} className="text-teal-200" />
-              <span>Free checklist</span>
+            <div className="flex items-center gap-2 mb-6">
+              <ClipboardCheck size={15} className="text-teal-700" />
+              <span className="text-sm font-medium text-teal-800 dark:text-teal-300">Free checklist</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 leading-tight mb-4">
               Questions to ask before you book
             </h1>
-            <p className="text-lg text-teal-100 leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed">
               Print this checklist and take it to every clinic consultation. The
               clinics worth choosing will be happy to answer all of it.
             </p>

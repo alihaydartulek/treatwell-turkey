@@ -373,13 +373,13 @@ function CompareTable() {
             {visualRows.map((row, i) =>
               row.kind === "group" ? (
                 <tr key={i}>
-                  <td className="pl-1 pr-3 pt-6 pb-2 align-bottom text-xs font-bold text-teal-700 uppercase tracking-wider">
+                  <td className="pl-1 pr-3 pt-6 pb-2 align-bottom text-xs font-bold text-teal-700 ">
                     {row.title}
                   </td>
                 </tr>
               ) : (
                 <tr key={i} className={row.bg}>
-                  <td className="py-4 pl-1 pr-3 align-top text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <td className="py-4 pl-1 pr-3 align-top text-xs font-semibold text-slate-500 ">
                     {row.label}
                   </td>
                 </tr>

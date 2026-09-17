@@ -82,16 +82,16 @@ export default function HowWeVerifyPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="hero-mesh text-white">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800">
           <div className="container py-16 md:py-20 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
-              <Shield size={14} className="text-teal-200" />
-              <span>Our methodology</span>
+            <div className="flex items-center gap-2 mb-6">
+              <Shield size={15} className="text-teal-700" />
+              <span className="text-sm font-medium text-teal-800 dark:text-teal-300">Our methodology</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl text-slate-900 leading-tight mb-4">
               How we verify the clinics we list
             </h1>
-            <p className="text-lg text-teal-100 leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed">
               Choosing a clinic abroad is a serious decision. Here is exactly how
               we check the clinics on CliniqTurkey — and the things we refuse to do.
             </p>

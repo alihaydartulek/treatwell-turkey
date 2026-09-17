@@ -235,7 +235,7 @@ export default function ForClinicsPage() {
                   }`}
                 >
                   {plan.highlight && (
-                    <span className="text-xs font-bold text-teal-200 uppercase tracking-wider mb-3">
+                    <span className="text-xs font-bold text-teal-200  mb-3">
                       Most Popular
                     </span>
                   )}
