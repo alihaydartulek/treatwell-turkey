@@ -58,6 +58,15 @@ h3 {
   letter-spacing: -0.015em;
 }
 
+/* Hero colour band — a calm but present mint ground that gives the top of
+   the page life without a gradient wash. Dark theme gets a deep pine tint. */
+.hero-band {
+  background-color: #e7f3ec;
+}
+html.dark .hero-band {
+  background-color: #0e1f1a !important;
+}
+
 /* Prose styles for blog content */
 .prose-sm h2 { font-size: 1.375rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
 .prose-sm h3 { font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-top: 1.5rem; margin-bottom: 0.5rem; }

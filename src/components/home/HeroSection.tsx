@@ -24,7 +24,7 @@ const previewClinics = [...clinics]
   .sort((a, b) => (b.googleRating ?? b.rating) - (a.googleRating ?? a.rating) || (b.googleReviewCount ?? b.reviewCount) - (a.googleReviewCount ?? a.reviewCount))
   .slice(0, 2);
 
-function PreviewCard({ clinic, muted = false }: { clinic: typeof clinics[number]; muted?: boolean }) {
+function PreviewCard({ clinic, muted = false, topRated = false }: { clinic: typeof clinics[number]; muted?: boolean; topRated?: boolean }) {
   const rating = clinic.googleRating ?? clinic.rating;
   const reviews = clinic.googleReviewCount ?? clinic.reviewCount;
   return (
@@ -32,7 +32,7 @@ function PreviewCard({ clinic, muted = false }: { clinic: typeof clinics[number]
       className={`rounded-2xl border bg-white p-5 ${
         muted
           ? "border-slate-200 shadow-sm"
-          : "border-slate-200 shadow-[0_12px_40px_rgba(15,60,50,0.14)]"
+          : "border-teal-200 shadow-[0_16px_44px_rgba(15,60,50,0.16)]"
       }`}
     >
       <div className="flex items-center justify-between mb-2">
@@ -41,9 +41,15 @@ function PreviewCard({ clinic, muted = false }: { clinic: typeof clinics[number]
           <span className="font-semibold text-slate-900 text-sm">{rating}</span>
           <span className="text-xs text-slate-400">({reviews.toLocaleString()})</span>
         </div>
-        <span className="inline-flex items-center gap-1 text-[11px] font-medium text-teal-700 bg-teal-50 border border-teal-100 px-2 py-0.5 rounded-full">
-          <ShieldCheck size={11} /> Verified
-        </span>
+        {topRated ? (
+          <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-800 bg-amber-100 border border-amber-200 px-2 py-0.5 rounded-full">
+            Top rated
+          </span>
+        ) : (
+          <span className="inline-flex items-center gap-1 text-[11px] font-medium text-teal-700 bg-teal-50 border border-teal-100 px-2 py-0.5 rounded-full">
+            <ShieldCheck size={11} /> Verified
+          </span>
+        )}
       </div>
       <div className="font-semibold text-slate-900 leading-snug">{clinic.name}</div>
       <div className="flex items-center gap-1 text-xs text-slate-500 mt-1">
@@ -77,8 +83,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="border-b border-slate-200 dark:border-slate-800">
-      <div className="container py-16 md:py-24">
+    <section className="hero-band relative overflow-hidden border-b border-slate-200 dark:border-slate-800">
+      {/* One soft depth element — not a scattered orb field */}
+      <div className="pointer-events-none absolute -top-24 right-[-6rem] w-[34rem] h-[34rem] rounded-full bg-teal-200/25 dark:bg-teal-400/5 blur-3xl" />
+      <div className="container relative py-16 md:py-24">
         <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
           {/* Left — the message + the action */}
           <div className="max-w-xl">
@@ -158,17 +166,17 @@ export default function HeroSection() {
 
           {/* Right — a real comparison preview (what the product does) */}
           <div className="hidden lg:block">
-            <div className="relative rounded-3xl bg-teal-50/50 border border-teal-100/70 p-8">
+            <div className="relative rounded-3xl bg-white/80 backdrop-blur-sm border border-white shadow-[0_20px_60px_rgba(15,60,50,0.10)] p-8">
               <div className="flex items-center justify-between mb-5">
                 <span className="text-sm font-semibold text-slate-900">Compare, side by side</span>
-                <span className="text-xs text-teal-700 bg-white border border-teal-100 px-2.5 py-1 rounded-full">
+                <span className="text-xs font-medium text-teal-700 bg-teal-50 border border-teal-100 px-2.5 py-1 rounded-full">
                   {clinics.length} clinics
                 </span>
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-3">
                 {previewClinics.map((c, i) => (
-                  <div key={c.slug} className={i === 1 ? "ml-8" : "mr-8"}>
-                    <PreviewCard clinic={c} muted={i === 1} />
+                  <div key={c.slug} className={i === 1 ? "ml-10" : "mr-10"}>
+                    <PreviewCard clinic={c} muted={i === 1} topRated={i === 0} />
                   </div>
                 ))}
               </div>
