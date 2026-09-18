@@ -15,6 +15,10 @@ const topRatedClinics = [...clinics]
   .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount)
   .slice(0, 4);
 
+const mostReviewedClinics = [...clinics]
+  .sort((a, b) => (b.googleReviewCount ?? b.reviewCount) - (a.googleReviewCount ?? a.reviewCount))
+  .slice(0, 4);
+
 const newestClinics = [...clinics].sort((a, b) => b.id - a.id).slice(0, 4);
 
 export const metadata: Metadata = {
@@ -76,11 +80,18 @@ export default function Home() {
           bg="slate"
         />
         <ClinicStrip
+          eyebrow="Chosen by thousands"
+          title="Most Reviewed Clinics"
+          subtitle="Ranked by how many real reviews patients have left — a sign of the clinics people actually go to."
+          clinics={mostReviewedClinics}
+          bg="white"
+        />
+        <ClinicStrip
           eyebrow="Just added"
           title="New on CliniqTurkey"
           subtitle="The most recently verified clinics to join the directory."
           clinics={newestClinics}
-          bg="white"
+          bg="slate"
         />
         <WhyTrustUs />
         <HowItWorks />
