@@ -125,7 +125,7 @@ export default async function ClinicProfilePage({
       <Header />
       <main id="main-content">
         {/* Cover */}
-        <section className="bg-gradient-to-br from-slate-800 to-slate-900 text-white">
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800">
           {/* Cover photo strip */}
           {clinic.coverImage && (
             <div className="relative h-52 md:h-72 overflow-hidden">
@@ -142,37 +142,37 @@ export default async function ClinicProfilePage({
           )}
 
           <div className="container py-10">
-            <div className="flex items-center gap-2 text-slate-400 text-sm mb-6">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span>/</span>
-              <Link href="/clinics" className="hover:text-white">Clinics</Link>
-              <span>/</span>
-              <span className="text-white">{clinic.name}</span>
+            <div className="flex items-center gap-2 text-slate-500 text-sm mb-6">
+              <Link href="/" className="hover:text-teal-700">Home</Link>
+              <span className="text-slate-300">/</span>
+              <Link href="/clinics" className="hover:text-teal-700">Clinics</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-700">{clinic.name}</span>
             </div>
 
             <div className="flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-3 mb-2">
-                  <h1 className="text-3xl font-bold">{clinic.name}</h1>
+                  <h1 className="text-3xl text-slate-900">{clinic.name}</h1>
                   <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${clinic.badgeColor}`}>
                     {clinic.badge}
                   </span>
                 </div>
 
-                <div className="flex items-center gap-1.5 text-slate-400 mb-4">
+                <div className="flex items-center gap-1.5 text-slate-500 mb-4">
                   <MapPin size={14} />
                   <span className="text-sm">
                     {clinic.district}, {clinic.city}, Turkey
                   </span>
                 </div>
 
-                <div className="flex flex-wrap gap-4 text-sm text-slate-300">
+                <div className="flex flex-wrap gap-4 text-sm text-slate-600">
                   <div className="flex items-center gap-1.5">
-                    <Star size={14} className="text-yellow-400 fill-yellow-400" />
-                    <strong className="text-white">{clinic.rating}</strong>
+                    <Star size={14} className="text-amber-500 fill-amber-500" />
+                    <strong className="text-slate-900">{clinic.rating}</strong>
                     <span>
                       ({clinic.reviewCount.toLocaleString()} reviews
-                      {clinic.ratingSource ? ` · ${clinic.ratingSource}` : ""})
+                      {clinic.ratingSource ? ` on ${clinic.ratingSource}` : ""})
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5">
@@ -190,7 +190,7 @@ export default async function ClinicProfilePage({
               <div className="flex flex-col gap-2 shrink-0">
                 <Link
                   href={quoteUrl}
-                  className="px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl text-sm transition-colors text-center"
+                  className="px-5 py-2.5 bg-teal-700 hover:bg-teal-800 text-white font-semibold rounded-xl text-sm transition-colors text-center"
                 >
                   Get Free Quote
                 </Link>

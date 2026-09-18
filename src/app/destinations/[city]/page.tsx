@@ -65,45 +65,43 @@ export default async function DestinationPage({
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section
-          className={`bg-gradient-to-br ${dest.gradient} text-white py-20`}
-        >
+        <section className="hero-band border-b border-slate-200 dark:border-slate-800 py-20">
           <div className="container">
-            <div className="flex items-center gap-2 text-white/60 text-sm mb-6">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span>/</span>
-              <Link href="/destinations" className="hover:text-white">Destinations</Link>
-              <span>/</span>
-              <span className="text-white">{dest.city}</span>
+            <div className="flex items-center gap-2 text-slate-500 text-sm mb-6">
+              <Link href="/" className="hover:text-teal-700">Home</Link>
+              <span className="text-slate-300">/</span>
+              <Link href="/destinations" className="hover:text-teal-700">Destinations</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-700">{dest.city}</span>
             </div>
 
             <div className="max-w-3xl">
               <div className="text-6xl mb-4">{dest.emoji}</div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-3">
+              <h1 className="text-4xl md:text-5xl text-slate-900 mb-3">
                 Medical Tourism in {dest.city}
               </h1>
-              <p className="text-lg text-white/80 mb-8 max-w-xl">
+              <p className="text-lg text-slate-600 mb-8 max-w-xl">
                 {dest.tagline}
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-2 text-sm">
-                  <span className="opacity-70">Clinics</span>
-                  <div className="font-bold">{dest.clinicCount}+ verified</div>
+                <div className="bg-white border border-slate-200 rounded-xl px-4 py-2 text-sm">
+                  <span className="text-slate-500">Clinics</span>
+                  <div className="font-bold text-slate-900">{dest.clinicCount}+ verified</div>
                 </div>
-                <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-2 text-sm">
-                  <span className="opacity-70">Flight time</span>
-                  <div className="font-bold">{dest.practicalInfo.flightTime}</div>
+                <div className="bg-white border border-slate-200 rounded-xl px-4 py-2 text-sm">
+                  <span className="text-slate-500">Flight time</span>
+                  <div className="font-bold text-slate-900">{dest.practicalInfo.flightTime}</div>
                 </div>
-                <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-2 text-sm">
-                  <span className="opacity-70">Best for</span>
-                  <div className="font-bold">{dest.topTreatments[0]}, {dest.topTreatments[1]}</div>
+                <div className="bg-white border border-slate-200 rounded-xl px-4 py-2 text-sm">
+                  <span className="text-slate-500">Best for</span>
+                  <div className="font-bold text-slate-900">{dest.topTreatments[0]}, {dest.topTreatments[1]}</div>
                 </div>
               </div>
 
               <Link
                 href="/get-a-quote"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 font-semibold rounded-xl hover:bg-white/90 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-teal-700 text-white font-semibold rounded-xl hover:bg-teal-800 transition-colors"
               >
                 Find Clinics in {dest.city} <ArrowRight size={16} />
               </Link>
