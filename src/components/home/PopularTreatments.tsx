@@ -33,6 +33,17 @@ const featuredSlugs = [
   "ivf",
 ];
 
+// Per-category accent so the grid reads as a set of distinct treatments,
+// not one repeated teal card. Full class strings so Tailwind keeps them.
+const treatmentColors: Record<string, string> = {
+  "hair-transplant": "bg-teal-50 border-teal-100 text-teal-600 group-hover:bg-teal-600",
+  "dental":          "bg-sky-50 border-sky-100 text-sky-600 group-hover:bg-sky-600",
+  "bariatric":       "bg-rose-50 border-rose-100 text-rose-600 group-hover:bg-rose-600",
+  "cosmetic":        "bg-violet-50 border-violet-100 text-violet-600 group-hover:bg-violet-600",
+  "eye-surgery":     "bg-amber-50 border-amber-100 text-amber-600 group-hover:bg-amber-600",
+  "ivf":             "bg-pink-50 border-pink-100 text-pink-600 group-hover:bg-pink-600",
+};
+
 const savingLabels: Record<string, string> = {
   "hair-transplant": "Save up to £6,500",
   "dental":          "Save up to £4,000",
@@ -81,7 +92,7 @@ export default function PopularTreatments() {
               className="card-glow group bg-white border border-slate-200 rounded-2xl p-6 hover:border-teal-200 transition-all block"
             >
               <div className="flex items-start justify-between gap-2 mb-4">
-                <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-teal-50 border border-teal-100 text-teal-600 shrink-0 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                <span className={`flex items-center justify-center w-12 h-12 rounded-xl border shrink-0 group-hover:text-white transition-colors ${treatmentColors[t.slug] ?? "bg-teal-50 border-teal-100 text-teal-600 group-hover:bg-teal-600"}`}>
                   <Icon size={22} />
                 </span>
                 {popularSlugs.has(t.slug) && (

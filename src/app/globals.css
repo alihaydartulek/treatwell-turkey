@@ -111,6 +111,20 @@ html.dark .border-green-200  { border-color: rgba(6, 78, 59, 0.5) !important; }
 html.dark .border-teal-100   { border-color: rgba(19, 78, 74, 0.4) !important; }
 html.dark .border-teal-200   { border-color: rgba(15, 118, 110, 0.55) !important; }
 
+/* Category accent tints (treatment icon boxes) — dark-mode equivalents */
+html.dark .bg-sky-50    { background-color: rgba(12, 74, 110, 0.25) !important; }
+html.dark .bg-rose-50   { background-color: rgba(136, 19, 55, 0.22) !important; }
+html.dark .bg-violet-50 { background-color: rgba(76, 29, 149, 0.22) !important; }
+html.dark .bg-amber-50  { background-color: rgba(120, 53, 15, 0.22) !important; }
+html.dark .border-sky-100    { border-color: rgba(12, 74, 110, 0.45) !important; }
+html.dark .border-rose-100   { border-color: rgba(136, 19, 55, 0.45) !important; }
+html.dark .border-violet-100 { border-color: rgba(76, 29, 149, 0.45) !important; }
+html.dark .border-amber-100  { border-color: rgba(120, 53, 15, 0.45) !important; }
+html.dark .text-sky-600    { color: #38bdf8 !important; }
+html.dark .text-rose-600   { color: #fb7185 !important; }
+html.dark .text-violet-600 { color: #a78bfa !important; }
+html.dark .text-amber-600  { color: #fbbf24 !important; }
+
 /* Hover overrides */
 html.dark .hover\:bg-slate-50:hover  { background-color: #334155 !important; }
 html.dark .hover\:bg-teal-50:hover   { background-color: rgba(15, 118, 110, 0.2) !important; }
