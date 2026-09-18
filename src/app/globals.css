@@ -68,10 +68,13 @@ html.dark .hero-band {
 }
 
 /* Prose styles for blog content */
-.prose-sm h2 { font-size: 1.375rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
-.prose-sm h3 { font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-.prose-sm p  { color: #475569; line-height: 1.75; margin-bottom: 1rem; }
-.prose-sm li { color: #475569; line-height: 1.75; margin-bottom: 0.25rem; }
+/* Blog reading — editorial serif headings, comfortable body measure */
+.prose-sm h2 { font-size: 1.65rem; font-weight: 600; color: #17251e; margin-top: 2.75rem; margin-bottom: 0.9rem; letter-spacing: -0.01em; }
+.prose-sm h3 { font-size: 1.2rem; font-weight: 600; color: #17251e; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+.prose-sm p  { color: #334155; font-size: 1.0625rem; line-height: 1.8; margin-bottom: 1.15rem; }
+.prose-sm li { color: #334155; font-size: 1.0625rem; line-height: 1.75; margin-bottom: 0.35rem; }
+.prose-sm a  { color: #0f766e; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.prose-sm a:hover { color: #0a4838; }
 
 /* ─── DARK MODE ─────────────────────────────────────────────────────────────
    !important is required to override Tailwind's @layer utilities             */
@@ -138,6 +141,7 @@ html.dark .prose-sm h2,
 html.dark .prose-sm h3  { color: #f1f5f9 !important; }
 html.dark .prose-sm p,
 html.dark .prose-sm li  { color: #94a3b8 !important; }
+html.dark .prose-sm a   { color: #5eead4 !important; }
 
 /* Smooth theme transition */
 html.dark,

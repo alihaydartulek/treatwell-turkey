@@ -173,7 +173,7 @@ export async function generateMetadata({
   if (!data) return {};
   const year = new Date().getFullYear();
   return {
-    title: `${data.title} ${year} | CliniqTurkey`,
+    title: `${data.title} ${year}`,
     description: data.summary,
     alternates: { canonical: `https://www.cliniqturkey.com/compare/${slug}` },
   };

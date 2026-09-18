@@ -22,7 +22,7 @@ export async function generateMetadata({
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return {
-    title: `${post.title} | CliniqTurkey`,
+    title: post.title,
     description: post.excerpt,
     alternates: { canonical: `https://www.cliniqturkey.com/blog/${slug}` },
     openGraph: {

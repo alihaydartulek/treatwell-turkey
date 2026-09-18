@@ -31,7 +31,7 @@ export async function generateMetadata({
   const dest = getDestinationBySlug(city);
   if (!dest) return {};
   return {
-    title: `Medical Tourism in ${dest.city}, Turkey — Clinics, Costs & Travel Guide | CliniqTurkey`,
+    title: `Medical Tourism in ${dest.city}, Turkey — Clinics, Costs & Travel Guide`,
     description: `Complete guide to medical tourism in ${dest.city}. ${dest.clinicCount}+ verified clinics, top treatments, practical travel info and patient tips.`,
     alternates: { canonical: `https://www.cliniqturkey.com/destinations/${city}` },
     openGraph: {
